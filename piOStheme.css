@@ -164,7 +164,7 @@ span[style="color: rgb(1, 1, 1);"]
     font-family: "FixedSysTrue", monospace;
 	border: solid var(--interactive-muted);
     border-width: 1px 3px;
-    padding: 1px 8px 3px 8px;
+    padding: 1px 8px 2px 8px;
     font-size: 16pt;
     text-shadow: none;
 }
