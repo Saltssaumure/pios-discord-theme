@@ -1,3 +1,10 @@
+/**
+ * @name piOS
+ * @author Saltssaumure#7557
+ * @description SUPERHOT piOS inspired theme. Previous version: v0.3 Feb05. 
+ * @version 0.4 (last version before full, hopefully)
+*/
+
 /*
                                                 Made by:
  _______  _______  _    _________ _______  _______  _______           __   __           _______  _______ 
@@ -14,7 +21,7 @@ Twitter: @Saltssaumure
 
 Join the Official Superhot Discord! https://discord.gg/9eAwJF8
 
----------------------------------------------------------------------------------------------------------------------- */
+------------------------------------------------------------------------------------------------------------------------ */
 
 /* Imports fonts */
 
@@ -36,6 +43,7 @@ Join the Official Superhot Discord! https://discord.gg/9eAwJF8
     --text-muted: grey;
     --text-link: white;
     --channels-default: white;
+	--deprecated-quickswitcher-input-background: black;
     --interactive-normal: white;
     --interactive-hover: white;
     --interactive-active: red;
@@ -51,10 +59,11 @@ Join the Official Superhot Discord! https://discord.gg/9eAwJF8
     --background-modifier-accent: transparent;
 	--background-mentioned: rgba(255,0,0,0.2);
 	--background-mentioned-hover: rgba(255,0,0,0.2);
+	--background-accent: rgba(200,0,0,1); /* the colour accents */
 	--activity-card-background: rgba(255,0,0,0.2);
     --channeltextarea-background: transparent; /* the part where you type messages */
     --deprecated-panel-background: transparent;
-	--guild-header-text-shadow: black;
+	--guild-header-text-shadow: transparent;
 /* User editable glow colours - change the RGBA values to anything you like! */
 /* RGBA colour picker: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool */	
 	--mainGlowColor: rgba(0,255,255,0.7);   /* Glow colour for messages, names, channels. Default: cyan     */
@@ -63,14 +72,16 @@ Join the Official Superhot Discord! https://discord.gg/9eAwJF8
 	--SHMindsGlowColor: rgba(0,200,255,0.5);/* Glow colour for Superhot Mind names.       Default: sky blue */
 }
 
-/* scrollbar stuff ------------------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------------- scrollbar stuff */
 
 .scroller-2FKFPG::-webkit-scrollbar
 {
     width: 18px;
 }
 
-.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb
+.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb,
+.scroller-2FKFPG::-webkit-scrollbar-thumb, .scroller-2FKFPG::-webkit-scrollbar-track,
+.scrollerThemed-2oenus.themeGhostHairline-DBD-2d .scroller-2FKFPG::-webkit-scrollbar-thumb, .scrollerThemed-2oenus.themeGhostHairlineChannels-3G0x9_ .scroller-2FKFPG::-webkit-scrollbar-thumb
 {
 	border-color: transparent;
 	background-color: grey;
@@ -88,9 +99,9 @@ Join the Official Superhot Discord! https://discord.gg/9eAwJF8
 	border: 0;
 }
 
-/* end scrollbar stuff --------------------------------------------------------------------------------------------- */
+/* end scrollbar stuff */
 
-/* SHADOW MODIFICATIONS -------------------------------------------------------------------------------------------- */
+/*  ----------------------------------------------------------------------------------------------- SHADOW MODIFICATIONS */
 
 /* Messages */
 .markup-2BOw-j
@@ -147,9 +158,9 @@ span[style="color: rgb(1, 1, 1);"]
     text-shadow: 0 0 20px var(--interactive-active);
 }
 
-/* END SHADOW MODIFICATIONS ------------------------------------------------------------------------------------*/
+/* END SHADOW MODIFICATIONS*/
 
-/* fonts! ------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------- Fonts */
 	
 ::placeholder, body, button, input, select, textarea
 {
@@ -164,7 +175,7 @@ span[style="color: rgb(1, 1, 1);"]
     font-family: "FixedSysTrue", monospace;
 	border: solid var(--interactive-muted);
     border-width: 1px 3px;
-    padding: 1px 8px 2px 8px;
+    padding: 1px 8px 3px 8px;
     font-size: 16pt;
     text-shadow: none;
 }
@@ -213,12 +224,15 @@ input
 	text-shadow: none;
 }
 
-/* unblurs bold text in chat STYLE SUBJECT TO CHANGE PLS GIVE FEEDBACK*/
+/* unblurs bold text in chat
+STYLE SUBJECT TO CHANGE, PLEASE GIVE FEEDBACK
+FEEDBACK RECEIVED: BOLD HAS GLOW AGAIN
 .markup-2BOw-j strong
 {
 	font-weight: normal;
 	text-shadow: 2px 0 0.1px var(--text-normal);
 }
+*/
 
 .content-2M3n_H, /* Pins / calls message interjects */
 .timestamp-1E3uAL, /* timestamp for the above */
@@ -228,86 +242,9 @@ input
 	text-shadow: none;
 }
 
-/* end fonts! --------------------------------------------------------------------------------------------------------- */
+/* end fonts!  */
 
-/* background of popoverstuff set to black */
-.theme-dark .headerNormal-T_seeN,
-.theme-dark .bodyInner-245q0L,
-.theme-dark .footer-1fjuF6,
-.theme-dark .quickMessage-1yeL4E,
-.headerPlaying-j0WQBV,
-.headerStreaming-2FjmGz,
-.headerSpotify-zpWxgT,
-.theme-dark .autocomplete-1vrmpx,
-.theme-dark .container-1D34oG,
-.theme-dark .popout-38lTFE,
-.theme-dark .modal-yWgWj-,
-.theme-dark .inset-3sAvek,
-.theme-dark .footer-3rDWdC,
-.theme-dark .uploadModal-2ifh8j,
-.theme-dark .footer-3mqk7D,
-.theme-dark .root-1gCeng,
-.theme-dark .slideBody-2nMrnU,
-.theme-dark .theme-light .action-1lSjCi,
-.theme-dark .addGamePopout-2RY8Ju
-{
-	background: var(--background-primary);
-}
-
-/* hover stuff is red transparenty*/
-.theme-dark .outer-1AjyKL.interactive-3B9GmY:hover,
-.theme-dark .memberListItem-31QoHj:not(.popoutDisabled-2RK7MF):hover,
-.theme-dark .enabled-1t_Gxm:hover,
-.theme-dark .friendSelected-1sa4bG,
-.lookFilled-1Gx00P.colorBrand-3pXr91:hover
-{
-	background: var(--background-modifier-hover);
-}
-
-/* stuff has borders */
-.wrapper-2aW0bm,
-.emojiPicker-3m1S-j,
-.contextMenu-HLZMGh,
-.userPopout-3XzG_A,
-.theme-dark .autocomplete-1vrmpx,
-.messagesPopoutWrap-1MQ1bW,
-.modal-yWgWj-,
-.theme-dark .uploadModal-2ifh8j,
-.theme-dark .popout-38lTFE,
-.root-1gCeng,
-.theme-dark .addGamePopout-2RY8Ju
-{
-	border: solid var(--interactive-muted);
-	border-width: 1px 3px;
-	padding: 0;
-}
-
-/* this also needs padding */
-.theme-dark .popout-38lTFE,
-.theme-dark .addGamePopout-2RY8Ju
-{
-	padding: 8px;
-}
-
-/* attached file box GIVE FEEDBACK THIS IS NOT FIXED FEATURE */
-.theme-dark .attachment-33OFj0
-{
-	border-width: 1px 3px;
-}
-
-/* buttons are grey */
-.lookFilled-1Gx00P.colorBrand-3pXr91,
-.lookFilled-1Gx00P.colorBrand-3pXr91:disabled
-{
-	background: var(--interactive-muted);
-}
-
-/* add friend button is transparent */
-.item-3HknzM[aria-label="Add Friend"]
-{
-	background: transparent!important;
-	color: var(--interactive-active)!important;
-}
+/* ------------------------------------------------------------------------------------------------------------ The Grid */
 
 /* adds border to every column */	
 .sidebar-2K8pFh.da-sidebar,
@@ -316,7 +253,7 @@ input
 .container-1D34oG,
 .nowPlayingColumn-2sl4cE
 {
-    border-left: 5px solid rgba(255,255,255,0.5);
+    border-left: 5px solid var(--interactive-muted);
 }
 
 /* top bar underline */
@@ -338,55 +275,213 @@ input
 	border-left: 5px solid var(--header-primary);
 }
 
-/* new messages line */
+/* Adds dashes between channel groups */
+.containerDefault-3GGEv_::before
+{
+	font-size: 12pt;
+    position: relative;
+    left:7px;
+    content: "-------------------------";
+    text-shadow: 0 1px var(--interactive-muted);
+    color: var(--interactive-muted);
+}
+
+/* server tip styling */
+.channelNotice-1-XFjC.quickswitcher-35bYg4,
+.channelNotice-1-XFjC.invite-OjTXrW
+{
+	background: 0;
+	padding: 30px 20px;
+	border: solid var(--interactive-muted);
+	border-width: 1px 0;
+	margin-top: -1px;
+}
+
+/* end The Grid */
+
+/* ------------------------------------------------------------------------------------------------ Backgrounds and text */
+
+/* background of popoverstuff set to black */
+.theme-dark .headerNormal-T_seeN,
+.theme-dark .bodyInner-245q0L,
+.theme-dark .footer-1fjuF6,
+.theme-dark .quickMessage-1yeL4E,
+.headerPlaying-j0WQBV,
+.headerStreaming-2FjmGz,
+.headerSpotify-zpWxgT,
+.theme-dark .autocomplete-1vrmpx,
+.theme-dark .container-1D34oG,
+.theme-dark .popout-38lTFE,
+.theme-dark .modal-yWgWj-,
+.theme-dark .inset-3sAvek,
+.theme-dark .footer-3rDWdC,
+.theme-dark .uploadModal-2ifh8j,
+.theme-dark .footer-3mqk7D,
+.theme-dark .root-1gCeng,
+.theme-dark .slideBody-2nMrnU,
+.theme-dark .theme-light .action-1lSjCi,
+.theme-dark .addGamePopout-2RY8Ju,
+.theme-dark .container-3ayLPN,
+.theme-dark .focused-2bY0OD,
+.theme-dark .message-2qRu38,
+.botTagRegular-2HEhHi,
+.theme-dark .card-FDVird:before,
+.css-181m2lf-menu,
+.video-1FfuMD
+{
+	background: var(--background-primary);
+}
+
+/* hover stuff is red transparenty*/
+.theme-dark .outer-1AjyKL.interactive-3B9GmY:hover,
+.theme-dark .memberListItem-31QoHj:not(.popoutDisabled-2RK7MF):hover,
+.theme-dark .enabled-1t_Gxm:hover,
+.theme-dark .friendSelected-1sa4bG,
+.lookFilled-1Gx00P.colorBrand-3pXr91:hover,
+.theme-dark .option-96V44q.selected-rZcOL-,
+.theme-dark .selectorSelected-1_M1WV
+{
+	background: var(--background-modifier-hover);
+}
+
+/* Greyed out buttons */
+.lookFilled-1Gx00P.colorBrand-3pXr91,
+.lookFilled-1Gx00P.colorBrand-3pXr91:disabled
+{
+	background: var(--interactive-muted);
+}
+
+/* Red background */
+.mentioned-xhSam7:before, /* Makes the tab thingy at the left side of mentioned posts red */
+.blockquoteDivider-2hH8H6, /* Block quote tab is red */
+.item-2hkk8m, /* unread servers have red pill */
+.mention-1f5kbO, /* new message notices in server select has red bg */
+.newMessagesBar-mujexs, /* [number] new messages since [time] bar at top */
+.jumpToPresentBar-9P20AMm, /* You're viewing older messages jump to present bar at bottom */
+.theme-dark .searchFilter-2ESiM3, /* from: in search */
+.theme-dark .searchAnswer-3Dz2-q, /* username in search */
+.circleIconButton-jET_ig.selected-ugP_am, /* add/find server buttons when hovered */
+.checkbox-3kaeSU .checkboxInner-3yjcPe .checkboxElement-1qV33p:checked+span /* check box to red */
+{
+	background-color: var(--background-accent);
+}
+.checkbox-3kaeSU .checkboxInner-3yjcPe .checkboxElement-1qV33p:checked+span /* check box to red */ 
+{
+	border-color: var(--background-accent);
+}
+.newMessagesBar-mujexs,
+.jumpToPresentBar-9P20AM
+{
+	opacity: 0.7;
+}
+
+/* stuff has borders */
+.wrapper-2aW0bm,
+.emojiPicker-3m1S-j,
+.contextMenu-HLZMGh,
+.userPopout-3XzG_A,
+.theme-dark .autocomplete-1vrmpx,
+.messagesPopoutWrap-1MQ1bW,
+.modal-yWgWj-,
+.theme-dark .uploadModal-2ifh8j,
+.theme-dark .popout-38lTFE,
+.root-1gCeng,
+.theme-dark .addGamePopout-2RY8Ju,
+.theme-dark .container-3ayLPN,
+.quickswitcher-3JagVE,
+.theme-dark .attachment-33OFj0,
+.root-SR8cQa,
+.menu-Sp6bN1,
+.theme-dark .wrapperAudio-1jDe0Q
+{
+	border: solid var(--interactive-muted);
+	border-width: 1px 3px;
+	padding: 0;
+}
+
+/* corrects the above for padding */
+.theme-dark .popout-38lTFE,
+.theme-dark .addGamePopout-2RY8Ju,
+.theme-dark .attachment-33OFj0,
+.theme-dark .wrapperAudio-1jDe0Qh
+{
+	padding: 8px;
+}
+.quickswitcher-3JagVE
+{
+	padding: 20px 20px 0;
+}
+
+/* aligns top of search popover with bottom of menu bar */
+.popoutBottom-2GAFPg.noArrow-2foL9g
+{
+	margin-top: 11px;
+}
+
+/* aligns top of pinned and mentioned popover with bottom of menu bar */
+.messagesPopoutWrap-1MQ1bW
+{
+	top: 3px;
+}
+
+/* aligns dropdown server options with channels column */
+.menu-Sp6bN1
+{
+	left: 84px;
+}
+
+/* add friend button is transparent */
+.item-3HknzM[aria-label="Add Friend"]
+{
+	background: transparent!important;
+	color: var(--interactive-active)!important;
+}
+
+/* new messages line is red */
 .isUnread-3Ef-o9
 {
-    border-color: var(--interactive-active);
+    border-color: var(--background-accent);
 }
 
-.unreadPill-2HyYtt, /* new message pill */
-.unreadPillCap-3_K2q2, /* a bit of new message pill */
-.or-3THJsp.da-or, /* OR in add new server */
-.icon-1_QxNX, /* # symbol before channel names */
-.protip-YaFfgO, /* remove protip in user popover */
-.theme-dark .theme-light .action-1lSjCi>div
-{
-	display: none;
-}
-
-/* unread undisturbed content */
-.modeUnread-1zpFdA .name-3_Dsmg
+/* white text */
+.modeUnread-1zpFdA .name-3_Dsmg, /* unread undisturbed content */
+.theme-dark .searchOption-zQ-1l6 .filter-3Y_im- /* search options */
 {
     color: var(--text-normal);
 }
 
-/* Adds dashes between channel groups */
-.containerDefault-3GGEv_::before
+/* grey text */
+.theme-dark .searchOption-zQ-1l6 .answer-1n6g43,
+.theme-dark .queryContainer-RKFJW-
 {
-    position: relative;
-    left:7px;
-    content: "-------------------------";
-    text-shadow: 0 1px rgba(255,255,255,0.5);
-    color: rgba(255,255,255,0.5);
+	color: var(--interactive-muted);
 }
 
-/* Makes the tab thingy at the left side of mentioned posts red */
-.mentioned-xhSam7:before
+/* red text */
+.verified-1eC5dy,
+.circleIconButton-jET_ig,
+.itemBase-tz5SeC.danger-2dXSTE,
+.itemBase-tz5SeC.danger-2dXSTE:hover,
+.itemBase-tz5SeC.brand-3igrJY,
+.itemBase-tz5SeC.brand-3igrJY:hover,
+.item-1GzJrl.invite-271nFU,
+.item-1GzJrl.invite-271nFU:hover,
+.item-1GzJrl.leave-1DRJfn,
+.item-1GzJrl.leave-1DRJfn:hover
 {
-	background-color: var(--interactive-active);
+	color: var(--interactive-active);
+}
+.itemBase-tz5SeC.danger-2dXSTE:active,
+.itemBase-tz5SeC.brand-3igrJY:active
+{
+	color: var(--interactive-normal);
 }
 
-/* unread servers have red pill */
-.item-2hkk8m
+/* number of notifs on server badge has red bg and glow */
+.numberBadge-2s8kKX
 {
-	background-color: var(--interactive-active);
-}
-
-/* [number] new messages since [time] bar at top, You're viewing older messages jump to present bar at bottom */
-.newMessagesBar-mujexs,
-.jumpToPresentBar-9P20AM
-{
-	background-color: rgba(255,0,0,0.7);
+	background-color: var(--background-accent)!important;
+	box-shadow: 0 0 20px var(--background-accent);
 }
 
 /* remove line in user popover */
@@ -395,12 +490,21 @@ input
 	border: 0
 }
 
+/* special colours for Clyde bc special bot */
+.localBot-GrCgVt:before
+{
+	background: var(--mainGlowColor);
+}
+
+/* end backgrounds and text */
+
+/* ----------------------------------------------------------------------------------------------- emoji related styling */
+
 /* message reacts colour */
 .reaction-1hd86g.reactionMe-wv5HKu
 {
 	background: var(--background-mentioned);
 }
-
 .reactionMe-wv5HKu .reactionCount-2mvXRV,
 .reactionMe-wv5HKu:hover .reactionCount-2mvXRV
 {
@@ -416,10 +520,13 @@ input
 /* changes colour of selected emoji tab */
 .emojiPicker-3m1S-j .categories-1feg4n .selected-39BZ4S
 {
-	border-bottom-color: var(--interactive-active);
+	border-bottom-color: var(--background-accent);
 }
 
-/* Spoiler stylin -------------------------------------------------------------------------------------------------- */
+/* end emoji section */
+
+/* ----------------------------------------------------------------------------------------------------- Spoiler styling */
+
 .theme-dark .spoilerText-3p6IlD.hidden-HHr2R9
 {
 	background: repeating-linear-gradient(
@@ -430,7 +537,7 @@ input
 		rgba(0,255,255,0.2) 6px
 	);
 	background-color: transparent;
-	filter: drop-shadow(0px 0px 5px var(--interactive-active));
+	filter: drop-shadow(0px 0px 5px var(--background-accent));
 }
 
 .theme-dark .spoilerText-3p6IlD.hidden-HHr2R9:hover,
@@ -462,114 +569,54 @@ input
 	margin-left: 0.6em;
 }
 
-/* end spoiler stylin ---------------------------------------------------------------------------------------------- */
+/* end spoiler styling */
 
-/* square everything ------------------------------------------------------------------------------------------- */
-.avatar-VxgULZ,
-.wrapper-3t9DeA,
-.content-3at_AU,
-.layout-2DM8Md,
-.spoilerText-3p6IlD.hidden-HHr2R9,
-.iconInactive-98JN5i,
-.folderIconWrapper-226oVY,
-.webkit-HjD9Er::-webkit-scrollbar-thumb,
-.blockquoteContainer-U5TVEi .blockquoteDivider-2hH8H6,
-.wrapper-2aW0bm,
-.newMessagesBar-mujexs,
-.emojiPicker-3m1S-j,
-.contextMenu-HLZMGh,
-.imageWrapper-2p5ogY,
-.userPopout-3XzG_A,
-.quickMessage-2XpSaN,
-.channelTextArea-2VhZ6z,
-.reaction-1hd86g,
-.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA.selected-39BZ4S,
-.theme-dark .autocomplete-1vrmpx,
-.button-38aScr,
-.spoilerWarning-2aAZq1,
-.spoilerContainer-331r0R,
-#bd-pub-button,
-.spoilerText-3p6IlD,
-.diversitySelector-tmmMv0 .popout-2nUePc, /* skin tone selector for emojis */
-.avatar-1BDn8e, /* avatars in messages */
-.card-3Qj_Yx, /* my account */
-.button-38aScr /* enable two-factor auth button */,
-.side-8zPYf6 .item-PXvHYJ /* settings side menu */,
-.connection-1fbD7X,
-.connectionDelete-2Odoln,
-.inner-2Y6JuD,
-.box-mmYMsp,
-.membershipDialog-rVL-t_,
-.videoWrapper-3YdgHH,
-.avatarUploaderInner-3UNxY3,
-.input-cIJ7To,
-.questionMark-CWEQZn,
-.userSettingsVoice-iwdUCU .previewOverlay-2O7_KC,
-.container-1nZlH6,
-.wrapper-3jrx9n,
-.option-n0icdO,
-.ghostPill-2-KUPM,
-.notDetected-33MY4s,
-.round-2jCFai,
-#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch,
-#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch:before,
-.bd-pfbtn,
-.bda-slist li,
-.bda-slist .bda-footer button,
-.botTag-2WPJ74,
+/* ----------------------------------------------------------------------------------------------------- Square corners */
+/* squares off user icons */
 foreignObject[mask*="url(#"],
-.markup-2BOw-j code.hljs,
-.markup-2BOw-j code.inline,
-.sidebar-2K8pFh.da-sidebar,
-.chat-3bRxxu.da-chat,
-.membersWrap-2h-GB4.da-membersWrap,
-.jumpToPresentBar-9P20AM,
-.peopleListItem-2nzedh.active-rhSpJJ,
-.peopleListItem-2nzedh:hover,
-.actionButton-uPB8Fs,
-.outer-1AjyKL,
-.popout-38lTFE,
-.theme-dark .memberListItem-31QoHj:not(.popoutDisabled-2RK7MF),
-.theme-dark .enabled-1t_Gxm,
-.body-1ld4H7,
-.activitySectionAssets-32WyHu .largeImage-DLXk-f,
-.topPill-30KHOu .item-PXvHYJ,
-.messagesPopoutWrap-1MQ1bW,
-.modal-yWgWj-,
-.friend-3KALPe,
-.uploadModal-2ifh8j,
-.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.image-2yrs5j,
-.uploadModal-2ifh8j .footer-3mqk7D,
-.attachment-33OFj0,
-.root-1gCeng,
-.action-1lSjCi,
-.actionButton-2PeQbJ,
-.content-3xS9Lh,
-.avatar-3elDyV,
-.card-FDVird:before,
-.theme-dark .addGamePopout-2RY8Ju,
-.css-15ejc46-control,
-.sizeDefault-2YlOZr,
-.sizeDefault-2YlOZr:after
+.assetsLargeMaskUserPopout-12EBBc,
+.assetsLargeMaskStreamPreview-2V7xlA
 {
-	border-radius: 0;
+	-webkit-mask: none;
+	mask: none;
 }
 
-foreignObject[mask*="url(#"]
+/* squares off everything else */
+*,
+.ui-switch:before,
+.sizeDefault-2YlOZr:after,
+.card-FDVird:before
 {
-  mask: none;
+	border-radius: 0!important;
 }
 
-/*--------------------------------------------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------------- hides a whole bunch of stuff */
 
+.unreadPill-2HyYtt, /* new message pill */
+.unreadPillCap-3_K2q2, /* a bit of new message pill */
+.or-3THJsp.da-or, /* OR in add new server */
+.icon-1_QxNX:not([name="Speaker"]), /* # symbol before channel names */
+.protip-YaFfgO, /* remove protip in user popover */
+.theme-dark .theme-light .action-1lSjCi>div,
+.theme-dark .noResultsImage-JbSWtu, /* remove magnifing glass pic if no results found in search*/
+.arrowGroup-2imezz, /* search for discord animated arrows */
+.theme-dark .option-96V44q:after, /* gradient in search popover */
+.theme-dark .resultsGroup-r_nuzN:before /* group separators in search popover */
+{
+	display: none;
+}
+
+/* end hiding stuff */
+
+/*--------------------------------------------------------------------------------------------------------- editor reset */
+/*
+    Keep Custom CSS editor and code related parts untouched.
+    Avoids issues when working with the Custom CSS editor.
+ */
 #bd-customcss-detach-container.hljs,
 #bd-customcss-detach-container.inline,
 #bd-customcss-detach-container.hljs :-webkit-any(ol, li, span),
 .editor-wrapper :-webkit-any(textarea, div, span) {
-    /**
-     * Keep Custom CSS editor and code related parts untouched.
-     * Avoids issues when working with the Custom CSS editor.
-     */
     font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
     text-transform: none;
     text-shadow: none;
