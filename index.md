@@ -1,15 +1,10 @@
-<<<<<<< HEAD:index.md
--<!doctype html>
-=======
 <!doctype html>
 
->>>>>>> 250d4e36a56501825bbe996a993255c36c214636:index.html
-<html>
+<html lang="en">
 
 <head>
 	<title>piOS Discord Theme</title>
 	<link rel="stylesheet" href="https://saltssaumure.github.io/thecss.css">
-
 </head>
 
 <body>
@@ -26,7 +21,6 @@
 	<br><img src="https://i.imgur.com/71JzUGc.png">
 	<br><img src="https://i.imgur.com/tlniq6T.png"></p>
 	
-	<p></p>
   <h2>Theme</h2>
   <p>Download: <a href="https://saltssaumure.github.io/pios-discord-theme/piOStheme.css">https://saltssaumure.github.io/pios-discord-theme/piOSForever.theme.css</a>
   <br>If it opens in browser rather than saving automatically, do Ctrl+S.</p>
