@@ -1,29 +1,26 @@
 /**
- * @name piOS
+ * @name piOSTEST2
  * @author Saltssaumure#7557
- * @description SUPERHOT piOS inspired theme. Previous version: v0.3 Feb05. 
- * @version 0.4 (last version before full, hopefully)
+ * @description TEST EDITION DO NOT UPLOAD2
+ * @version Autoupdate
 */
 
-/*
-                                                Made by:
- _______  _______  _    _________ _______  _______  _______           __   __           _______  _______ 
-(  ____ \(  ___  )( \   \__   __/(  ____ \(  ____ \(  ___  )|\     /|(  \ /  )|\     /|(  ____ )(  ____ \
-| (____\/| (___) || |      | |   | (____\/| (____\/| (___) || |   | || || || || |   | || (____)|| (__  \/
-(_____  )|  ___  || |      | |   (_____  )(_____  )|  ___  || |   | || |(_)| || |   | || __  __)|  __)   
-/\____) || )   ( || (____/\| |   /\____) |/\____) || )   ( || (___) || )   ( || (___) || ) \ \__| (____/\
-\_______)|/     \|(_______/)_(   \_______)\_______)|/     \|(_______)|/     \|(_______)|/   \__/(_______/
-
-                                              donut steel!
-
-Discord: Saltssaumure#7557
-Twitter: @Saltssaumure
-
-Join the Official Superhot Discord! https://discord.gg/9eAwJF8
-
------------------------------------------------------------------------------------------------------------------------- */
-
-/* Imports fonts */
+/* 
+Colours:
+backgrounds: black
+text: white
+    --background-modifier-hover: rgba(255,0,0,0.2);
+    --background-modifier-active: rgba(255,0,0,0.7);
+    --background-modifier-selected: rgba(255,0,0,0.3);
+	
+	--background-mentioned: rgba(255,0,0,0.2);
+	--background-mentioned-hover: rgba(255,0,0,0.2);
+	
+	--mainGlowColor: rgba(0,255,255,0.7);   
+	--mutedGlowColor: rgba(200,255,255,0.2);
+	--SHTeamGlowColor: rgba(255,0,0,0.5);   
+	--SHMindsGlowColor: rgba(0,200,255,0.5);
+*/
 
 @font-face {
     font-family: "FixedSysTrue";
@@ -35,93 +32,184 @@ Join the Official Superhot Discord! https://discord.gg/9eAwJF8
     src: url("https://static.tumblr.com/6nmlfta/kInq29swf/perfect_dos_vga_437_win.ttf")
 }
 
-/* Main theme adjustment */
-.theme-dark, .theme-light {
-    --header-primary: grey;
-    --header-secondary: white;
-    --text-normal: white;
-    --text-muted: grey;
-    --text-link: white;
-    --channels-default: white;
-	--deprecated-quickswitcher-input-background: black;
-    --interactive-normal: white;
-    --interactive-hover: white;
-    --interactive-active: red;
-    --interactive-muted: grey;
-    --background-primary: black; /* messages zone */
-    --background-secondary: black; /* channels bar, users bar */
-	--background-secondary-alt: black; /* user menu at bottom of channels bar */
-    --background-tertiary: black; /* very top bar, server sidebar */
-	--background-floating: black;
-    --background-modifier-hover: rgba(255,0,0,0.2);
-    --background-modifier-active: rgba(255,0,0,0.7);
-    --background-modifier-selected: rgba(255,0,0,0.3);
-    --background-modifier-accent: transparent;
-	--background-mentioned: rgba(255,0,0,0.2);
-	--background-mentioned-hover: rgba(255,0,0,0.2);
-	--background-accent: rgba(200,0,0,1); /* the colour accents */
-	--activity-card-background: rgba(255,0,0,0.2);
-    --channeltextarea-background: transparent; /* the part where you type messages */
-    --deprecated-panel-background: transparent;
-	--guild-header-text-shadow: transparent;
-/* User editable glow colours - change the RGBA values to anything you like! */
+.theme-dark
+{
+	/* User editable glow colours - change the RGBA values to anything you like! */
 /* RGBA colour picker: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool */	
 	--mainGlowColor: rgba(0,255,255,0.7);   /* Glow colour for messages, names, channels. Default: cyan     */
 	--mutedGlowColor: rgba(200,255,255,0.2);/* Glow colour for muted channels.            Default: slate    */
 	--SHTeamGlowColor: rgba(255,0,0,0.5);   /* Glow colour for Superhot Team names.       Default: red      */
 	--SHMindsGlowColor: rgba(0,200,255,0.5);/* Glow colour for Superhot Mind names.       Default: sky blue */
+	--border: grey;
+	--border-code: white;
+	--border-bright: white;
+	--background-embed: rgba(255,0,0,0.3);
+	--warning: red;
+	
+	--header-primary: white;
+	--header-secondary: grey;
+    --text-normal: white;
+    --text-muted: grey;
+    --text-link: white;
+    --text-link-low-saturation: white;
+    /* --text-positive: hsl(139,calc(var(--saturation-factor, 1)*66.8%),58.6%); */
+    /* --text-warning: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%); */
+    /* --text-danger: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%); */
+    /* --interactive-normal: #b9bbbe; */
+    /* --interactive-hover: #dcddde; */
+    --interactive-active: white; /* default: unread dot marker, current channel name */
+    /* --interactive-muted: #4f545c; */
+	
+    --background-primary: black;
+    --background-secondary: black;
+    --background-secondary-alt: black;
+    --background-tertiary: black;
+    --background-accent: red;
+    --background-floating: black;
+	--background-mentioned: rgba(255,0,0,0.2);
+	--channeltextarea-background: transparent;
+	
+	--divider-color: red; /* color of new messages divider */
+	--info-warning-foreground: red; /* colour of @ping message left side indicator */
+	
+	--font-display: PerfectDOS, monospace; /* For server and chanenl title */
+	--font-primary: PerfectDOS, monospace; /* For almost everything else */
+	--font-code: "FixedSysTrue", monospace; /* Code blocks */
+	
+    /* --background-mobile-primary: #36393f; */
+    /* --background-mobile-secondary: #2f3136; */
+	--background-modifier-hover: rgba(255,0,0,0.2);
+    --background-modifier-active: rgba(255,0,0,0.7);
+    --background-modifier-selected: rgba(255,0,0,0.3);
+    --background-modifier-accent: transparent;
+
+    /* --info-positive-text: #fff; */
+    /* --info-warning-text: #fff; */
+    /* --info-danger-text: #fff; */
+    /* --info-help-background: hsla(197,calc(var(--saturation-factor, 1)*100%),47.8%,0.1); */
+    /* --info-help-foreground: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%); */
+    /* --info-help-text: #fff; */
+    /* --status-warning-text: #000; */
+	
+    --scrollbar-thin-thumb: var(--background-accent);
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: var(--background-accent);
+    --scrollbar-auto-track: transparent;
+    --scrollbar-auto-scrollbar-color-thumb: var(--background-accent);
+    --scrollbar-auto-scrollbar-color-track: transparent;
+	
+    /* --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15); */
+    /* --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05); */
+    /* --elevation-medium: 0 4px 4px rgba(0,0,0,0.16); */
+    /* --elevation-high: 0 8px 16px rgba(0,0,0,0.24); */
+    /* --logo-primary: #fff; */
+    /* --control-brand-foreground: hsl(227,calc(var(--saturation-factor, 1)*57.9%),77.6%); */
+    /* --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%); */
+    /* --background-mentioned: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1); */
+    /* --channels-default: #8e9297; */
+    /* --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4); */
+    
+    /* --activity-card-background: #202225; */
+    /* --textbox-markdown-syntax: #8e9297; */
+    /* --deprecated-card-bg: rgba(32,34,37,0.6); */
+    /* --deprecated-card-editable-bg: rgba(32,34,37,0.3); */
+    /* --deprecated-store-bg: #36393f; */
+    /* --deprecated-quickswitcher-input-background: #72767d; */
+    /* --deprecated-quickswitcher-input-placeholder: hsla(0,0%,100%,0.3); */
+    /* --deprecated-text-input-bg: rgba(0,0,0,0.1); */
+    /* --deprecated-text-input-border: rgba(0,0,0,0.3); */
+    /* --deprecated-text-input-border-hover: #040405; */
+    /* --deprecated-text-input-border-disabled: #202225; */
+    /* --deprecated-text-input-prefix: #dcddde; */
+	letter-spacing: -0.04rem;
 }
 
-/* ----------------------------------------------------------------------------------------------------- scrollbar stuff */
-
-.scroller-2FKFPG::-webkit-scrollbar
+/* discord friends tab: for some reason not currently using a variable */
+.theme-dark .container-1D34oG
 {
-    width: 18px;
+	background-color: var(--background-primary);
 }
+	/* square off the corners in friend tab */
+	.actionButton-uPB8Fs
+	{
+		border-radius: 0;
+	}
 
-.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb,
-.scroller-2FKFPG::-webkit-scrollbar-thumb, .scroller-2FKFPG::-webkit-scrollbar-track,
-.scrollerThemed-2oenus.themeGhostHairline-DBD-2d .scroller-2FKFPG::-webkit-scrollbar-thumb, .scrollerThemed-2oenus.themeGhostHairlineChannels-3G0x9_ .scroller-2FKFPG::-webkit-scrollbar-thumb
+/* give embeds a spicy red background */
+.embedFull-2tM8--.markup-2BOw-j
 {
-	border-color: transparent;
-	background-color: grey;
-	border-radius: 0
-}
-
-.scroller-2FKFPG::-webkit-scrollbar-thumb, .scroller-2FKFPG::-webkit-scrollbar-track
-{
-	border-width: 4px;
-}
-
-.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece
-{
-	background: transparent;
+	background: var(--background-embed);
+	border-radius: 0;
 	border: 0;
+	text-shadow: none;
+}
+	.grid-1nZz7S
+	{
+		padding: 12px 18px;
+	}
+		.embedMargin-UO5XwE
+		{
+			margin-top: 0;
+		}
+		
+	/* squares off images/videos embeds */
+	.embedImage-2W1cML img,
+	.embedImage-2W1cML video,
+	.embedThumbnail-2Y84-K img,
+	.embedThumbnail-2Y84-K video,
+	.embedVideo-3nf0O9 img,
+	.embedVideo-3nf0O9 video,
+	.embedMedia-1guQoW,
+	.wrapper-2TxpI8,
+	.imageWrapper-2p5ogY
+	{
+		border-radius: 0;
+	}	
+	/* play buttons on video */
+	.wrapper-129saQ
+	{
+		border-radius: 0;
+		padding: 12px 5px;
+	}
+	/* timeline slider */
+	.mediaBarGrabber-1FqnbN,
+	.mediaBarProgress-1xaPtl,
+	.mediaBarProgress-1xaPtl:after,
+	.mediaBarProgress-1xaPtl:before
+	{
+		border-radius: 0;
+		background: var(--background-accent);
+	}
+
+/* "replying to message" bar set transparent with dotted underline */
+.replyBar-1YLQ2F
+{
+	border-bottom: 1px dashed var(--border);
+	border-radius: 0;
 }
 
-/* end scrollbar stuff */
+/* End colours/background
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Start glow */ 
 
-/*  ----------------------------------------------------------------------------------------------- SHADOW MODIFICATIONS */
-
-/* Messages */
+/* Main section text glow */
 .markup-2BOw-j
 {
 	text-shadow: 2px 0 10px var(--mainGlowColor), -2px 0 10px var(--mainGlowColor);
 }
 
-/* Sidebar white text */
-.containerDefault-3GGEv_, /* left bar titles */
-.containerDefault-1ZnADq, /* left bar channels */
-.da-membersGroup, /* right bar titles*/
-.container-2Pjhx- /* right bar names n game */
+.repliedTextContent-1R3vnK.markup-2BOw-j, /* but not on reply message preview */
+.edited-3sfAzf /* but not on (edited) */
 {
-	text-shadow: 2px 0 5px var(--mainGlowColor), -2px 0 5px var(--mainGlowColor);
+	text-shadow: none;
 }
 
-/* Muted channels */
-.modeMuted-3osy7j .name-3_Dsmg
+/* allow glow outside name box on users list */
+.content-3QAtGj, .nameAndDecorators-5FJ2dg, .name-uJV0GL, .roleColor-rz2vM0
 {
-	text-shadow: 2px 0 5px var(--mutedGlowColor), -2px 0 5px var(--mutedGlowColor);
+	overflow: visible;
 }
 
 /* Superhot Team */
@@ -129,18 +217,133 @@ span[style="color: rgb(196, 0, 0);"]
 {
 	text-shadow: 2px 0 5px var(--SHTeamGlowColor), -2px 0 5px var(--SHTeamGlowColor);
 }
-
-/* Superhot Minds */
-span[style="color: rgb(52, 152, 219);"]
-{
-	text-shadow: 2px 0 5px var(--SHMindsGlowColor), -2px 0 5px var(--SHMindsGlowColor);	
-}
-
 /* SuperBOT */
 span[style="color: rgb(1, 1, 1);"]
 {
 	text-shadow: 2px 0 5px var(--SHMindsGlowColor), -2px 0 5px var(--SHMindsGlowColor);
 }
+
+/* Light turquoise */
+span[style="color: rgb(26, 188, 156);"]
+{	
+	--lightturquoise: rgb(26, 188, 156);
+	text-shadow: 2px 0 5px var(--lightturquoise), -2px 0 5px var(--lightturquoise);
+}
+	/* Dark turquoise */
+	span[style="color: rgb(17, 128, 106);"]
+	{
+		--darkturquoise: rgb(17, 128, 106);
+		text-shadow: 2px 0 5px var(--darkturquoise), -2px 0 5px var(--darkturquoise);
+	}
+/* Light green */
+span[style="color: rgb(46, 204, 113);"]
+{
+	--lightgreen: rgb(46, 204, 113);
+	text-shadow: 2px 0 5px var(--lightgreen), -2px 0 5px var(--lightgreen);
+}
+	/* Dark green */
+	span[style="color: rgb(31, 139, 76);"]
+	{
+		--darkgreen: rgb(31, 139, 76);
+		text-shadow: 2px 0 5px var(--darkgreen), -2px 0 5px var(--darkgreen);
+	}
+/* Superhot Minds (and Light blue) */
+span[style="color: rgb(52, 152, 219);"]
+{
+	text-shadow: 2px 0 5px var(--SHMindsGlowColor), -2px 0 5px var(--SHMindsGlowColor);	
+}
+	/* Dark blue */
+	span[style="color: rgb(32, 102, 148);"]
+	{
+		--darkblue: rgb(32, 102, 148);
+		text-shadow: 2px 0 5px var(--darkblue), -2px 0 5px var(--darkblue);
+	}
+/* Light purple */
+span[style="color: rgb(155, 89, 182);"]
+{
+	--lightpurple: rgb(155, 89, 182);
+	text-shadow: 2px 0 5px var(--lightpurple), -2px 0 5px var(--lightpurple);
+}
+	/* Dark purple */
+	span[style="color: rgb(113, 54, 138);"]
+	{
+		--darkpurple: rgb(113, 54, 138);
+		text-shadow: 2px 0 5px var(--darkpurple), -2px 0 5px var(--darkpurple);
+	}
+/* Light pink */
+span[style="color: rgb(233, 30, 99);"]
+{
+	--lightpink: rgb(233, 30, 99);
+	text-shadow: 2px 0 5px var(--lightpink), -2px 0 5px var(--lightpink);
+}
+	/* Dark pink */
+	span[style="color: rgb(173, 20, 87);"]
+	{
+		--darkpink: rgb(173, 20, 87);
+		text-shadow: 2px 0 5px var(--darkpink), -2px 0 5px var(--darkpink);
+	}
+/* Light yellow */
+span[style="color: rgb(241, 196, 15);"]
+{
+	--lightyellow: rgb(241, 196, 15);
+	text-shadow: 2px 0 5px var(--lightyellow), -2px 0 5px var(--lightyellow);
+}
+	/* Dark yellow */
+	span[style="color: rgb(194, 124, 14);"]
+	{
+		--darkyellow: rgb(194, 124, 14);
+		text-shadow: 2px 0 5px var(--darkyellow), -2px 0 5px var(--darkyellow);
+	}
+/* Light tan */
+span[style="color: rgb(230, 126, 34);"]
+{
+	--lighttan: rgb(230, 126, 34);
+	text-shadow: 2px 0 5px var(--lighttan), -2px 0 5px var(--lighttan);
+}
+	/* Dark tan */
+	span[style="color: rgb(168, 67, 0);"]
+	{
+		--darktan: rgb(168, 67, 0);
+		text-shadow: 2px 0 5px var(--darktan), -2px 0 5px var(--darktan);
+	}
+/* Light orange */
+span[style="color: rgb(231, 76, 60);"]
+{
+	--lightorange: rgb(231, 76, 60);
+	text-shadow: 2px 0 5px var(--lightorange), -2px 0 5px var(--lightorange);
+}
+	/* Dark orange */
+	span[style="color: rgb(153, 45, 34);"]
+	{
+		--darkorange: rgb(153, 45, 34);
+		text-shadow: 2px 0 5px var(--darkorange), -2px 0 5px var(--darkorange);
+	}
+/* Light grey */
+span[style="color: rgb(149, 165, 166);"]
+{
+	--lightgrey: rgb(149, 165, 166);
+	text-shadow: 2px 0 5px var(--lightgrey), -2px 0 5px var(--lightgrey);
+}
+	/* Dark grey */
+	span[style="color: rgb(151, 156, 159);"]
+	{
+		--darkgrey: rgb(151, 156, 159);
+		text-shadow: 2px 0 5px var(--darkgrey), -2px 0 5px var(--darkgrey);
+	}
+/* Light slate */
+span[style="color: rgb(96, 125, 139);"]
+{
+	--lightslate: rgb(96, 125, 139);
+	text-shadow: 2px 0 5px var(--lightslate), -2px 0 5px var(--lightslate);
+}
+	/* Dark slate */
+	span[style="color: rgb(84, 110, 122);"]
+	{
+		--darkslate: rgb(84, 110, 122);
+		text-shadow: 2px 0 5px var(--darkslate), -2px 0 5px var(--darkslate);
+	}
+
+
 
 /* Hover/select on channels/names */
 .modeUnread-1zpFdA:hover .name-3_Dsmg,
@@ -148,23 +351,40 @@ span[style="color: rgb(1, 1, 1);"]
 .content-3QAtGj:hover,
 .da-selected
 {
-    text-shadow: 0 0 5px var(--interactive-active);
+    text-shadow: 0 0 5px blue;
 }
 
 .theme-dark .wrapper-3WhCwL, /* #channels and @pings */
 .markup-2BOw-j a /* hyperlinks */
 {
-    color: var(--text-normal);
-    text-shadow: 0 0 20px var(--interactive-active);
+    color: white;
+    text-shadow: 0 0 20px white;
 }
 
-/* END SHADOW MODIFICATIONS*/
 
-/* --------------------------------------------------------------------------------------------------------------- Fonts */
-	
-::placeholder, body, button, input, select, textarea
+/* End glow
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Start Fonts */ 
+
+/* All caps on areas where case is not so important */
+/* importantly: excludes message text, searches, emoji, and status text */
+.channelName-2YrOjO, 	/* channel names */
+/*.name-uJV0GL,			usernames in user list */
+/*.username-1A8OIy,		usernames in main section */
+/*.mention,				usernames in mention */
+/*.headerText-15Q25Z,	usernames in user info */
+.activityUserPopout-2yItg2,	/* now playing game and time */
+.protip-2urNh2,			/* "right click user for more actions */
+.roleName-32vpEy,		/* roles */
+.timestamp-3ZCmNB,		/* message timestamp */
+.divider-JfaTT5,		/* day dividers */
+.children-19S4PO, 		/* channel name and desc */
+.navButton-2gQCx-,		/* emoji/gif picker buttons */
+.categoryName-UvMsNp,	/* gif picker categories */
+.side-8zPYf6 			/* settings list */
 {
-    font-family: "PerfectDOS", "FixedSysTrue", monospace;
     text-transform: uppercase;	
 }
 
@@ -172,67 +392,34 @@ span[style="color: rgb(1, 1, 1);"]
 .markup-2BOw-j code.hljs,
 .markup-2BOw-j code.inline
 {
-    font-family: "FixedSysTrue", monospace;
-	border: solid var(--interactive-muted);
+    font-family: var(--font-code);
+	border: solid var(--border-code);
     border-width: 1px 3px;
     padding: 1px 8px 3px 8px;
-    font-size: 16pt;
     text-shadow: none;
+	border-radius: 0;
 }
 
-/* code in typing bits */
-.inlineCode-2ngu6Y,
-.codeBlockText-9TnoxQ,
-.codeLine-14BKbG
-{
-	font-family: "FixedSysTrue", monospace;
-}
-
-/* no text transform for chat */
-.markup-2BOw-j,
-input
-{
-    font-size:1.5rem;
-    line-height: 1;
-    text-transform: none; /* remove this line if you want ALL CAPS ON EVERYTHING */
-}
-
-/* Underline @pings and #channels */
-.theme-dark .wrapper-3WhCwL
+/* Underline #channels and @pings */
+.theme-dark .wrapper-3WhCwL,
+.mention
 {
     text-decoration: underline;
+	border-radius: 0;
+	background: var(--background-embed);
+}
+.roleMention-2Bj0ju
+{
+	text-shadow: none;
 }
 
-/* Fix some font sizes */
+/* Fix font size of channel group and user group labels to match others */
 .da-username,
 .container-2ax-kl,
 .name-3YKhmS
 {
-    font-size: 16px;
+    font-size: 16px	;
 }
-
-/* reduces blurriness of bold stuff */
-.container-2ax-kl,
-.name-3YKhmS,
-.base-1x0h_U,
-.title-eS5yk3,
-.embedTitle-3OXDkz,
-.headerTagUsernameNoNickname-2_H881,
-.bodyTitle-Y0qMQz
-{
-	font-weight: normal;
-	text-shadow: none;
-}
-
-/* unblurs bold text in chat
-STYLE SUBJECT TO CHANGE, PLEASE GIVE FEEDBACK
-FEEDBACK RECEIVED: BOLD HAS GLOW AGAIN
-.markup-2BOw-j strong
-{
-	font-weight: normal;
-	text-shadow: 2px 0 0.1px var(--text-normal);
-}
-*/
 
 .content-2M3n_H, /* Pins / calls message interjects */
 .timestamp-1E3uAL, /* timestamp for the above */
@@ -241,292 +428,602 @@ FEEDBACK RECEIVED: BOLD HAS GLOW AGAIN
 	text-transform: uppercase;
 	text-shadow: none;
 }
-
-/* end fonts!  */
-
-/* ------------------------------------------------------------------------------------------------------------ The Grid */
-
-/* adds border to every column */	
-.sidebar-2K8pFh.da-sidebar,
-.chat-3bRxxu.da-chat,
-.membersWrap-2h-GB4.da-membersWrap,
-.container-1D34oG,
-.nowPlayingColumn-2sl4cE
+.compact-2zYMSo
 {
-    border-left: 5px solid var(--interactive-muted);
+	margin-left: 0;
 }
 
-/* top bar underline */
-.title-3qD0b-,
-.container-1r6BKw.themed-ANHk51
+/* in replying to user box, change @on colour to red as warning */
+.colorLink-2vG20E.mentionButton-3710-W
 {
-	border-bottom: 1px solid var(--header-primary);
+	color: var(--warning);
 }
 
-/* typing bit overline */
-.form-2fGMdU
+/* new message bubble delete */
+.unreadPill-2HyYtt
 {
-	border-top: 1px solid var(--header-primary);
+	display: none;
 }
 
-/* search results leftline */
-.searchResultsWrap-2DKFzt
+/* square off jump to present bar
+ and new messages since bar
+ and messages failed to load bar */
+.jumpToPresentBar-G1R9s6,
+.newMessagesBar-265mhP,
+.messagesErrorBar-nyJGU7
 {
-	border-left: 5px solid var(--header-primary);
-}
-
-/* Adds dashes between channel groups */
-.containerDefault-3GGEv_::before
-{
-	font-size: 12pt;
-    position: relative;
-    left:7px;
-    content: "-------------------------";
-    text-shadow: 0 1px var(--interactive-muted);
-    color: var(--interactive-muted);
-}
-
-/* server tip styling */
-.channelNotice-1-XFjC.quickswitcher-35bYg4,
-.channelNotice-1-XFjC.invite-OjTXrW
-{
-	background: 0;
-	padding: 30px 20px;
-	border: solid var(--interactive-muted);
-	border-width: 1px 0;
-	margin-top: -1px;
-}
-
-/* end The Grid */
-
-/* ------------------------------------------------------------------------------------------------ Backgrounds and text */
-
-/* background of popoverstuff set to black */
-.theme-dark .headerNormal-T_seeN,
-.theme-dark .bodyInner-245q0L,
-.theme-dark .footer-1fjuF6,
-.theme-dark .quickMessage-1yeL4E,
-.headerPlaying-j0WQBV,
-.headerStreaming-2FjmGz,
-.headerSpotify-zpWxgT,
-.theme-dark .autocomplete-1vrmpx,
-.theme-dark .container-1D34oG,
-.theme-dark .popout-38lTFE,
-.theme-dark .modal-yWgWj-,
-.theme-dark .inset-3sAvek,
-.theme-dark .footer-3rDWdC,
-.theme-dark .uploadModal-2ifh8j,
-.theme-dark .footer-3mqk7D,
-.theme-dark .root-1gCeng,
-.theme-dark .slideBody-2nMrnU,
-.theme-dark .theme-light .action-1lSjCi,
-.theme-dark .addGamePopout-2RY8Ju,
-.theme-dark .container-3ayLPN,
-.theme-dark .focused-2bY0OD,
-.theme-dark .message-2qRu38,
-.botTagRegular-2HEhHi,
-.theme-dark .card-FDVird:before,
-.css-181m2lf-menu,
-.video-1FfuMD
-{
-	background: var(--background-primary);
-}
-
-/* hover stuff is red transparenty*/
-.theme-dark .outer-1AjyKL.interactive-3B9GmY:hover,
-.theme-dark .memberListItem-31QoHj:not(.popoutDisabled-2RK7MF):hover,
-.theme-dark .enabled-1t_Gxm:hover,
-.theme-dark .friendSelected-1sa4bG,
-.lookFilled-1Gx00P.colorBrand-3pXr91:hover,
-.theme-dark .option-96V44q.selected-rZcOL-,
-.theme-dark .selectorSelected-1_M1WV
-{
-	background: var(--background-modifier-hover);
-}
-
-/* Greyed out buttons */
-.lookFilled-1Gx00P.colorBrand-3pXr91,
-.lookFilled-1Gx00P.colorBrand-3pXr91:disabled
-{
-	background: var(--interactive-muted);
-}
-
-/* Red background */
-.mentioned-xhSam7:before, /* Makes the tab thingy at the left side of mentioned posts red */
-.blockquoteDivider-2hH8H6, /* Block quote tab is red */
-.item-2hkk8m, /* unread servers have red pill */
-.mention-1f5kbO, /* new message notices in server select has red bg */
-.newMessagesBar-mujexs, /* [number] new messages since [time] bar at top */
-.jumpToPresentBar-9P20AMm, /* You're viewing older messages jump to present bar at bottom */
-.theme-dark .searchFilter-2ESiM3, /* from: in search */
-.theme-dark .searchAnswer-3Dz2-q, /* username in search */
-.circleIconButton-jET_ig.selected-ugP_am, /* add/find server buttons when hovered */
-.checkbox-3kaeSU .checkboxInner-3yjcPe .checkboxElement-1qV33p:checked+span /* check box to red */
-{
+	border-radius: 0;
 	background-color: var(--background-accent);
-}
-.checkbox-3kaeSU .checkboxInner-3yjcPe .checkboxElement-1qV33p:checked+span /* check box to red */ 
-{
-	border-color: var(--background-accent);
-}
-.newMessagesBar-mujexs,
-.jumpToPresentBar-9P20AM
-{
 	opacity: 0.7;
 }
 
-/* stuff has borders */
-.wrapper-2aW0bm,
-.emojiPicker-3m1S-j,
-.contextMenu-HLZMGh,
-.userPopout-3XzG_A,
-.theme-dark .autocomplete-1vrmpx,
-.messagesPopoutWrap-1MQ1bW,
-.modal-yWgWj-,
-.theme-dark .uploadModal-2ifh8j,
-.theme-dark .popout-38lTFE,
-.root-1gCeng,
-.theme-dark .addGamePopout-2RY8Ju,
-.theme-dark .container-3ayLPN,
-.quickswitcher-3JagVE,
-.theme-dark .attachment-33OFj0,
-.root-SR8cQa,
-.menu-Sp6bN1,
-.theme-dark .wrapperAudio-1jDe0Q
+/* square off new unreads bubble */
+.bar-30k2ka
 {
-	border: solid var(--interactive-muted);
+	border-radius: 0;
+}
+.mention-1f5kbO /* make the server unread red */
+{
+	background-color: var(--background-accent);
+}
+
+/* End fonts
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Start boxes (borders) */ 
+
+/* box around the main section */
+.chatContent-a9vAAp
+{
+	border: solid var(--border);
+	border-width: 2px 5px;
+}
+/* remove the wrong colour top line */
+.content-yTz4x3::before~
+{
+	display: none;
+}
+/* square off avatar */
+.avatar-1BDn8e
+{
+	border-radius: 0;
+}
+
+/* follow to get this channel's updates in your server add dotted topline */
+.form-2fGMdU .wrapper-39oAo3
+{
+	border-top: 1px dashed var(--border);
+	margin-top: 0;
+}
+	/* kill bird wumpus */
+	.image-3XsqGc
+	{
+		display: none;
+	}
+
+/* info bubbles tooltips */
+.tooltip-2QfLtc
+{
+	border: solid var(--border-bright);
 	border-width: 1px 3px;
-	padding: 0;
+	border-radius: 0;
+}
+	.tooltipPointer-3ZfirK /* arrow pointing towards tooltip source*/
+	{
+		display: none;
+	}
+	.avatar-3bWpYy, /* avatars in tooltip */
+	.container-23E4rK .moreUsers-7v8yWY /* more users icon in tooltip */
+	{
+		border-radius: 0;
+	}
+
+/* typing box */
+.channelTextArea-2VhZ6z
+{
+	border: solid var(--border);
+	border-width: 2px 5px;
+	border-radius: 0;
+}
+	.scrollableContainer-2NUZem
+	{
+		border-radius: 0;
+		min-height: 60px;
+	}
+		.fontSize24Padding-2Tz8jD
+		{
+			padding: 10px 0;
+		}
+	
+	/* yeet nitro */
+	button[aria-label="Send a gift"]
+	{
+		display: none;
+	}
+	
+/* suggestions when typing emoji */
+.autocomplete-3l_oCd
+{
+	border-radius: 0;
+}
+.theme-dark .autocomplete-1vrmpx
+{
+	background: var(--background-primary);
+	border: solid var(--border);
+	border-width: 1px 3px;
+}
+	/* Selected/hovered emoji/user/channel */
+	.theme-dark .selected-1Tbx07
+	{
+		background: var(--background-modifier-selected);
+	}
+	.base-1pYU8j
+	{
+		border-radius: 0;
+	}
+	
+/* fixes search suggestion box */
+.theme-dark .container-3ayLPN
+{
+	background: var(--background-primary);
+	border: solid var(--border-bright);
+	border-width: 1px 3px;
+}
+.container-3ayLPN
+{
+	border-radius: 0;
+}
+.theme-dark .elevationBorderHigh-2WYJ09
+{
+	box-shadow: none;
+}
+	/* fixes each suggestion box */
+	.theme-dark .option-96V44q:after
+	{
+		display: none;
+	}
+	.theme-dark .option-96V44q.selected-rZcOL-
+	{
+		background: var(--background-modifier-selected);
+	}
+	.option-96V44q
+	{
+		border-radius: 0;	
+	}	
+	/* fixes search result */
+	.theme-dark .focused-2bY0OD
+	{
+		background: var(--background-primary);
+	}
+	
+/* fixes date popup when you search before: after: */
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__header,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--previous,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day--outside-month
+{
+	background-color: var(--background-primary);
+}
+/* day box on hover */
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:hover,
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day:hover
+{
+	background-color: var(--background-modifier-hover);
+}
+	/* previous / next month buttons */
+	.calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--next,
+	.calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--previous
+	{
+		border-radius: 0;
+	}
+
+	/* day box size */
+	.calendarPicker-2yf6Ci .react-datepicker__day
+	{
+		--daywidth: 36px;
+		height: var(--daywidth);
+		width: var(--daywidth);
+		line-height: var(--daywidth);
+	}
+		/* unrounds the corners */
+		.calendarPicker-2yf6Ci .react-datepicker__week:first-of-type>.react-datepicker__day:first-of-type,
+		.calendarPicker-2yf6Ci .react-datepicker__week:first-of-type>.react-datepicker__day:last-of-type,
+		.calendarPicker-2yf6Ci .react-datepicker__week:last-of-type>.react-datepicker__day:first-of-type,
+		.calendarPicker-2yf6Ci .react-datepicker__week:last-of-type>.react-datepicker__day:last-of-type
+		{
+			border-radius: 0;
+		}
+	.calendarPicker-2yf6Ci .react-datepicker__day-name
+	{
+		width: 36px; /* why does this not work with daywidth */
+	}
+	/* current day underbar*/
+	.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:after
+	{
+		background: var(--background-accent);
+	}
+	/* hint bubble */
+	.datePicker--XZbmJ .datePickerHint-3Q1Udw .hintValue-29ny8Z
+	{
+		border-radius: 0;
+	}
+		.theme-dark .datePicker--XZbmJ .datePickerHint-3Q1Udw .hintValue-29ny8Z
+		{
+			background: var(--background-modifier-selected);
+		}
+		.theme-dark .datePicker--XZbmJ .datePickerHint-3Q1Udw .hintValue-29ny8Z:hover
+		{
+			background: var(--background-accent);
+		}
+	
+/* search modifiers eg has: from: */
+.searchFilter-2ESiM3,
+.search-2oPWTC .DraftEditor-root .DraftEditor-editorContainer,
+.searchAnswer-3Dz2-q
+{
+	border-radius: 0;
 }
 
-/* corrects the above for padding */
-.theme-dark .popout-38lTFE,
-.theme-dark .addGamePopout-2RY8Ju,
-.theme-dark .attachment-33OFj0,
-.theme-dark .wrapperAudio-1jDe0Qh
+/* search results */
+.searchResult-9tQ1uo
 {
-	padding: 8px;
-}
-.quickswitcher-3JagVE
-{
-	padding: 20px 20px 0;
+	border-radius: 0;
 }
 
-/* aligns top of search popover with bottom of menu bar */
-.popoutBottom-2GAFPg.noArrow-2foL9g
+/* draw bright borders around boxes */	
+.contentWrapper-SvZHNd,			/* emoji/gif selector box (from message box)*/
+#emoji-picker-tab-panel[role="dialog"], /* emoji picker for reactions */
+.userPopout-xaxa6l,				/* user profile popouts */
+.messagesPopoutWrap-1MQ1bW,		/* pinned messages box */
+.container-enaOkj				/* mentions box */
 {
-	margin-top: 11px;
+	border-radius: 0;
+	border: solid var(--border-bright);
+	border-width: 2px 5px;
 }
 
-/* aligns top of pinned and mentioned popover with bottom of menu bar */
-.messagesPopoutWrap-1MQ1bW
+/* decrease text size in the above boxes */
+.messagesPopoutWrap-1MQ1bW .markup-2BOw-j,
+.container-enaOkj .markup-2BOw-j
 {
-	top: 3px;
+	font-size: smaller;
+	line-height: 1rem;
 }
 
-/* aligns dropdown server options with channels column */
-.menu-Sp6bN1
+/* Emoji reaction picker style */
+#emoji-picker-tab-panel[role="dialog"]
 {
-	left: 84px;
+	background: var(--background-primary);
+}
+	.emojiPicker-3PwZFl /* square off the internal box */
+	{
+		box-shadow: none;
+		background: transparent;
+	}
+		.navButton-2gQCx- /* square off the gif/emoji tab buttons */
+		{
+			border-radius: 0;
+		}
+		.diversitySelectorOptions-4YM-vX /* draws box around skin tone selector */
+		{
+			border-radius: 0;
+			border: solid var(--border);
+			border-width: 1px 3px;
+		}
+		.emojiItem-14v6tW, /* squares off each emoji */
+		.gif-1TcNIB /* squares off each gif */,
+		.categoryFade-2ybR1J,
+		.categoryFadeBlurple-1j72_A
+		{
+			border-radius: 0;
+		}
+			.gif-1TcNIB:after
+			{
+				display: none;
+			}
+			
+.reaction-1hd86g /* squares off reactions */
+{
+	border-radius: 0;
+}
+.reaction-1hd86g.reactionMe-wv5HKu /* and turns red on reactions you've added */
+{
+	border-color: var(--background-accent);
+	background-color: var(--background-modifier-selected);
 }
 
-/* add friend button is transparent */
-.item-3HknzM[aria-label="Add Friend"]
+/* image uploader popup */
+.uploadModal-2ifh8j
 {
-	background: transparent!important;
-	color: var(--interactive-active)!important;
+	border-radius: 0;
+	border: solid var(--border);
+	border-width: 2px 5px;
+}
+	.theme-dark .uploadModal-2ifh8j
+	{
+		background: var(--background-primary);
+	}
+		.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.image-2yrs5j
+		{
+			border-radius: 0;
+		}
+	.theme-dark .footer-3mqk7D
+	{
+		background-color: transparent;
+	}
+		.box-mmYMsp /* mark as spoiler box */
+		{
+			border-radius: 0;
+		}
+			.theme-dark .checkbox-1ix_J3.checked-3_4uQ9 /* when spoiler is marked */
+			{
+				border-color: var(--background-accent)!important;
+				color: var(--background-accent); /* passes color to SVG tick */
+			}
+			.theme-dark .checkbox-1ix_J3.checked-3_4uQ9 path
+			{
+				fill: currentColor;
+			}
+		.lookFilled-1Gx00P.colorBrand-3pXr91 /* upload button */
+		{
+			background-color: var(--background-modifier-selected);
+		}
+			.lookFilled-1Gx00P.colorBrand-3pXr91:hover
+			{
+				background-color: var(--background-accent);
+			}
+
+/* Style user profile popouts */
+.userPopout-xaxa6l
+{
+	border-radius: 0;
+}
+	/* message user box */
+	.input-cIJ7To
+	{
+		border-radius: 0;
+	}
+
+/* role */
+.role-2irmRk,
+.roleCircle-3xAZ1j
+{
+	border-radius: 0;
 }
 
-/* new messages line is red */
-.isUnread-3Ef-o9
+/* delet reply jump in mentions/unreads */
+.container-3iAQ-0 .compact-T3H92H .repliedMessage-VokQwo,
+.container-enaOkj .compact-T3H92H .repliedMessage-VokQwo
 {
-    border-color: var(--background-accent);
+	display: none;
 }
-
-/* white text */
-.modeUnread-1zpFdA .name-3_Dsmg, /* unread undisturbed content */
-.theme-dark .searchOption-zQ-1l6 .filter-3Y_im- /* search options */
+.topPill-30KHOu .item-PXvHYJ /* square off mentions/unreads buttons */
 {
-    color: var(--text-normal);
+	border-radius: 0;
 }
-
-/* grey text */
-.theme-dark .searchOption-zQ-1l6 .answer-1n6g43,
-.theme-dark .queryContainer-RKFJW-
+.menu-3sdvDG /* filter gets box border */
 {
-	color: var(--interactive-muted);
-}
-
-/* red text */
-.verified-1eC5dy,
-.circleIconButton-jET_ig,
-.itemBase-tz5SeC.danger-2dXSTE,
-.itemBase-tz5SeC.danger-2dXSTE:hover,
-.itemBase-tz5SeC.brand-3igrJY,
-.itemBase-tz5SeC.brand-3igrJY:hover,
-.item-1GzJrl.invite-271nFU,
-.item-1GzJrl.invite-271nFU:hover,
-.item-1GzJrl.leave-1DRJfn,
-.item-1GzJrl.leave-1DRJfn:hover
-{
-	color: var(--interactive-active);
-}
-.itemBase-tz5SeC.danger-2dXSTE:active,
-.itemBase-tz5SeC.brand-3igrJY:active
-{
-	color: var(--interactive-normal);
-}
-
-/* number of notifs on server badge has red bg and glow */
-.numberBadge-2s8kKX
-{
-	background-color: var(--background-accent)!important;
-	box-shadow: 0 0 20px var(--background-accent);
-}
-
-/* remove line in user popover */
-.footer-1fjuF6
-{
-	border: 0
-}
-
-/* special colours for Clyde bc special bot */
-.localBot-GrCgVt:before
-{
-	background: var(--mainGlowColor);
-}
-
-/* end backgrounds and text */
-
-/* ----------------------------------------------------------------------------------------------- emoji related styling */
-
-/* message reacts colour */
-.reaction-1hd86g.reactionMe-wv5HKu
-{
-	background: var(--background-mentioned);
-}
-.reactionMe-wv5HKu .reactionCount-2mvXRV,
-.reactionMe-wv5HKu:hover .reactionCount-2mvXRV
-{
-	color: var(--interactive-active);
+	border: solid var(--border);
+	border-width: 1px 3px;
+	border-radius: 0;
 }
 
 /* blurs out emojis that require nitro when no nitro is active */
-.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA.disabled-1H1CfW
+.emojiItemDisabled-1FvFuF
 {
-	filter: blur(1px) grayscale(100%) opacity(20%);
+	filter: blur(1px) grayscale(100%) opacity(40%);
 }
 
-/* changes colour of selected emoji tab */
-.emojiPicker-3m1S-j .categories-1feg4n .selected-39BZ4S
+/* square off block quote starter */
+.blockquoteContainer-U5TVEi .blockquoteDivider-2hH8H6
 {
-	border-bottom-color: var(--background-accent);
+	border-radius: 0;
+	width: 3px;
 }
 
-/* end emoji section */
+/* reply pipe */
+.repliedMessage-VokQwo:before
+{
+	border-radius: 0;
+	border-left-width: 3px;
+	border-top-width: 1px;
+}
 
-/* ----------------------------------------------------------------------------------------------------- Spoiler styling */
+/* hmmm what if soup text boxes in compact mode*/
+.message-2qnXI6.compact-T3H92H
+{
+	/* these don't want to be in a single border property */
+	border-width: 1px 3px;
+	border-style: solid;
+	border-color: var(--border);
+	margin: 1.5rem 3rem;
+	padding: 1rem 1rem .5rem 1rem;
+	padding-right: 1rem!important;
+}
 
+	/* name and timestamp */
+	.compact-T3H92H .header-23xsNx
+	{
+		position: absolute;
+		top: -1.6rem;
+		display: flex;
+		flex-direction: row-reverse;
+	}
+		
+		.compact-T3H92H .headerText-3Uvj1Y
+		{
+			margin-right: 0;
+		}
+		
+		.compact-T3H92H .header-23xsNx>span
+		{
+			display: block;
+		}
+		
+			.username-1A8OIy,
+			.compact-T3H92H .timestamp-3ZCmNB
+			{
+				background: linear-gradient(transparent, var(--background-primary) 40%, transparent 60%);
+			}
+			
+	/* reply if any */
+	.compact-T3H92H .repliedMessage-VokQwo::before
+	{
+		display: none;
+	}
+	.compact-T3H92H .repliedMessage-VokQwo
+	{
+		position: absolute;
+		right: .5rem;
+		padding-left: 0;
+		top: -.6rem;
+		max-width: 400px;
+		background: linear-gradient(transparent, var(--background-primary) 50%, transparent 60%);
+		display: flex;
+		justify-content: flex-end;
+		z-index: 1;
+	}
+	.compact-T3H92H .replyBadge-r1su3o
+	{
+		border-radius: 0; 
+		background: transparent;
+	}
+	
+	/* the message itself */
+	.compact-T3H92H .contents-2mQqc9
+	{
+		margin: 0;
+		padding-left: 0;
+		text-indent: 0;
+	}
+
+/* remove box if system message eg. pin*/
+.systemMessage-1I9LCe.message-2qnXI6.compact-T3H92H
+{
+	border: 0;
+}
+	/* vertically center pin icon */
+	.iconContainer-3GkGRf
+	{
+		padding: 0.1rem;
+	}
+	/* remove link glow on pin */
+	.systemMessage-1I9LCe .markup-2BOw-j a
+	{
+		text-shadow: none;
+	}
+	
+/* message react/reply etc buttons */
+.compact-T3H92H .container-3npvBV
+{
+	top: -16px;
+}
+	.wrapper-2aW0bm
+	{
+	border-radius: 0;
+	border: solid var(--border);
+	border-width: 1px 3px;
+	}
+	
+/* Adds dashes between channel groups */
+.containerDefault-3tr_sE:not(:nth-of-type(2))::before
+{
+	font-size: 16pt;
+    content: "-------------------";
+    color: var(--channels-default);
+}
+/* adds dashes between memeber groups */
+.membersGroup-v9BXpm.container-2ax-kl:not(:first-of-type)::before
+{
+	font-size: 16pt;
+	display: block;
+	position: relative;
+    content: "-----------------";
+    color: var(--channels-default);
+	padding-bottom:6px;
+	font-weight: 9;
+}
+	
+/* square off member box */
+.layout-2DM8Md
+{
+	border-radius: 0;
+}
+
+.membersGroup-v9BXpm:not(:first-of-type)
+{
+	height: 56px;
+	padding-top: 18px;
+}
+	
+/* ---------------sdfsdfsdf SQUARE TEIM */
+
+/* squares off user icons */
+foreignObject[mask*="url(#"],
+.assetsLargeMaskUserPopout-12EBBc,
+.assetsLargeMaskStreamPreview-2V7xlA
+{
+	mask: none;
+}
+.wrapper-3t9DeA /* including in user profile popover */
+{
+	border-radius: 0;
+	border-width: 2px 5px;
+}
+
+.baseShapeRound-1Mm1YW, 			/* and stream/ping icons */
+.wrapperSimple-19ogV2, 				/* and server icons */
+.expandedFolderBackground-1cujaW, .folderIconWrapper-1_bOZe, .iconInactive-98JN5i	/* and server folder icons */
+{
+	border-radius: 0;
+}
+
+.numberBadge-2s8kKX /*  make ping icon actually follow the colour scheme */
+{
+	background: var(--background-accent)!important; /* unfortunately it's styled inline so I gotta !important*/
+	padding: 2px 0 0 2px;	/* this centers the number but it's no longer square hmmmm*/
+	width: 18px!important; /* unfortunately it's styled inline so I gotta !important*/
+}
+
+/* squares off channels */
+.content-1x5b-n
+{
+	border-radius: 0;
+}
+
+/* square off unread dot and change to warning color */
+.unread-2lAfLh,
+.item-2hkk8m
+{
+	border-radius: 0;
+	background-color: var(--warning);
+}
+
+/* fix popup that dims everything else */
+.theme-dark .root-1gCeng,
+.theme-dark .footer-2gL1pp
+{
+	background-color: var(--background-primary);
+	box-shadow: none;
+}
+.theme-dark .root-1gCeng
+{
+	border: solid var(--border);
+	border-width: 2px 5px;
+	border-radius: 0;
+}
+	.button-38aScr
+	{
+		border-radius: 0;
+	}
+	.lookFilled-1Gx00P.colorRed-1TFJan
+	{
+		background: var(--background-accent);
+	}
+
+/* -------------------- SPOILER STUFF ---- */
 .theme-dark .spoilerText-3p6IlD.hidden-HHr2R9
 {
 	background: repeating-linear-gradient(
@@ -568,47 +1065,49 @@ FEEDBACK RECEIVED: BOLD HAS GLOW AGAIN
 	align-items: flex-start;
 	margin-left: 0.6em;
 }
+/* end spoiler stuff */
 
-/* end spoiler styling */
 
-/* ----------------------------------------------------------------------------------------------------- Square corners */
-/* squares off user icons */
-foreignObject[mask*="url(#"],
-.assetsLargeMaskUserPopout-12EBBc,
-.assetsLargeMaskStreamPreview-2V7xlA
+/* scrollbar stuff */
+/* .scroller-2LSbBU is main chat scrollbar */
+/* .auto-Ge5KZx is the friends list scrollbar */
+/* .thin-1ybCId are the thin bars that appear on hover */
+.scroller-2LSbBU::-webkit-scrollbar,
+.auto-Ge5KZx::-webkit-scrollbar
 {
-	-webkit-mask: none;
-	mask: none;
+    width: 5px;
 }
+	.scroller-2LSbBU::-webkit-scrollbar-thumb,
+	.scroller-2LSbBU::-webkit-scrollbar-track,
+	.auto-Ge5KZx::-webkit-scrollbar-thumb,
+	.auto-Ge5KZx::-webkit-scrollbar-track
+	{
+		border-width: 10px;
+	}
+	/* squares thumb */
+	.auto-Ge5KZx::-webkit-scrollbar-thumb,
+	.thin-1ybCId::-webkit-scrollbar-thumb
+	{
+		border-radius: 0;
+	}
 
-/* squares off everything else */
-*,
-.ui-switch:before,
-.sizeDefault-2YlOZr:after,
-.card-FDVird:before
-{
-	border-radius: 0!important;
-}
+/* end scrollbar stuff */
 
-/* ---------------------------------------------------------------------------------------- hides a whole bunch of stuff */
 
-.unreadPill-2HyYtt, /* new message pill */
-.unreadPillCap-3_K2q2, /* a bit of new message pill */
-.or-3THJsp.da-or, /* OR in add new server */
-.icon-1_QxNX:not([name="Speaker"]), /* # symbol before channel names */
-.protip-YaFfgO, /* remove protip in user popover */
-.theme-dark .theme-light .action-1lSjCi>div,
-.theme-dark .noResultsImage-JbSWtu, /* remove magnifing glass pic if no results found in search*/
-.arrowGroup-2imezz, /* search for discord animated arrows */
-.theme-dark .option-96V44q:after, /* gradient in search popover */
-.theme-dark .resultsGroup-r_nuzN:before /* group separators in search popover */
-{
-	display: none;
-}
 
-/* end hiding stuff */
 
-/*--------------------------------------------------------------------------------------------------------- editor reset */
+
+
+
+
+
+
+
+
+
+
+
+
 /*
     Keep Custom CSS editor and code related parts untouched.
     Avoids issues when working with the Custom CSS editor.
