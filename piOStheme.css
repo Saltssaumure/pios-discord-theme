@@ -1,8 +1,8 @@
 /**
- * @name piOSTEST2
+ * @name piOSTEST3
  * @author Saltssaumure#7557
- * @description nothing here
- * @version Autoupdate
+ * @description Don't use this directly if possible, download the autoupdater
+ * @version X
 */
 
 /* 
@@ -30,6 +30,13 @@ text: white
 @font-face {
     font-family: "PerfectDOS";
     src: url("https://static.tumblr.com/6nmlfta/kInq29swf/perfect_dos_vga_437_win.ttf")
+}
+
+::root
+{
+	--font-display: PerfectDOS, monospace; /* For server and channel title */
+	--font-primary: PerfectDOS, monospace; /* For almost everything else */
+	--font-code: "FixedSysTrue", monospace; /* Code blocks */
 }
 
 .theme-dark
@@ -71,10 +78,6 @@ text: white
 	
 	--divider-color: red; /* color of new messages divider */
 	--info-warning-foreground: red; /* colour of @ping message left side indicator */
-	
-	--font-display: PerfectDOS, monospace; /* For server and chanenl title */
-	--font-primary: PerfectDOS, monospace; /* For almost everything else */
-	--font-code: "FixedSysTrue", monospace; /* Code blocks */
 	
     /* --background-mobile-primary: #36393f; */
     /* --background-mobile-secondary: #2f3136; */
