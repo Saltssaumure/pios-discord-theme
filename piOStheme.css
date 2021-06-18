@@ -32,6 +32,11 @@ text: white
     src: url("https://static.tumblr.com/6nmlfta/kInq29swf/perfect_dos_vga_437_win.ttf")
 }
 
+body
+{
+	--font-display: PerfectDOS, monospace; /* For server and channel title */
+}
+
 .theme-dark
 {
 	/* User editable glow colours - change the RGBA values to anything you like! */
