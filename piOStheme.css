@@ -1,8 +1,8 @@
 /**
- * @name piOSTEST2
+ * @name piOSTEST3
  * @author Saltssaumure#7557
- * @description nothing here
- * @version Autoupdate
+ * @description This is not the correct file - download from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/vAutoupdate instead!
+ * @version 2
 */
 
 /* 
@@ -722,7 +722,8 @@ Start boxes (borders) */
 			border-width: 1px 3px;
 		}
 		.emojiItem-14v6tW, /* squares off each emoji */
-		.gif-1TcNIB /* squares off each gif */,
+		.sticker-2cpdZp, /* squares off each sticker */	
+		.gif-1TcNIB, /* squares off each gif */
 		.categoryFade-2ybR1J,
 		.categoryFadeBlurple-1j72_A
 		{
@@ -731,6 +732,14 @@ Start boxes (borders) */
 			.gif-1TcNIB:after
 			{
 				display: none;
+			}
+			
+			.inspectedIndicator-59EII8, /* remove mask on sticker */
+			.assetWrapperMasked-2tj_Bb
+			{
+				mask: none; /* this doesnt seem to do anything */
+				-webkit-mask: none;
+				border-radius: 0;
 			}
 			
 .reaction-1hd86g /* squares off reactions */
@@ -819,8 +828,9 @@ Start boxes (borders) */
 	border-radius: 0;
 }
 
-/* blurs out emojis that require nitro when no nitro is active */
-.emojiItemDisabled-1FvFuF
+/* blurs out emojis and stickers that require nitro when no nitro is active */
+.emojiItemDisabled-1FvFuF,
+.stickerUnsendable-2q_h2B
 {
 	filter: blur(1px) grayscale(100%) opacity(40%);
 }
@@ -942,6 +952,7 @@ Start boxes (borders) */
 	font-size: 16pt;
     content: "-------------------";
     color: var(--channels-default);
+	margin-left: 5px;
 }
 /* adds dashes between memeber groups */
 .membersGroup-v9BXpm.container-2ax-kl:not(:first-of-type)::before
@@ -1031,6 +1042,30 @@ foreignObject[mask*="url(#"],
 	{
 		background: var(--background-accent);
 	}
+
+/* Stream picture in picture */	
+.pictureInPictureVideo-2iKsGg
+{
+	border-radius: 0;
+	border: solid var(--border-bright);
+	border-width: 2px 5px;
+}
+
+/* Icon for streamed game */
+.icon-3Oovq9,
+.badge-1JXQev,
+/* vc user icon and live sign */
+.avatar-3tNQiO,
+.liveShapeRound-32u79-
+{
+	border-radius: 0;
+}
+
+/* replying to bar */
+.attachedBars-tZDmyV
+{
+	background: transparent;
+}
 
 /* -------------------- SPOILER STUFF ---- */
 .theme-dark .spoilerText-3p6IlD.hidden-HHr2R9
