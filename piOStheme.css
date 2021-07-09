@@ -803,6 +803,14 @@ Start boxes (borders) */
 	{
 		border-radius: 0;
 	}
+	
+	/* about me ```code``` from inline to block */
+	.aboutMeBody-3GuvKk code.inline
+	{
+		display: block;
+		margin: 0;
+		margin-bottom: -1.2em;
+	}
 
 /* role */
 .role-2irmRk,
