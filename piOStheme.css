@@ -2,7 +2,7 @@
  * @name piOSTEST3
  * @author Saltssaumure#7557
  * @description This is not the correct file - download from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/vAutoupdate instead!
- * @version 2
+ * @version 3
 */
 
 /* 
@@ -885,7 +885,7 @@ Start boxes (borders) */
 	border-width: 1px 3px;
 	border-style: solid;
 	border-color: var(--border);
-	margin: 1.5rem 3rem;
+	margin: calc(var(--compact-message-spacing)*1.5rem) 3rem;
 	padding: 1rem 1rem .5rem 1rem;
 	padding-right: 1rem!important;
 }
