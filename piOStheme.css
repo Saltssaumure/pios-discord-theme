@@ -41,15 +41,15 @@ body
 {
 	/* User editable glow colours - change the RGBA values to anything you like! */
 /* RGBA colour picker: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool */	
-	--mainGlowColor: rgba(0,255,255,0.7);   /* Glow colour for messages, names, channels. Default: cyan     */
-	--mutedGlowColor: rgba(200,255,255,0.2);/* Glow colour for muted channels.            Default: slate    */
+	--mainGlowColor: hsla(180, calc(var(--saturation-factor)*100%), 50%, 0.7);   /* Glow colour for messages, names, channels. Default: cyan     */
+	--mutedGlowColor: hsla(180, calc(var(--saturation-factor)*100%), 89%, 0.2)/* Glow colour for muted channels.            Default: slate    */
 	--SHTeamGlowColor: rgba(255,0,0,0.5);   /* Glow colour for Superhot Team names.       Default: red      */
 	--SHMindsGlowColor: rgba(0,200,255,0.5);/* Glow colour for Superhot Mind names.       Default: sky blue */
 	--border: grey;
 	--border-code: white;
 	--border-bright: white;
 	--background-embed: rgba(255,0,0,0.3);
-	--warning: red;
+	--warning: hsl(0, calc(var(--saturation-factor)*100%), 50%); /* pure red */
 	
 	--header-primary: white;
 	--header-secondary: grey;
@@ -69,13 +69,13 @@ body
     --background-secondary: black;
     --background-secondary-alt: black;
     --background-tertiary: black;
-    --background-accent: red;
+    --background-accent: hsl(0, calc(var(--saturation-factor)*100%), 50%);
     --background-floating: black;
-	--background-mentioned: rgba(255,0,0,0.2);
+	--background-mentioned: hsla(0, calc(var(--saturation-factor)*100%), 50%, 0.2);
 	--channeltextarea-background: transparent;
 	
-	--divider-color: red; /* color of new messages divider */
-	--info-warning-foreground: red; /* colour of @ping message left side indicator */
+	--divider-color: hsl(0, calc(var(--saturation-factor)*100%), 50%); /* color of new messages divider */
+	--info-warning-foreground: hsl(0, calc(var(--saturation-factor)*100%), 50%); /* colour of @ping message left side indicator */
 	
 	--font-display: PerfectDOS, monospace; /* For server and chanenl title */
 	--font-primary: PerfectDOS, monospace; /* For almost everything else */
@@ -83,9 +83,9 @@ body
 	
     /* --background-mobile-primary: #36393f; */
     /* --background-mobile-secondary: #2f3136; */
-	--background-modifier-hover: rgba(255,0,0,0.2);
-    --background-modifier-active: rgba(255,0,0,0.7);
-    --background-modifier-selected: rgba(255,0,0,0.3);
+	--background-modifier-hover: hsla(0, calc(var(--saturation-factor)*100%), 50%, 0.2);
+    --background-modifier-active: hsla(0, calc(var(--saturation-factor)*100%), 50%, 0.7);
+    --background-modifier-selected: hsla(0, calc(var(--saturation-factor)*100%), 50%, 0.3);
     --background-modifier-accent: transparent;
 
     /* --info-positive-text: #fff; */
@@ -194,6 +194,9 @@ body
 }
 
 /* End colours/background
+
+/* stop eye searing reds */
+
 
 
 
@@ -355,13 +358,13 @@ span[style="color: rgb(96, 125, 139);"]
 
 
 /* Hover/select on channels/names */
-.modeUnread-1zpFdA:hover .name-3_Dsmg,
-.wrapper-1ucjTd:hover,
-.content-3QAtGj:hover,
-.da-selected
-{
-    text-shadow: 0 0 5px blue;
-}
+/* .modeUnread-1zpFdA:hover .name-3_Dsmg, */
+/* .wrapper-1ucjTd:hover, */
+/* .content-3QAtGj:hover, */
+/* .da-selected */
+/* { */
+    /* text-shadow: 0 0 5px blue; */
+/* } */
 
 .theme-dark .wrapper-3WhCwL, /* #channels and @pings */
 .markup-2BOw-j a /* hyperlinks */
@@ -888,12 +891,16 @@ Start boxes (borders) */
 		{
 			display: block;
 		}
-		
-			.username-1A8OIy,
-			.compact-T3H92H .timestamp-3ZCmNB
+			.compact-T3H92H .header-23xsNx
 			{
 				background: linear-gradient(transparent, var(--background-primary) 40%, transparent 60%);
 			}
+				/* Hides timestamps for the same time as previous message */
+				.compact-T3H92H .header-23xsNx>.timestampVisibleOnHover-2bQeI4
+				{
+					width: 0;
+					color: transparent;
+				}
 			
 	/* reply if any */
 	.compact-T3H92H .repliedMessage-VokQwo::before
