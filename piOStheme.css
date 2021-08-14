@@ -595,6 +595,10 @@ Start boxes (borders) */
 	{
 		display: none;
 	}
+	.option-96V44q.user-O3Czj0 .displayAvatar-1wWlVM
+	{
+		border-radius: 0;
+	}
 	.theme-dark .option-96V44q.selected-rZcOL-
 	{
 		background: var(--background-modifier-selected);
@@ -608,6 +612,11 @@ Start boxes (borders) */
 	{
 		background: var(--background-primary);
 	}
+.tab-2j5AEF
+{
+	border-radius: 0;
+}
+	
 	
 /* fixes date popup when you search before: after: */
 .theme-dark .calendarPicker-2yf6Ci .react-datepicker,
@@ -861,8 +870,16 @@ Start boxes (borders) */
 	border-top-width: 1px;
 }
 
+/* inbox icon squaring */
+.iconActiveMedium-1UaEIR
+{
+	border-radius: 0;
+}
+
 /* hmmm what if soup text boxes in compact mode*/
-.message-2qnXI6.compact-T3H92H
+.message-2qnXI6.compact-T3H92H,
+.message-2g38UB.compact-T3H92H,
+.message-2DieIs.compact-T3H92H
 {
 	/* these don't want to be in a single border property */
 	border-width: 1px 3px;
@@ -872,14 +889,21 @@ Start boxes (borders) */
 	padding: 1rem 1rem .5rem 1rem;
 	padding-right: 1rem!important;
 }
-
-	/* name and timestamp */
-	.compact-T3H92H .header-23xsNx
+	
+	/* name and timestamp in main message section*/
+	.message-2qnXI6.compact-T3H92H .header-23xsNx,
+	.message-2g38UB.compact-T3H92H .header-23xsNx,
+	.message-2DieIs.compact-T3H92H .header-23xsNx
 	{
 		position: absolute;
 		top: -1.6rem;
 		display: flex;
 		flex-direction: row-reverse;
+	}
+	.message-2g38UB,
+	.message-2DieIs
+	{
+		overflow: visible;
 	}
 		
 		.compact-T3H92H .headerText-3Uvj1Y
