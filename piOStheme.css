@@ -432,7 +432,7 @@ Start Fonts */
 
 /* Fix font size of channel group and user group labels to match others */
 .da-username,
-.container-36u7Lw,
+.container-q97qHp,
 .name-3YKhmS
 {
     font-size: 16px	;
@@ -999,8 +999,8 @@ Start boxes (borders) */
     color: var(--channels-default);
 	margin-left: 5px;
 }
-/* adds dashes between memeber groups */
-.membersGroup-2eiWxl.container-36u7Lw:not(:first-of-type)::before
+/* adds dashes between member groups */
+.membersGroup-2eiWxl.container-q97qHp:not(:first-of-type)::before
 {
 	font-size: 16pt;
 	display: block;
