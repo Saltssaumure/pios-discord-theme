@@ -1,8 +1,13 @@
 /**
- * @name piOSTEST3
+ * @name piOSTEST4
  * @author Saltssaumure#7557
- * @description This is not the correct file - download from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/vAutoupdate instead!
- * @version 2
+ * @description Fixes for Stable 110451 (c233a73). Please download the autoupdater from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/latest!
+ * @version 4
+*/
+
+/*
+Source for new class names:
+https://gist.github.com/ExperiBass/2375ac4f7088bb9410d81cd59495f462
 */
 
 /* 
@@ -41,15 +46,15 @@ body
 {
 	/* User editable glow colours - change the RGBA values to anything you like! */
 /* RGBA colour picker: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool */	
-	--mainGlowColor: rgba(0,255,255,0.7);   /* Glow colour for messages, names, channels. Default: cyan     */
-	--mutedGlowColor: rgba(200,255,255,0.2);/* Glow colour for muted channels.            Default: slate    */
+	--mainGlowColor: hsla(180, calc(var(--saturation-factor)*100%), 50%, 0.7);   /* Glow colour for messages, names, channels. Default: cyan     */
+	--mutedGlowColor: hsla(180, calc(var(--saturation-factor)*100%), 89%, 0.2)/* Glow colour for muted channels.            Default: slate    */
 	--SHTeamGlowColor: rgba(255,0,0,0.5);   /* Glow colour for Superhot Team names.       Default: red      */
 	--SHMindsGlowColor: rgba(0,200,255,0.5);/* Glow colour for Superhot Mind names.       Default: sky blue */
 	--border: grey;
 	--border-code: white;
 	--border-bright: white;
 	--background-embed: rgba(255,0,0,0.3);
-	--warning: red;
+	--warning: hsl(0, calc(var(--saturation-factor)*100%), 50%); /* pure red */
 	
 	--header-primary: white;
 	--header-secondary: grey;
@@ -69,13 +74,13 @@ body
     --background-secondary: black;
     --background-secondary-alt: black;
     --background-tertiary: black;
-    --background-accent: red;
+    --background-accent: hsl(0, calc(var(--saturation-factor)*100%), 50%);
     --background-floating: black;
-	--background-mentioned: rgba(255,0,0,0.2);
+	--background-mentioned: hsla(0, calc(var(--saturation-factor)*100%), 50%, 0.2);
 	--channeltextarea-background: transparent;
 	
-	--divider-color: red; /* color of new messages divider */
-	--info-warning-foreground: red; /* colour of @ping message left side indicator */
+	--divider-color: hsl(0, calc(var(--saturation-factor)*100%), 50%); /* color of new messages divider */
+	--info-warning-foreground: hsl(0, calc(var(--saturation-factor)*100%), 50%); /* colour of @ping message left side indicator */
 	
 	--font-display: PerfectDOS, monospace; /* For server and chanenl title */
 	--font-primary: PerfectDOS, monospace; /* For almost everything else */
@@ -83,9 +88,9 @@ body
 	
     /* --background-mobile-primary: #36393f; */
     /* --background-mobile-secondary: #2f3136; */
-	--background-modifier-hover: rgba(255,0,0,0.2);
-    --background-modifier-active: rgba(255,0,0,0.7);
-    --background-modifier-selected: rgba(255,0,0,0.3);
+	--background-modifier-hover: hsla(0, calc(var(--saturation-factor)*100%), 50%, 0.2);
+    --background-modifier-active: hsla(0, calc(var(--saturation-factor)*100%), 50%, 0.7);
+    --background-modifier-selected: hsla(0, calc(var(--saturation-factor)*100%), 50%, 0.3);
     --background-modifier-accent: transparent;
 
     /* --info-positive-text: #fff; */
@@ -130,70 +135,73 @@ body
 }
 
 /* discord friends tab: for some reason not currently using a variable */
-.theme-dark .container-1D34oG
+.theme-dark .container-2cd8Mz
 {
 	background-color: var(--background-primary);
 }
 	/* square off the corners in friend tab */
-	.actionButton-uPB8Fs
+	.actionButton-3-B2x-
 	{
 		border-radius: 0;
 	}
 
 /* give embeds a spicy red background */
-.embedFull-2tM8--.markup-2BOw-j
+.embedFull-1HGV2S.markup-eYLPri
 {
 	background: var(--background-embed);
 	border-radius: 0;
 	border: 0;
 	text-shadow: none;
 }
-	.grid-1nZz7S
+	.grid-1aWVsE
 	{
 		padding: 12px 18px;
 	}
-		.embedMargin-UO5XwE
+		.embedMargin-2PsaQ4
 		{
 			margin-top: 0;
 		}
 		
 	/* squares off images/videos embeds */
-	.embedImage-2W1cML img,
-	.embedImage-2W1cML video,
-	.embedThumbnail-2Y84-K img,
-	.embedThumbnail-2Y84-K video,
-	.embedVideo-3nf0O9 img,
-	.embedVideo-3nf0O9 video,
-	.embedMedia-1guQoW,
-	.wrapper-2TxpI8,
-	.imageWrapper-2p5ogY
+	.embedImage-2Ynqkh img,
+	.embedImage-2Ynqkh video,
+	.embedThumbnail-2nTasl img,
+	.embedThumbnail-2nTasl video,
+	.embedVideo-2ixt5A img,
+	.embedVideo-2ixt5A video,
+	.embedMedia-1mdWSP,
+	.wrapper-1FP9YQ,
+	.imageWrapper-oMkQl4
 	{
 		border-radius: 0;
 	}	
 	/* play buttons on video */
-	.wrapper-129saQ
+	.wrapper-x4po40
 	{
 		border-radius: 0;
 		padding: 12px 5px;
 	}
 	/* timeline slider */
-	.mediaBarGrabber-1FqnbN,
-	.mediaBarProgress-1xaPtl,
-	.mediaBarProgress-1xaPtl:after,
-	.mediaBarProgress-1xaPtl:before
+	.mediaBarGrabber-FvJKJg,
+	.mediaBarProgress-38I317,
+	.mediaBarProgress-38I317:after,
+	.mediaBarProgress-38I317:before
 	{
 		border-radius: 0;
 		background: var(--background-accent);
 	}
 
 /* "replying to message" bar set transparent with dotted underline */
-.replyBar-1YLQ2F
+.replyBar-1oi75v
 {
 	border-bottom: 1px dashed var(--border);
 	border-radius: 0;
 }
 
 /* End colours/background
+
+/* stop eye searing reds */
+
 
 
 
@@ -204,19 +212,19 @@ body
 Start glow */ 
 
 /* Main section text glow */
-.markup-2BOw-j
+.markup-eYLPri
 {
 	text-shadow: 2px 0 10px var(--mainGlowColor), -2px 0 10px var(--mainGlowColor);
 }
 
-.repliedTextContent-1R3vnK.markup-2BOw-j, /* but not on reply message preview */
-.edited-3sfAzf /* but not on (edited) */
+.repliedTextContent-2hOYMB.markup-eYLPri, /* but not on reply message preview */
+.edited-1v5nT8 /* but not on (edited) */
 {
 	text-shadow: none;
 }
 
 /* allow glow outside name box on users list */
-.content-3QAtGj, .nameAndDecorators-5FJ2dg, .name-uJV0GL, .roleColor-rz2vM0
+.content-1U25dZ, .nameAndDecorators-3ERwy2, .name-3Vmqxm, .roleColor-nA7BqX
 {
 	overflow: visible;
 }
@@ -355,16 +363,16 @@ span[style="color: rgb(96, 125, 139);"]
 
 
 /* Hover/select on channels/names */
-.modeUnread-1zpFdA:hover .name-3_Dsmg,
-.wrapper-1ucjTd:hover,
-.content-3QAtGj:hover,
-.da-selected
-{
-    text-shadow: 0 0 5px blue;
-}
+/* .modeUnread-1zpFdA:hover .name-3_Dsmg, */
+/* .wrapper-1ucjTd:hover, */
+/* .content-3QAtGj:hover, */
+/* .da-selected */
+/* { */
+    /* text-shadow: 0 0 5px blue; */
+/* } */
 
-.theme-dark .wrapper-3WhCwL, /* #channels and @pings */
-.markup-2BOw-j a /* hyperlinks */
+.theme-dark .wrapper-1ZcZW-, /* #channels and @pings */
+.markup-eYLPri a /* hyperlinks */
 {
     color: white;
     text-shadow: 0 0 20px white;
@@ -379,27 +387,27 @@ Start Fonts */
 
 /* All caps on areas where case is not so important */
 /* importantly: excludes message text, searches, emoji, and status text */
-.channelName-2YrOjO, 	/* channel names */
-/*.name-uJV0GL,			usernames in user list */
-/*.username-1A8OIy,		usernames in main section */
-/*.mention,				usernames in mention */
-/*.headerText-15Q25Z,	usernames in user info */
-.activityUserPopout-2yItg2,	/* now playing game and time */
-.protip-2urNh2,			/* "right click user for more actions */
-.roleName-32vpEy,		/* roles */
-.timestamp-3ZCmNB,		/* message timestamp */
-.divider-JfaTT5,		/* day dividers */
-.children-19S4PO, 		/* channel name and desc */
-.navButton-2gQCx-,		/* emoji/gif picker buttons */
-.categoryName-UvMsNp,	/* gif picker categories */
-.side-8zPYf6 			/* settings list */
+.channelName-3KPsGw, 	/* channel names */
+/*.name-3Vmqxm,			usernames in user list */
+/*.username-h_Y3Us,		usernames in main section */
+/*.mention,				usernames in mention (may no longer be usable)*/
+/*.headerText-15Q25Z,	usernames in user info (may no longer be usable)*/
+.activityUserPopout-2MzGCj,	/* now playing game and time */
+.protip-2urNh2,			/* "right click user for more actions (not changed?)*/
+.roleName-2ZJJYR,		/* roles */
+.timestamp-p1Df1m,		/* message timestamp */
+.divider-2rZFJK,		/* day dividers */
+.children-3xh0VB, 		/* channel name and desc */
+.navButton-1XuvI-,		/* emoji/gif picker buttons */
+.categoryName-1iPNc5,	/* gif picker categories */
+.side-2ur1Qk 			/* settings list */
 {
     text-transform: uppercase;	
 }
 
 /* nukes formatting for code blocks bc readability is important for being a hackerman */
-.markup-2BOw-j code.hljs,
-.markup-2BOw-j code.inline
+.markup-eYLPri code.hljs,
+.markup-eYLPri code.inline
 {
     font-family: var(--font-code);
 	border: solid var(--border-code);
@@ -410,46 +418,46 @@ Start Fonts */
 }
 
 /* Underline #channels and @pings */
-.theme-dark .wrapper-3WhCwL,
+.theme-dark .wrapper-1ZcZW-,
 .mention
 {
     text-decoration: underline;
 	border-radius: 0;
 	background: var(--background-embed);
 }
-.roleMention-2Bj0ju
+.roleMention-11Aaqi
 {
 	text-shadow: none;
 }
 
 /* Fix font size of channel group and user group labels to match others */
 .da-username,
-.container-2ax-kl,
+.container-36u7Lw,
 .name-3YKhmS
 {
     font-size: 16px	;
 }
 
-.content-2M3n_H, /* Pins / calls message interjects */
-.timestamp-1E3uAL, /* timestamp for the above */
+.content-vSHmMD, /* Pins / calls message interjects */
+.timestamp-2qj4__, /* timestamp for the above */
 .mentionFilter-1PQ6ey .value-2k8Drt /* mentions, display: [everything] */
 {
 	text-transform: uppercase;
 	text-shadow: none;
 }
-.compact-2zYMSo
+.compact-3bMNvi
 {
 	margin-left: 0;
 }
 
 /* in replying to user box, change @on colour to red as warning */
-.colorLink-2vG20E.mentionButton-3710-W
+.colorLink-2apWfY.mentionButton-3C5YMI
 {
 	color: var(--warning);
 }
 
 /* new message bubble delete */
-.unreadPill-2HyYtt
+.unreadPill-3nEWYM
 {
 	display: none;
 }
@@ -457,9 +465,9 @@ Start Fonts */
 /* square off jump to present bar
  and new messages since bar
  and messages failed to load bar */
-.jumpToPresentBar-G1R9s6,
-.newMessagesBar-265mhP,
-.messagesErrorBar-nyJGU7
+.jumpToPresentBar-1cEnH0,
+.newMessagesBar-1hF-9G,
+.messagesErrorBar-1IQ1rH
 {
 	border-radius: 0;
 	background-color: var(--background-accent);
@@ -467,11 +475,11 @@ Start Fonts */
 }
 
 /* square off new unreads bubble */
-.bar-30k2ka
+.bar-2eAyLE
 {
 	border-radius: 0;
 }
-.mention-1f5kbO /* make the server unread red */
+.mention-3XBnnZ /* make the server unread red */
 {
 	background-color: var(--background-accent);
 }
@@ -483,64 +491,64 @@ Start Fonts */
 Start boxes (borders) */ 
 
 /* box around the main section */
-.chatContent-a9vAAp
+.chatContent-3KubbW
 {
 	border: solid var(--border);
 	border-width: 2px 5px;
 }
 /* remove the wrong colour top line */
-.content-yTz4x3::before~
+.content-1jQy2l::before~
 {
 	display: none;
 }
 /* square off avatar */
-.avatar-1BDn8e
+.avatar-2e8lTP
 {
 	border-radius: 0;
 }
 
 /* follow to get this channel's updates in your server add dotted topline */
-.form-2fGMdU .wrapper-39oAo3
+.form-3gdLxP .wrapper-2SplAX
 {
 	border-top: 1px dashed var(--border);
 	margin-top: 0;
 }
 	/* kill bird wumpus */
-	.image-3XsqGc
+	.image-3FliiM
 	{
 		display: none;
 	}
 
 /* info bubbles tooltips */
-.tooltip-2QfLtc
+.tooltip-14MtrL
 {
 	border: solid var(--border-bright);
 	border-width: 1px 3px;
 	border-radius: 0;
 }
-	.tooltipPointer-3ZfirK /* arrow pointing towards tooltip source*/
+	.tooltipPointer-3L49xb /* arrow pointing towards tooltip source*/
 	{
 		display: none;
 	}
-	.avatar-3bWpYy, /* avatars in tooltip */
-	.container-23E4rK .moreUsers-7v8yWY /* more users icon in tooltip */
+	.avatar-3TrM7c, /* avatars in tooltip */
+	.container-1jha_j .moreUsers-_v6T-L /* more users icon in tooltip */
 	{
 		border-radius: 0;
 	}
 
 /* typing box */
-.channelTextArea-2VhZ6z
+.channelTextArea-1VQBuV
 {
 	border: solid var(--border);
 	border-width: 2px 5px;
 	border-radius: 0;
 }
-	.scrollableContainer-2NUZem
+	.scrollableContainer-15eg7h
 	{
 		border-radius: 0;
 		min-height: 60px;
 	}
-		.fontSize24Padding-2Tz8jD
+		.fontSize24Padding-3GueH0
 		{
 			padding: 10px 0;
 		}
@@ -556,80 +564,89 @@ Start boxes (borders) */
 {
 	border-radius: 0;
 }
-.theme-dark .autocomplete-1vrmpx
+.theme-dark .autocomplete-3NRXG8
 {
 	background: var(--background-primary);
 	border: solid var(--border);
 	border-width: 1px 3px;
 }
 	/* Selected/hovered emoji/user/channel */
-	.theme-dark .selected-1Tbx07
+	.theme-dark .selected-3H3-RC
 	{
 		background: var(--background-modifier-selected);
 	}
-	.base-1pYU8j
+	.base-2v-uc0
 	{
 		border-radius: 0;
 	}
 	
 /* fixes search suggestion box */
-.theme-dark .container-3ayLPN
+.theme-dark .container-2McqkF
 {
 	background: var(--background-primary);
 	border: solid var(--border-bright);
 	border-width: 1px 3px;
 }
-.container-3ayLPN
+.container-2McqkF
 {
 	border-radius: 0;
 }
-.theme-dark .elevationBorderHigh-2WYJ09
+.theme-dark .elevationBorderHigh-3drnJX
 {
 	box-shadow: none;
 }
 	/* fixes each suggestion box */
-	.theme-dark .option-96V44q:after
+	.theme-dark .option-2KkUJO:after
 	{
 		display: none;
 	}
-	.theme-dark .option-96V44q.selected-rZcOL-
+	.option-2KkUJO.user-23VtPS .displayAvatar-3XS1w6
+	{
+		border-radius: 0;
+	}
+	.theme-dark .option-2KkUJO.selected-rZcOL-
 	{
 		background: var(--background-modifier-selected);
 	}
-	.option-96V44q
+	.option-2KkUJO
 	{
 		border-radius: 0;	
 	}	
 	/* fixes search result */
-	.theme-dark .focused-2bY0OD
+	.theme-dark .focused-2FU0YH
 	{
 		background: var(--background-primary);
 	}
+.tab-2j5AEF
+{
+	border-radius: 0;
+}
+	
 	
 /* fixes date popup when you search before: after: */
-.theme-dark .calendarPicker-2yf6Ci .react-datepicker,
-.theme-dark .calendarPicker-2yf6Ci .react-datepicker__header,
-.theme-dark .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--previous,
-.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled,
-.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day--outside-month
+.theme-dark .calendarPicker-sDhzdi .react-datepicker,
+.theme-dark .calendarPicker-sDhzdi .react-datepicker__header,
+.theme-dark .calendarPicker-sDhzdi .react-datepicker__navigation.react-datepicker__navigation--previous,
+.theme-dark .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled,
+.theme-dark .calendarPicker-sDhzdi .react-datepicker__day--outside-month
 {
 	background-color: var(--background-primary);
 }
 /* day box on hover */
-.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:hover,
-.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day:hover
+.theme-dark .calendarPicker-Dhzdi .react-datepicker__day.react-datepicker__day--selected:hover,
+.theme-dark .calendarPicker-Dhzdi .react-datepicker__day:hover
 {
 	background-color: var(--background-modifier-hover);
 }
 	/* previous / next month buttons */
-	.calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--next,
-	.calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--previous
+	.calendarPicker-Dhzdi .react-datepicker__navigation.react-datepicker__navigation--next,
+	.calendarPicker-Dhzdi .react-datepicker__navigation.react-datepicker__navigation--previous
 	{
 		border-radius: 0;
 	}
 
 	/* day box size */
-	.calendarPicker-2yf6Ci .react-datepicker__day
+	.calendarPicker-Dhzdi .react-datepicker__day
 	{
 		--daywidth: 36px;
 		height: var(--daywidth);
@@ -637,56 +654,56 @@ Start boxes (borders) */
 		line-height: var(--daywidth);
 	}
 		/* unrounds the corners */
-		.calendarPicker-2yf6Ci .react-datepicker__week:first-of-type>.react-datepicker__day:first-of-type,
-		.calendarPicker-2yf6Ci .react-datepicker__week:first-of-type>.react-datepicker__day:last-of-type,
-		.calendarPicker-2yf6Ci .react-datepicker__week:last-of-type>.react-datepicker__day:first-of-type,
-		.calendarPicker-2yf6Ci .react-datepicker__week:last-of-type>.react-datepicker__day:last-of-type
+		.calendarPicker-Dhzdi .react-datepicker__week:first-of-type>.react-datepicker__day:first-of-type,
+		.calendarPicker-Dhzdi .react-datepicker__week:first-of-type>.react-datepicker__day:last-of-type,
+		.calendarPicker-Dhzdi .react-datepicker__week:last-of-type>.react-datepicker__day:first-of-type,
+		.calendarPicker-Dhzdi .react-datepicker__week:last-of-type>.react-datepicker__day:last-of-type
 		{
 			border-radius: 0;
 		}
-	.calendarPicker-2yf6Ci .react-datepicker__day-name
+	.calendarPicker-Dhzdi .react-datepicker__day-name
 	{
 		width: 36px; /* why does this not work with daywidth */
 	}
 	/* current day underbar*/
-	.theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:after
+	.theme-dark .calendarPicker-Dhzdi .react-datepicker__day.react-datepicker__day--selected:after
 	{
 		background: var(--background-accent);
 	}
 	/* hint bubble */
-	.datePicker--XZbmJ .datePickerHint-3Q1Udw .hintValue-29ny8Z
+	.datePicker-70cO23 .datePickerHint-17MnA8 .hintValue-1x-flY
 	{
 		border-radius: 0;
 	}
-		.theme-dark .datePicker--XZbmJ .datePickerHint-3Q1Udw .hintValue-29ny8Z
+		.theme-dark .datePicker-70cO23 .datePickerHint-17MnA8 .hintValue-1x-flY
 		{
 			background: var(--background-modifier-selected);
 		}
-		.theme-dark .datePicker--XZbmJ .datePickerHint-3Q1Udw .hintValue-29ny8Z:hover
+		.theme-dark .datePicker-70cO23 .datePickerHint-17MnA8 .hintValue-1x-flY:hover
 		{
 			background: var(--background-accent);
 		}
 	
 /* search modifiers eg has: from: */
-.searchFilter-2ESiM3,
-.search-2oPWTC .DraftEditor-root .DraftEditor-editorContainer,
-.searchAnswer-3Dz2-q
+.searchFilter-2UfsDk,
+.search-1FM8Qc .DraftEditor-root .DraftEditor-editorContainer,
+.searchAnswer-23w-CH
 {
 	border-radius: 0;
 }
 
 /* search results */
-.searchResult-9tQ1uo
+.searchResult-O9NDji
 {
 	border-radius: 0;
 }
 
 /* draw bright borders around boxes */	
-.contentWrapper-SvZHNd,			/* emoji/gif selector box (from message box)*/
+.contentWrapper-3vHNP2,			/* emoji/gif selector box (from message box)*/
 #emoji-picker-tab-panel[role="dialog"], /* emoji picker for reactions */
-.userPopout-xaxa6l,				/* user profile popouts */
-.messagesPopoutWrap-1MQ1bW,		/* pinned messages box */
-.container-enaOkj				/* mentions box */
+.userPopout-2j1gM4,				/* user profile popouts */
+.messagesPopoutWrap-3zryHW,		/* pinned messages box */
+.container-2ebMPP				/* mentions box */
 {
 	border-radius: 0;
 	border: solid var(--border-bright);
@@ -694,8 +711,8 @@ Start boxes (borders) */
 }
 
 /* decrease text size in the above boxes */
-.messagesPopoutWrap-1MQ1bW .markup-2BOw-j,
-.container-enaOkj .markup-2BOw-j
+.messagesPopoutWrap-3zryHW .markup-eYLPri,
+.container-2ebMPP .markup-eYLPri
 {
 	font-size: smaller;
 	line-height: 1rem;
@@ -706,81 +723,81 @@ Start boxes (borders) */
 {
 	background: var(--background-primary);
 }
-	.emojiPicker-3PwZFl /* square off the internal box */
+	.emojiPicker-6YCk8a /* square off the internal box */
 	{
 		box-shadow: none;
 		background: transparent;
 	}
-		.navButton-2gQCx- /* square off the gif/emoji tab buttons */
+		.navButton-1XuvI- /* square off the gif/emoji tab buttons */
 		{
 			border-radius: 0;
 		}
-		.diversitySelectorOptions-4YM-vX /* draws box around skin tone selector */
+		.diversitySelectorOptions-3DhNYs /* draws box around skin tone selector */
 		{
 			border-radius: 0;
 			border: solid var(--border);
 			border-width: 1px 3px;
 		}
-		.emojiItem-14v6tW, /* squares off each emoji */
-		.sticker-2cpdZp, /* squares off each sticker */	
-		.gif-1TcNIB, /* squares off each gif */
-		.categoryFade-2ybR1J,
-		.categoryFadeBlurple-1j72_A
+		.emojiItem-277VFM, /* squares off each emoji */
+		.sticker-H2HhJD, /* squares off each sticker */	
+		.gif-1EWTs-, /* squares off each gif */
+		.categoryFade-2EGqIh,
+		.categoryFadeBlurple-1HuV1x
 		{
 			border-radius: 0;
 		}
-			.gif-1TcNIB:after
+			.gif-1EWTs-:after
 			{
 				display: none;
 			}
 			
-			.inspectedIndicator-59EII8, /* remove mask on sticker */
-			.assetWrapperMasked-2tj_Bb
+			.inspectedIndicator-27zwNZ, /* remove mask on sticker */
+			.assetWrapperMasked-1iw9lV
 			{
 				mask: none; /* this doesnt seem to do anything */
 				-webkit-mask: none;
 				border-radius: 0;
 			}
 			
-.reaction-1hd86g /* squares off reactions */
+.reaction-2A2y9y /* squares off reactions */
 {
 	border-radius: 0;
 }
-.reaction-1hd86g.reactionMe-wv5HKu /* and turns red on reactions you've added */
+.reaction-2A2y9y.reactionMe-3I9gFK /* and turns red on reactions you've added */
 {
 	border-color: var(--background-accent);
 	background-color: var(--background-modifier-selected);
 }
 
 /* image uploader popup */
-.uploadModal-2ifh8j
+.uploadModal-2ie9O_
 {
 	border-radius: 0;
 	border: solid var(--border);
 	border-width: 2px 5px;
 }
-	.theme-dark .uploadModal-2ifh8j
+	.theme-dark .uploadModal-2ie9O_
 	{
 		background: var(--background-primary);
 	}
-		.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.image-2yrs5j
+		.uploadModal-2ie9O_ .inner-rBP-MS .file-163EuR .icon-HW4tZ-.image-2ssF8k
 		{
 			border-radius: 0;
 		}
-	.theme-dark .footer-3mqk7D
+	.theme-dark .footer-VCsJQY
 	{
 		background-color: transparent;
 	}
-		.box-mmYMsp /* mark as spoiler box */
+		.box-BHImcZ /* mark as spoiler box */
 		{
 			border-radius: 0;
 		}
-			.theme-dark .checkbox-1ix_J3.checked-3_4uQ9 /* when spoiler is marked */
+			.theme-dark .checkbox-f1HnKB.checked-1pZh2h /* when spoiler is marked */
 			{
 				border-color: var(--background-accent)!important;
 				color: var(--background-accent); /* passes color to SVG tick */
 			}
-			.theme-dark .checkbox-1ix_J3.checked-3_4uQ9 path
+			.theme-dark .checkbox-f1HnKB.checked-1pZh2h path
 			{
 				fill: currentColor;
 			}
@@ -794,18 +811,18 @@ Start boxes (borders) */
 			}
 
 /* Style user profile popouts */
-.userPopout-xaxa6l
+.userPopout-2j1gM4
 {
 	border-radius: 0;
 }
 	/* message user box */
-	.input-cIJ7To
+	.input-2g-os5
 	{
 		border-radius: 0;
 	}
 	
 	/* about me ```code``` from inline to block */
-	.aboutMeBody-3GuvKk code.inline
+	.aboutMeBody-1J8rhz code.inline
 	{
 		display: block;
 		margin: 0;
@@ -813,23 +830,23 @@ Start boxes (borders) */
 	}
 
 /* role */
-.role-2irmRk,
-.roleCircle-3xAZ1j
+.role-2TIOKu,
+.roleCircle-1EgnFN
 {
 	border-radius: 0;
 }
 
 /* delet reply jump in mentions/unreads */
-.container-3iAQ-0 .compact-T3H92H .repliedMessage-VokQwo,
-.container-enaOkj .compact-T3H92H .repliedMessage-VokQwo
+.container-iA3Qrz .compact-2Nkcau .repliedMessage-3Z6XBG,
+.container-2ebMPP .compact-2Nkcau .repliedMessage-3Z6XBG
 {
 	display: none;
 }
-.topPill-30KHOu .item-PXvHYJ /* square off mentions/unreads buttons */
+.topPill-3DJJNV .item-3XjbnG /* square off mentions/unreads buttons */
 {
 	border-radius: 0;
 }
-.menu-3sdvDG /* filter gets box border */
+.menu-1QACrS /* filter gets box border */
 {
 	border: solid var(--border);
 	border-width: 1px 3px;
@@ -837,70 +854,90 @@ Start boxes (borders) */
 }
 
 /* blurs out emojis and stickers that require nitro when no nitro is active */
-.emojiItemDisabled-1FvFuF,
-.stickerUnsendable-2q_h2B
+.emojiItemDisabled-3VVnwp,
+.stickerUnsendable-PkQAxI
 {
 	filter: blur(1px) grayscale(100%) opacity(40%);
 }
 
 /* square off block quote starter */
-.blockquoteContainer-U5TVEi .blockquoteDivider-2hH8H6
+.blockquoteContainer-3VtvI1 .blockquoteDivider-363utW
 {
 	border-radius: 0;
 	width: 3px;
 }
 
 /* reply pipe */
-.repliedMessage-VokQwo:before
+.repliedMessage-3Z6XBG:before
 {
 	border-radius: 0;
 	border-left-width: 3px;
 	border-top-width: 1px;
 }
 
+/* inbox icon squaring */
+.iconActiveMedium-27_R5B
+{
+	border-radius: 0;
+}
+
 /* hmmm what if soup text boxes in compact mode*/
-.message-2qnXI6.compact-T3H92H
+.message-2CShn3.compact-2Nkcau,
+.message-372Ods.compact-2Nkcau,
+.message-3g3FYR.compact-2Nkcau
 {
 	/* these don't want to be in a single border property */
 	border-width: 1px 3px;
 	border-style: solid;
 	border-color: var(--border);
-	margin: 1.5rem 3rem;
+	margin: calc(var(--compact-message-spacing)*1.5rem) 3rem;
 	padding: 1rem 1rem .5rem 1rem;
 	padding-right: 1rem!important;
 }
-
-	/* name and timestamp */
-	.compact-T3H92H .header-23xsNx
+	
+	/* name and timestamp in main message section*/
+	.message-2CShn3.compact-2Nkcau .header-2jRmjb,
+	.message-372Ods.compact-2Nkcau .header-2jRmjb,
+	.message-3g3FYR.compact-2Nkcau .header-2jRmjb
 	{
 		position: absolute;
 		top: -1.6rem;
 		display: flex;
 		flex-direction: row-reverse;
 	}
+
+	.message-372Ods,
+	.message-3g3FYR
+	{
+		overflow: visible;
+	}
 		
-		.compact-T3H92H .headerText-3Uvj1Y
+		.compact-2Nkcau .headerText-2z4IhQ
 		{
 			margin-right: 0;
 		}
 		
-		.compact-T3H92H .header-23xsNx>span
+		.compact-2Nkcau .header-2jRmjb>span
 		{
 			display: block;
 		}
-		
-			.username-1A8OIy,
-			.compact-T3H92H .timestamp-3ZCmNB
+			.compact-2Nkcau .header-2jRmjb
 			{
 				background: linear-gradient(transparent, var(--background-primary) 40%, transparent 60%);
 			}
+				/* Hides timestamps for the same time as previous message */
+				.compact-2Nkcau .header-2jRmjb>.timestampVisibleOnHover-9PEuZS
+				{
+					width: 0;
+					color: transparent;
+				}
 			
 	/* reply if any */
-	.compact-T3H92H .repliedMessage-VokQwo::before
+	.compact-2Nkcau .repliedMessage-3Z6XBG::before
 	{
 		display: none;
 	}
-	.compact-T3H92H .repliedMessage-VokQwo
+	.compact-2Nkcau .repliedMessage-3Z6XBG
 	{
 		position: absolute;
 		right: .5rem;
@@ -912,14 +949,14 @@ Start boxes (borders) */
 		justify-content: flex-end;
 		z-index: 1;
 	}
-	.compact-T3H92H .replyBadge-r1su3o
+	.compact-2Nkcau .replyBadge-LMm_Ic
 	{
 		border-radius: 0; 
 		background: transparent;
 	}
 	
 	/* the message itself */
-	.compact-T3H92H .contents-2mQqc9
+	.compact-2Nkcau .contents-2MsGLg
 	{
 		margin: 0;
 		padding-left: 0;
@@ -927,27 +964,27 @@ Start boxes (borders) */
 	}
 
 /* remove box if system message eg. pin*/
-.systemMessage-1I9LCe.message-2qnXI6.compact-T3H92H
+.systemMessage-1H1Z20.message-2CShn3.compact-2Nkcau
 {
 	border: 0;
 }
 	/* vertically center pin icon */
-	.iconContainer-3GkGRf
+	.iconContainer-2rPbqG
 	{
 		padding: 0.1rem;
 	}
 	/* remove link glow on pin */
-	.systemMessage-1I9LCe .markup-2BOw-j a
+	.systemMessage-1H1Z20 .markup-eYLPri a
 	{
 		text-shadow: none;
 	}
 	
 /* message react/reply etc buttons */
-.compact-T3H92H .container-3npvBV
+.compact-2Nkcau .container-2gUZhU
 {
 	top: -16px;
 }
-	.wrapper-2aW0bm
+	.wrapper-2vIMkT
 	{
 	border-radius: 0;
 	border: solid var(--border);
@@ -955,7 +992,7 @@ Start boxes (borders) */
 	}
 	
 /* Adds dashes between channel groups */
-.containerDefault-3tr_sE:not(:nth-of-type(2))::before
+.containerDefault-3TQ5YN:not(:nth-of-type(2))::before
 {
 	font-size: 16pt;
     content: "-------------------";
@@ -963,7 +1000,7 @@ Start boxes (borders) */
 	margin-left: 5px;
 }
 /* adds dashes between memeber groups */
-.membersGroup-v9BXpm.container-2ax-kl:not(:first-of-type)::before
+.membersGroup-2eiWxl.container-36u7Lw:not(:first-of-type)::before
 {
 	font-size: 16pt;
 	display: block;
@@ -975,12 +1012,12 @@ Start boxes (borders) */
 }
 	
 /* square off member box */
-.layout-2DM8Md
+.layout-1qmrhw
 {
 	border-radius: 0;
 }
 
-.membersGroup-v9BXpm:not(:first-of-type)
+.membersGroup-2eiWxl:not(:first-of-type)
 {
 	height: 56px;
 	padding-top: 18px;
@@ -990,25 +1027,25 @@ Start boxes (borders) */
 
 /* squares off user icons */
 foreignObject[mask*="url(#"],
-.assetsLargeMaskUserPopout-12EBBc,
-.assetsLargeMaskStreamPreview-2V7xlA
+.assetsLargeMaskUserPopout-3N96A8,
+.assetsLargeMaskStreamPreview--ugZjW
 {
 	mask: none;
 }
-.wrapper-3t9DeA /* including in user profile popover */
+.wrapper-1VLyxH /* including in user profile popover */
 {
 	border-radius: 0;
 	border-width: 2px 5px;
 }
 
-.baseShapeRound-1Mm1YW, 			/* and stream/ping icons */
-.wrapperSimple-19ogV2, 				/* and server icons */
-.expandedFolderBackground-1cujaW, .folderIconWrapper-1_bOZe, .iconInactive-98JN5i	/* and server folder icons */
+.baseShapeRound-3epLEv, 			/* and stream/ping icons */
+.wrapperSimple-Js2rIO, 				/* and server icons */
+.expandedFolderBackground-1cujaW, .folderIconWrapper-1_bOZe, .iconInactive-26M06U	/* and server folder icons */
 {
 	border-radius: 0;
 }
 
-.numberBadge-2s8kKX /*  make ping icon actually follow the colour scheme */
+.numberBadge-37OJ3S /*  make ping icon actually follow the colour scheme */
 {
 	background: var(--background-accent)!important; /* unfortunately it's styled inline so I gotta !important*/
 	padding: 2px 0 0 2px;	/* this centers the number but it's no longer square hmmmm*/
@@ -1016,27 +1053,27 @@ foreignObject[mask*="url(#"],
 }
 
 /* squares off channels */
-.content-1x5b-n
+.content-1gYQeQ
 {
 	border-radius: 0;
 }
 
 /* square off unread dot and change to warning color */
-.unread-2lAfLh,
-.item-2hkk8m
+.unread-36eUEm,
+.item-2LIpTv
 {
 	border-radius: 0;
 	background-color: var(--warning);
 }
 
 /* fix popup that dims everything else */
-.theme-dark .root-1gCeng,
-.theme-dark .footer-2gL1pp
+.theme-dark .root-g14mjS,
+.theme-dark .footer-31IekZ
 {
 	background-color: var(--background-primary);
 	box-shadow: none;
 }
-.theme-dark .root-1gCeng
+.theme-dark .root-g14mjS
 {
 	border: solid var(--border);
 	border-width: 2px 5px;
@@ -1052,7 +1089,7 @@ foreignObject[mask*="url(#"],
 	}
 
 /* Stream picture in picture */	
-.pictureInPictureVideo-2iKsGg
+.pictureInPictureVideo-2puO2Q
 {
 	border-radius: 0;
 	border: solid var(--border-bright);
@@ -1060,23 +1097,23 @@ foreignObject[mask*="url(#"],
 }
 
 /* Icon for streamed game */
-.icon-3Oovq9,
-.badge-1JXQev,
+.icon-10cLkJ,
+.badge-3RBqXG,
 /* vc user icon and live sign */
-.avatar-3tNQiO,
-.liveShapeRound-32u79-
+.avatar-3FKimL,
+.liveShapeRound-2Tgi2d
 {
 	border-radius: 0;
 }
 
 /* replying to bar */
-.attachedBars-tZDmyV
+.attachedBars-2BCP3l
 {
 	background: transparent;
 }
 
 /* -------------------- SPOILER STUFF ---- */
-.theme-dark .spoilerText-3p6IlD.hidden-HHr2R9
+.theme-dark .spoilerText-27bIiA.hidden-3B-Rum
 {
 	background: repeating-linear-gradient(
 		-45deg,
@@ -1089,8 +1126,8 @@ foreignObject[mask*="url(#"],
 	filter: drop-shadow(0px 0px 5px var(--background-accent));
 }
 
-.theme-dark .spoilerText-3p6IlD.hidden-HHr2R9:hover,
-.spoilerText-3p6IlD
+.theme-dark .spoilerText-27bIiA.hidden-3B-Rum:hover,
+.spoilerText-27bIiA
 {
 	background: repeating-linear-gradient(
 		-45deg,
@@ -1102,7 +1139,7 @@ foreignObject[mask*="url(#"],
 	filter: none;
 }
 
-.theme-dark .spoilerWarning-2aAZq1
+.theme-dark .spoilerWarning-8ovW0v
 {
 	background: repeating-linear-gradient(
 		-45deg,
@@ -1124,41 +1161,26 @@ foreignObject[mask*="url(#"],
 /* .scroller-2LSbBU is main chat scrollbar */
 /* .auto-Ge5KZx is the friends list scrollbar */
 /* .thin-1ybCId are the thin bars that appear on hover */
-.scroller-2LSbBU::-webkit-scrollbar,
-.auto-Ge5KZx::-webkit-scrollbar
+.scroller-kQBbkU::-webkit-scrollbar,
+.auto-2K3UW5::-webkit-scrollbar
 {
     width: 5px;
 }
-	.scroller-2LSbBU::-webkit-scrollbar-thumb,
-	.scroller-2LSbBU::-webkit-scrollbar-track,
-	.auto-Ge5KZx::-webkit-scrollbar-thumb,
-	.auto-Ge5KZx::-webkit-scrollbar-track
+	.scroller-kQBbkU::-webkit-scrollbar-thumb,
+	.scroller-kQBbkU::-webkit-scrollbar-track,
+	.auto-2K3UW5::-webkit-scrollbar-thumb,
+	.auto-2K3UW5::-webkit-scrollbar-track
 	{
 		border-width: 10px;
 	}
 	/* squares thumb */
-	.auto-Ge5KZx::-webkit-scrollbar-thumb,
-	.thin-1ybCId::-webkit-scrollbar-thumb
+	.auto-2K3UW5::-webkit-scrollbar-thumb,
+	.thin-31rlnD::-webkit-scrollbar-thumb
 	{
 		border-radius: 0;
 	}
 
 /* end scrollbar stuff */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
     Keep Custom CSS editor and code related parts untouched.
