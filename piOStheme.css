@@ -379,6 +379,19 @@ span[style="color: rgb(96, 125, 139);"]
     text-shadow: 0 0 20px white;
 }
 
+/* allows channel and users shadow to not clip */
+.overflow-1wOqNV,
+.channelName-3KPsGw,
+.name-3BUDLf,
+.mainContent-uDGa6R,
+.container-q97qHp,
+.zalgo-26OfGz.cozy-VmLDNB .header-2jRmjb,
+    .username-h_Y3Us,
+/* and chat content */
+.zalgo-26OfGz .messageContent-2t3eCI{
+    overflow: visible;
+}
+
 
 /* End glow
 --------------------------------------------------------------------------------
