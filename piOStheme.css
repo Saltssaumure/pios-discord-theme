@@ -47,7 +47,7 @@ body
 	/* User editable glow colours - change the RGBA values to anything you like! */
 /* RGBA colour picker: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool */	
 	--mainGlowColor: hsla(180, calc(var(--saturation-factor)*100%), 50%, 0.7);   /* Glow colour for messages, names, channels. Default: cyan     */
-	--mutedGlowColor: hsla(180, calc(var(--saturation-factor)*100%), 89%, 0.2)/* Glow colour for muted channels.            Default: slate    */
+	--mutedGlowColor: hsla(180, calc(var(--saturation-factor)*100%), 89%, 0.2);/* Glow colour for muted channels.            Default: slate    */
 	--SHTeamGlowColor: rgba(255,0,0,0.5);   /* Glow colour for Superhot Team names.       Default: red      */
 	--SHMindsGlowColor: rgba(0,200,255,0.5);/* Glow colour for Superhot Mind names.       Default: sky blue */
 	--border: grey;
@@ -112,6 +112,7 @@ body
     --elevation-low: transparent;
     --elevation-medium: transparent;
     --elevation-high: transparent;
+    
     /* --logo-primary: #fff; */
     /* --control-brand-foreground: hsl(227,calc(var(--saturation-factor, 1)*57.9%),77.6%); */
     /* --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%); */
