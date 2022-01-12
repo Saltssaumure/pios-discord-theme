@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/29710355/123527529-72121600-d6d8-11eb-9580-da3987ee8398.png)
 
-Use with BetterDiscord/Lightcord.
+Use with BetterDiscord.
 For status rings instead of bubbles, also install [RadialStatus](https://github.com/DiscordStyles/RadialStatus) theme.
 
 ## Download

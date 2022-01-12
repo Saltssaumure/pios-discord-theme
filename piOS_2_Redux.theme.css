@@ -1,0 +1,100 @@
+/**
+ * @name piOS v0.2 Redux
+ * @author Saltssaumure#7557
+ * @description Patch to restore v0.2 aesthetics. To be used in combination with "piOS Forever".
+ * @version 1
+ * @source https://github.com/Saltssaumure/pios-discord-theme
+ * @website https://discord.gg/9eAwJF8
+*/
+
+.theme-dark {
+    /* wider letter spacing */
+    letter-spacing: 0;
+    
+    /* colours */
+    --activeGlowColor: red;
+    --header-secondary: white;
+    --text-muted: white;
+    --channels-default: white;
+    --interactive-normal: white;
+    --interactive-hover: white;
+    --interactive-active: red;
+    --interactive-muted: white;
+    --background-mobile-header: black;
+}
+
+/* adds border between server, channel, chat sections*/
+.platform-win .sidebar-1tnWFu {
+    border-radius: 0;
+    border: solid var(--border);
+    border-width: 0 4px;
+}
+/* removes border around chat section */
+/* adds border between chat, user/search sections */
+.chatContent-3KubbW {
+    border: 0;
+    border-right: 4px solid var(--border);  
+}
+
+/* dividers between channel and user groups */
+.containerDefault-3TQ5YN:not(:nth-of-type(2))::before,
+.membersGroup-2eiWxl.container-q97qHp:not(:first-of-type)::before {
+    font-size: 14pt;
+    letter-spacing: 0.2pt;
+    content: "---------------------";
+    color: var(--border);
+    text-shadow: 0 1px 0 var(--border);
+}
+
+/* Removes # symbol before channel names */
+.icon-2W8DHg {
+    display:none;
+}
+
+/* border for each message */
+.messageListItem-ZZ7v6g {
+    margin: 20px;
+    border: 5px solid rgba(255,255,255,0.5);
+    border-width: 2px 5px;
+} .group-spacing-16 .groupStart-3Mlgv1 {
+    margin-top: 0;
+    padding-top: 1.0625rem;
+    padding-bottom: 1.0625rem;
+}
+
+/* adds default shadow for channels and users */
+.channelName-3KPsGw,
+.name-3BUDLf,
+.membersGroup-2eiWxl span,
+.roleColor-nA7BqX:not([style]),
+.username-h_Y3Us:not([style]) {
+    text-shadow:    0 0 5px var(--mainGlowColor),
+                    0 0 10px var(--mainGlowColor);
+}
+
+/* adds red text shadow for hover/active/selected channels and users */
+.selected-2TbFuo .channelName-3KPsGw,
+.modeUnread-3Cxepe .channelName-3KPsGw,
+.containerDefault-YUSmu3:hover .channelName-3KPsGw,
+.containerDefault-YUSmu3:active .channelName-3KPsGw,
+.selected-1-Z6gm .roleColor-nA7BqX,
+.member-2gU6Ar:hover .roleColor-nA7BqX,
+.member-2gU6Ar:active .roleColor-nA7BqX {
+    text-shadow: 0 0 5px var(--activeGlowColor);
+}
+/* change selected channel to red */
+.modeUnread-3Cxepe .channelName-3KPsGw {
+    color: white;
+    text-shadow:    0 0 5px var(--mainGlowColor),
+                    0 0 10px var(--mainGlowColor);
+}
+
+.bodyInnerWrapper-2bQs1k {
+    color: var(--interactive-normal);
+}
+
+.spine-29OFwR {
+    border-radius: 0;
+	border-left-width: 3px;
+	border-top-width: 1px;
+}
