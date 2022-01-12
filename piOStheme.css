@@ -224,11 +224,7 @@ Start glow */
 	text-shadow: none;
 }
 
-/* allow glow outside name box on users list */
-.content-1U25dZ, .nameAndDecorators-3ERwy2, .name-3Vmqxm, .roleColor-nA7BqX
-{
-	overflow: visible;
-}
+
 
 /* Superhot Team */
 span[style="color: rgb(196, 0, 0);"]
@@ -379,7 +375,7 @@ span[style="color: rgb(96, 125, 139);"]
     text-shadow: 0 0 20px white;
 }
 
-/* allows channel and users shadow to not clip */
+/* allows channel and users glow to not clip */
 .overflow-1wOqNV,
 .channelName-3KPsGw,
 .name-3BUDLf,
@@ -391,7 +387,6 @@ span[style="color: rgb(96, 125, 139);"]
 .zalgo-26OfGz .messageContent-2t3eCI{
     overflow: visible;
 }
-
 
 /* End glow
 --------------------------------------------------------------------------------
@@ -516,7 +511,8 @@ Start boxes (borders) */
 	display: none;
 }
 /* square off avatar */
-.avatar-2e8lTP
+.avatar-2e8lTP,
+.executedCommandAvatar-3oOnb1, .replyAvatar-sHd2sU, .replyBadge-LMm_Ic, .threadMessageAccessoryAvatar-17qE_g
 {
 	border-radius: 0;
 }
@@ -604,10 +600,6 @@ Start boxes (borders) */
 .container-2McqkF
 {
 	border-radius: 0;
-}
-.theme-dark .elevationBorderHigh-3drnJX
-{
-	box-shadow: none;
 }
 	/* fixes each suggestion box */
 	.theme-dark .option-2KkUJO:after
@@ -848,6 +840,7 @@ Start boxes (borders) */
 .roleCircle-1EgnFN
 {
 	border-radius: 0;
+    border-width: 1px;
 }
 
 /* delet reply jump in mentions/unreads */
@@ -1124,6 +1117,12 @@ foreignObject[mask*="url(#"],
 .attachedBars-2BCP3l
 {
 	background: transparent;
+}
+
+/* reset username and role label colour */
+.headerTagUsernameNoNickname-1TjuLc,
+.bodyInnerWrapper-2bQs1k {
+    color: var(--interactive-normal);
 }
 
 /* -------------------- SPOILER STUFF ---- */
