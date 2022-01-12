@@ -88,13 +88,3 @@
     text-shadow:    0 0 5px var(--mainGlowColor),
                     0 0 10px var(--mainGlowColor);
 }
-
-.bodyInnerWrapper-2bQs1k {
-    color: var(--interactive-normal);
-}
-
-.spine-29OFwR {
-    border-radius: 0;
-	border-left-width: 3px;
-	border-top-width: 1px;
-}
