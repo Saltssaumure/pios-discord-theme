@@ -1169,6 +1169,16 @@ foreignObject[mask*="url(#"],
 }
 /* end spoiler stuff */
 
+/* status glow */
+.wrapper-1VLyxH[aria-label*="Online"] {
+	box-shadow: 0 0 10px #3fb27a;
+}
+.wrapper-1VLyxH[aria-label*="Do not disturb"] {
+	box-shadow: 0 0 10px #f04747;
+}
+.wrapper-1VLyxH[aria-label*="Idle"] {
+	box-shadow: 0 0 10px #faa61a;
+}
 
 /* scrollbar stuff */
 /* .scroller-2LSbBU is main chat scrollbar */
