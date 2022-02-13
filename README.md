@@ -1,6 +1,8 @@
 # SUPERHOT piOS Discord Theme
+[![GitHub downloads](https://img.shields.io/github/downloads/saltssaumure/pios-discord-theme/total?color=purple&label=GitHub%20downloads&style=flat-square)](https://github.com/Saltssaumure/pios-discord-theme/releases/latest "Latest release")
+![Total size](https://img.shields.io/github/repo-size/saltssaumure/pios-discord-theme?style=flat-square "Total size")
 
-![image](https://user-images.githubusercontent.com/29710355/123527529-72121600-d6d8-11eb-9580-da3987ee8398.png)
+![Screenshot of piOS Discord Theme applied to Discord desktop client](https://user-images.githubusercontent.com/29710355/123527529-72121600-d6d8-11eb-9580-da3987ee8398.png)
 
 Use with BetterDiscord.
 For status rings instead of bubbles, also install [RadialStatus](https://github.com/DiscordStyles/RadialStatus) theme.
