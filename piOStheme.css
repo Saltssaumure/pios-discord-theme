@@ -362,7 +362,7 @@ span[style="color: rgb(96, 125, 139);"]
 /* Hover/select on channels/names */
 /* .modeUnread-1zpFdA:hover .name-3_Dsmg, */
 /* .wrapper-1ucjTd:hover, */
-/* .content-3QAtGj:hover, */
+/* .content-1U25dZ:hover, */
 /* .da-selected */
 /* { */
     /* text-shadow: 0 0 5px blue; */
@@ -807,11 +807,11 @@ Start boxes (borders) */
 			{
 				fill: currentColor;
 			}
-		.lookFilled-1Gx00P.colorBrand-3pXr91 /* upload button */
+		.lookFilled-yCfaCM.colorBrand-I6CyqQ /* upload button */
 		{
 			background-color: var(--background-modifier-selected);
 		}
-			.lookFilled-1Gx00P.colorBrand-3pXr91:hover
+			.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover
 			{
 				background-color: var(--background-accent);
 			}
@@ -1047,7 +1047,7 @@ foreignObject[mask*="url(#"],
 
 .baseShapeRound-3epLEv, 			/* and stream/ping icons */
 .wrapperSimple-Js2rIO, 				/* and server icons */
-.expandedFolderBackground-1cujaW, .folderIconWrapper-1_bOZe, .iconInactive-26M06U	/* and server folder icons */
+.expandedFolderBackground-1cujaW, .folderIconWrapper-1oRIZr, .iconInactive-26M06U	/* and server folder icons */
 {
 	border-radius: 0;
 }
@@ -1086,11 +1086,11 @@ foreignObject[mask*="url(#"],
 	border-width: 2px 5px;
 	border-radius: 0;
 }
-	.button-38aScr
+	.button-f2h6uQ
 	{
 		border-radius: 0;
 	}
-	.lookFilled-1Gx00P.colorRed-1TFJan
+	.lookFilled-yCfaCM.colorRed-rQXKgM
 	{
 		background: var(--background-accent);
 	}
@@ -1181,9 +1181,9 @@ foreignObject[mask*="url(#"],
 }
 
 /* scrollbar stuff */
-/* .scroller-2LSbBU is main chat scrollbar */
-/* .auto-Ge5KZx is the friends list scrollbar */
-/* .thin-1ybCId are the thin bars that appear on hover */
+/* .scroller-kQBbkU is main chat scrollbar */
+/* .auto-2K3UW5 is the friends list scrollbar */
+/* .thin-31rlnD are the thin bars that appear on hover */
 .scroller-kQBbkU::-webkit-scrollbar,
 .auto-2K3UW5::-webkit-scrollbar
 {
