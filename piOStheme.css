@@ -10,22 +10,7 @@ Source for new class names:
 https://gist.github.com/ExperiBass/2375ac4f7088bb9410d81cd59495f462
 */
 
-/* 
-Colours:
-backgrounds: black
-text: white
-    --background-modifier-hover: rgba(255,0,0,0.2);
-    --background-modifier-active: rgba(255,0,0,0.7);
-    --background-modifier-selected: rgba(255,0,0,0.3);
-	
-	--background-mentioned: rgba(255,0,0,0.2);
-	--background-mentioned-hover: rgba(255,0,0,0.2);
-	
-	--mainGlowColor: rgba(0,255,255,0.7);   
-	--mutedGlowColor: rgba(200,255,255,0.2);
-	--SHTeamGlowColor: rgba(255,0,0,0.5);   
-	--SHMindsGlowColor: rgba(0,200,255,0.5);
-*/
+@import url(https://saltssaumure.github.io/borderradiant-discord-theme/br-main.css);
 
 @font-face {
     font-family: "FixedSysTrue";
@@ -37,8 +22,7 @@ text: white
     src: url("https://saltssaumure.github.io/pios-discord-theme/fonts/PerfectDosVga.ttf")
 }
 
-body
-{
+body {
 	--font-display: PerfectDOS, monospace; /* For server and channel title */
 }
 
@@ -55,21 +39,13 @@ body
 	--border-bright: white;
 	--background-embed: rgba(255,0,0,0.3);
 	--warning: hsl(0, calc(var(--saturation-factor)*100%), 50%); /* pure red */
-	
 	--header-primary: white;
 	--header-secondary: grey;
     --text-normal: white;
     --text-muted: grey;
     --text-link: white;
     --text-link-low-saturation: white;
-    /* --text-positive: hsl(139,calc(var(--saturation-factor, 1)*66.8%),58.6%); */
-    /* --text-warning: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%); */
-    /* --text-danger: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%); */
-    /* --interactive-normal: #b9bbbe; */
-    /* --interactive-hover: #dcddde; */
     --interactive-active: white; /* default: unread dot marker, current channel name */
-    /* --interactive-muted: #4f545c; */
-	
     --background-primary: black;
     --background-secondary: black;
     --background-secondary-alt: black;
@@ -78,60 +54,25 @@ body
     --background-floating: black;
 	--background-mentioned: hsla(0, calc(var(--saturation-factor)*100%), 50%, 0.2);
 	--channeltextarea-background: transparent;
-	
 	--divider-color: hsl(0, calc(var(--saturation-factor)*100%), 50%); /* color of new messages divider */
 	--info-warning-foreground: hsl(0, calc(var(--saturation-factor)*100%), 50%); /* colour of @ping message left side indicator */
-	
 	--font-display: PerfectDOS, monospace; /* For server and chanenl title */
 	--font-primary: PerfectDOS, monospace; /* For almost everything else */
 	--font-code: "FixedSysTrue", monospace; /* Code blocks */
-	
-    /* --background-mobile-primary: #36393f; */
-    /* --background-mobile-secondary: #2f3136; */
 	--background-modifier-hover: hsla(0, calc(var(--saturation-factor)*100%), 50%, 0.2);
     --background-modifier-active: hsla(0, calc(var(--saturation-factor)*100%), 50%, 0.7);
     --background-modifier-selected: hsla(0, calc(var(--saturation-factor)*100%), 50%, 0.3);
     --background-modifier-accent: transparent;
-
-    /* --info-positive-text: #fff; */
-    /* --info-warning-text: #fff; */
-    /* --info-danger-text: #fff; */
-    /* --info-help-background: hsla(197,calc(var(--saturation-factor, 1)*100%),47.8%,0.1); */
-    /* --info-help-foreground: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%); */
-    /* --info-help-text: #fff; */
-    /* --status-warning-text: #000; */
-	
     --scrollbar-thin-thumb: var(--background-accent);
     --scrollbar-thin-track: transparent;
     --scrollbar-auto-thumb: var(--background-accent);
     --scrollbar-auto-track: transparent;
     --scrollbar-auto-scrollbar-color-thumb: var(--background-accent);
     --scrollbar-auto-scrollbar-color-track: transparent;
-	
     --elevation-stroke: transparent;
     --elevation-low: transparent;
     --elevation-medium: transparent;
     --elevation-high: transparent;
-    
-    /* --logo-primary: #fff; */
-    /* --control-brand-foreground: hsl(227,calc(var(--saturation-factor, 1)*57.9%),77.6%); */
-    /* --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%); */
-    /* --background-mentioned: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1); */
-    /* --channels-default: #8e9297; */
-    /* --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4); */
-    
-    /* --activity-card-background: #202225; */
-    /* --textbox-markdown-syntax: #8e9297; */
-    /* --deprecated-card-bg: rgba(32,34,37,0.6); */
-    /* --deprecated-card-editable-bg: rgba(32,34,37,0.3); */
-    /* --deprecated-store-bg: #36393f; */
-    /* --deprecated-quickswitcher-input-background: #72767d; */
-    /* --deprecated-quickswitcher-input-placeholder: hsla(0,0%,100%,0.3); */
-    /* --deprecated-text-input-bg: rgba(0,0,0,0.1); */
-    /* --deprecated-text-input-border: rgba(0,0,0,0.3); */
-    /* --deprecated-text-input-border-hover: #040405; */
-    /* --deprecated-text-input-border-disabled: #202225; */
-    /* --deprecated-text-input-prefix: #dcddde; */
 	letter-spacing: -0.04rem;
 }
 
