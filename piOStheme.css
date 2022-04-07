@@ -14,17 +14,17 @@ https://gist.github.com/ExperiBass/2375ac4f7088bb9410d81cd59495f462
 
 @font-face {
     font-family: "FixedSysTrue";
-	font-smooth: none;
+	font-smooth: never;
     -webkit-font-smoothing: none;
-    -moz-osx-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
     src: url("https://saltssaumure.github.io/pios-discord-theme/fonts/FixedSysTrue.ttf");
 }
 
 @font-face {
     font-family: "PerfectDOS";
-	font-smooth: none;
+	font-smooth: never;
     -webkit-font-smoothing: none;
-    -moz-osx-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
     src: url("https://saltssaumure.github.io/pios-discord-theme/fonts/PerfectDosVga.ttf");
 }
 
