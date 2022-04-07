@@ -2,7 +2,7 @@
  * @name piOSTEST5
  * @author Saltssaumure#7557
  * @description Changed font host to Github. Please download the autoupdater from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/latest!
- * @version 5
+ * @version 6
 */
 
 /*
@@ -14,28 +14,29 @@ https://gist.github.com/ExperiBass/2375ac4f7088bb9410d81cd59495f462
 
 @font-face {
     font-family: "FixedSysTrue";
-    font-smooth: none;
+	font-smooth: none;
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: none;
-    src: url("https://saltssaumure.github.io/pios-discord-theme/fonts/FixedSysTrue.ttf")
+    src: url("https://saltssaumure.github.io/pios-discord-theme/fonts/FixedSysTrue.ttf");
 }
 
 @font-face {
     font-family: "PerfectDOS";
-    font-smooth: none;
+	font-smooth: none;
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: none;
-    src: url("https://saltssaumure.github.io/pios-discord-theme/fonts/PerfectDosVga.ttf")
+    src: url("https://saltssaumure.github.io/pios-discord-theme/fonts/PerfectDosVga.ttf");
 }
 
 body {
-	--font-display: PerfectDOS, monospace; /* For server and channel title */
+    --true-compact-message-spacing: var(--compact-message-spacing, 1);
+    --font-display: PerfectDOS, monospace; /* For server and channel title */
 }
 
 .theme-dark
 {
 	/* User editable glow colours - change the RGBA values to anything you like! */
-/* RGBA colour picker: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool */	
+	/* RGBA colour picker: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool */	
 	--mainGlowColor: hsla(180, calc(var(--saturation-factor)*100%), 50%, 0.7);   /* Glow colour for messages, names, channels. Default: cyan     */
 	--mutedGlowColor: hsla(180, calc(var(--saturation-factor)*100%), 89%, 0.2);/* Glow colour for muted channels.            Default: slate    */
 	--SHTeamGlowColor: rgba(255,0,0,0.5);   /* Glow colour for Superhot Team names.       Default: red      */
@@ -83,241 +84,172 @@ body {
 }
 
 /* discord friends tab: for some reason not currently using a variable */
-.theme-dark .container-2cd8Mz
-{
-	background-color: var(--background-primary);
+.theme-dark .container-2cd8Mz {
+    background-color: var(--background-primary);
 }
-	/* square off the corners in friend tab */
-	.actionButton-3-B2x-
-	{
-		border-radius: 0;
-	}
 
 /* give embeds a spicy red background */
-.embedFull-1HGV2S.markup-eYLPri
-{
-	background: var(--background-embed);
-	border-radius: 0;
-	border: 0;
-	text-shadow: none;
+.embedFull-1HGV2S.markup-eYLPri {
+    background: var(--background-embed);
+    border: 0;
+    text-shadow: none;
 }
-	.grid-1aWVsE
-	{
-		padding: 12px 18px;
-	}
-		.embedMargin-2PsaQ4
-		{
-			margin-top: 0;
-		}
-		
-	/* squares off images/videos embeds */
-	.embedImage-2Ynqkh img,
-	.embedImage-2Ynqkh video,
-	.embedThumbnail-2nTasl img,
-	.embedThumbnail-2nTasl video,
-	.embedVideo-2ixt5A img,
-	.embedVideo-2ixt5A video,
-	.embedMedia-1mdWSP,
-	.wrapper-1FP9YQ,
-	.imageWrapper-oMkQl4
-	{
-		border-radius: 0;
-	}	
-	/* play buttons on video */
-	.wrapper-x4po40
-	{
-		border-radius: 0;
-		padding: 12px 5px;
-	}
-	/* timeline slider */
-	.mediaBarGrabber-FvJKJg,
-	.mediaBarProgress-38I317,
-	.mediaBarProgress-38I317:after,
-	.mediaBarProgress-38I317:before
-	{
-		border-radius: 0;
-		background: var(--background-accent);
-	}
+.grid-1aWVsE {
+    padding: 12px 18px;
+}
+.embedMargin-2PsaQ4 {
+    margin-top: 0;
+}
+
+/* play buttons on video */
+.wrapper-x4po40 {
+    padding: 12px 5px;
+}
+/* timeline slider */
+.mediaBarGrabber-FvJKJg,
+.mediaBarProgress-38I317,
+.mediaBarProgress-38I317:after,
+.mediaBarProgress-38I317:before {
+    background: var(--background-accent);
+}
 
 /* "replying to message" bar set transparent with dotted underline */
-.replyBar-1oi75v
-{
-	border-bottom: 1px dashed var(--border);
-	border-radius: 0;
+.replyBar-1oi75v {
+    border-bottom: 1px dashed var(--border);
 }
-
-/* End colours/background
-
-/* stop eye searing reds */
-
-
-
 
 /*
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-Start glow */ 
+Start glow */
 
 /* Main section text glow */
-.markup-eYLPri
-{
-	text-shadow: 2px 0 10px var(--mainGlowColor), -2px 0 10px var(--mainGlowColor);
+.markup-eYLPri {
+    text-shadow: 2px 0 10px var(--mainGlowColor),
+        -2px 0 10px var(--mainGlowColor);
 }
 
 .repliedTextContent-2hOYMB.markup-eYLPri, /* but not on reply message preview */
-.edited-1v5nT8 /* but not on (edited) */
-{
-	text-shadow: none;
+.edited-1v5nT8 /* but not on (edited) */ {
+    text-shadow: none;
 }
-
-
 
 /* Superhot Team */
-span[style="color: rgb(196, 0, 0);"]
-{
-	text-shadow: 2px 0 5px var(--SHTeamGlowColor), -2px 0 5px var(--SHTeamGlowColor);
+span[style="color: rgb(196, 0, 0);"] {
+    text-shadow: 2px 0 5px var(--SHTeamGlowColor),
+        -2px 0 5px var(--SHTeamGlowColor);
 }
 /* SuperBOT */
-span[style="color: rgb(1, 1, 1);"]
-{
-	text-shadow: 2px 0 5px var(--SHMindsGlowColor), -2px 0 5px var(--SHMindsGlowColor);
+span[style="color: rgb(1, 1, 1);"] {
+    text-shadow: 2px 0 5px var(--SHMindsGlowColor),
+        -2px 0 5px var(--SHMindsGlowColor);
 }
 
 /* Light turquoise */
-span[style="color: rgb(26, 188, 156);"]
-{	
-	--lightturquoise: rgb(26, 188, 156);
-	text-shadow: 2px 0 5px var(--lightturquoise), -2px 0 5px var(--lightturquoise);
+span[style="color: rgb(26, 188, 156);"] {
+    --lightturquoise: rgb(26, 188, 156);
+    text-shadow: 2px 0 5px var(--lightturquoise),
+        -2px 0 5px var(--lightturquoise);
 }
-	/* Dark turquoise */
-	span[style="color: rgb(17, 128, 106);"]
-	{
-		--darkturquoise: rgb(17, 128, 106);
-		text-shadow: 2px 0 5px var(--darkturquoise), -2px 0 5px var(--darkturquoise);
-	}
+/* Dark turquoise */
+span[style="color: rgb(17, 128, 106);"] {
+    --darkturquoise: rgb(17, 128, 106);
+    text-shadow: 2px 0 5px var(--darkturquoise), -2px 0 5px var(--darkturquoise);
+}
 /* Light green */
-span[style="color: rgb(46, 204, 113);"]
-{
-	--lightgreen: rgb(46, 204, 113);
-	text-shadow: 2px 0 5px var(--lightgreen), -2px 0 5px var(--lightgreen);
+span[style="color: rgb(46, 204, 113);"] {
+    --lightgreen: rgb(46, 204, 113);
+    text-shadow: 2px 0 5px var(--lightgreen), -2px 0 5px var(--lightgreen);
 }
-	/* Dark green */
-	span[style="color: rgb(31, 139, 76);"]
-	{
-		--darkgreen: rgb(31, 139, 76);
-		text-shadow: 2px 0 5px var(--darkgreen), -2px 0 5px var(--darkgreen);
-	}
+/* Dark green */
+span[style="color: rgb(31, 139, 76);"] {
+    --darkgreen: rgb(31, 139, 76);
+    text-shadow: 2px 0 5px var(--darkgreen), -2px 0 5px var(--darkgreen);
+}
 /* Superhot Minds (and Light blue) */
-span[style="color: rgb(52, 152, 219);"]
-{
-	text-shadow: 2px 0 5px var(--SHMindsGlowColor), -2px 0 5px var(--SHMindsGlowColor);	
+span[style="color: rgb(52, 152, 219);"] {
+    text-shadow: 2px 0 5px var(--SHMindsGlowColor),
+        -2px 0 5px var(--SHMindsGlowColor);
 }
-	/* Dark blue */
-	span[style="color: rgb(32, 102, 148);"]
-	{
-		--darkblue: rgb(32, 102, 148);
-		text-shadow: 2px 0 5px var(--darkblue), -2px 0 5px var(--darkblue);
-	}
+/* Dark blue */
+span[style="color: rgb(32, 102, 148);"] {
+    --darkblue: rgb(32, 102, 148);
+    text-shadow: 2px 0 5px var(--darkblue), -2px 0 5px var(--darkblue);
+}
 /* Light purple */
-span[style="color: rgb(155, 89, 182);"]
-{
-	--lightpurple: rgb(155, 89, 182);
-	text-shadow: 2px 0 5px var(--lightpurple), -2px 0 5px var(--lightpurple);
+span[style="color: rgb(155, 89, 182);"] {
+    --lightpurple: rgb(155, 89, 182);
+    text-shadow: 2px 0 5px var(--lightpurple), -2px 0 5px var(--lightpurple);
 }
-	/* Dark purple */
-	span[style="color: rgb(113, 54, 138);"]
-	{
-		--darkpurple: rgb(113, 54, 138);
-		text-shadow: 2px 0 5px var(--darkpurple), -2px 0 5px var(--darkpurple);
-	}
+/* Dark purple */
+span[style="color: rgb(113, 54, 138);"] {
+    --darkpurple: rgb(113, 54, 138);
+    text-shadow: 2px 0 5px var(--darkpurple), -2px 0 5px var(--darkpurple);
+}
 /* Light pink */
-span[style="color: rgb(233, 30, 99);"]
-{
-	--lightpink: rgb(233, 30, 99);
-	text-shadow: 2px 0 5px var(--lightpink), -2px 0 5px var(--lightpink);
+span[style="color: rgb(233, 30, 99);"] {
+    --lightpink: rgb(233, 30, 99);
+    text-shadow: 2px 0 5px var(--lightpink), -2px 0 5px var(--lightpink);
 }
-	/* Dark pink */
-	span[style="color: rgb(173, 20, 87);"]
-	{
-		--darkpink: rgb(173, 20, 87);
-		text-shadow: 2px 0 5px var(--darkpink), -2px 0 5px var(--darkpink);
-	}
+/* Dark pink */
+span[style="color: rgb(173, 20, 87);"] {
+    --darkpink: rgb(173, 20, 87);
+    text-shadow: 2px 0 5px var(--darkpink), -2px 0 5px var(--darkpink);
+}
 /* Light yellow */
-span[style="color: rgb(241, 196, 15);"]
-{
-	--lightyellow: rgb(241, 196, 15);
-	text-shadow: 2px 0 5px var(--lightyellow), -2px 0 5px var(--lightyellow);
+span[style="color: rgb(241, 196, 15);"] {
+    --lightyellow: rgb(241, 196, 15);
+    text-shadow: 2px 0 5px var(--lightyellow), -2px 0 5px var(--lightyellow);
 }
-	/* Dark yellow */
-	span[style="color: rgb(194, 124, 14);"]
-	{
-		--darkyellow: rgb(194, 124, 14);
-		text-shadow: 2px 0 5px var(--darkyellow), -2px 0 5px var(--darkyellow);
-	}
+/* Dark yellow */
+span[style="color: rgb(194, 124, 14);"] {
+    --darkyellow: rgb(194, 124, 14);
+    text-shadow: 2px 0 5px var(--darkyellow), -2px 0 5px var(--darkyellow);
+}
 /* Light tan */
-span[style="color: rgb(230, 126, 34);"]
-{
-	--lighttan: rgb(230, 126, 34);
-	text-shadow: 2px 0 5px var(--lighttan), -2px 0 5px var(--lighttan);
+span[style="color: rgb(230, 126, 34);"] {
+    --lighttan: rgb(230, 126, 34);
+    text-shadow: 2px 0 5px var(--lighttan), -2px 0 5px var(--lighttan);
 }
-	/* Dark tan */
-	span[style="color: rgb(168, 67, 0);"]
-	{
-		--darktan: rgb(168, 67, 0);
-		text-shadow: 2px 0 5px var(--darktan), -2px 0 5px var(--darktan);
-	}
+/* Dark tan */
+span[style="color: rgb(168, 67, 0);"] {
+    --darktan: rgb(168, 67, 0);
+    text-shadow: 2px 0 5px var(--darktan), -2px 0 5px var(--darktan);
+}
 /* Light orange */
-span[style="color: rgb(231, 76, 60);"]
-{
-	--lightorange: rgb(231, 76, 60);
-	text-shadow: 2px 0 5px var(--lightorange), -2px 0 5px var(--lightorange);
+span[style="color: rgb(231, 76, 60);"] {
+    --lightorange: rgb(231, 76, 60);
+    text-shadow: 2px 0 5px var(--lightorange), -2px 0 5px var(--lightorange);
 }
-	/* Dark orange */
-	span[style="color: rgb(153, 45, 34);"]
-	{
-		--darkorange: rgb(153, 45, 34);
-		text-shadow: 2px 0 5px var(--darkorange), -2px 0 5px var(--darkorange);
-	}
+/* Dark orange */
+span[style="color: rgb(153, 45, 34);"] {
+    --darkorange: rgb(153, 45, 34);
+    text-shadow: 2px 0 5px var(--darkorange), -2px 0 5px var(--darkorange);
+}
 /* Light grey */
-span[style="color: rgb(149, 165, 166);"]
-{
-	--lightgrey: rgb(149, 165, 166);
-	text-shadow: 2px 0 5px var(--lightgrey), -2px 0 5px var(--lightgrey);
+span[style="color: rgb(149, 165, 166);"] {
+    --lightgrey: rgb(149, 165, 166);
+    text-shadow: 2px 0 5px var(--lightgrey), -2px 0 5px var(--lightgrey);
 }
-	/* Dark grey */
-	span[style="color: rgb(151, 156, 159);"]
-	{
-		--darkgrey: rgb(151, 156, 159);
-		text-shadow: 2px 0 5px var(--darkgrey), -2px 0 5px var(--darkgrey);
-	}
+/* Dark grey */
+span[style="color: rgb(151, 156, 159);"] {
+    --darkgrey: rgb(151, 156, 159);
+    text-shadow: 2px 0 5px var(--darkgrey), -2px 0 5px var(--darkgrey);
+}
 /* Light slate */
-span[style="color: rgb(96, 125, 139);"]
-{
-	--lightslate: rgb(96, 125, 139);
-	text-shadow: 2px 0 5px var(--lightslate), -2px 0 5px var(--lightslate);
+span[style="color: rgb(96, 125, 139);"] {
+    --lightslate: rgb(96, 125, 139);
+    text-shadow: 2px 0 5px var(--lightslate), -2px 0 5px var(--lightslate);
 }
-	/* Dark slate */
-	span[style="color: rgb(84, 110, 122);"]
-	{
-		--darkslate: rgb(84, 110, 122);
-		text-shadow: 2px 0 5px var(--darkslate), -2px 0 5px var(--darkslate);
-	}
-
-
-
-/* Hover/select on channels/names */
-/* .modeUnread-1zpFdA:hover .name-3_Dsmg, */
-/* .wrapper-1ucjTd:hover, */
-/* .content-1U25dZ:hover, */
-/* .da-selected */
-/* { */
-    /* text-shadow: 0 0 5px blue; */
-/* } */
+/* Dark slate */
+span[style="color: rgb(84, 110, 122);"] {
+    --darkslate: rgb(84, 110, 122);
+    text-shadow: 2px 0 5px var(--darkslate), -2px 0 5px var(--darkslate);
+}
 
 .theme-dark .wrapper-1ZcZW-, /* #channels and @pings */
-.markup-eYLPri a /* hyperlinks */
-{
+.markup-eYLPri a /* hyperlinks */ {
     color: white;
     text-shadow: 0 0 20px white;
 }
@@ -331,7 +263,7 @@ span[style="color: rgb(96, 125, 139);"]
 .zalgo-26OfGz.cozy-VmLDNB .header-2jRmjb,
     .username-h_Y3Us,
 /* and chat content */
-.zalgo-26OfGz .messageContent-2t3eCI{
+.zalgo-26OfGz .messageContent-2t3eCI {
     overflow: visible;
 }
 
@@ -339,7 +271,7 @@ span[style="color: rgb(96, 125, 139);"]
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-Start Fonts */ 
+Start Fonts */
 
 /* All caps on areas where case is not so important */
 /* importantly: excludes message text, searches, emoji, and status text */
@@ -356,66 +288,55 @@ Start Fonts */
 .children-3xh0VB, 		/* channel name and desc */
 .navButton-1XuvI-,		/* emoji/gif picker buttons */
 .categoryName-1iPNc5,	/* gif picker categories */
-.side-2ur1Qk 			/* settings list */
-{
-    text-transform: uppercase;	
+.side-2ur1Qk 			/* settings list */ {
+    text-transform: uppercase;
 }
 
 /* nukes formatting for code blocks bc readability is important for being a hackerman */
 .markup-eYLPri code.hljs,
-.markup-eYLPri code.inline
-{
+.markup-eYLPri code.inline {
     font-family: var(--font-code);
-	border: solid var(--border-code);
+    border: solid var(--border-code);
     border-width: 1px 3px;
     padding: 1px 8px 3px 8px;
     text-shadow: none;
-	border-radius: 0;
 }
 
 /* Underline #channels and @pings */
 .theme-dark .wrapper-1ZcZW-,
-.mention
-{
+.mention {
     text-decoration: underline;
-	border-radius: 0;
-	background: var(--background-embed);
+    background: var(--background-embed);
 }
-.roleMention-11Aaqi
-{
-	text-shadow: none;
+.roleMention-11Aaqi {
+    text-shadow: none;
 }
 
 /* Fix font size of channel group and user group labels to match others */
 .da-username,
 .container-q97qHp,
-.name-3YKhmS
-{
-    font-size: 16px	;
+.name-3YKhmS {
+    font-size: 16px;
 }
 
 .content-vSHmMD, /* Pins / calls message interjects */
 .timestamp-2qj4__, /* timestamp for the above */
-.mentionFilter-1PQ6ey .value-2k8Drt /* mentions, display: [everything] */
-{
-	text-transform: uppercase;
-	text-shadow: none;
+.mentionFilter-1PQ6ey .value-2k8Drt /* mentions, display: [everything] */ {
+    text-transform: uppercase;
+    text-shadow: none;
 }
-.compact-3bMNvi
-{
-	margin-left: 0;
+.compact-3bMNvi {
+    margin-left: 0;
 }
 
 /* in replying to user box, change @on colour to red as warning */
-.colorLink-2apWfY.mentionButton-3C5YMI
-{
-	color: var(--warning);
+.colorLink-2apWfY.mentionButton-3C5YMI {
+    color: var(--warning);
 }
 
 /* new message bubble delete */
-.unreadPill-3nEWYM
-{
-	display: none;
+.unreadPill-3nEWYM {
+    display: none;
 }
 
 /* square off jump to present bar
@@ -423,647 +344,418 @@ Start Fonts */
  and messages failed to load bar */
 .jumpToPresentBar-1cEnH0,
 .newMessagesBar-1hF-9G,
-.messagesErrorBar-1IQ1rH
-{
-	border-radius: 0;
-	background-color: var(--background-accent);
-	opacity: 0.7;
+.messagesErrorBar-1IQ1rH {
+    background-color: var(--background-accent);
+    opacity: 0.7;
 }
 
-/* square off new unreads bubble */
-.bar-2eAyLE
-{
-	border-radius: 0;
-}
-.mention-3XBnnZ /* make the server unread red */
-{
-	background-color: var(--background-accent);
+.mention-3XBnnZ /* make the server unread red */ {
+    background-color: var(--background-accent);
 }
 
 /* End fonts
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-Start boxes (borders) */ 
+Start boxes (borders) */
 
 /* box around the main section */
-.chatContent-3KubbW
-{
-	border: solid var(--border);
-	border-width: 2px 5px;
+.chatContent-3KubbW {
+    border: solid var(--border);
+    border-width: 2px 5px;
 }
 /* remove the wrong colour top line */
-.content-1jQy2l::before~
-{
-	display: none;
-}
-/* square off avatar */
-.avatar-2e8lTP,
-.executedCommandAvatar-3oOnb1, .replyAvatar-sHd2sU, .replyBadge-LMm_Ic, .threadMessageAccessoryAvatar-17qE_g
-{
-	border-radius: 0;
+.content-1jQy2l::before ~ {
+    display: none;
 }
 
 /* follow to get this channel's updates in your server add dotted topline */
-.form-3gdLxP .wrapper-2SplAX
-{
-	border-top: 1px dashed var(--border);
-	margin-top: 0;
+.form-3gdLxP .wrapper-2SplAX {
+    border-top: 1px dashed var(--border);
+    margin-top: 0;
 }
-	/* kill bird wumpus */
-	.image-3FliiM
-	{
-		display: none;
-	}
+/* kill bird wumpus */
+.image-3FliiM {
+    display: none;
+}
 
 /* info bubbles tooltips */
-.tooltip-14MtrL
-{
-	border: solid var(--border-bright);
-	border-width: 1px 3px;
-	border-radius: 0;
+.tooltip-14MtrL {
+    border: solid var(--border-bright);
+    border-width: 1px 3px;
 }
-	.tooltipPointer-3L49xb /* arrow pointing towards tooltip source*/
-	{
-		display: none;
-	}
-	.avatar-3TrM7c, /* avatars in tooltip */
-	.container-1jha_j .moreUsers-_v6T-L /* more users icon in tooltip */
-	{
-		border-radius: 0;
-	}
+.tooltipPointer-3L49xb /* arrow pointing towards tooltip source*/ {
+    display: none;
+}
 
 /* typing box */
-.channelTextArea-1VQBuV
-{
-	border: solid var(--border);
-	border-width: 2px 5px;
-	border-radius: 0;
+.channelTextArea-1VQBuV {
+    border: solid var(--border);
+    border-width: 2px 5px;
 }
-	.scrollableContainer-15eg7h
-	{
-		border-radius: 0;
-		min-height: 60px;
-	}
-		.fontSize24Padding-3GueH0
-		{
-			padding: 10px 0;
-		}
-	
-	/* yeet nitro */
-	button[aria-label="Send a gift"]
-	{
-		display: none;
-	}
-	
-/* suggestions when typing emoji */
-.autocomplete-3l_oCd
-{
-	border-radius: 0;
+.scrollableContainer-15eg7h {
+    min-height: 60px;
 }
-.theme-dark .autocomplete-3NRXG8
-{
-	background: var(--background-primary);
-	border: solid var(--border);
-	border-width: 1px 3px;
+.fontSize24Padding-3GueH0 {
+    padding: 10px 0;
 }
-	/* Selected/hovered emoji/user/channel */
-	.theme-dark .selected-3H3-RC
-	{
-		background: var(--background-modifier-selected);
-	}
-	.base-2v-uc0
-	{
-		border-radius: 0;
-	}
-	
+
+/* yeet nitro */
+button[aria-label="Send a gift"] {
+    display: none;
+}
+
+.theme-dark .autocomplete-3NRXG8 {
+    background: var(--background-primary);
+    border: solid var(--border);
+    border-width: 1px 3px;
+}
+/* Selected/hovered emoji/user/channel */
+.theme-dark .selected-3H3-RC {
+    background: var(--background-modifier-selected);
+}
+
 /* fixes search suggestion box */
-.theme-dark .container-2McqkF
-{
-	background: var(--background-primary);
-	border: solid var(--border-bright);
-	border-width: 1px 3px;
+.theme-dark .container-2McqkF {
+    background: var(--background-primary);
+    border: solid var(--border-bright);
+    border-width: 1px 3px;
 }
-.container-2McqkF
-{
-	border-radius: 0;
+/* fixes each suggestion box */
+.theme-dark .option-2KkUJO:after {
+    display: none;
 }
-	/* fixes each suggestion box */
-	.theme-dark .option-2KkUJO:after
-	{
-		display: none;
-	}
-	.option-2KkUJO.user-23VtPS .displayAvatar-3XS1w6
-	{
-		border-radius: 0;
-	}
-	.theme-dark .option-2KkUJO.selected-rZcOL-
-	{
-		background: var(--background-modifier-selected);
-	}
-	.option-2KkUJO
-	{
-		border-radius: 0;	
-	}	
-	/* fixes search result */
-	.theme-dark .focused-2FU0YH
-	{
-		background: var(--background-primary);
-	}
-.tab-2j5AEF
-{
-	border-radius: 0;
+.theme-dark .option-2KkUJO.selected-rZcOL- {
+    background: var(--background-modifier-selected);
 }
-	
-	
+/* fixes search result */
+.theme-dark .focused-2FU0YH {
+    background: var(--background-primary);
+}
+
 /* fixes date popup when you search before: after: */
 .theme-dark .calendarPicker-sDhzdi .react-datepicker,
 .theme-dark .calendarPicker-sDhzdi .react-datepicker__header,
-.theme-dark .calendarPicker-sDhzdi .react-datepicker__navigation.react-datepicker__navigation--previous,
-.theme-dark .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled,
-.theme-dark .calendarPicker-sDhzdi .react-datepicker__day--outside-month
-{
-	background-color: var(--background-primary);
+.theme-dark
+    .calendarPicker-sDhzdi
+    .react-datepicker__navigation.react-datepicker__navigation--previous,
+.theme-dark
+    .calendarPicker-sDhzdi
+    .react-datepicker__day.react-datepicker__day--disabled,
+.theme-dark .calendarPicker-sDhzdi .react-datepicker__day--outside-month {
+    background-color: var(--background-primary);
 }
 /* day box on hover */
-.theme-dark .calendarPicker-Dhzdi .react-datepicker__day.react-datepicker__day--selected:hover,
-.theme-dark .calendarPicker-Dhzdi .react-datepicker__day:hover
-{
-	background-color: var(--background-modifier-hover);
+.theme-dark
+    .calendarPicker-Dhzdi
+    .react-datepicker__day.react-datepicker__day--selected:hover,
+.theme-dark .calendarPicker-Dhzdi .react-datepicker__day:hover {
+    background-color: var(--background-modifier-hover);
 }
-	/* previous / next month buttons */
-	.calendarPicker-Dhzdi .react-datepicker__navigation.react-datepicker__navigation--next,
-	.calendarPicker-Dhzdi .react-datepicker__navigation.react-datepicker__navigation--previous
-	{
-		border-radius: 0;
-	}
-
-	/* day box size */
-	.calendarPicker-Dhzdi .react-datepicker__day
-	{
-		--daywidth: 36px;
-		height: var(--daywidth);
-		width: var(--daywidth);
-		line-height: var(--daywidth);
-	}
-		/* unrounds the corners */
-		.calendarPicker-Dhzdi .react-datepicker__week:first-of-type>.react-datepicker__day:first-of-type,
-		.calendarPicker-Dhzdi .react-datepicker__week:first-of-type>.react-datepicker__day:last-of-type,
-		.calendarPicker-Dhzdi .react-datepicker__week:last-of-type>.react-datepicker__day:first-of-type,
-		.calendarPicker-Dhzdi .react-datepicker__week:last-of-type>.react-datepicker__day:last-of-type
-		{
-			border-radius: 0;
-		}
-	.calendarPicker-Dhzdi .react-datepicker__day-name
-	{
-		width: 36px; /* why does this not work with daywidth */
-	}
-	/* current day underbar*/
-	.theme-dark .calendarPicker-Dhzdi .react-datepicker__day.react-datepicker__day--selected:after
-	{
-		background: var(--background-accent);
-	}
-	/* hint bubble */
-	.datePicker-70cO23 .datePickerHint-17MnA8 .hintValue-1x-flY
-	{
-		border-radius: 0;
-	}
-		.theme-dark .datePicker-70cO23 .datePickerHint-17MnA8 .hintValue-1x-flY
-		{
-			background: var(--background-modifier-selected);
-		}
-		.theme-dark .datePicker-70cO23 .datePickerHint-17MnA8 .hintValue-1x-flY:hover
-		{
-			background: var(--background-accent);
-		}
-	
-/* search modifiers eg has: from: */
-.searchFilter-2UfsDk,
-.search-1FM8Qc .DraftEditor-root .DraftEditor-editorContainer,
-.searchAnswer-23w-CH
-{
-	border-radius: 0;
+/* day box size */
+.calendarPicker-Dhzdi .react-datepicker__day {
+    --daywidth: 36px;
+    height: var(--daywidth);
+    width: var(--daywidth);
+    line-height: var(--daywidth);
+}
+.calendarPicker-Dhzdi .react-datepicker__day-name {
+    width: 36px; /* why does this not work with daywidth */
+}
+/* current day underbar*/
+.theme-dark
+    .calendarPicker-Dhzdi
+    .react-datepicker__day.react-datepicker__day--selected:after {
+    background: var(--background-accent);
+}
+.theme-dark .datePicker-70cO23 .datePickerHint-17MnA8 .hintValue-1x-flY {
+    background: var(--background-modifier-selected);
+}
+.theme-dark .datePicker-70cO23 .datePickerHint-17MnA8 .hintValue-1x-flY:hover {
+    background: var(--background-accent);
 }
 
-/* search results */
-.searchResult-O9NDji
-{
-	border-radius: 0;
-}
-
-/* draw bright borders around boxes */	
+/* draw bright borders around boxes */
 .contentWrapper-3vHNP2,			/* emoji/gif selector box (from message box)*/
 #emoji-picker-tab-panel[role="dialog"], /* emoji picker for reactions */
 .userPopout-2j1gM4,				/* user profile popouts */
 .messagesPopoutWrap-3zryHW,		/* pinned messages box */
-.container-2ebMPP				/* mentions box */
-{
-	border-radius: 0;
-	border: solid var(--border-bright);
-	border-width: 2px 5px;
+.container-2ebMPP				/* mentions box */ {
+    border: solid var(--border-bright);
+    border-width: 2px 5px;
 }
 
 /* decrease text size in the above boxes */
 .messagesPopoutWrap-3zryHW .markup-eYLPri,
-.container-2ebMPP .markup-eYLPri
-{
-	font-size: smaller;
-	line-height: 1rem;
+.container-2ebMPP .markup-eYLPri {
+    font-size: smaller;
+    line-height: 1rem;
 }
 
 /* Emoji reaction picker style */
-#emoji-picker-tab-panel[role="dialog"]
-{
-	background: var(--background-primary);
+#emoji-picker-tab-panel[role="dialog"] {
+    background: var(--background-primary);
 }
-	.emojiPicker-6YCk8a /* square off the internal box */
-	{
-		box-shadow: none;
-		background: transparent;
-	}
-		.navButton-1XuvI- /* square off the gif/emoji tab buttons */
-		{
-			border-radius: 0;
-		}
-		.diversitySelectorOptions-3DhNYs /* draws box around skin tone selector */
-		{
-			border-radius: 0;
-			border: solid var(--border);
-			border-width: 1px 3px;
-		}
-		.emojiItem-277VFM, /* squares off each emoji */
-		.sticker-H2HhJD, /* squares off each sticker */	
-		.gif-1EWTs-, /* squares off each gif */
-		.categoryFade-2EGqIh,
-		.categoryFadeBlurple-1HuV1x
-		{
-			border-radius: 0;
-		}
-			.gif-1EWTs-:after
-			{
-				display: none;
-			}
-			
-			.inspectedIndicator-27zwNZ, /* remove mask on sticker */
-			.assetWrapperMasked-1iw9lV
-			{
-				mask: none; /* this doesnt seem to do anything */
-				-webkit-mask: none;
-				border-radius: 0;
-			}
-			
-.reaction-2A2y9y /* squares off reactions */
-{
-	border-radius: 0;
+.emojiPicker-6YCk8a /* square off the internal box */ {
+    box-shadow: none;
+    background: transparent;
 }
-.reaction-2A2y9y.reactionMe-3I9gFK /* and turns red on reactions you've added */
-{
-	border-color: var(--background-accent);
-	background-color: var(--background-modifier-selected);
+.diversitySelectorOptions-3DhNYs /* draws box around skin tone selector */ {
+    border: solid var(--border);
+    border-width: 1px 3px;
+}
+.gif-1EWTs-:after {
+    display: none;
+}
+
+.inspectedIndicator-27zwNZ, /* remove mask on sticker */
+			.assetWrapperMasked-1iw9lV {
+    mask: none; /* this doesnt seem to do anything */
+    -webkit-mask: none;
+}
+
+.reaction-2A2y9y.reactionMe-3I9gFK /* and turns red on reactions you've added */ {
+    border-color: var(--background-accent);
+    background-color: var(--background-modifier-selected);
 }
 
 /* image uploader popup */
-.uploadModal-2ie9O_
-{
-	border-radius: 0;
-	border: solid var(--border);
-	border-width: 2px 5px;
+.uploadModal-2ie9O_ {
+    border: solid var(--border);
+    border-width: 2px 5px;
 }
-	.theme-dark .uploadModal-2ie9O_
-	{
-		background: var(--background-primary);
-	}
-		.uploadModal-2ie9O_ .inner-rBP-MS .file-163EuR .icon-HW4tZ-.image-2ssF8k
-		{
-			border-radius: 0;
-		}
-	.theme-dark .footer-VCsJQY
-	{
-		background-color: transparent;
-	}
-		.box-BHImcZ /* mark as spoiler box */
-		{
-			border-radius: 0;
-		}
-			.theme-dark .checkbox-f1HnKB.checked-1pZh2h /* when spoiler is marked */
-			{
-				border-color: var(--background-accent)!important;
-				color: var(--background-accent); /* passes color to SVG tick */
-			}
-			.theme-dark .checkbox-f1HnKB.checked-1pZh2h path
-			{
-				fill: currentColor;
-			}
-		.lookFilled-yCfaCM.colorBrand-I6CyqQ /* upload button */
-		{
-			background-color: var(--background-modifier-selected);
-		}
-			.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover
-			{
-				background-color: var(--background-accent);
-			}
+.theme-dark .uploadModal-2ie9O_ {
+    background: var(--background-primary);
+}
+.theme-dark .footer-VCsJQY {
+    background-color: transparent;
+}
+.theme-dark .checkbox-f1HnKB.checked-1pZh2h /* when spoiler is marked */ {
+    border-color: var(--background-accent) !important;
+    color: var(--background-accent); /* passes color to SVG tick */
+}
+.theme-dark .checkbox-f1HnKB.checked-1pZh2h path {
+    fill: currentColor;
+}
+.lookFilled-yCfaCM.colorBrand-I6CyqQ /* upload button */ {
+    background-color: var(--background-modifier-selected);
+}
+.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover {
+    background-color: var(--background-accent);
+}
 
-/* Style user profile popouts */
-.userPopout-2j1gM4
-{
-	border-radius: 0;
+/* about me ```code``` from inline to block */
+.aboutMeBody-1J8rhz code.inline {
+    display: block;
+    margin: 0;
+    margin-bottom: -1.2em;
 }
-	/* message user box */
-	.input-2g-os5
-	{
-		border-radius: 0;
-	}
-	
-	/* about me ```code``` from inline to block */
-	.aboutMeBody-1J8rhz code.inline
-	{
-		display: block;
-		margin: 0;
-		margin-bottom: -1.2em;
-	}
 
 /* role */
 .role-2TIOKu,
-.roleCircle-1EgnFN
-{
-	border-radius: 0;
+.roleCircle-1EgnFN {
     border-width: 1px;
 }
 
 /* delet reply jump in mentions/unreads */
 .container-iA3Qrz .compact-2Nkcau .repliedMessage-3Z6XBG,
-.container-2ebMPP .compact-2Nkcau .repliedMessage-3Z6XBG
-{
-	display: none;
+.container-2ebMPP .compact-2Nkcau .repliedMessage-3Z6XBG {
+    display: none;
 }
-.topPill-3DJJNV .item-3XjbnG /* square off mentions/unreads buttons */
-{
-	border-radius: 0;
-}
-.menu-1QACrS /* filter gets box border */
-{
-	border: solid var(--border);
-	border-width: 1px 3px;
-	border-radius: 0;
+.menu-1QACrS /* filter gets box border */ {
+    border: solid var(--border);
+    border-width: 1px 3px;
 }
 
 /* blurs out emojis and stickers that require nitro when no nitro is active */
 .emojiItemDisabled-3VVnwp,
-.stickerUnsendable-PkQAxI
-{
-	filter: blur(1px) grayscale(100%) opacity(40%);
+.stickerUnsendable-PkQAxI {
+    filter: blur(1px) grayscale(100%) opacity(40%);
 }
 
 /* square off block quote starter */
-.blockquoteContainer-3VtvI1 .blockquoteDivider-363utW
-{
-	border-radius: 0;
-	width: 3px;
+.blockquoteContainer-3VtvI1 .blockquoteDivider-363utW {
+    width: 3px;
 }
 
 /* reply pipe */
-.repliedMessage-3Z6XBG:before
-{
-	border-radius: 0;
-	border-left-width: 3px;
-	border-top-width: 1px;
-}
-
-/* inbox icon squaring */
-.iconActiveMedium-27_R5B
-{
-	border-radius: 0;
+.repliedMessage-3Z6XBG:before {
+    border-left-width: 3px;
+    border-top-width: 1px;
 }
 
 /* hmmm what if soup text boxes in compact mode*/
 .message-2CShn3.compact-2Nkcau,
 .message-372Ods.compact-2Nkcau,
-.message-3g3FYR.compact-2Nkcau
-{
-	/* these don't want to be in a single border property */
-	border-width: 1px 3px;
-	border-style: solid;
-	border-color: var(--border);
-	margin: calc(var(--compact-message-spacing)*1.5rem) 3rem;
-	padding: 1rem 1rem .5rem 1rem;
-	padding-right: 1rem!important;
+.message-3g3FYR.compact-2Nkcau {
+    /* these don't want to be in a single border property */
+    border-width: 1px 3px;
+    border-style: solid;
+    border-color: var(--border);
+    margin: calc(var(--true-compact-message-spacing) * 1.5rem) 3rem;
+    padding: 1rem 1rem 0.5rem 1rem;
+    padding-right: 1rem !important;
 }
-	
-	/* name and timestamp in main message section*/
-	.message-2CShn3.compact-2Nkcau .header-2jRmjb,
-	.message-372Ods.compact-2Nkcau .header-2jRmjb,
-	.message-3g3FYR.compact-2Nkcau .header-2jRmjb
-	{
-		position: absolute;
-		top: -1.6rem;
-		display: flex;
-		flex-direction: row-reverse;
-	}
 
-	.message-372Ods,
-	.message-3g3FYR
-	{
-		overflow: visible;
-	}
-		
-		.compact-2Nkcau .headerText-2z4IhQ
-		{
-			margin-right: 0;
-		}
-		
-		.compact-2Nkcau .header-2jRmjb>span
-		{
-			display: block;
-		}
-			.compact-2Nkcau .header-2jRmjb
-			{
-				background: linear-gradient(transparent, var(--background-primary) 40%, transparent 60%);
-			}
-				/* Hides timestamps for the same time as previous message */
-				.compact-2Nkcau .header-2jRmjb>.timestampVisibleOnHover-9PEuZS
-				{
-					width: 0;
-					color: transparent;
-				}
-			
-	/* reply if any */
-	.compact-2Nkcau .repliedMessage-3Z6XBG::before
-	{
-		display: none;
-	}
-	.compact-2Nkcau .repliedMessage-3Z6XBG
-	{
-		position: absolute;
-		right: .5rem;
-		padding-left: 0;
-		top: -.6rem;
-		max-width: 400px;
-		background: linear-gradient(transparent, var(--background-primary) 50%, transparent 60%);
-		display: flex;
-		justify-content: flex-end;
-		z-index: 1;
-	}
-	.compact-2Nkcau .replyBadge-LMm_Ic
-	{
-		border-radius: 0; 
-		background: transparent;
-	}
-	
-	/* the message itself */
-	.compact-2Nkcau .contents-2MsGLg
-	{
-		margin: 0;
-		padding-left: 0;
-		text-indent: 0;
-	}
+/* name and timestamp in main message section*/
+.message-2CShn3.compact-2Nkcau .header-2jRmjb,
+.message-372Ods.compact-2Nkcau .header-2jRmjb,
+.message-3g3FYR.compact-2Nkcau .header-2jRmjb {
+    position: absolute;
+    top: -1.6rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.message-372Ods,
+.message-3g3FYR {
+    overflow: visible;
+}
+
+.compact-2Nkcau .headerText-2z4IhQ {
+    margin-right: 0;
+}
+
+.compact-2Nkcau .header-2jRmjb > span {
+    display: block;
+}
+.compact-2Nkcau .header-2jRmjb {
+    background: linear-gradient(
+        transparent,
+        var(--background-primary) 40%,
+        transparent 60%
+    );
+}
+/* Hides timestamps for the same time as previous message */
+.compact-2Nkcau .header-2jRmjb > .timestampVisibleOnHover-9PEuZS {
+    width: 0;
+    color: transparent;
+}
+
+/* reply if any */
+.compact-2Nkcau .repliedMessage-3Z6XBG::before {
+    display: none;
+}
+.compact-2Nkcau .repliedMessage-3Z6XBG {
+    position: absolute;
+    right: 0.5rem;
+    padding-left: 0;
+    top: -0.6rem;
+    max-width: 400px;
+    background: linear-gradient(
+        transparent,
+        var(--background-primary) 50%,
+        transparent 60%
+    );
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+}
+.compact-2Nkcau .replyBadge-LMm_Ic {
+    background: transparent;
+}
+
+/* the message itself */
+.compact-2Nkcau .contents-2MsGLg {
+    margin: 0;
+    padding-left: 0;
+    text-indent: 0;
+}
 
 /* remove box if system message eg. pin*/
-.systemMessage-1H1Z20.message-2CShn3.compact-2Nkcau
-{
-	border: 0;
+.systemMessage-1H1Z20.message-2CShn3.compact-2Nkcau {
+    border: 0;
 }
-	/* vertically center pin icon */
-	.iconContainer-2rPbqG
-	{
-		padding: 0.1rem;
-	}
-	/* remove link glow on pin */
-	.systemMessage-1H1Z20 .markup-eYLPri a
-	{
-		text-shadow: none;
-	}
-	
-/* message react/reply etc buttons */
-.compact-2Nkcau .container-2gUZhU
-{
-	top: -16px;
+/* vertically center pin icon */
+.iconContainer-2rPbqG {
+    padding: 0.1rem;
 }
-	.wrapper-2vIMkT
-	{
-	border-radius: 0;
-	border: solid var(--border);
-	border-width: 1px 3px;
-	}
-	
-/* Adds dashes between channel groups */
-.containerDefault-3TQ5YN:not(:nth-of-type(2))::before
-{
-	font-size: 16pt;
-    content: "-------------------";
-    color: var(--channels-default);
-	margin-left: 5px;
-}
-/* adds dashes between member groups */
-.membersGroup-2eiWxl.container-q97qHp:not(:first-of-type)::before
-{
-	font-size: 16pt;
-	display: block;
-	position: relative;
-    content: "-----------------";
-    color: var(--channels-default);
-	padding-bottom:6px;
-	font-weight: 9;
-}
-	
-/* square off member box */
-.layout-1qmrhw
-{
-	border-radius: 0;
+/* remove link glow on pin */
+.systemMessage-1H1Z20 .markup-eYLPri a {
+    text-shadow: none;
 }
 
-.membersGroup-2eiWxl:not(:first-of-type)
-{
-	height: 56px;
-	padding-top: 18px;
+/* message react/reply etc buttons */
+.compact-2Nkcau .container-2gUZhU {
+    top: -16px;
 }
-	
+.wrapper-2vIMkT {
+    border: solid var(--border);
+    border-width: 1px 3px;
+}
+
+/* Adds dashes between channel groups */
+.containerDefault-3TQ5YN:not(:nth-of-type(2))::before {
+    font-size: 16pt;
+    content: "-------------------";
+    color: var(--channels-default);
+    margin-left: 5px;
+}
+/* adds dashes between member groups */
+.membersGroup-2eiWxl.container-q97qHp:not(:first-of-type)::before {
+    font-size: 16pt;
+    display: block;
+    position: relative;
+    content: "-----------------";
+    color: var(--channels-default);
+    padding-bottom: 6px;
+    font-weight: 9;
+}
+
+.membersGroup-2eiWxl:not(:first-of-type) {
+    height: 56px;
+    padding-top: 18px;
+}
+
 /* ---------------sdfsdfsdf SQUARE TEIM */
 
 /* squares off user icons */
 foreignObject[mask*="url(#"],
 .assetsLargeMaskUserPopout-3N96A8,
-.assetsLargeMaskStreamPreview--ugZjW
-{
-	mask: none;
+.assetsLargeMaskStreamPreview--ugZjW {
+    mask: none;
 }
-.wrapper-1VLyxH /* including in user profile popover */
-{
-	border-radius: 0;
-	border-width: 2px 5px;
+.wrapper-1VLyxH /* including in user profile popover */ {
+    border-width: 2px 5px;
 }
 
-.baseShapeRound-3epLEv, 			/* and stream/ping icons */
-.wrapperSimple-Js2rIO, 				/* and server icons */
-.expandedFolderBackground-1cujaW, .folderIconWrapper-1oRIZr, .iconInactive-26M06U	/* and server folder icons */
-{
-	border-radius: 0;
-}
-
-.numberBadge-37OJ3S /*  make ping icon actually follow the colour scheme */
-{
-	background: var(--background-accent)!important; /* unfortunately it's styled inline so I gotta !important*/
-	padding: 2px 0 0 2px;	/* this centers the number but it's no longer square hmmmm*/
-	width: 18px!important; /* unfortunately it's styled inline so I gotta !important*/
-}
-
-/* squares off channels */
-.content-1gYQeQ
-{
-	border-radius: 0;
+.numberBadge-37OJ3S /*  make ping icon actually follow the colour scheme */ {
+    background: var(
+        --background-accent
+    ) !important; /* unfortunately it's styled inline so I gotta !important*/
+    padding: 2px 0 0 2px; /* this centers the number but it's no longer square hmmmm*/
+    width: 18px !important; /* unfortunately it's styled inline so I gotta !important*/
 }
 
 /* square off unread dot and change to warning color */
 .unread-36eUEm,
-.item-2LIpTv
-{
-	border-radius: 0;
-	background-color: var(--warning);
+.item-2LIpTv {
+    background-color: var(--warning);
 }
 
 /* fix popup that dims everything else */
 .theme-dark .root-g14mjS,
-.theme-dark .footer-31IekZ
-{
-	background-color: var(--background-primary);
-	box-shadow: none;
+.theme-dark .footer-31IekZ {
+    background-color: var(--background-primary);
+    box-shadow: none;
 }
-.theme-dark .root-g14mjS
-{
-	border: solid var(--border);
-	border-width: 2px 5px;
-	border-radius: 0;
+.theme-dark .root-g14mjS {
+    border: solid var(--border);
+    border-width: 2px 5px;
 }
-	.button-f2h6uQ
-	{
-		border-radius: 0;
-	}
-	.lookFilled-yCfaCM.colorRed-rQXKgM
-	{
-		background: var(--background-accent);
-	}
-
-/* Stream picture in picture */	
-.pictureInPictureVideo-2puO2Q
-{
-	border-radius: 0;
-	border: solid var(--border-bright);
-	border-width: 2px 5px;
+.lookFilled-yCfaCM.colorRed-rQXKgM {
+    background: var(--background-accent);
 }
 
-/* Icon for streamed game */
-.icon-10cLkJ,
-.badge-3RBqXG,
-/* vc user icon and live sign */
-.avatar-3FKimL,
-.liveShapeRound-2Tgi2d
-{
-	border-radius: 0;
+/* Stream picture in picture */
+.pictureInPictureVideo-2puO2Q {
+    border: solid var(--border-bright);
+    border-width: 2px 5px;
 }
 
 /* replying to bar */
-.attachedBars-2BCP3l
-{
-	background: transparent;
+.attachedBars-2BCP3l {
+    background: transparent;
 }
 
 /* reset username and role label colour */
@@ -1073,58 +765,55 @@ foreignObject[mask*="url(#"],
 }
 
 /* -------------------- SPOILER STUFF ---- */
-.theme-dark .spoilerText-27bIiA.hidden-3B-Rum
-{
-	background: repeating-linear-gradient(
-		-45deg,
-		transparent,
-		transparent 4px,
-		rgba(0,255,255,0.2) 2px,
-		rgba(0,255,255,0.2) 6px
-	);
-	background-color: transparent;
-	filter: drop-shadow(0px 0px 5px var(--background-accent));
+.theme-dark .spoilerText-27bIiA.hidden-3B-Rum {
+    background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 4px,
+        rgba(0, 255, 255, 0.2) 2px,
+        rgba(0, 255, 255, 0.2) 6px
+    );
+    background-color: transparent;
+    filter: drop-shadow(0px 0px 5px var(--background-accent));
 }
 
 .theme-dark .spoilerText-27bIiA.hidden-3B-Rum:hover,
-.spoilerText-27bIiA
-{
-	background: repeating-linear-gradient(
-		-45deg,
-		transparent,
-		transparent 4px,
-		rgba(0,255,255,0.2) 2px,
-		rgba(0,255,255,0.2) 6px
-	);
-	filter: none;
+.spoilerText-27bIiA {
+    background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 4px,
+        rgba(0, 255, 255, 0.2) 2px,
+        rgba(0, 255, 255, 0.2) 6px
+    );
+    filter: none;
 }
 
-.theme-dark .spoilerWarning-8ovW0v
-{
-	background: repeating-linear-gradient(
-		-45deg,
-		rgba(0,0,0,0.2),
-		rgba(0,0,0,0.2) 4px,
-		rgba(0,255,255,0.2) 2px,
-		rgba(0,255,255,0.2) 6px
-	);
-	width:100%;
-	height:100%;
-	line-height: 200%;
-	align-items: flex-start;
-	margin-left: 0.6em;
+.theme-dark .spoilerWarning-8ovW0v {
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2) 4px,
+        rgba(0, 255, 255, 0.2) 2px,
+        rgba(0, 255, 255, 0.2) 6px
+    );
+    width: 100%;
+    height: 100%;
+    line-height: 200%;
+    align-items: flex-start;
+    margin-left: 0.6em;
 }
 /* end spoiler stuff */
 
 /* status glow */
 .wrapper-1VLyxH[aria-label*="Online"] {
-	box-shadow: 0 0 10px #3fb27a;
+    box-shadow: 0 0 10px #3fb27a;
 }
 .wrapper-1VLyxH[aria-label*="Do not disturb"] {
-	box-shadow: 0 0 10px #f04747;
+    box-shadow: 0 0 10px #f04747;
 }
 .wrapper-1VLyxH[aria-label*="Idle"] {
-	box-shadow: 0 0 10px #faa61a;
+    box-shadow: 0 0 10px #faa61a;
 }
 
 /* scrollbar stuff */
@@ -1132,23 +821,15 @@ foreignObject[mask*="url(#"],
 /* .auto-2K3UW5 is the friends list scrollbar */
 /* .thin-31rlnD are the thin bars that appear on hover */
 .scroller-kQBbkU::-webkit-scrollbar,
-.auto-2K3UW5::-webkit-scrollbar
-{
+.auto-2K3UW5::-webkit-scrollbar {
     width: 5px;
 }
-	.scroller-kQBbkU::-webkit-scrollbar-thumb,
-	.scroller-kQBbkU::-webkit-scrollbar-track,
-	.auto-2K3UW5::-webkit-scrollbar-thumb,
-	.auto-2K3UW5::-webkit-scrollbar-track
-	{
-		border-width: 10px;
-	}
-	/* squares thumb */
-	.auto-2K3UW5::-webkit-scrollbar-thumb,
-	.thin-31rlnD::-webkit-scrollbar-thumb
-	{
-		border-radius: 0;
-	}
+.scroller-kQBbkU::-webkit-scrollbar-thumb,
+.scroller-kQBbkU::-webkit-scrollbar-track,
+.auto-2K3UW5::-webkit-scrollbar-thumb,
+.auto-2K3UW5::-webkit-scrollbar-track {
+    border-width: 10px;
+}
 
 /* end scrollbar stuff */
 
@@ -1160,7 +841,8 @@ foreignObject[mask*="url(#"],
 #bd-customcss-detach-container.inline,
 #bd-customcss-detach-container.hljs :-webkit-any(ol, li, span),
 .editor-wrapper :-webkit-any(textarea, div, span) {
-    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+    font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro",
+        monospace;
     text-transform: none;
     text-shadow: none;
 }
