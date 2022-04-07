@@ -55,3 +55,20 @@ span[style="color: rgb(1, 1, 1);"] {
     --SHMindsGlowColor: rgba(0,200,255,0.5);
     text-shadow: 0 0 5px var(--SHMindsGlowColor) ,0 0 5px var(--mainGlowColor);
 }
+
+/* status glow */
+.wrapper-1VLyxH[aria-label*="Online"] {
+    --statusGlowColor: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);
+}
+.wrapper-1VLyxH[aria-label*="Do Not Disturb"] {
+    --statusGlowColor: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%);
+}
+.wrapper-1VLyxH[aria-label*="Idle"] {
+    --statusGlowColor: hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%);
+}
+.wrapper-1VLyxH[aria-label*="Streaming"] {
+    --statusGlowColor: hsl(262, calc(var(--saturation-factor, 1) * 46.8%), 39.8%);
+}
+.wrapper-1VLyxH {
+    box-shadow: 0 0 10px var(--statusGlowColor);
+}

@@ -11,7 +11,7 @@ https://gist.github.com/ExperiBass/2375ac4f7088bb9410d81cd59495f462
 */
 
 @import url(https://saltssaumure.github.io/borderradiant-discord-theme/br-main.css);
-@import url(https://saltssaumure.github.io/pios-discord-theme/piOSglow.css)
+@import url(https://saltssaumure.github.io/pios-discord-theme/piOSglow.css);
 
 @font-face {
     font-family: "FixedSysTrue";
@@ -114,16 +114,6 @@ body {
 }
 
 /*
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-Start glow */
-
-
-
-
-
-/* End glow
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -254,11 +244,6 @@ Start boxes (borders) */
 }
 .fontSize24Padding-3GueH0 {
     padding: 10px 0;
-}
-
-/* yeet nitro */
-button[aria-label="Send a gift"] {
-    display: none;
 }
 
 .theme-dark .autocomplete-3NRXG8 {
@@ -661,16 +646,7 @@ foreignObject[mask*="url(#"],
 }
 /* end spoiler stuff */
 
-/* status glow */
-.wrapper-1VLyxH[aria-label*="Online"] {
-    box-shadow: 0 0 10px #3fb27a;
-}
-.wrapper-1VLyxH[aria-label*="Do not disturb"] {
-    box-shadow: 0 0 10px #f04747;
-}
-.wrapper-1VLyxH[aria-label*="Idle"] {
-    box-shadow: 0 0 10px #faa61a;
-}
+
 
 /* scrollbar stuff */
 /* .scroller-kQBbkU is main chat scrollbar */
