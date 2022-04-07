@@ -1,5 +1,5 @@
 /**
- * @name piOSTEST5
+ * @name piOSTEST6
  * @author Saltssaumure#7557
  * @description Changed font host to Github. Please download the autoupdater from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/latest!
  * @version 6
@@ -11,6 +11,7 @@ https://gist.github.com/ExperiBass/2375ac4f7088bb9410d81cd59495f462
 */
 
 @import url(https://saltssaumure.github.io/borderradiant-discord-theme/br-main.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/piOSglow.css)
 
 @font-face {
     font-family: "FixedSysTrue";
@@ -35,12 +36,6 @@ body {
 
 .theme-dark
 {
-	/* User editable glow colours - change the RGBA values to anything you like! */
-	/* RGBA colour picker: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool */	
-	--mainGlowColor: hsla(180, calc(var(--saturation-factor)*100%), 50%, 0.7);   /* Glow colour for messages, names, channels. Default: cyan     */
-	--mutedGlowColor: hsla(180, calc(var(--saturation-factor)*100%), 89%, 0.2);/* Glow colour for muted channels.            Default: slate    */
-	--SHTeamGlowColor: rgba(255,0,0,0.5);   /* Glow colour for Superhot Team names.       Default: red      */
-	--SHMindsGlowColor: rgba(0,200,255,0.5);/* Glow colour for Superhot Mind names.       Default: sky blue */
 	--border: grey;
 	--border-code: white;
 	--border-bright: white;
@@ -124,148 +119,9 @@ body {
 --------------------------------------------------------------------------------
 Start glow */
 
-/* Main section text glow */
-.markup-eYLPri {
-    text-shadow: 2px 0 10px var(--mainGlowColor),
-        -2px 0 10px var(--mainGlowColor);
-}
 
-.repliedTextContent-2hOYMB.markup-eYLPri, /* but not on reply message preview */
-.edited-1v5nT8 /* but not on (edited) */ {
-    text-shadow: none;
-}
 
-/* Superhot Team */
-span[style="color: rgb(196, 0, 0);"] {
-    text-shadow: 2px 0 5px var(--SHTeamGlowColor),
-        -2px 0 5px var(--SHTeamGlowColor);
-}
-/* SuperBOT */
-span[style="color: rgb(1, 1, 1);"] {
-    text-shadow: 2px 0 5px var(--SHMindsGlowColor),
-        -2px 0 5px var(--SHMindsGlowColor);
-}
 
-/* Light turquoise */
-span[style="color: rgb(26, 188, 156);"] {
-    --lightturquoise: rgb(26, 188, 156);
-    text-shadow: 2px 0 5px var(--lightturquoise),
-        -2px 0 5px var(--lightturquoise);
-}
-/* Dark turquoise */
-span[style="color: rgb(17, 128, 106);"] {
-    --darkturquoise: rgb(17, 128, 106);
-    text-shadow: 2px 0 5px var(--darkturquoise), -2px 0 5px var(--darkturquoise);
-}
-/* Light green */
-span[style="color: rgb(46, 204, 113);"] {
-    --lightgreen: rgb(46, 204, 113);
-    text-shadow: 2px 0 5px var(--lightgreen), -2px 0 5px var(--lightgreen);
-}
-/* Dark green */
-span[style="color: rgb(31, 139, 76);"] {
-    --darkgreen: rgb(31, 139, 76);
-    text-shadow: 2px 0 5px var(--darkgreen), -2px 0 5px var(--darkgreen);
-}
-/* Superhot Minds (and Light blue) */
-span[style="color: rgb(52, 152, 219);"] {
-    text-shadow: 2px 0 5px var(--SHMindsGlowColor),
-        -2px 0 5px var(--SHMindsGlowColor);
-}
-/* Dark blue */
-span[style="color: rgb(32, 102, 148);"] {
-    --darkblue: rgb(32, 102, 148);
-    text-shadow: 2px 0 5px var(--darkblue), -2px 0 5px var(--darkblue);
-}
-/* Light purple */
-span[style="color: rgb(155, 89, 182);"] {
-    --lightpurple: rgb(155, 89, 182);
-    text-shadow: 2px 0 5px var(--lightpurple), -2px 0 5px var(--lightpurple);
-}
-/* Dark purple */
-span[style="color: rgb(113, 54, 138);"] {
-    --darkpurple: rgb(113, 54, 138);
-    text-shadow: 2px 0 5px var(--darkpurple), -2px 0 5px var(--darkpurple);
-}
-/* Light pink */
-span[style="color: rgb(233, 30, 99);"] {
-    --lightpink: rgb(233, 30, 99);
-    text-shadow: 2px 0 5px var(--lightpink), -2px 0 5px var(--lightpink);
-}
-/* Dark pink */
-span[style="color: rgb(173, 20, 87);"] {
-    --darkpink: rgb(173, 20, 87);
-    text-shadow: 2px 0 5px var(--darkpink), -2px 0 5px var(--darkpink);
-}
-/* Light yellow */
-span[style="color: rgb(241, 196, 15);"] {
-    --lightyellow: rgb(241, 196, 15);
-    text-shadow: 2px 0 5px var(--lightyellow), -2px 0 5px var(--lightyellow);
-}
-/* Dark yellow */
-span[style="color: rgb(194, 124, 14);"] {
-    --darkyellow: rgb(194, 124, 14);
-    text-shadow: 2px 0 5px var(--darkyellow), -2px 0 5px var(--darkyellow);
-}
-/* Light tan */
-span[style="color: rgb(230, 126, 34);"] {
-    --lighttan: rgb(230, 126, 34);
-    text-shadow: 2px 0 5px var(--lighttan), -2px 0 5px var(--lighttan);
-}
-/* Dark tan */
-span[style="color: rgb(168, 67, 0);"] {
-    --darktan: rgb(168, 67, 0);
-    text-shadow: 2px 0 5px var(--darktan), -2px 0 5px var(--darktan);
-}
-/* Light orange */
-span[style="color: rgb(231, 76, 60);"] {
-    --lightorange: rgb(231, 76, 60);
-    text-shadow: 2px 0 5px var(--lightorange), -2px 0 5px var(--lightorange);
-}
-/* Dark orange */
-span[style="color: rgb(153, 45, 34);"] {
-    --darkorange: rgb(153, 45, 34);
-    text-shadow: 2px 0 5px var(--darkorange), -2px 0 5px var(--darkorange);
-}
-/* Light grey */
-span[style="color: rgb(149, 165, 166);"] {
-    --lightgrey: rgb(149, 165, 166);
-    text-shadow: 2px 0 5px var(--lightgrey), -2px 0 5px var(--lightgrey);
-}
-/* Dark grey */
-span[style="color: rgb(151, 156, 159);"] {
-    --darkgrey: rgb(151, 156, 159);
-    text-shadow: 2px 0 5px var(--darkgrey), -2px 0 5px var(--darkgrey);
-}
-/* Light slate */
-span[style="color: rgb(96, 125, 139);"] {
-    --lightslate: rgb(96, 125, 139);
-    text-shadow: 2px 0 5px var(--lightslate), -2px 0 5px var(--lightslate);
-}
-/* Dark slate */
-span[style="color: rgb(84, 110, 122);"] {
-    --darkslate: rgb(84, 110, 122);
-    text-shadow: 2px 0 5px var(--darkslate), -2px 0 5px var(--darkslate);
-}
-
-.theme-dark .wrapper-1ZcZW-, /* #channels and @pings */
-.markup-eYLPri a /* hyperlinks */ {
-    color: white;
-    text-shadow: 0 0 20px white;
-}
-
-/* allows channel and users glow to not clip */
-.overflow-1wOqNV,
-.channelName-3KPsGw,
-.name-3BUDLf,
-.mainContent-uDGa6R,
-.container-q97qHp,
-.zalgo-26OfGz.cozy-VmLDNB .header-2jRmjb,
-    .username-h_Y3Us,
-/* and chat content */
-.zalgo-26OfGz .messageContent-2t3eCI {
-    overflow: visible;
-}
 
 /* End glow
 --------------------------------------------------------------------------------

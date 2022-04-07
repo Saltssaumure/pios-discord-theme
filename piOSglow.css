@@ -1,0 +1,57 @@
+/**
+ * @name piOSglow
+ * @author Saltssaumure#7557
+ * @description Glow section of piOS Discord Theme. Please download the autoupdater from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/latest!
+ * @version 1
+*/
+
+.theme-dark {
+	--mainGlowColor: hsla(180, calc(var(--saturation-factor)*100%), 50%, 0.7);      /* Glow colour for messages, names, channels. Default: cyan     */
+	--mutedGlowColor: hsla(180, calc(var(--saturation-factor)*100%), 89%, 0.2);     /* Glow colour for muted channels.            Default: slate    */
+}
+
+/* Chat content text glow */
+.markup-eYLPri {
+    text-shadow:
+        2px 0 10px var(--mainGlowColor),
+        -2px 0 10px var(--mainGlowColor);
+}
+.repliedTextContent-2hOYMB.markup-eYLPri, /* but not on reply message preview */
+.edited-1v5nT8 /* but not on (edited) */ {
+    text-shadow: none;
+}
+
+.theme-dark .wrapper-1ZcZW-, /* #channels and @pings */
+.markup-eYLPri a /* hyperlinks */ {
+    color: white;
+    text-shadow: 0 0 20px white;
+}
+
+/* allows channel and users glow to not clip */
+.overflow-1wOqNV,
+.channelName-3KPsGw,
+.name-3BUDLf,
+.mainContent-uDGa6R,
+.container-q97qHp,
+.zalgo-26OfGz.cozy-VmLDNB .header-2jRmjb,
+.username-h_Y3Us,
+/* and chat content */
+.zalgo-26OfGz .messageContent-2t3eCI {
+    overflow: visible;
+}
+
+/* Member list usernames with role colours */
+.roleColor-nA7BqX {
+    text-shadow: 0 0 5px;
+}
+/* Special overrides */
+/* Superhot Team */
+span[style="color: rgb(196, 0, 0);"] {
+    --SHTeamGlowColor: rgba(255,0,0,0.5);
+    text-shadow: 0 0 5px var(--SHTeamGlowColor),
+}
+/* SuperBOT */
+span[style="color: rgb(1, 1, 1);"] {
+    --SHMindsGlowColor: rgba(0,200,255,0.5);
+    text-shadow: 0 0 5px var(--SHMindsGlowColor) ,0 0 5px var(--mainGlowColor);
+}
