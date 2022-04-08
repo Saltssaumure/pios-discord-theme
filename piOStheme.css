@@ -1,7 +1,7 @@
 /**
- * @name piOSTEST6
+ * @name piOS Main
  * @author Saltssaumure#7557
- * @description Changed font host to Github. Please download the autoupdater from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/latest!
+ * @description Main section of piOS Discord Theme. Please download the autoupdater from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/latest!
  * @version 6
 */
 
@@ -10,15 +10,27 @@ Source for new class names:
 https://gist.github.com/ExperiBass/2375ac4f7088bb9410d81cd59495f462
 */
 
-@import url(https://saltssaumure.github.io/borderradiant-discord-theme/br-main.css);
-@import url(https://saltssaumure.github.io/pios-discord-theme/piOSglow.css);
+@import url(https://saltssaumure.github.io/borderradiant-discord-theme/BorderRadiant.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/piOSRadialStatus.theme.css);
+
+@import url(https://saltssaumure.github.io/pios-discord-theme/piOSRadialStatus.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/piOStext.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/piOSglow.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/piOSspoiler.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/piOSmisc.theme.css);
+
+@import url(https://saltssaumure.github.io/pios-discord-theme/box/piOSboxChannelMemberServer.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/box/piOSboxChat.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/box/piOSboxModal.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/box/piOSboxPopover.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/box/piOSboxSearch.theme.css);
 
 @font-face {
     font-family: "FixedSysTrue";
 	font-smooth: never;
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: grayscale;
-    src: url("https://saltssaumure.github.io/pios-discord-theme/fonts/FixedSysTrue.ttf");
+    src: url("https://saltssaumure.github.io/pios-discord-theme/font/FixedSysTrue.ttf");
 }
 
 @font-face {
@@ -26,644 +38,107 @@ https://gist.github.com/ExperiBass/2375ac4f7088bb9410d81cd59495f462
 	font-smooth: never;
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: grayscale;
-    src: url("https://saltssaumure.github.io/pios-discord-theme/fonts/PerfectDosVga.ttf");
+    src: url("https://saltssaumure.github.io/pios-discord-theme/font/PerfectDosVga.ttf");
 }
 
-body {
-    --true-compact-message-spacing: var(--compact-message-spacing, 1);
-    --font-display: PerfectDOS, monospace; /* For server and channel title */
-}
+/* 
+Override Discord variables: kebab-case
+Self-defined variables: camelCase
+User-definable variables: kebab-case
+*/
 
 .theme-dark
 {
-	--border: grey;
-	--border-code: white;
-	--border-bright: white;
-	--background-embed: rgba(255,0,0,0.3);
-	--warning: hsl(0, calc(var(--saturation-factor)*100%), 50%); /* pure red */
-	--header-primary: white;
-	--header-secondary: grey;
-    --text-normal: white;
-    --text-muted: grey;
-    --text-link: white;
-    --text-link-low-saturation: white;
-    --interactive-active: white; /* default: unread dot marker, current channel name */
-    --background-primary: black;
-    --background-secondary: black;
-    --background-secondary-alt: black;
-    --background-tertiary: black;
-    --background-accent: hsl(0, calc(var(--saturation-factor)*100%), 50%);
-    --background-floating: black;
-	--background-mentioned: hsla(0, calc(var(--saturation-factor)*100%), 50%, 0.2);
-	--channeltextarea-background: transparent;
-	--divider-color: hsl(0, calc(var(--saturation-factor)*100%), 50%); /* color of new messages divider */
-	--info-warning-foreground: hsl(0, calc(var(--saturation-factor)*100%), 50%); /* colour of @ping message left side indicator */
-	--font-display: PerfectDOS, monospace; /* For server and chanenl title */
+    /* Set customisable colour scheme */
+    --piOSaccenthue:  var(--accent-color, 0); /* default: 0 (red) */
+    --piOSaccent:     hsl(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%);
+    --piOSwhite:    white;
+    --piOSlightgrey:lightgrey;
+    --piOSgrey:     grey;
+    --piOSblack:    black;
+    
+    /* Set default fonts */
+    --font-display: PerfectDOS, monospace; /* For server and channel title */
 	--font-primary: PerfectDOS, monospace; /* For almost everything else */
-	--font-code: "FixedSysTrue", monospace; /* Code blocks */
-	--background-modifier-hover: hsla(0, calc(var(--saturation-factor)*100%), 50%, 0.2);
-    --background-modifier-active: hsla(0, calc(var(--saturation-factor)*100%), 50%, 0.7);
-    --background-modifier-selected: hsla(0, calc(var(--saturation-factor)*100%), 50%, 0.3);
-    --background-modifier-accent: transparent;
-    --scrollbar-thin-thumb: var(--background-accent);
+	--font-code:    "FixedSysTrue", monospace; /* Code blocks */
+    letter-spacing: -0.04rem;
+
+    /* Borders */
+	--borderColor:          var(--piOSgrey);
+	--borderCodeColor:      var(--piOSwhite);
+	--borderBrightColor:    var(--piOSwhite);
+    --thickBorder: 2px 5px;
+    --thinBorder:  1px 3px;
+
+    /* Text colours */
+	--header-primary:           var(--piOSwhite); /* Server name, channel name, default user colour */
+	--header-secondary:         var(--piOSgrey);
+    --text-normal:              var(--piOSwhite);
+    --text-muted:               var(--piOSgrey);
+    --text-link:                var(--piOSwhite);
+    --text-link-low-saturation: var(--piOSwhite);
+    --interactive-normal:       var(--piOSlightgrey);
+    --interactive-muted:        var(--piOSgrey);
+    --interactive-active:       var(--piOSwhite); /* default: unread dot marker, current channel name */
+
+    /* Backgrounds */
+    --background-primary:       var(--piOSblack);
+    --background-secondary:     var(--piOSblack);
+    --background-secondary-alt: var(--piOSblack);
+    --background-tertiary:      var(--piOSblack);
+    --background-accent:        var(--piOSaccent);
+    --background-floating:      var(--piOSblack);
+	--background-mentioned:     hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.2);
+    --backgroundEmbed:          hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.3);
+	--channeltextarea-background:   transparent;
+    --input-background:         var(--background-modifier-hover); 
+    --background-modifier-hover:    hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.2);
+    --background-modifier-active:   hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.7);
+    --background-modifier-selected: hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.3);
+    --background-modifier-accent:   transparent;
+
+    /* Scrollbars */
+    --scrollbar-thin-thumb: var(--piOSaccent);
     --scrollbar-thin-track: transparent;
-    --scrollbar-auto-thumb: var(--background-accent);
+    --scrollbar-auto-thumb: var(--piOSaccent);
     --scrollbar-auto-track: transparent;
-    --scrollbar-auto-scrollbar-color-thumb: var(--background-accent);
+    --scrollbar-auto-scrollbar-color-thumb: var(--piOSaccent);
     --scrollbar-auto-scrollbar-color-track: transparent;
+
+    /* Drop shadows */
     --elevation-stroke: transparent;
-    --elevation-low: transparent;
+    --elevation-low:    transparent;
     --elevation-medium: transparent;
-    --elevation-high: transparent;
-	letter-spacing: -0.04rem;
-}
+    --elevation-high:   transparent;
 
-/* discord friends tab: for some reason not currently using a variable */
-.theme-dark .container-2cd8Mz {
-    background-color: var(--background-primary);
-}
+    /* Search */
+    --search-popout-option-fade:        linear-gradient(90deg, transparent, var(--piOSblack) 80%); /* Fading effect after search options */
+    --search-popout-option-fade-hover:  linear-gradient(90deg, transparent, var(--piOSblack) 50%);
+    /* --search-popout-option-filter-text: var(--piOSgrey); */
+    --search-popout-option-non-text-color:  ;
+    /*--search-popout-option-filter-color:    var(--piOSgrey);
+    --search-popout-option-answer-color:    var(--piOSgrey);
+    --search-popout-date-picker-border:     var(--piOSgrey); 
+    As of 8th Apr 2022, these variables do nothing */
+    --search-popout-date-picker-hint-text:  var(--piOSgrey);
+    --search-popout-date-picker-hint-value-text:                var(--piOSwhite);
+    --search-popout-date-picker-hint-value-background:          var(--background-modifier-hover);
+    --search-popout-date-picker-hint-value-background-hover:    var(--background-modifier-selected);
+    --deprecated-text-input-border-disabled: var(--borderColor); /* for some reason used by day box borders */
 
-/* give embeds a spicy red background */
-.embedFull-1HGV2S.markup-eYLPri {
-    background: var(--background-embed);
-    border: 0;
-    text-shadow: none;
-}
-.grid-1aWVsE {
-    padding: 12px 18px;
-}
-.embedMargin-2PsaQ4 {
-    margin-top: 0;
-}
-
-/* play buttons on video */
-.wrapper-x4po40 {
-    padding: 12px 5px;
-}
-/* timeline slider */
-.mediaBarGrabber-FvJKJg,
-.mediaBarProgress-38I317,
-.mediaBarProgress-38I317:after,
-.mediaBarProgress-38I317:before {
-    background: var(--background-accent);
-}
-
-/* "replying to message" bar set transparent with dotted underline */
-.replyBar-1oi75v {
-    border-bottom: 1px dashed var(--border);
-}
-
-/*
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-Start Fonts */
-
-/* All caps on areas where case is not so important */
-/* importantly: excludes message text, searches, emoji, and status text */
-.channelName-3KPsGw, 	/* channel names */
-/*.name-3Vmqxm,			usernames in user list */
-/*.username-h_Y3Us,		usernames in main section */
-/*.mention,				usernames in mention (may no longer be usable)*/
-/*.headerText-15Q25Z,	usernames in user info (may no longer be usable)*/
-.activityUserPopout-2MzGCj,	/* now playing game and time */
-.protip-2urNh2,			/* "right click user for more actions (not changed?)*/
-.roleName-2ZJJYR,		/* roles */
-.timestamp-p1Df1m,		/* message timestamp */
-.divider-2rZFJK,		/* day dividers */
-.children-3xh0VB, 		/* channel name and desc */
-.navButton-1XuvI-,		/* emoji/gif picker buttons */
-.categoryName-1iPNc5,	/* gif picker categories */
-.side-2ur1Qk 			/* settings list */ {
-    text-transform: uppercase;
-}
-
-/* nukes formatting for code blocks bc readability is important for being a hackerman */
-.markup-eYLPri code.hljs,
-.markup-eYLPri code.inline {
-    font-family: var(--font-code);
-    border: solid var(--border-code);
-    border-width: 1px 3px;
-    padding: 1px 8px 3px 8px;
-    text-shadow: none;
-}
-
-/* Underline #channels and @pings */
-.theme-dark .wrapper-1ZcZW-,
-.mention {
-    text-decoration: underline;
-    background: var(--background-embed);
-}
-.roleMention-11Aaqi {
-    text-shadow: none;
-}
-
-/* Fix font size of channel group and user group labels to match others */
-.da-username,
-.container-q97qHp,
-.name-3YKhmS {
-    font-size: 16px;
-}
-
-.content-vSHmMD, /* Pins / calls message interjects */
-.timestamp-2qj4__, /* timestamp for the above */
-.mentionFilter-1PQ6ey .value-2k8Drt /* mentions, display: [everything] */ {
-    text-transform: uppercase;
-    text-shadow: none;
-}
-.compact-3bMNvi {
-    margin-left: 0;
-}
-
-/* in replying to user box, change @on colour to red as warning */
-.colorLink-2apWfY.mentionButton-3C5YMI {
-    color: var(--warning);
-}
-
-/* new message bubble delete */
-.unreadPill-3nEWYM {
-    display: none;
-}
-
-/* square off jump to present bar
- and new messages since bar
- and messages failed to load bar */
-.jumpToPresentBar-1cEnH0,
-.newMessagesBar-1hF-9G,
-.messagesErrorBar-1IQ1rH {
-    background-color: var(--background-accent);
-    opacity: 0.7;
-}
-
-.mention-3XBnnZ /* make the server unread red */ {
-    background-color: var(--background-accent);
-}
-
-/* End fonts
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-Start boxes (borders) */
-
-/* box around the main section */
-.chatContent-3KubbW {
-    border: solid var(--border);
-    border-width: 2px 5px;
-}
-/* remove the wrong colour top line */
-.content-1jQy2l::before ~ {
-    display: none;
-}
-
-/* follow to get this channel's updates in your server add dotted topline */
-.form-3gdLxP .wrapper-2SplAX {
-    border-top: 1px dashed var(--border);
-    margin-top: 0;
-}
-/* kill bird wumpus */
-.image-3FliiM {
-    display: none;
-}
-
-/* info bubbles tooltips */
-.tooltip-14MtrL {
-    border: solid var(--border-bright);
-    border-width: 1px 3px;
-}
-.tooltipPointer-3L49xb /* arrow pointing towards tooltip source*/ {
-    display: none;
-}
-
-/* typing box */
-.channelTextArea-1VQBuV {
-    border: solid var(--border);
-    border-width: 2px 5px;
-}
-.scrollableContainer-15eg7h {
-    min-height: 60px;
-}
-.fontSize24Padding-3GueH0 {
-    padding: 10px 0;
-}
-
-.theme-dark .autocomplete-3NRXG8 {
-    background: var(--background-primary);
-    border: solid var(--border);
-    border-width: 1px 3px;
-}
-/* Selected/hovered emoji/user/channel */
-.theme-dark .selected-3H3-RC {
-    background: var(--background-modifier-selected);
-}
-
-/* fixes search suggestion box */
-.theme-dark .container-2McqkF {
-    background: var(--background-primary);
-    border: solid var(--border-bright);
-    border-width: 1px 3px;
-}
-/* fixes each suggestion box */
-.theme-dark .option-2KkUJO:after {
-    display: none;
-}
-.theme-dark .option-2KkUJO.selected-rZcOL- {
-    background: var(--background-modifier-selected);
-}
-/* fixes search result */
-.theme-dark .focused-2FU0YH {
-    background: var(--background-primary);
-}
-
-/* fixes date popup when you search before: after: */
-.theme-dark .calendarPicker-sDhzdi .react-datepicker,
-.theme-dark .calendarPicker-sDhzdi .react-datepicker__header,
-.theme-dark
-    .calendarPicker-sDhzdi
-    .react-datepicker__navigation.react-datepicker__navigation--previous,
-.theme-dark
-    .calendarPicker-sDhzdi
-    .react-datepicker__day.react-datepicker__day--disabled,
-.theme-dark .calendarPicker-sDhzdi .react-datepicker__day--outside-month {
-    background-color: var(--background-primary);
-}
-/* day box on hover */
-.theme-dark
-    .calendarPicker-Dhzdi
-    .react-datepicker__day.react-datepicker__day--selected:hover,
-.theme-dark .calendarPicker-Dhzdi .react-datepicker__day:hover {
-    background-color: var(--background-modifier-hover);
-}
-/* day box size */
-.calendarPicker-Dhzdi .react-datepicker__day {
-    --daywidth: 36px;
-    height: var(--daywidth);
-    width: var(--daywidth);
-    line-height: var(--daywidth);
-}
-.calendarPicker-Dhzdi .react-datepicker__day-name {
-    width: 36px; /* why does this not work with daywidth */
-}
-/* current day underbar*/
-.theme-dark
-    .calendarPicker-Dhzdi
-    .react-datepicker__day.react-datepicker__day--selected:after {
-    background: var(--background-accent);
-}
-.theme-dark .datePicker-70cO23 .datePickerHint-17MnA8 .hintValue-1x-flY {
-    background: var(--background-modifier-selected);
-}
-.theme-dark .datePicker-70cO23 .datePickerHint-17MnA8 .hintValue-1x-flY:hover {
-    background: var(--background-accent);
-}
-
-/* draw bright borders around boxes */
-.contentWrapper-3vHNP2,			/* emoji/gif selector box (from message box)*/
-#emoji-picker-tab-panel[role="dialog"], /* emoji picker for reactions */
-.userPopout-2j1gM4,				/* user profile popouts */
-.messagesPopoutWrap-3zryHW,		/* pinned messages box */
-.container-2ebMPP				/* mentions box */ {
-    border: solid var(--border-bright);
-    border-width: 2px 5px;
-}
-
-/* decrease text size in the above boxes */
-.messagesPopoutWrap-3zryHW .markup-eYLPri,
-.container-2ebMPP .markup-eYLPri {
-    font-size: smaller;
-    line-height: 1rem;
-}
-
-/* Emoji reaction picker style */
-#emoji-picker-tab-panel[role="dialog"] {
-    background: var(--background-primary);
-}
-.emojiPicker-6YCk8a /* square off the internal box */ {
-    box-shadow: none;
-    background: transparent;
-}
-.diversitySelectorOptions-3DhNYs /* draws box around skin tone selector */ {
-    border: solid var(--border);
-    border-width: 1px 3px;
-}
-.gif-1EWTs-:after {
-    display: none;
-}
-
-.inspectedIndicator-27zwNZ, /* remove mask on sticker */
-			.assetWrapperMasked-1iw9lV {
-    mask: none; /* this doesnt seem to do anything */
-    -webkit-mask: none;
-}
-
-.reaction-2A2y9y.reactionMe-3I9gFK /* and turns red on reactions you've added */ {
-    border-color: var(--background-accent);
-    background-color: var(--background-modifier-selected);
-}
-
-/* image uploader popup */
-.uploadModal-2ie9O_ {
-    border: solid var(--border);
-    border-width: 2px 5px;
-}
-.theme-dark .uploadModal-2ie9O_ {
-    background: var(--background-primary);
-}
-.theme-dark .footer-VCsJQY {
-    background-color: transparent;
-}
-.theme-dark .checkbox-f1HnKB.checked-1pZh2h /* when spoiler is marked */ {
-    border-color: var(--background-accent) !important;
-    color: var(--background-accent); /* passes color to SVG tick */
-}
-.theme-dark .checkbox-f1HnKB.checked-1pZh2h path {
-    fill: currentColor;
-}
-.lookFilled-yCfaCM.colorBrand-I6CyqQ /* upload button */ {
-    background-color: var(--background-modifier-selected);
-}
-.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover {
-    background-color: var(--background-accent);
-}
-
-/* about me ```code``` from inline to block */
-.aboutMeBody-1J8rhz code.inline {
-    display: block;
-    margin: 0;
-    margin-bottom: -1.2em;
-}
-
-/* role */
-.role-2TIOKu,
-.roleCircle-1EgnFN {
-    border-width: 1px;
-}
-
-/* delet reply jump in mentions/unreads */
-.container-iA3Qrz .compact-2Nkcau .repliedMessage-3Z6XBG,
-.container-2ebMPP .compact-2Nkcau .repliedMessage-3Z6XBG {
-    display: none;
-}
-.menu-1QACrS /* filter gets box border */ {
-    border: solid var(--border);
-    border-width: 1px 3px;
-}
-
-/* blurs out emojis and stickers that require nitro when no nitro is active */
-.emojiItemDisabled-3VVnwp,
-.stickerUnsendable-PkQAxI {
-    filter: blur(1px) grayscale(100%) opacity(40%);
-}
-
-/* square off block quote starter */
-.blockquoteContainer-3VtvI1 .blockquoteDivider-363utW {
-    width: 3px;
-}
-
-/* reply pipe */
-.repliedMessage-3Z6XBG:before {
-    border-left-width: 3px;
-    border-top-width: 1px;
-}
-
-/* hmmm what if soup text boxes in compact mode*/
-.message-2CShn3.compact-2Nkcau,
-.message-372Ods.compact-2Nkcau,
-.message-3g3FYR.compact-2Nkcau {
-    /* these don't want to be in a single border property */
-    border-width: 1px 3px;
-    border-style: solid;
-    border-color: var(--border);
-    margin: calc(var(--true-compact-message-spacing) * 1.5rem) 3rem;
-    padding: 1rem 1rem 0.5rem 1rem;
-    padding-right: 1rem !important;
-}
-
-/* name and timestamp in main message section*/
-.message-2CShn3.compact-2Nkcau .header-2jRmjb,
-.message-372Ods.compact-2Nkcau .header-2jRmjb,
-.message-3g3FYR.compact-2Nkcau .header-2jRmjb {
-    position: absolute;
-    top: -1.6rem;
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.message-372Ods,
-.message-3g3FYR {
-    overflow: visible;
-}
-
-.compact-2Nkcau .headerText-2z4IhQ {
-    margin-right: 0;
-}
-
-.compact-2Nkcau .header-2jRmjb > span {
-    display: block;
-}
-.compact-2Nkcau .header-2jRmjb {
-    background: linear-gradient(
-        transparent,
-        var(--background-primary) 40%,
-        transparent 60%
-    );
-}
-/* Hides timestamps for the same time as previous message */
-.compact-2Nkcau .header-2jRmjb > .timestampVisibleOnHover-9PEuZS {
-    width: 0;
-    color: transparent;
-}
-
-/* reply if any */
-.compact-2Nkcau .repliedMessage-3Z6XBG::before {
-    display: none;
-}
-.compact-2Nkcau .repliedMessage-3Z6XBG {
-    position: absolute;
-    right: 0.5rem;
-    padding-left: 0;
-    top: -0.6rem;
-    max-width: 400px;
-    background: linear-gradient(
-        transparent,
-        var(--background-primary) 50%,
-        transparent 60%
-    );
-    display: flex;
-    justify-content: flex-end;
-    z-index: 1;
-}
-.compact-2Nkcau .replyBadge-LMm_Ic {
-    background: transparent;
-}
-
-/* the message itself */
-.compact-2Nkcau .contents-2MsGLg {
-    margin: 0;
-    padding-left: 0;
-    text-indent: 0;
-}
-
-/* remove box if system message eg. pin*/
-.systemMessage-1H1Z20.message-2CShn3.compact-2Nkcau {
-    border: 0;
-}
-/* vertically center pin icon */
-.iconContainer-2rPbqG {
-    padding: 0.1rem;
-}
-/* remove link glow on pin */
-.systemMessage-1H1Z20 .markup-eYLPri a {
-    text-shadow: none;
-}
-
-/* message react/reply etc buttons */
-.compact-2Nkcau .container-2gUZhU {
-    top: -16px;
-}
-.wrapper-2vIMkT {
-    border: solid var(--border);
-    border-width: 1px 3px;
-}
-
-/* Adds dashes between channel groups */
-.containerDefault-3TQ5YN:not(:nth-of-type(2))::before {
-    font-size: 16pt;
-    content: "-------------------";
-    color: var(--channels-default);
-    margin-left: 5px;
-}
-/* adds dashes between member groups */
-.membersGroup-2eiWxl.container-q97qHp:not(:first-of-type)::before {
-    font-size: 16pt;
-    display: block;
-    position: relative;
-    content: "-----------------";
-    color: var(--channels-default);
-    padding-bottom: 6px;
-    font-weight: 9;
-}
-
-.membersGroup-2eiWxl:not(:first-of-type) {
-    height: 56px;
-    padding-top: 18px;
-}
-
-/* ---------------sdfsdfsdf SQUARE TEIM */
-
-/* squares off user icons */
-foreignObject[mask*="url(#"],
-.assetsLargeMaskUserPopout-3N96A8,
-.assetsLargeMaskStreamPreview--ugZjW {
-    mask: none;
-}
-.wrapper-1VLyxH /* including in user profile popover */ {
-    border-width: 2px 5px;
-}
-
-.numberBadge-37OJ3S /*  make ping icon actually follow the colour scheme */ {
-    background: var(
-        --background-accent
-    ) !important; /* unfortunately it's styled inline so I gotta !important*/
-    padding: 2px 0 0 2px; /* this centers the number but it's no longer square hmmmm*/
-    width: 18px !important; /* unfortunately it's styled inline so I gotta !important*/
-}
-
-/* square off unread dot and change to warning color */
-.unread-36eUEm,
-.item-2LIpTv {
-    background-color: var(--warning);
-}
-
-/* fix popup that dims everything else */
-.theme-dark .root-g14mjS,
-.theme-dark .footer-31IekZ {
-    background-color: var(--background-primary);
-    box-shadow: none;
-}
-.theme-dark .root-g14mjS {
-    border: solid var(--border);
-    border-width: 2px 5px;
-}
-.lookFilled-yCfaCM.colorRed-rQXKgM {
-    background: var(--background-accent);
-}
-
-/* Stream picture in picture */
-.pictureInPictureVideo-2puO2Q {
-    border: solid var(--border-bright);
-    border-width: 2px 5px;
-}
-
-/* replying to bar */
-.attachedBars-2BCP3l {
-    background: transparent;
-}
-
-/* reset username and role label colour */
-.headerTagUsernameNoNickname-1TjuLc,
-.bodyInnerWrapper-2bQs1k {
-    color: var(--interactive-normal);
-}
-
-/* -------------------- SPOILER STUFF ---- */
-.theme-dark .spoilerText-27bIiA.hidden-3B-Rum {
-    background: repeating-linear-gradient(
+    /* Misc parts */
+    --status-danger: var(--piOSaccent); /* Servers sidebar notification counter background */
+    --divider-color: hsl(0, calc(var(--saturation-factor)*100%), 50%); /* color of new messages divider */
+	--info-warning-foreground: hsl(0, calc(var(--saturation-factor)*100%), 50%); /* colour of @ping message left side indicator */
+    --spoilerGradient: repeating-linear-gradient(
         -45deg,
         transparent,
         transparent 4px,
         rgba(0, 255, 255, 0.2) 2px,
         rgba(0, 255, 255, 0.2) 6px
-    );
-    background-color: transparent;
-    filter: drop-shadow(0px 0px 5px var(--background-accent));
+    ); /* Spoiler stripe pattern */
+    --true-compact-message-spacing: var(--compact-message-spacing, 1); /* Space between messages in compact mode, user adjustable */
 }
-
-.theme-dark .spoilerText-27bIiA.hidden-3B-Rum:hover,
-.spoilerText-27bIiA {
-    background: repeating-linear-gradient(
-        -45deg,
-        transparent,
-        transparent 4px,
-        rgba(0, 255, 255, 0.2) 2px,
-        rgba(0, 255, 255, 0.2) 6px
-    );
-    filter: none;
-}
-
-.theme-dark .spoilerWarning-8ovW0v {
-    background: repeating-linear-gradient(
-        -45deg,
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2) 4px,
-        rgba(0, 255, 255, 0.2) 2px,
-        rgba(0, 255, 255, 0.2) 6px
-    );
-    width: 100%;
-    height: 100%;
-    line-height: 200%;
-    align-items: flex-start;
-    margin-left: 0.6em;
-}
-/* end spoiler stuff */
-
-
-
-/* scrollbar stuff */
-/* .scroller-kQBbkU is main chat scrollbar */
-/* .auto-2K3UW5 is the friends list scrollbar */
-/* .thin-31rlnD are the thin bars that appear on hover */
-.scroller-kQBbkU::-webkit-scrollbar,
-.auto-2K3UW5::-webkit-scrollbar {
-    width: 5px;
-}
-.scroller-kQBbkU::-webkit-scrollbar-thumb,
-.scroller-kQBbkU::-webkit-scrollbar-track,
-.auto-2K3UW5::-webkit-scrollbar-thumb,
-.auto-2K3UW5::-webkit-scrollbar-track {
-    border-width: 10px;
-}
-
-/* end scrollbar stuff */
 
 /*
     Keep Custom CSS editor and code related parts untouched.
