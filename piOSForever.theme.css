@@ -31,5 +31,6 @@ Join the Official Superhot Discord! https://discord.gg/9eAwJF8
 
 :root
 {
-	--compact-message-spacing: 1; /* Space between messages in compact mode, ie. box mode. Default: 1 */
+	--compact-message-spacing: 1; 	/* Space between messages in compact mode, ie. box mode. Default: 1 (100%) */
+	--accent-color: 0; 				/* Colour accent. Range: 0-360, default: 0 (red) */
 }

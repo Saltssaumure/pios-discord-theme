@@ -1,5 +1,5 @@
 /**
- * @name piOSglow
+ * @name piOS Glow
  * @author Saltssaumure#7557
  * @description Glow section of piOS Discord Theme. Please download the autoupdater from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/latest!
  * @version 1
@@ -16,15 +16,32 @@
         2px 0 10px var(--mainGlowColor),
         -2px 0 10px var(--mainGlowColor);
 }
-.repliedTextContent-2hOYMB.markup-eYLPri, /* but not on reply message preview */
-.edited-1v5nT8 /* but not on (edited) */ {
+
+/* No glow on:
+Reply message preview
+(edited)
+Code blocks and inline
+Timestamps
+*/
+.repliedTextContent-2hOYMB.markup-eYLPri,
+.edited-1v5nT8,
+.markup-eYLPri code.hljs,
+.markup-eYLPri code.inline,
+.timestamp-2qj4__,
+.timestamp-p1Df1m,
+.timestampInline-_lS3aK {
     text-shadow: none;
 }
 
-.theme-dark .wrapper-1ZcZW-, /* #channels and @pings */
-.markup-eYLPri a /* hyperlinks */ {
-    color: white;
-    text-shadow: 0 0 20px white;
+/* Channel and user pings, hyperlinks */
+.theme-dark .mention, 
+.markup-eYLPri a {
+    text-shadow: 0 0 20px;
+}
+/* Role pings, pin/join/thread alert messages */
+.theme-dark .mention.roleMention-11Aaqi,
+.content-vSHmMD {
+    text-shadow: 0 0 10px;
 }
 
 /* allows channel and users glow to not clip */

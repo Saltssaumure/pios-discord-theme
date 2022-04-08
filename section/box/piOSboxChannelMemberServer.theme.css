@@ -1,0 +1,43 @@
+/**
+ * @name piOS Channel/Member/Server Boxes
+ * @author Saltssaumure#7557
+ * @description Channel/Member/Server group boxes section of piOS Discord Theme. Please download the autoupdater from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/latest!
+ * @version 1
+*/
+
+/* ---- Channel sidebar ---- */
+/* Adds dashes between channel groups */
+.containerDefault-3TQ5YN:not(:nth-of-type(2))::before {
+    font-size: 16pt;
+    content: "-------------------";
+    color: var(--channels-default);
+    margin-left: 5px;
+}
+
+/* ---- Members list ---- */
+/* adds dashes between member groups */
+.membersGroup-2eiWxl.container-q97qHp:not(:first-of-type)::before {
+    font-size: 16pt;
+    display: block;
+    position: relative;
+    content: "-----------------";
+    color: var(--channels-default);
+    padding-bottom: 6px;
+    font-weight: 9;
+}
+/* Add spacing between member groups */
+.membersGroup-2eiWxl:not(:first-of-type) {
+    height: 56px;
+    padding-top: 18px;
+}
+
+/* ---- Servers sidebar ---- */
+/* Unread server/channel dot */
+.unread-36eUEm,
+.item-2LIpTv {
+    background-color: var(--piOSaccent);
+}
+/* "New" bubble in servers sidebar */
+.mention-3XBnnZ {
+    background-color: var(--piOSaccent);
+}

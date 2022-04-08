@@ -1,0 +1,35 @@
+/**
+ * @name piOS Misc
+ * @author Saltssaumure#7557
+ * @description Misc section of piOS Discord Theme. Please download the autoupdater from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/latest!
+ * @version 1
+*/
+
+/* Notification counter */
+.numberBadge-37OJ3S {
+    padding: 2px 0 0 2px;
+    width: 18px !important;
+}
+
+/* discord friends tab: for some reason not currently using a variable */
+.theme-dark .container-2cd8Mz {
+    background-color: var(--background-primary);
+}
+
+/* I forgot what this is */
+.lookFilled-yCfaCM.colorred-rQXKgM {
+    background: var(--background-accent);
+}
+
+/* Buttons */
+.lookFilled-yCfaCM.colorBrand-I6CyqQ  {
+    background-color: var(--background-modifier-selected);
+}
+.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover {
+    background-color: var(--background-accent);
+}
+
+/* Dangerous buttons when hovered */
+.button-3bklZh.dangerous-Y36ifs:hover {
+    color: var(--piOSwhite);
+}

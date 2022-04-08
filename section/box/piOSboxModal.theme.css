@@ -1,0 +1,57 @@
+/**
+ * @name piOS Modal Boxes
+ * @author Saltssaumure#7557
+ * @description Modal boxes section of piOS Discord Theme. Please download the autoupdater from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/latest!
+ * @version 1
+*/
+
+/* Modals */
+.theme-dark .root-g14mjS {
+    border: solid var(--borderBrightColor);
+    border-width: var(--thickBorder);
+    box-shadow: 0 0 30px 0 var(--piOSgrey);
+}
+
+/* ---- Inbox modal ---- */
+/* Inbox message containers */
+.messageContainer-3VTXBC {
+    padding: 0;
+}
+.messages-23can0 {
+    padding: 16px 0 0 0;
+}
+/* Remove "replied to" in inbox due to space constraint */
+.container-iA3Qrz .compact-2Nkcau .repliedMessage-3Z6XBG,
+.container-2ebMPP .compact-2Nkcau .repliedMessage-3Z6XBG {
+    display: none;
+}
+.menu-1QACrS /* filter gets box border (not sure what this does anymore) */ {
+    border: solid var(--borderColor);
+    border-width: var(--thickBorder);
+}
+
+/* ---- Upload file by drag and drop modal ---- */
+.uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .bgScale-1iWuPF {
+    background: var(--piOSblack);
+    border: solid var(--borderBrightColor);
+    border-width: var(--thickBorder);
+}
+    .uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .inner-rBP-MS {
+        border: 0;
+    }
+
+/* ---- Image upload modify modal ---- */
+.theme-dark .uploadModal-2ie9O_ {
+    background-color: var(--background-primary);
+}
+    .theme-dark .footer-VCsJQY {
+        background-color: transparent;
+    }
+    /* Spoiler checkbox */
+    .theme-dark .checkbox-f1HnKB.checked-1pZh2h {
+        border-color: var(--piOSwhite) !important;
+        color: var(--piOSwhite);
+    }
+        .theme-dark .checkbox-f1HnKB.checked-1pZh2h path {
+            fill: currentColor;
+        }
