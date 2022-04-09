@@ -14,9 +14,8 @@ Get the automatically updating theme [here](https://github.com/Saltssaumure/pios
 ### Message display
 Cosy mode uses regular Discord layout, while Compact mode has piOS-style boxes.
 
-**Discord setting:** `User Settings > App Settings > Appearance > Message Display`.
+- **Discord setting:** `User Settings > App Settings > Appearance > Message Display`.
 
-**Example:**
 |Cosy|Compact|
 |-|-|
 |![Cosy](https://user-images.githubusercontent.com/29710355/154400330-eb4434ac-1716-4c3f-bca1-8b6ba509e9c3.png)|![Compact](https://user-images.githubusercontent.com/29710355/154400528-66fea4d8-53c1-4178-91f5-88729bde0e81.png)|
@@ -24,11 +23,9 @@ Cosy mode uses regular Discord layout, while Compact mode has piOS-style boxes.
 ### Compact message spacing
 Affects spacing between messages in Compact mode (see above).
 
-**Theme setting:** change value of `--compact-message-spacing` to any positive or zero number.
+- **Theme setting:** change value of `--compact-message-spacing` to any positive or zero number.
+- **Default value:** `1` (100% of default spacing).
 
-**Default value:** `1` (100% of default spacing).
-
-**Example:**
 |1 (default)|2.5|
 |-|-|
 |![Messages are relatively close together.](https://user-images.githubusercontent.com/29710355/162553148-11c5bf02-7b9d-4d46-a8b6-bba509759452.png)|![Spacing between messages is much increased.](https://user-images.githubusercontent.com/29710355/162553169-ef3c2230-5527-4736-9c7f-a4ef1d1f51f1.png)
@@ -36,11 +33,9 @@ Affects spacing between messages in Compact mode (see above).
 ### Colour accents
 Affects colour scheme used throughout the theme.
 
-**Theme setting:** change value of `--accent-color` to any number. Use a HSL colour picker (eg. [React Color](https://casesandberg.github.io/react-color/)) and copy the H value.
+- **Theme setting:** change value of `--accent-color` to any number. Use a HSL colour picker (eg. [React Color](https://casesandberg.github.io/react-color/)) and copy the H value.
+- **Default value:** `0` (red).
 
-**Default value:** `0` (red).
-
-**Example:**
 |Color picker|Result|
 |-|-|
 |![Purple in a colour picker with its H value 270 selected.](https://user-images.githubusercontent.com/29710355/162552090-57011aeb-8b97-45e6-a96c-d13287761cf8.png)|![Screenshot of piOS Discord Theme where all colour accents are purple.](https://user-images.githubusercontent.com/29710355/162551985-ed568020-7f12-4300-ad31-0c5a66be4645.png)|
