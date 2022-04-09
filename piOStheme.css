@@ -11,19 +11,18 @@ https://gist.github.com/ExperiBass/2375ac4f7088bb9410d81cd59495f462
 */
 
 @import url(https://saltssaumure.github.io/borderradiant-discord-theme/BorderRadiant.theme.css);
-@import url(https://saltssaumure.github.io/pios-discord-theme/piOSRadialStatus.theme.css);
 
-@import url(https://saltssaumure.github.io/pios-discord-theme/piOSRadialStatus.theme.css);
-@import url(https://saltssaumure.github.io/pios-discord-theme/piOStext.theme.css);
-@import url(https://saltssaumure.github.io/pios-discord-theme/piOSglow.theme.css);
-@import url(https://saltssaumure.github.io/pios-discord-theme/piOSspoiler.theme.css);
-@import url(https://saltssaumure.github.io/pios-discord-theme/piOSmisc.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/section/piOSRadialStatus.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/section/piOStext.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/section/piOSglow.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/section/piOSspoiler.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/section/piOSmisc.theme.css);
 
-@import url(https://saltssaumure.github.io/pios-discord-theme/box/piOSboxChannelMemberServer.theme.css);
-@import url(https://saltssaumure.github.io/pios-discord-theme/box/piOSboxChat.theme.css);
-@import url(https://saltssaumure.github.io/pios-discord-theme/box/piOSboxModal.theme.css);
-@import url(https://saltssaumure.github.io/pios-discord-theme/box/piOSboxPopover.theme.css);
-@import url(https://saltssaumure.github.io/pios-discord-theme/box/piOSboxSearch.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/section/box/piOSboxChannelMemberServer.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/section/box/piOSboxChat.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/section/box/piOSboxModal.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/section/box/piOSboxPopover.theme.css);
+@import url(https://saltssaumure.github.io/pios-discord-theme/section/box/piOSboxSearch.theme.css);
 
 @font-face {
     font-family: "FixedSysTrue";
