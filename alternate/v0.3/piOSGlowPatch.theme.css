@@ -1,0 +1,86 @@
+/**
+ * @name piOS Glow Patch
+ * @author Saltssaumure#7557
+ * @description Patch for piOS v0.3 to re-enable main text glow.
+ * @version 0.3
+*/
+
+/*
+                                                Made by:
+ _______  _______  _    _________ _______  _______  _______           __   __           _______  _______ 
+(  ____ \(  ___  )( \   \__   __/(  ____ \(  ____ \(  ___  )|\     /|(  \ /  )|\     /|(  ____ )(  ____ \
+| (____\/| (___) || |      | |   | (____\/| (____\/| (___) || |   | || || || || |   | || (____)|| (__  \/
+(_____  )|  ___  || |      | |   (_____  )(_____  )|  ___  || |   | || |(_)| || |   | || __  __)|  __)   
+/\____) || )   ( || (____/\| |   /\____) |/\____) || )   ( || (___) || )   ( || (___) || ) \ \__| (____/\
+\_______)|/     \|(_______/)_(   \_______)\_______)|/     \|(_______)|/     \|(_______)|/   \__/(_______/
+
+                                              donut steel!
+
+Discord: Saltssaumure#7557
+Twitter: @Saltssaumure
+
+Join the Official Superhot Discord! https://discord.gg/9eAwJF8
+
+*/
+
+/* User editable glow colours - change the RGBA values to anything you like! */
+/* RGBA colour picker: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool */
+
+.theme-dark
+{
+	--mainGlowColor: rgba(0,255,255,0.7);   /* Glow colour for messages, names, channels. Default: cyan     */
+	--mutedGlowColor: rgba(200,255,255,0.2);/* Glow colour for muted channels.            Default: slate    */
+	--SHTeamGlowColor: rgba(255,0,0,0.5);   /* Glow colour for Superhot Team names.       Default: red      */
+	--SHMindsGlowColor: rgba(0,200,255,0.5);/* Glow colour for Superhot Mind names.       Default: sky blue */
+}
+
+/* ------------------------------------------------------ */
+/* The CSS below should only be edited by advanced users! */
+
+/* Messages */
+.markup-2BOw-j
+{
+	text-shadow: 2px 0 10px var(--mainGlowColor), -2px 0 10px var(--mainGlowColor);
+}
+
+/* Sidebar white text */
+.containerDefault-3GGEv_, /* left bar titles */
+.containerDefault-1ZnADq, /* left bar channels */
+.da-membersGroup, /* right bar titles*/
+.container-2Pjhx- /* right bar names n game */
+{
+	text-shadow: 2px 0 5px var(--mainGlowColor), -2px 0 5px var(--mainGlowColor);
+}
+
+/* Muted channels */
+.modeMuted-3osy7j .name-3_Dsmg
+{
+	text-shadow: 2px 0 5px var(--mutedGlowColor), -2px 0 5px var(--mutedGlowColor);
+}
+
+/* Superhot Team */
+span[style="color: rgb(196, 0, 0);"]
+{
+	text-shadow: 2px 0 5px var(--SHTeamGlowColor), -2px 0 5px var(--SHTeamGlowColor);
+}
+
+/* Superhot Minds */
+span[style="color: rgb(52, 152, 219);"]
+{
+	text-shadow: 2px 0 5px var(--SHMindsGlowColor), -2px 0 5px var(--SHMindsGlowColor);	
+}
+
+/* SuperBOT */
+span[style="color: rgb(1, 1, 1);"]
+{
+	text-shadow: 2px 0 5px var(--SHMindsGlowColor), -2px 0 5px var(--SHMindsGlowColor);
+}
+
+/* Hover/select on channels/names */
+.modeUnread-1zpFdA:hover .name-3_Dsmg,
+.wrapper-1ucjTd:hover,
+.content-3QAtGj:hover,
+.da-selected
+{
+    text-shadow: 0 0 5px red;
+}

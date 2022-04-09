@@ -1,0 +1,178 @@
+/**
+ * @name piOS
+ * @author Saltssaumure#7557
+ * @description SUPERHOT piOS inspired theme
+ * @version (v0.2 Dec10)
+*/
+
+/*
+                                                Made by:
+ _______  _______  _    _________ _______  _______  _______           __   __           _______  _______ 
+(  ____ \(  ___  )( \   \__   __/(  ____ \(  ____ \(  ___  )|\     /|(  \ /  )|\     /|(  ____ )(  ____ \
+| (____\/| (___) || |      | |   | (____\/| (____\/| (___) || |   | || || || || |   | || (____)|| (__  \/
+(_____  )|  ___  || |      | |   (_____  )(_____  )|  ___  || |   | || |(_)| || |   | || __  __)|  __)   
+/\____) || )   ( || (____/\| |   /\____) |/\____) || )   ( || (___) || )   ( || (___) || ) \ \__| (____/\
+\_______)|/     \|(_______/)_(   \_______)\_______)|/     \|(_______)|/     \|(_______)|/   \__/(_______/
+
+                                              donut steel!
+*/
+
+/* Imports fonts */
+
+@font-face {
+    font-family: "FixedSysTrue";
+    src: url("https://static.tumblr.com/6nmlfta/Xglq29q3t/fsex300.ttf")
+}
+
+@font-face {
+    font-family: "PerfectDOS";
+    src: url("https://static.tumblr.com/6nmlfta/kInq29swf/perfect_dos_vga_437_win.ttf")
+}
+
+/* Main theme adjustment */
+.theme-dark {
+    --header-primary: #fff;
+    --header-secondary: #fff;
+    --text-normal: #fff;
+    --text-muted: #fff;
+    --text-link: #fff;
+    --channels-default: #fff;
+    --interactive-normal: #fff;
+    --interactive-hover: #fff;
+    --interactive-active: #f00;
+    --interactive-muted: #fff;
+    --background-primary: #000;
+    --background-secondary: #000;
+    --background-tertiary: #000;
+    --background-accent: #000;
+    --background-floating: #000;
+    --background-mobile-header: #000;
+    --background-modifier-hover: rgba(255,0,0,0.2);
+    --background-modifier-active: rgba(255,0,0,0.7);
+    --background-modifier-selected: rgba(255,0,0,0.3);
+    --background-modifier-accent: transparent;
+    --elevation-low: transparent;
+    --elevation-high: transparent;
+    /* --logo-primary: ; */
+    --guild-header-text-shadow: 20px 20px 0px rgba(245,234,32,1);
+    --channeltextarea-background: transparent;
+    --deprecated-panel-background: transparent;
+}
+	
+::placeholder, body, button, input, select, textarea
+{
+    font-family: "PerfectDOS", "FixedSysTrue", monospace;
+    text-transform: uppercase;
+}
+
+.markup-2BOw-j code.hljs,
+.markup-2BOw-j code.inline
+{
+    font-family: "FixedSysTrue", monospace;
+    border: solid red;
+    border-width: 1px 3px;
+    border-radius: 0;
+    padding: 0;
+    font-size: 16pt;
+    text-shadow:none;
+}
+
+/* Removes roundness and adds border to every column */	
+.sidebar-2K8pFh.da-sidebar,
+.chat-3bRxxu.da-chat,
+.membersWrap-2h-GB4.da-membersWrap
+{
+    border-radius: 0;
+    border-left: 5px solid rgba(255,255,255,0.5);
+}
+
+/* Red or cyan shadow */
+.da-containerCozyBounded, /* center chat */
+.containerDefault-3GGEv_, /* left bar titles */
+.containerDefault-1ZnADq, /* left bar channels */
+.da-membersGroup, /* right bar titles*/
+.container-2Pjhx- /* right bar names n game */
+{
+    text-shadow: 0 0 20px cyan;
+}
+
+.modeUnread-1zpFdA .name-3_Dsmg/* unread undisturbed content */
+{
+    color: white;
+}
+
+.modeUnread-1zpFdA:hover .name-3_Dsmg,
+.wrapper-1ucjTd:hover,
+.content-3QAtGj:hover,
+.da-selected
+{
+    text-shadow: 0 0 20px red;
+}
+
+.theme-dark .wrapper-3WhCwL, /* #channels and @pings */
+.markup-2BOw-j a /* hyperlinks */
+{
+    color: white;
+    text-shadow: 0 0 20px red;
+}
+
+/* Underline @pings and #channels */
+.theme-dark .wrapper-3WhCwL
+{
+    text-decoration: underline;
+}
+
+/* Central chat boxes for each chatter */
+.container-1YxwTf
+{
+    margin: 20px;
+    border: 5px solid rgba(255,255,255,0.5);
+    border-width: 2px 5px;
+}
+
+/* Fix some font sizes */
+.da-username,
+.container-2ax-kl,
+.name-3YKhmS
+{
+    font-size: 16px;
+}
+
+.markup-2BOw-j
+{
+    font-size:1.5rem;
+    line-height:1;
+    text-transform: none;
+}
+
+/* Removes # symbol before channel names */
+.icon-1_QxNX
+{
+    display:none;
+}
+
+
+/* Adds dashes between channel groups */
+.containerDefault-3GGEv_::before
+{
+    position: relative;
+    left:7px;
+    content: "-------------------------";
+    text-shadow: 0 1px rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.5);
+}
+
+/*-------------------------------------------------------*/
+#bd-customcss-detach-container.hljs,
+#bd-customcss-detach-container.inline,
+#bd-customcss-detach-container.hljs :-webkit-any(ol, li, span),
+.editor-wrapper :-webkit-any(textarea, div, span) {
+    /**
+     * Keep Custom CSS editor and code related parts untouched.
+     * Avoids issues when working with the Custom CSS editor.
+     */
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+    text-transform: none;
+    text-shadow:none;
+}
+
