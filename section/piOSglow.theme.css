@@ -22,6 +22,7 @@ Reply message preview
 (edited)
 Code blocks and inline
 Timestamps
+Thread preview
 */
 .repliedTextContent-2hOYMB.markup-eYLPri,
 .edited-1v5nT8,
@@ -29,7 +30,8 @@ Timestamps
 .markup-eYLPri code.inline,
 .timestamp-2qj4__,
 .timestamp-p1Df1m,
-.timestampInline-_lS3aK {
+.timestampInline-_lS3aK,
+.threadMessageAccessoryPreview-13YRmc .markup-eYLPri{
     text-shadow: none;
 }
 

@@ -161,6 +161,23 @@
         border-color: var(--piOSaccent);
         background-color: var(--background-modifier-selected);
     }
+    /* Thread from message */
+    /* Thread spine */
+    .spine-2vt3pM {
+        top: 0.15rem;
+        left: 0rem;
+        z-index: -1;
+        border-bottom-width: 1px;
+        border-left-width: 3px;
+    }
+    /* Thread info */
+    .container-3i3IzO {
+        background-color: var(--background-modifier-hover);
+    }
+    .compact-2Nkcau .container-3i3IzO {
+        position: relative;
+        left: 2.5rem;
+    }
 
 /* Typing box */
 .channelTextArea-1VQBuV {
