@@ -1,0 +1,136 @@
+/**
+ * @name piOS Settings
+ * @author Saltssaumure#7557
+ * @description Settings section of piOS Discord Theme. Please download the autoupdater from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/latest!
+ * @version 1
+*/
+
+/* Values slider */
+.theme-dark .bar-1Bhnl9,
+.theme-dark .markDash-yk2kJ- {
+    background-color: var(--piOSgrey);
+}
+.barFill-2Bh7CX {
+    background: var(--background-accent);
+}
+
+/* Check/uncheck slider toggle */
+.container-2nx-BQ.checked-25WXMf {
+    background-color: var(--background-modifier-active)!important;
+    color: var(--background-modifier-active);
+}
+.bd-switch input:checked+.bd-switch-body {
+    --switch-color: var(--background-modifier-active);
+}
+.container-2nx-BQ {
+    background-color: var(--piOSgrey)!important;
+    color: var(--piOSgrey);
+}
+.slider-32CRPX svg path {
+    fill: currentColor!important;
+}
+
+/* Discord key redemption */
+.theme-dark .codeRedemptionRedirect-2hYMSQ {
+    background-color: var(--background-modifier-hover);
+    border-color: var(--piOSaccent);
+}
+
+/* Default payment method */
+.theme-dark .defaultIndicator-2ndWks {
+    background: var(--background-accent);
+}
+
+/* Authorised apps */
+.authedApp-8q3NA9 {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}
+
+/* Connections */
+.connection-YOVI9j {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);    
+}
+
+/* Discord nitro settings tab */
+.selectedBackground-1t6xXq {
+    background: var(--background-modifier-hover);
+}
+
+/* Voice and video */
+/* Video background */
+.backgroundOptionRing-1vvQ0C {
+    border: solid var(--piOSaccent);
+    border-width: var(--thinBorder);
+}
+
+/* Keybinds */
+.defaultKeybind-1rEiTa {
+    height: auto;
+}
+.keybindShortcut-3zF1P9 span {
+    background-color: var(--background-modifier-selected);
+}
+.theme-dark .keybindShortcut-3zF1P9 span {
+    box-shadow: inset 0 -4px 0 var(--background-modifier-hover);
+}
+
+/* Activity status */
+.overlayToggleIconOff-ps4gGp rect {
+    fill: var(--piOSaccent);
+}
+/* Remove game */
+.theme-dark .default-1Tkeeg {
+    background-color: transparent;
+    border: 1px solid var(--background-modifier-active);
+}
+
+/* Game overlay */
+/* Overlay notifications */
+.wrapper-SdcMKg {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}
+.wrapper-SdcMKg.disabledSelected-1jqfsw {
+    border: solid var(--piOSaccent);
+    border-width: var(--thinBorder);
+}
+    .option-1QI4c9 {
+        background-color: var(--borderColor);
+    }
+    .selected-18Wszc.option-1QI4c9 {
+        background-color: var(--background-modifier-active);
+        border-color: var(--piOSaccent);
+    }
+    .option-1QI4c9:hover {
+        background-color: var(--background-modifier-hover);
+    }
+
+/* Custom CSS */
+#bd-editor-panel {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}
+
+/* Plugins and Themes */
+.bd-button,
+.bd-addon-views .bd-view-button.selected {
+    background-color: var(--background-modifier-selected);
+}
+.bd-button:hover {
+    background-color: var(--background-modifier-active);
+}
+.bd-button:active {
+    background-color: var(--background-accent);
+}
+.bd-button.bd-button-danger,
+.bd-button.bd-button-danger:hover,
+.bd-button.bd-button-danger:active {
+    background-color: var(--background-accent);
+}
+
+.bd-addon-card {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}

@@ -76,6 +76,7 @@ User-definable variables: kebab-case
     --text-muted:               var(--piOSgrey);
     --text-link:                var(--piOSwhite);
     --text-link-low-saturation: var(--piOSwhite);
+    --text-positive:            var(--piOSwhite);
     --interactive-normal:       var(--piOSlightgrey);
     --interactive-muted:        var(--piOSgrey);
     --interactive-active:       var(--piOSwhite); /* default: unread dot marker, current channel name */
@@ -91,6 +92,7 @@ User-definable variables: kebab-case
     --backgroundEmbed:          hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.3);
 	--channeltextarea-background:   transparent;
     --input-background:         var(--background-modifier-hover); 
+    --deprecated-card-bg:       var(--background-modifier-hover);
     --button-danger-background:         var(--background-modifier-active);
     --button-danger-background-hover:   var(--background-accent);
     --button-danger-background-active:  var(--background-accent);
@@ -105,6 +107,13 @@ User-definable variables: kebab-case
     --button-outline-positive-border:           var(--piOSaccent);
     --button-outline-positive-border-hover:     var(--piOSaccent);
     --button-outline-positive-border-active:    var(--piOSaccent);
+    --button-outline-danger-text:               var(--piOSwhite);
+    --button-outline-danger-text-hover:         var(--piOSwhite);
+    --button-outline-danger-border:             var(--piOSaccent);
+    --button-outline-danger-background-hover:   var(--background-modifier-active);
+    --button-outline-danger-background-active:  var(--background-accent);
+    --button-outline-danger-border-hover:       var(--background-modifier-active);
+    --button-outline-danger-border-active:      var(--background-accent);
     --button-secondary-background:          var(--piOSblack);
     --button-secondary-background-hover:    var(--background-modifier-hover);
     --button-secondary-background-active:   var(--background-modifier-active);

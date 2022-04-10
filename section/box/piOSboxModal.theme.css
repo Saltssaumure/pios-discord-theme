@@ -93,14 +93,6 @@
     .theme-dark .footer-VCsJQY {
         background-color: transparent;
     }
-    /* Spoiler checkbox */
-    .theme-dark .checkbox-f1HnKB.checked-1pZh2h {
-        border-color: var(--piOSwhite) !important;
-        color: var(--piOSwhite);
-    }
-        .theme-dark .checkbox-f1HnKB.checked-1pZh2h path {
-            fill: currentColor;
-        }
 
 /* Delete message confirmation modal */
 /* Message view */
@@ -109,4 +101,26 @@
     box-shadow: none;
     border: solid var(--borderColor);
     border-width: var(--thickBorder);
+}
+
+/* Enter phone number modal */
+/* Country select */
+.theme-dark .popoutList-10IFAa {
+    background: var(--background-primary);
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}
+    /* Country */
+    .theme-dark .selectableItem-3-fmiM:hover {
+        background-color: var(--background-modifier-hover);
+    }
+
+/* Change your username modal */
+.questionMark-3V9mGJ {
+    background-color: var(--background-modifier-hover);
+}
+
+/* BetterDiscord error modal */
+.bd-error-modal-header {
+    padding: 16px;
 }

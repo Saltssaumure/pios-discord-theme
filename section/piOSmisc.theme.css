@@ -16,62 +16,54 @@
     background-color: var(--background-primary);
 }
 
-/* I forgot what this is */
-.lookFilled-yCfaCM.colorred-rQXKgM {
-    background: var(--background-accent);
-}
-
 /* Buttons */
 .lookFilled-yCfaCM.colorBrand-I6CyqQ,
-.lookFilled-yCfaCM.colorPrimary-2AuQVo  {
+.lookFilled-yCfaCM.colorPrimary-2AuQVo,
+.lookFilled-yCfaCM.colorBrandNew-2-gGsS  {
     background-color: var(--background-modifier-selected);
 }
 .lookFilled-yCfaCM.colorBrand-I6CyqQ:hover,
-.lookFilled-yCfaCM.colorPrimary-2AuQVo:hover {
+.lookFilled-yCfaCM.colorPrimary-2AuQVo:hover,
+.lookFilled-yCfaCM.colorBrandNew-2-gGsS:hover {
     background-color: var(--background-modifier-active);
 }
 .lookFilled-yCfaCM.colorBrand-I6CyqQ:active,
-.lookFilled-yCfaCM.colorPrimary-2AuQVo:active {
+.lookFilled-yCfaCM.colorPrimary-2AuQVo:active,
+.lookFilled-yCfaCM.colorBrandNew-2-gGsS:active {
     background-color: var(--background-accent);
 }
 /* Green buttons */
 .lookOutlined-3yKVGo.colorGreen-3y-Z79 {
     background-color: var(--background-modifier-hover);
 }
+/* Red buttons */
+.lookFilled-yCfaCM.colorred-rQXKgM {
+    background: var(--background-accent);
+}
 /* Dangerous buttons when hovered */
 .button-3bklZh.dangerous-Y36ifs:hover {
     color: var(--piOSwhite);
 }
-
-/* Check/uncheck slider */
-.container-2nx-BQ.checked-25WXMf {
-    background-color: var(--background-modifier-active)!important;
-    color: var(--background-modifier-active);
-}
-.container-2nx-BQ {
-    background-color: var(--piOSgrey)!important;
-    color: var(--piOSgrey);
-}
-.slider-32CRPX svg path {
-    fill: currentColor!important;
-}
-     
+    
 /* BetterDiscord toasts */
 .bd-toasts {
     align-items: flex-end;
     right: 0;
 }
     .bd-toast {
-        border: solid var(--borderBrightColor);
+        border: solid var(--borderColor);
         border-width: var(--thinBorder);
         margin-right: 24px;
+        background-color: hsla(0, 0%, 0%, 0.7);
     }
     .bd-toast.toast-success {
-        background-color: var(--background-accent);
+        background-color: var(--background-modifier-active);
     }
 
 /* Messages from Clyde now appear as SYSTEM */
-.compact-2Nkcau.wrapper-30-Nkg.ephemeral-2nDdnn {
+.compact-2Nkcau.wrapper-30-Nkg.ephemeral-2nDdnn,
+.message-2CShn3.ephemeral-2nDdnn.selected-2LX7Jy,
+.mouse-mode.full-motion .ephemeral-2nDdnn:hover {
     --clydeColor: var(--piOSaccent);
     --clydeDimColor: hsl(var(--piOSaccenthue), 100%, 30%);
     border-color: var(--piOSaccent);
@@ -139,3 +131,19 @@
         .ephemeralMessage-11q8XZ .anchor-1MIwyf {
             color: var(--clydeColor);
         }
+
+/* Checkboxes */
+.theme-dark .checkbox-f1HnKB.checked-1pZh2h {
+    border-color: var(--piOSwhite) !important;
+    color: var(--piOSwhite);
+    background: transparent!important;
+}
+    .theme-dark .checkbox-f1HnKB.checked-1pZh2h path {
+        fill: currentColor;
+    }
+
+/* Star for verified */
+.flowerStar-2tNFCR path {
+    fill: var(--background-modifier-active);
+}
+
