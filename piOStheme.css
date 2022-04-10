@@ -2,7 +2,7 @@
  * @name piOS Main
  * @author Saltssaumure#7557
  * @description Main section of piOS Discord Theme. Please download the autoupdater from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/latest!
- * @version 6
+ * @version 7
 */
 
 /*
@@ -91,6 +91,23 @@ User-definable variables: kebab-case
     --backgroundEmbed:          hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.3);
 	--channeltextarea-background:   transparent;
     --input-background:         var(--background-modifier-hover); 
+    --button-danger-background:         var(--background-modifier-active);
+    --button-danger-background-hover:   var(--background-accent);
+    --button-danger-background-active:  var(--background-accent);
+    --button-positive-background:           var(--background-modifier-active);  
+    --button-positive-background-hover:     var(--background-accent);
+    --button-positive-background-active:    var(--background-accent);
+    --button-outline-positive-text:                 var(--piOSwhite);
+    --button-outline-positive-text-hover:           var(--piOSwhite);
+    --button-outline-positive-text-active:          var(--piOSwhite);
+    --button-outline-positive-background-hover:     var(--background-modifier-selected);
+    --button-outline-positive-background-active:    var(--background-modifier-selected);
+    --button-outline-positive-border:           var(--piOSaccent);
+    --button-outline-positive-border-hover:     var(--piOSaccent);
+    --button-outline-positive-border-active:    var(--piOSaccent);
+    --button-secondary-background:          var(--piOSblack);
+    --button-secondary-background-hover:    var(--background-modifier-hover);
+    --button-secondary-background-active:   var(--background-modifier-active);
     --background-modifier-hover:    hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.2);
     --background-modifier-active:   hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.7);
     --background-modifier-selected: hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.3);
@@ -137,6 +154,12 @@ User-definable variables: kebab-case
         rgba(0, 255, 255, 0.2) 6px
     ); /* Spoiler stripe pattern */
     --true-compact-message-spacing: var(--compact-message-spacing, 1); /* Space between messages in compact mode, user adjustable */
+    --focus-primary: hsl(
+        calc(var(--piOSaccenthue) + 180),
+        calc(var(--saturation-factor) * 100%),
+        50%
+    ); /* Focus ring when navigating by keyboard */
+    --info-warning-foreground: var(--piOSaccent); /* Mentioned message left bar */
 }
 
 /*

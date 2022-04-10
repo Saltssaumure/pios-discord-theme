@@ -22,14 +22,120 @@
 }
 
 /* Buttons */
-.lookFilled-yCfaCM.colorBrand-I6CyqQ  {
+.lookFilled-yCfaCM.colorBrand-I6CyqQ,
+.lookFilled-yCfaCM.colorPrimary-2AuQVo  {
     background-color: var(--background-modifier-selected);
 }
-.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover {
+.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover,
+.lookFilled-yCfaCM.colorPrimary-2AuQVo:hover {
+    background-color: var(--background-modifier-active);
+}
+.lookFilled-yCfaCM.colorBrand-I6CyqQ:active,
+.lookFilled-yCfaCM.colorPrimary-2AuQVo:active {
     background-color: var(--background-accent);
 }
-
+/* Green buttons */
+.lookOutlined-3yKVGo.colorGreen-3y-Z79 {
+    background-color: var(--background-modifier-hover);
+}
 /* Dangerous buttons when hovered */
 .button-3bklZh.dangerous-Y36ifs:hover {
     color: var(--piOSwhite);
 }
+
+/* Check/uncheck slider */
+.container-2nx-BQ.checked-25WXMf {
+    background-color: var(--background-modifier-active)!important;
+    color: var(--background-modifier-active);
+}
+.container-2nx-BQ {
+    background-color: var(--piOSgrey)!important;
+    color: var(--piOSgrey);
+}
+.slider-32CRPX svg path {
+    fill: currentColor!important;
+}
+     
+/* BetterDiscord toasts */
+.bd-toasts {
+    align-items: flex-end;
+    right: 0;
+}
+    .bd-toast {
+        border: solid var(--borderBrightColor);
+        border-width: var(--thinBorder);
+        margin-right: 24px;
+    }
+    .bd-toast.toast-success {
+        background-color: var(--background-accent);
+    }
+
+/* Messages from Clyde now appear as SYSTEM */
+.compact-2Nkcau.wrapper-30-Nkg.ephemeral-2nDdnn {
+    --clydeColor: var(--piOSaccent);
+    --clydeDimColor: hsl(var(--piOSaccenthue), 100%, 30%);
+    border-color: var(--piOSaccent);
+    background-color: transparent;
+}
+    /* No left bar */
+    .ephemeral-2nDdnn:before {
+        display: none;
+    }
+    /* Change name */
+    .ephemeral-2nDdnn .username-h_Y3Us {
+        visibility: hidden;
+    }
+    .ephemeral-2nDdnn .username-h_Y3Us::after {
+        visibility: visible;
+        content: "SYSTEM";
+        display: block;
+        color: var(--clydeColor);
+        position: absolute;
+        top: -0.15rem;
+        left: 0;
+        background: linear-gradient(
+            transparent,
+            var(--background-primary) 40%,
+            transparent 60%
+        );
+    }
+    .ephemeral-2nDdnn .username-h_Y3Us:hover::after {
+        text-decoration: underline;
+    }
+    /* Totally not a bot */
+    .ephemeral-2nDdnn .botTag-1NoD0B {
+        display: none;
+    }
+    /* Timestamp */ 
+    .ephemeral-2nDdnn .timestamp-p1Df1m,
+    .ephemeral-2nDdnn .timestamp-p1Df1m.alt-1dvXnH {
+        color: var(--clydeDimColor);
+    }
+    /* Content */
+    .ephemeral-2nDdnn .markup-eYLPri {
+        color: var(--clydeColor);
+        text-shadow:
+            2px 0 10px var(--clydeColor),
+            -2px 0 10px var(--clydeColor);
+        text-transform: uppercase;
+    }
+    /* Dismiss message box */
+    .ephemeralMessage-11q8XZ {
+        position: absolute;
+        right: 0;
+        background: linear-gradient(
+            transparent,
+            var(--background-primary) 50%,
+            transparent 70%
+        );
+        bottom: -1.1rem;
+        text-transform: uppercase;
+        color: var(--clydeDimColor);
+        font-size: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+        .ephemeralMessage-11q8XZ .anchor-1MIwyf {
+            color: var(--clydeColor);
+        }

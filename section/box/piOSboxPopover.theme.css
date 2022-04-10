@@ -66,3 +66,17 @@
 .stickerUnsendable-PkQAxI {
     filter: blur(1px) grayscale(100%) opacity(40%);
 }
+
+/* ---- Message options popover ---- */
+/* Hovered normal option */
+.colorDefault-CDqZdO.focused-3qFvc8 {
+    background-color: var(--background-modifier-hover);
+}
+/* Hovered danger option */
+.colorDanger-3n-KnP.focused-3qFvc8 {
+    background-color: var(--background-modifier-active);
+}
+/* Clicked option */
+.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
+    background-color: var(--background-modifier-active);
+}

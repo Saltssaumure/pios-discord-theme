@@ -9,10 +9,45 @@
 .theme-dark .root-g14mjS {
     border: solid var(--borderBrightColor);
     border-width: var(--thickBorder);
+    background-color: var(--piOSblack);
     box-shadow: 0 0 30px 0 var(--piOSgrey);
 }
+/* Footer */
+.theme-dark .footer-31IekZ {
+    background-color: var(--piOSblack);
+    box-shadow: none;
+    border-top: 2px dashed var(--borderColor);
+}
 
+
+/* ---- Invite friends to server modal ---- */
+/* Copy url */
+.copyInput-1dXbXE .input-2g-os5 {
+    background: transparent;
+}
+/* Invite link settings */
+/* Selected item icon */
+.selectedIcon-19TbzU {
+    color: var(--piOSgrey);
+}
+/* Search bar */
+.container-2oNtJn {
+    background-color: var(--input-background);
+}
+/* Search results */
+.theme-dark .inviteRow-3vmB7i:hover {
+    background: var(--background-modifier-hover);
+}
+    /* "Invite" button */
+    .inviteRowButton-3hcOhY {
+        padding: 2px;
+    }
+      
 /* ---- Inbox modal ---- */
+/* Channel info */
+.channelHeader-DFRX8q {
+    border-bottom: 2px dashed var(--borderColor);
+}
 /* Inbox message containers */
 .messageContainer-3VTXBC {
     padding: 0;
@@ -28,6 +63,17 @@
 .menu-1QACrS /* filter gets box border (not sure what this does anymore) */ {
     border: solid var(--borderColor);
     border-width: var(--thickBorder);
+}
+/* "Mark Inbox as read", "Notifications", "Mark as read", Jump buttons */
+.primary-38Hs-h:hover:not(.disabled-184-il),
+.secondary-2bzKEX,
+.tertiary-1e-lAP,
+.jumpButton-1V_1FA {
+    background-color: var(--background-modifier-selected);
+}
+.secondary-2bzKEX:hover:not(.disabled-184-il),
+.tertiary-1e-lAP:hover:not(.disabled-184-il) {
+    background-color: var(--background-modifier-active);
 }
 
 /* ---- Upload file by drag and drop modal ---- */
@@ -55,3 +101,12 @@
         .theme-dark .checkbox-f1HnKB.checked-1pZh2h path {
             fill: currentColor;
         }
+
+/* Delete message confirmation modal */
+/* Message view */
+.theme-dark .message-G6O-Wv {
+    background-color: var(--piOSblack);
+    box-shadow: none;
+    border: solid var(--borderColor);
+    border-width: var(--thickBorder);
+}

@@ -83,6 +83,13 @@
         .compact-2Nkcau .username-h_Y3Us {
             vertical-align: top;
         }
+    /* Special message left bar */
+    .automodMessage-265YwJ:before,
+    .ephemeral-2nDdnn:before,
+    .mentioned-Tre-dv:before,
+    .replying-eZ7p5z:before {
+        width: 3px;
+    }
     /* Reply */
     .compact-2Nkcau .repliedMessage-3Z6XBG::before {
         display: none;
@@ -190,7 +197,7 @@
     /* "Replying to" bar */
     .attachedBars-2BCP3l {
         background: transparent;
-        border-bottom: 1px dashed var(--border);
+        border-bottom: 2px dashed var(--border);
     }
         /* @on button */
         .colorLink-2apWfY.mentionButton-3C5YMI {
@@ -203,6 +210,6 @@
 
 /* follow to get this channel's updates in your server add dotted topline */
 .form-3gdLxP .wrapper-2SplAX {
-    border-top: 1px dashed var(--borderColor);
+    border-top: 2px dashed var(--borderColor);
     margin-top: 0;
 }
