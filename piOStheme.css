@@ -41,6 +41,12 @@ https://gist.github.com/ExperiBass/2375ac4f7088bb9410d81cd59495f462
     src: url("https://saltssaumure.github.io/pios-discord-theme/font/PerfectDosVga.ttf");
 }
 
+/* Warn users in light mode */
+.theme-light #piOS\ Forever-card .bd-description::after {
+    content: " Switch to dark mode to see effects.";
+    font-weight: 700;
+}
+
 /* 
 Override Discord variables: kebab-case
 Self-defined variables: camelCase
