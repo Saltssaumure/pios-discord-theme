@@ -91,27 +91,21 @@
         width: 3px;
     }
     /* Reply */
-    .compact-2Nkcau .repliedMessage-3Z6XBG::before {
+    .compact-2Nkcau.hasReply-2Cr4KE .header-2jRmjb {
+        top: -2.7rem;
+    }
+    .compact-2Nkcau.hasReply-2Cr4KE .repliedMessage-3Z6XBG {
+        margin-left: 0;
+        padding-left: 0;
+        top: -2px;
+    }
+    .compact-2Nkcau.hasReply-2Cr4KE .replyBadge-LMm_Ic {
         display: none;
     }
-    .compact-2Nkcau .repliedMessage-3Z6XBG {
-        position: absolute;
-        right: 0.5rem;
-        padding-left: 0;
-        top: -0.6rem;
-        max-width: 400px;
-        background: linear-gradient(
-            transparent,
-            var(--background-primary) 50%,
-            transparent 60%
-        );
-        display: flex;
-        justify-content: flex-end;
-        z-index: 1;
+    .compact-2Nkcau.hasReply-2Cr4KE .repliedTextContentIcon-1LQXRB {
+        width: 16px;
+        height: 16px;
     }
-        .compact-2Nkcau .replyBadge-LMm_Ic {
-            background: transparent;
-        }
     /* message react/reply etc buttons */
     .compact-2Nkcau .container-2gUZhU {
         top: -16px;
