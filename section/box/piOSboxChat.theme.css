@@ -99,7 +99,8 @@
         padding-left: 0;
         top: -2px;
     }
-    .compact-2Nkcau.hasReply-2Cr4KE .replyBadge-LMm_Ic {
+    .compact-2Nkcau.hasReply-2Cr4KE .replyBadge-LMm_Ic,
+    .compact-2Nkcau.hasReply-2Cr4KE .repliedMessage-3Z6XBG::before {
         display: none;
     }
     .compact-2Nkcau.hasReply-2Cr4KE .repliedTextContentIcon-1LQXRB {
