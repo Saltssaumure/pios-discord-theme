@@ -20,12 +20,12 @@
 
   --rs-avatar-shape: 0%; /* 50% for round - 0% for square */
 
-  --rs-online-color: #43b581; /* Colour for online status */
-  --rs-idle-color: #faa61a; /* Colour for idle status */
-  --rs-dnd-color: #f04747; /* Colour for dnd status */
-  --rs-offline-color: #636b75; /* Colour for offline status */
-  --rs-streaming-color: #643da7; /* Colour for streaming status */
-  --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+  --rs-online-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%); /* Colour for online status */
+  --rs-idle-color: hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%); /* Colour for idle status */
+  --rs-dnd-color: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%); /* Colour for dnd status */
+  --rs-offline-color: hsl(214, calc(var(--saturation-factor, 1) * 9.9%), 50.4%); /* Colour for offline status */
+  --rs-streaming-color: hsl(262, calc(var(--saturation-factor, 1) * 46.8%), 39.8%); /* Colour for streaming status */
+  --rs-invisible-color: var(--rs-offline-color); /* Colour for invisible status - Note: this will only show for your own invisibility */
   --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
 
   --rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
