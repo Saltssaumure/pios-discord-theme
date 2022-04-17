@@ -103,9 +103,12 @@
     .compact-2Nkcau.hasReply-2Cr4KE .repliedMessage-3Z6XBG::before {
         display: none;
     }
-    .compact-2Nkcau.hasReply-2Cr4KE .repliedTextContentIcon-1LQXRB {
-        width: 16px;
-        height: 16px;
+    /* Icons inside replied content */
+    .compact-2Nkcau.hasReply-2Cr4KE .repliedTextContentIcon-1LQXRB,
+    .compact-2Nkcau.hasReply-2Cr4KE .badgesChat-f_cbR8 img,
+    .compact-2Nkcau.hasReply-2Cr4KE .ownerIcon-255uKo {
+        width: 1rem;
+        height: 1rem;
     }
     /* message react/reply etc buttons */
     .compact-2Nkcau .container-2gUZhU {
