@@ -53,7 +53,8 @@ Self-defined variables: camelCase
 User-definable variables: kebab-case
 */
 
-.theme-dark
+.theme-dark,
+.layerContainer-2v_Sit .theme-light /* Modals that use theme-light while in dark mode */
 {
     /* Set customisable colour scheme */
     --piOSaccenthue:  var(--accent-color, 0); /* default: 0 (red) */
@@ -93,6 +94,8 @@ User-definable variables: kebab-case
     --background-secondary:     var(--piOSblack);
     --background-secondary-alt: var(--piOSblack);
     --background-tertiary:      var(--piOSblack);
+    --background-mobile-primary:    var(--piOSblack);
+    --background-mobile-secondary:  var(--piOSblack);
     --background-accent:        var(--piOSaccent);
     --background-floating:      var(--piOSblack);
 	--background-mentioned:     hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.2);
