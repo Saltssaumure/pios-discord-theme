@@ -27,11 +27,21 @@
     .tooltipPointer-3L49xb {
         display: none;
     }
+/* "Verified" connection tooltip */
+.theme-dark .tooltipBrand-20XsMA,
+.theme-light .tooltipBrand-20XsMA {
+    background-color: var(--piOSblack);
+}
 
 /* ---- User profile popover ---- */
 /* User profile picture */
 .wrapper-1VLyxH {
     border-width: 0;
+}
+/* View profile hint */
+.avatarHint-k7pYop {
+    top: 0;
+    left: 0;
 }
 /* about me ```code``` from inline to block */
 .aboutMeBody-1J8rhz code.inline {
