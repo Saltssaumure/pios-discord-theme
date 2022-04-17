@@ -91,3 +91,19 @@
 .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
     background-color: var(--background-modifier-active);
 }
+
+/* ---- Voice noise suppression popover ---- */
+.noiseCancellationPopout-2-e5Xz {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}
+
+/* ---- Channel Permissions plugin popover ---- */
+.popout-TdhJ6Z,
+.container-8Futzw {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}
+.container-8Futzw .FarcradaChannelTooltipClass {
+    margin-top: 8px!important;
+}
