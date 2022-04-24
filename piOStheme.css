@@ -2,7 +2,7 @@
  * @name piOS Main
  * @author Saltssaumure#7557
  * @description Main section of piOS Discord Theme. Please download the autoupdater from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/latest!
- * @version 7
+ * @version 8
 */
 
 /*
@@ -150,7 +150,7 @@ User-definable variables: kebab-case
     --search-popout-option-fade:        linear-gradient(90deg, transparent, var(--piOSblack) 80%); /* Fading effect after search options */
     --search-popout-option-fade-hover:  linear-gradient(90deg, transparent, var(--piOSblack) 50%);
     /* --search-popout-option-filter-text: var(--piOSgrey); */
-    --search-popout-option-non-text-color:  ;
+    --search-popout-option-non-text-color: var(--piOSgrey);
     /*--search-popout-option-filter-color:    var(--piOSgrey);
     --search-popout-option-answer-color:    var(--piOSgrey);
     --search-popout-date-picker-border:     var(--piOSgrey); 
