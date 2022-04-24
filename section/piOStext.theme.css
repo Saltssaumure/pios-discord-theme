@@ -28,6 +28,10 @@
     border-width: 1px 3px;
     padding: 1px 8px 3px 8px;
 }
+/* Code in replied message */
+.markup-eYLPri.repliedTextContent-2hOYMB code.inline {
+    padding: 1px 8px 2px 8px;
+}
 
 /* Underline #channels and @pings */
 .theme-dark .wrapper-1ZcZW- {
