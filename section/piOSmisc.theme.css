@@ -62,20 +62,33 @@
 
 /* Messages from Clyde now appear as SYSTEM */
 .compact-2Nkcau.wrapper-30-Nkg.ephemeral-2nDdnn,
+.cozyMessage-1DWF9U.wrapper-30-Nkg.ephemeral-2nDdnn,
 .message-2CShn3.ephemeral-2nDdnn.selected-2LX7Jy,
 .mouse-mode.full-motion .ephemeral-2nDdnn:hover {
     --clydeColor: var(--piOSaccent);
     --clydeDimColor: hsl(var(--piOSaccenthue), 100%, 30%);
-    border-color: var(--piOSaccent);
+    border-color: var(--background-modifier-active);
     background-color: transparent;
 }
     /* No left bar */
     .ephemeral-2nDdnn:before {
         display: none;
     }
+    /* Change popout banner */
+    .userPopout-2j1gM4[aria-label="Clyde"] .popoutBanner-3cqRD9 {
+        background-color: var(--piOSblack)!important;
+    }
+    /* Change avatar */
+    .ephemeral-2nDdnn .avatar-2e8lTP {
+        filter: contrast(2) saturate(100) invert(1);
+    }
+    .full-motion .avatar-2e8lTP.clickable-31pE3P:hover {
+        filter: hue-rotate(130deg) contrast(2) saturate(100) ;
+    }
     /* Change name */
     .ephemeral-2nDdnn .username-h_Y3Us {
         visibility: hidden;
+        padding-right: 0.5rem;
     }
     .ephemeral-2nDdnn .username-h_Y3Us::after {
         visibility: visible;
@@ -111,8 +124,13 @@
             -2px 0 10px var(--clydeColor);
         text-transform: uppercase;
     }
-    /* Dismiss message box */
+    /* Dismiss message box */  
     .ephemeralMessage-11q8XZ {
+        color: var(--clydeDimColor);
+        font-size: 100%;
+        text-transform: uppercase;
+    }
+    .compact-2Nkcau .ephemeralMessage-11q8XZ {
         position: absolute;
         right: 0;
         background: linear-gradient(
@@ -121,9 +139,6 @@
             transparent 70%
         );
         bottom: -1.1rem;
-        text-transform: uppercase;
-        color: var(--clydeDimColor);
-        font-size: 100%;
         display: flex;
         align-items: center;
         gap: 0.6rem;
