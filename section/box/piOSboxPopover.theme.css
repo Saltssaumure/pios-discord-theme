@@ -12,7 +12,7 @@
 .profileBannerPreview-3mLIdO,           /* User profile preview (not a popover but same as above) */
 .messagesPopoutWrap-3zryHW,		        /* Pinned messages */
 .container-2ebMPP,				        /* Inbox */
-.container-18GwIk                       /* Threads */,
+.container-18GwIk:not(.browser-SOGsFd)  /* Threads (not modal) */,
 .pictureInPictureVideo-2puO2Q           /* Stream picture-in-picture */ {
     border: solid var(--borderBrightColor);
     border-width: var(--thickBorder);
@@ -106,4 +106,12 @@
 }
 .container-8Futzw .FarcradaChannelTooltipClass {
     margin-top: 8px!important;
+}
+
+/* ---- Threads popover ---- */
+/* Thread container */
+.container-2rzKKA,
+.container-2rzKKA:hover {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
 }
