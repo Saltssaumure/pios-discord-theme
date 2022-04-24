@@ -168,6 +168,11 @@
     }
     /* Thread from message */
     /* Thread spine */
+    /* Upper */
+    .compact-2Nkcau.hasThread-3h-KJV .contents-2MsGLg::before {
+        display: none;
+    }
+    /* Lower */
     .spine-2vt3pM {
         top: 0.15rem;
         left: 0rem;
@@ -204,6 +209,11 @@
     /* Uploading files bar */
     .upload-vLbqu- {
         background-color: var(--backgroundEmbed);
+    }
+    /* Command suggestions bar */
+    .theme-dark .selected-3H3-RC,
+    .theme-dark .option-Tt7anD {
+        background-color: var(--background-modifier-selected);
     }
 
 /* follow to get this channel's updates in your server add dotted topline */
