@@ -2,12 +2,19 @@
 [![GitHub downloads](https://img.shields.io/github/downloads/saltssaumure/pios-discord-theme/total?color=purple&label=GitHub%20downloads&style=flat-square)](https://github.com/Saltssaumure/pios-discord-theme/releases/latest "Latest release")
 ![Total size](https://img.shields.io/github/repo-size/saltssaumure/pios-discord-theme?style=flat-square "Total size")
 
-SUPERHOT piOS-inspired theme built for BetterDiscord. 
+SUPERHOT piOS-inspired theme built for BetterDiscord.
 
 ![Screenshot of piOS Discord Theme applied to Discord desktop client](https://user-images.githubusercontent.com/29710355/123527529-72121600-d6d8-11eb-9580-da3987ee8398.png)
 
-## Download
-Get the automatically updating theme [here](https://github.com/Saltssaumure/pios-discord-theme/releases/latest).
+## Installation
+1. Install [BetterDiscord](https://betterdiscord.app/).
+2. Download the theme file:
+    - [GitHub](https://github.com/Saltssaumure/pios-discord-theme/releases/latest)
+    - [BD Store](https://betterdiscord.app/theme/piOS%20Forever)
+3. Place theme file in BD's theme folder:
+    - Windows: `%appdata%/betterdiscord/themes`
+    - Mac: `~/Library/Application Support/betterdiscord/themes`
+    - Linux: `~/.config/BetterDiscord/themes`
 
 ## Customisation
 
@@ -19,6 +26,16 @@ Cosy mode uses regular Discord layout, while Compact mode has piOS-style boxes.
 |Cosy|Compact|
 |-|-|
 |![Cosy](https://user-images.githubusercontent.com/29710355/154400330-eb4434ac-1716-4c3f-bca1-8b6ba509e9c3.png)|![Compact](https://user-images.githubusercontent.com/29710355/154400528-66fea4d8-53c1-4178-91f5-88729bde0e81.png)|
+
+### Glow intensity
+Brightness of text glow and status indicator glow. 
+
+- **Theme setting:** change value of `--glow-intensity` to a number between 0 and 1.
+- **Default value:** `1` (100% brightness).
+
+| 1 (full glow) | 0 (no glow) |
+|-|-|
+| ![image](https://user-images.githubusercontent.com/29710355/165006236-eeddba57-b7d6-4bd6-81af-1f649c5000dc.png) ![image](https://user-images.githubusercontent.com/29710355/165006394-3f6b4379-a35f-4506-a855-6a86d9e1f142.png) | ![image](https://user-images.githubusercontent.com/29710355/165006329-896ad462-f94d-447a-acd6-75cb0573cae4.png) ![image](https://user-images.githubusercontent.com/29710355/165006379-8c60fedd-7f42-4f70-a134-33da1a5211e4.png)
 
 ### Compact message spacing
 Affects spacing between messages in Compact mode (see above).
@@ -40,7 +57,11 @@ Affects colour scheme used throughout the theme.
 |-|-|
 |![Purple in a colour picker with its H value 270 selected.](https://user-images.githubusercontent.com/29710355/162552090-57011aeb-8b97-45e6-a96c-d13287761cf8.png)|![Screenshot of piOS Discord Theme where all colour accents are purple.](https://user-images.githubusercontent.com/29710355/162551985-ed568020-7f12-4300-ad31-0c5a66be4645.png)|
 
+## License
+[GNU General Public License v3.0](https://github.com/Saltssaumure/pios-discord-theme/blob/master/LICENSE.md)
+TL;DR: Do what you want with this theme, as long as you also let others do what they want with your version.
+
 ## Questions or suggestions?
-- Post an issue on Github: https://github.com/Saltssaumure/pios-discord-theme/issues
-- Join the official SUPERHOT server and ping me: https://discord.gg/9eAwJF8
-- Send a DM on Discord: Saltssaumure#7557
+- Post [an issue](https://github.com/Saltssaumure/pios-discord-theme/issues) on GitHub.
+- Post in `#theme-support` on [my support server](https://discord.gg/uy8nKQVatp).
+- Ping me on the [SUPERHOT Official server](https://discord.gg/9eAwJF8).
