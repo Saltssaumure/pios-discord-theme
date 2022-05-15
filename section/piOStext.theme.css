@@ -20,6 +20,11 @@
     text-transform: uppercase;
 }
 
+/* Selected text */
+::selection {
+    background: var(--background-modifier-active);
+}
+
 /* Code blocks and inline */
 .markup-eYLPri code.hljs,
 .markup-eYLPri code.inline {

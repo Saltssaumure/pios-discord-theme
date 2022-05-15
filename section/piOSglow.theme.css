@@ -40,9 +40,10 @@ Thread preview
 .markup-eYLPri a {
     text-shadow: 0 0 calc(20px * var(--glowIntensity));
 }
-/* Role pings, pin/join/thread alert messages */
+/* Role pings, pin/join/thread alert messages, selected text */
 .theme-dark .mention.roleMention-11Aaqi,
-.content-vSHmMD {
+.content-vSHmMD,
+::selection {
     text-shadow: 0 0 calc(10px * var(--glowIntensity));
 }
 
