@@ -91,22 +91,34 @@
         width: 3px;
     }
     /* Reply */
-    .compact-2Nkcau.hasReply-2Cr4KE .header-2jRmjb {
+    /* Post username and timestamp */
+    .compact-2Nkcau.hasReply-2Cr4KE .header-2jRmjb,
+    .compact-2Nkcau .repliedMessage-3Z6XBG+.contents-2MsGLg .header-2jRmjb {
         top: -2.7rem;
     }
-    .compact-2Nkcau.hasReply-2Cr4KE .repliedMessage-3Z6XBG {
+    /* Replied content */
+    .compact-2Nkcau .repliedMessage-3Z6XBG {
         margin-left: 0;
         padding-left: 0;
         top: -2px;
     }
-    .compact-2Nkcau.hasReply-2Cr4KE .replyBadge-LMm_Ic,
-    .compact-2Nkcau.hasReply-2Cr4KE .repliedMessage-3Z6XBG::before {
+    .executedCommand-14-SNW,
+    .threadMessageAccessory-2W9mjC {
+        height: auto;
+    }
+    .compact-2Nkcau .repliedMessage-3Z6XBG .timestamp-p1Df1m {
+        line-height: 1rem;
+        height: auto;
+    }
+    /* Replied elbow */
+    .compact-2Nkcau .repliedMessage-3Z6XBG::before {
         display: none;
     }
     /* Icons inside replied content */
-    .compact-2Nkcau.hasReply-2Cr4KE .repliedTextContentIcon-1LQXRB,
-    .compact-2Nkcau.hasReply-2Cr4KE .badgesChat-f_cbR8 img,
-    .compact-2Nkcau.hasReply-2Cr4KE .ownerIcon-255uKo {
+    .compact-2Nkcau .repliedMessage-3Z6XBG .repliedTextContentIcon-1LQXRB,
+    .compact-2Nkcau .repliedMessage-3Z6XBG .badgesChat-f_cbR8 img,
+    .compact-2Nkcau .repliedMessage-3Z6XBG .ownerIcon-255uKo,
+    .compact-2Nkcau .repliedMessage-3Z6XBG .emoji {
         width: 1rem;
         height: 1rem;
     }
