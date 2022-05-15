@@ -19,12 +19,14 @@
 }
 
 /* ---- Tooltips ---- */
-.tooltip-14MtrL {
+.tooltip-14MtrL,
+.tooltip-1T4pLi {
     border: solid var(--borderBrightColor);
     border-width: var(--thinBorder);
 }
     /* Arrow towards tooltip source */
-    .tooltipPointer-3L49xb {
+    .tooltipPointer-3L49xb,
+    .tooltipPointer-r3VntW {
         display: none;
     }
 /* "Verified" connection tooltip */
