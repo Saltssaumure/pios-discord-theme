@@ -42,6 +42,12 @@
     border-width: var(--thinBorder);
 }
 
+/* ---- New user popover ---- */
+.popoutContainer-2wbmiM {
+    border: solid var(--borderBrightColor);
+    border-width: var(--thinBorder);
+}
+
 /* ---- User profile popover ---- */
 /* User profile picture */
 .wrapper-1VLyxH {
