@@ -85,6 +85,7 @@ User-definable variables: kebab-case
     --text-link:                var(--piOSwhite);
     --text-link-low-saturation: var(--piOSwhite);
     --text-positive:            var(--piOSwhite);
+    --text-brand:               hsl(var(--piOSaccenthue), calc(var(--saturation-factor)*80%), 50%);
     --interactive-normal:       var(--piOSlightgrey);
     --interactive-muted:        var(--piOSgrey);
     --interactive-active:       var(--piOSwhite); /* default: unread dot marker, current channel name */

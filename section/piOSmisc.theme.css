@@ -18,6 +18,7 @@
 
 /* Buttons */
 .lookFilled-yCfaCM.colorBrand-I6CyqQ,
+.lookFilled-yCfaCM.colorBrand-I6CyqQ:disabled,
 .lookFilled-yCfaCM.colorPrimary-2AuQVo,
 .lookFilled-yCfaCM.colorBrandNew-2-gGsS  {
     background-color: var(--background-modifier-selected);
