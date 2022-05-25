@@ -23,6 +23,10 @@
 }
 
 /* Calendar date selector */
+.theme-dark .calendarPicker-sDhzdi {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}
 .theme-dark .calendarPicker-sDhzdi .react-datepicker,
 .theme-dark .calendarPicker-sDhzdi .react-datepicker__header,
 .theme-dark .calendarPicker-sDhzdi .react-datepicker__navigation.react-datepicker__navigation--previous,

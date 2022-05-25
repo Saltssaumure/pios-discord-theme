@@ -115,6 +115,28 @@
         background-color: var(--background-modifier-hover);
     }
 
+/* Event and new event modal */
+/* Event card */
+.theme-dark .previewCard-E137i2,
+.card-8UsK4b
+{
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}
+/* Event cover image */
+.imageUploaderInner-IIRaFr {
+    background-color: var(--background-modifier-hover);
+}
+    .avatarUploadIcon-34ohJq.hideDefaultIcon-Z9-iXK {
+        background-color: var(--background-modifier-active);
+    }
+    .imageUploaderIcon-2OHmFu path {
+        fill: var(--piOSwhite);
+    }
+.eventStatusGreen-2-f2N8 {
+    color: var(--piOSaccent);
+}
+
 /* Change your username modal */
 .questionMark-3V9mGJ {
     background-color: var(--background-modifier-hover);
