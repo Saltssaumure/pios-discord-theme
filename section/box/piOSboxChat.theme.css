@@ -174,7 +174,12 @@
             background: var(--piOSwhite);
         }
     /* Reacts you have added */
-    .reaction-2A2y9y.reactionMe-3I9gFK {
+    .reaction-3vwAF2,
+    .reaction-3vwAF2:hover {
+        border: solid var(--borderColor);
+        border-width: var(--thinBorder);
+    }
+    .reaction-3vwAF2.reactionMe-1PwQAc {
         border-color: var(--piOSaccent);
         background-color: var(--background-modifier-selected);
     }
