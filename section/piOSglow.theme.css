@@ -69,7 +69,7 @@ Thread preview
 /* Superhot Team */
 span[style="color: rgb(196, 0, 0);"] {
     --SHTeamGlowColor: rgba(255,0,0,0.5);
-    text-shadow: var(--glowSize) var(--SHTeamGlowColor),
+    text-shadow: var(--glowSize) var(--SHTeamGlowColor);
 }
 /* SuperBOT */
 span[style="color: rgb(1, 1, 1);"] {
