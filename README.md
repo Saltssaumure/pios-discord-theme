@@ -57,6 +57,17 @@ Affects colour scheme used throughout the theme.
 |-|-|
 |![Purple in a colour picker with its H value 270 selected.](https://user-images.githubusercontent.com/29710355/162552090-57011aeb-8b97-45e6-a96c-d13287761cf8.png)|![Screenshot of piOS Discord Theme where all colour accents are purple.](https://user-images.githubusercontent.com/29710355/162551985-ed568020-7f12-4300-ad31-0c5a66be4645.png)|
 
+### CRT overlay
+Adds CRT monitor style overlay to the whole window.
+
+- **Theme settings:** change value(s) of `--crt-overlay`, `--crt-scanline`, `--crt-flicker`.
+- **Values:** `block`/`none`, `block`/`none`, `flicker`/`none`.
+
+![Screenshot of piOS Discord Theme with CRT overlay enabled.](https://user-images.githubusercontent.com/29710355/182611054-c0cb9122-1eac-42ec-93d1-ab5a203a7e15.png)
+
+[Video demonstration of animated scanline](https://drive.google.com/uc?id=1xFbTWA5qIZAurVJdjOptnCd6OMBLBfEz)
+
+
 ## License
 [GNU General Public License v3.0](https://github.com/Saltssaumure/pios-discord-theme/blob/master/LICENSE.md)
 TL;DR: Do what you want with this theme, as long as you also let others do what they want with your version.
