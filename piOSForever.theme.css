@@ -34,4 +34,8 @@ Join Salts' Discord Themes server! https://discord.gg/uy8nKQVatp
     --glow-intensity: 1;            /* Intensity of text glow. Range: 0-1, default: 1 (100%) */
     --compact-message-spacing: 1;   /* Space between messages in compact mode. Range: 0-∞, default: 1 (100%) */
     --accent-color: 0;              /* Colour accent hue value as in HSL. Range: 0-360, default: 0 (red) */
+    --crt-overlay: block;           /* CRT monitor overlay. Values: block (on) or none (off) */
+    /* The following effects are performance-heavy. */
+    --crt-scanline: block;          /* CRT animated scanline. Values: block (on) or none (off) */
+    --crt-flicker: none;            /* CRT monitor overlay flickering. Values: flicker (on) or none (off) */
 }

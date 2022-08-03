@@ -28,7 +28,7 @@
 /* Code blocks and inline */
 .markup-eYLPri code.hljs,
 .markup-eYLPri code.inline {
-    font-family: var(--fontCode);
+    font-family: var(--font-code);
     border: solid var(--borderCodeColor);
     border-width: 1px 3px;
     padding: 1px 8px 3px 8px;
