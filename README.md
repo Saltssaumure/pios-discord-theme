@@ -67,9 +67,17 @@ Adds CRT monitor style overlay to the whole window.
 
 [Video demonstration of animated scanline](https://drive.google.com/uc?id=1xFbTWA5qIZAurVJdjOptnCd6OMBLBfEz)
 
+### Customisable title text
+Adds customisable title text to replace the Discord logo.
+
+- **Theme setting:** change value of `--title-text` to any text in quotations.
+- **Default value:** `"piOS v2.1.01p"`.
+
+![image](https://user-images.githubusercontent.com/29710355/185759617-42fc6937-4523-4559-ba9c-5e9bb2ba8d3c.png)
+
 
 ## License
-[GNU General Public License v3.0](https://github.com/Saltssaumure/pios-discord-theme/blob/master/LICENSE.md)
+[GNU General Public License v3.0](https://github.com/Saltssaumure/pios-discord-theme/blob/master/LICENSE.md)  
 TL;DR: Do what you want with this theme, as long as you also let others do what they want with your version.
 
 ## Questions or suggestions?
