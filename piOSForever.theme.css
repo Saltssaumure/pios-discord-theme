@@ -3,7 +3,7 @@
  * @author Saltssaumure
  * @authorLink https://github.com/Saltssaumure
  * @description SUPERHOT piOS inspired theme. With customisable colours, glow intensity, support for both cosy and compact mode.
- * @version Autoupdate5
+ * @version Autoupdate6
  * @invite uy8nKQVatp
  * @source https://github.com/Saltssaumure/pios-discord-theme
  * @donate https://ko-fi.com/saltssaumure
@@ -34,6 +34,7 @@ Join Salts' Discord Themes server! https://discord.gg/uy8nKQVatp
     --glow-intensity: 1;            /* Intensity of text glow. Range: 0-1, default: 1 (100%) */
     --compact-message-spacing: 1;   /* Space between messages in compact mode. Range: 0-∞, default: 1 (100%) */
     --accent-color: 0;              /* Colour accent hue value as in HSL. Range: 0-360, default: 0 (red) */
+    --title-text: "piOS v2.1.01p";  /* Text replacement for Discord logo. Values: any text in "quotations" */
     --crt-overlay: block;           /* CRT monitor overlay. Values: block (on) or none (off) */
     /* The following effects are performance-heavy. */
     --crt-scanline: block;          /* CRT animated scanline. Values: block (on) or none (off) */
