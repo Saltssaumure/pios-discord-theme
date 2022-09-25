@@ -71,3 +71,38 @@
 .circleIconButton-1VxDrg.selected-2r1Hvo {
     background-color: var(--background-modifier-active);
 }
+
+/* ---- Forums ---- */
+.container-3wLKDe {
+    border: solid var(--borderColor);
+    border-width: var(--thickBorder);
+}
+    /* Forum post */
+    .container-2qVG6q {
+        border: solid var(--borderColor);
+        border-width: var(--thinBorder);
+    }
+    /* See more */
+    .container-2O1UgZ {
+        border: solid var(--borderColor);
+        border-width: var(--thinBorder);
+    }
+    /* Make new post */
+    /* Image container */
+    .container-3Om6RL,
+    .container-JhuCwn .popout-2vZMlk {
+        border: solid var(--borderBrightColor);
+        border-width: var(--thinBorder);
+    }
+
+/* ---- Home ---- */
+.homeContainer-r4Hvv1 {
+    border: solid var(--borderColor);
+    border-width: var(--thickBorder);
+}
+    /* Message highlight */
+    .card-3x20HF,
+    .card-3x20HF:hover {
+        border: solid var(--borderColor);
+        border-width: var(--thinBorder);
+    }

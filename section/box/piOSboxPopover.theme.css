@@ -8,8 +8,8 @@
 /* Popovers */
 .contentWrapper-3vHNP2,                 /* Emoji/gif selector (from message box)*/
 #emoji-picker-tab-panel[role="dialog"], /* Emoji picker for reactions */
-.userPopout-2j1gM4,                     /* User profile popovers */
-.profileBannerPreview-3mLIdO,           /* User profile preview (not a popover but same as above) */
+.userPopout-29jUdN,                     /* User profile popovers */
+.profileCustomizationPreview-2-Y173,    /* User profile preview (not a popover but same as above) */
 .messagesPopoutWrap-3zryHW,             /* Pinned messages */
 .container-2ebMPP,                      /* Inbox */
 .container-18GwIk:not(.browser-SOGsFd), /* Threads (not modal) */
