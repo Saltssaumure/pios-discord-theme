@@ -53,6 +53,12 @@ Self-defined variables: camelCase
 User-definable variables: kebab-case
 */
 
+:lang(bg), :lang(el), :lang(ru), :lang(uk) {
+    --font-display: FixedSysTrue, monospace; /* For server and channel title */
+	--font-primary: FixedSysTrue, monospace; /* For almost everything else */
+	--font-headline: FixedSysTrue, monospace;
+}
+
 .theme-dark,
 .layerContainer-2v_Sit .theme-light /* Modals that use theme-light while in dark mode */
 {
