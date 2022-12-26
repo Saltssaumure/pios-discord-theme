@@ -142,6 +142,11 @@
     background-color: var(--background-modifier-hover);
 }
 
+/* Forum sort modal */
+.container-2d0jMv {
+    background: transparent;
+}
+
 /* BetterDiscord error modal */
 .bd-error-modal-header {
     padding: 16px;

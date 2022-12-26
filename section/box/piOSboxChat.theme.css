@@ -238,3 +238,23 @@
     border-top: 2px dashed var(--borderColor);
     margin-top: 0;
 }
+
+/* Forums */
+.theme-dark .container-3wLKDe {
+    background: var(--piOSblack);
+}
+    /* Post title */
+    .card-2JNtco .headerText-3MQ6n4 {
+        --text-muted: var(--piOSwhite);
+    }
+    /* Post message preview */
+    .card-2JNtco .markup-eYLPri {
+        text-shadow: none;
+    }
+
+/* Browse channels */
+.theme-dark .container-2IKOsH,
+.theme-dark .header-3xB4vB,
+.theme-dark .container-1um7CU {
+    background: var(--piOSblack);
+}

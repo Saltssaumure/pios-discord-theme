@@ -134,3 +134,12 @@
     border: solid var(--borderColor);
     border-width: var(--thinBorder);
 }
+
+
+/* Server settings */
+
+/* Stickers */
+.theme-dark .tierHeaderLocked-30MLlO,
+.theme-dark .tierHeaderUnlocked-1OpOLf {
+    background: var(--background-modifier-active);
+}

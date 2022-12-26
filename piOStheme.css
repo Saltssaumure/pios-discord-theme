@@ -54,9 +54,9 @@ User-definable variables: kebab-case
 */
 
 :lang(bg), :lang(el), :lang(ru), :lang(uk) {
-    --font-display: FixedSysTrue, monospace; /* For server and channel title */
-	--font-primary: FixedSysTrue, monospace; /* For almost everything else */
-	--font-headline: FixedSysTrue, monospace;
+    --font-display: FixedSysTrue, monospace;    /* For server and channel title */
+	--font-primary: FixedSysTrue, monospace;    /* For almost everything else */
+	--font-headline: FixedSysTrue, monospace;   /* For discord ads */
 }
 
 .theme-dark,
@@ -71,8 +71,9 @@ User-definable variables: kebab-case
     --piOSblack:    black;
     
     /* Set default fonts */
-    --font-display: PerfectDOS, monospace; /* For server and channel title */
-	--font-primary: PerfectDOS, monospace; /* For almost everything else */
+    --font-display: PerfectDOS, monospace;  /* For server and channel title */
+	--font-primary: PerfectDOS, monospace;  /* For almost everything else */
+    --font-headline: PerfectDOS, monospace; /* For discord ads */
 	--font-code:    "FixedSysTrue", monospace; /* Code blocks */
     letter-spacing: -0.04rem;
 
@@ -91,6 +92,8 @@ User-definable variables: kebab-case
     --text-link:                var(--piOSwhite);
     --text-link-low-saturation: var(--piOSwhite);
     --text-positive:            var(--piOSwhite);
+    --text-warning:             var(--piOSwhite);
+    --text-danger:              var(--piOSaccent);
     --text-brand:               hsl(var(--piOSaccenthue), calc(var(--saturation-factor)*80%), 50%);
     --interactive-normal:       var(--piOSlightgrey);
     --interactive-muted:        var(--piOSgrey);
