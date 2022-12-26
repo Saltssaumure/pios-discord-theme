@@ -135,11 +135,50 @@
     border-width: var(--thinBorder);
 }
 
-
 /* Server settings */
 
 /* Stickers */
-.theme-dark .tierHeaderLocked-30MLlO,
-.theme-dark .tierHeaderUnlocked-1OpOLf {
-    background: var(--background-modifier-active);
+.tier-3CS7-p {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+    padding: 0 16px 16px 0;
 }
+    /* Header */
+    .theme-dark .tierHeaderLocked-30MLlO,
+    .theme-dark .tierHeaderUnlocked-1OpOLf {
+        background: transparent;
+    }
+    /* Sticker placeholder */
+    .placeholderCard-3eGmb3 {
+        border-color: var(--piOSgrey);
+    }
+    /* Locked tiers */
+    .theme-dark .tierBody-1d3UiS {
+        background: transparent;
+    }
+
+/* App directory */
+.theme-dark .directoryModal-YJsOMv {
+    background: transparent;
+}
+    /* App categories */
+    .category-2OvQ93:hover {
+        background: var(--background-modifier-hover);
+    }
+    .category-2OvQ93:active {
+        background: var(--background-modifier-active);
+    }
+    /* App cards */
+    .card-2xymMp,
+    .item-2Nx4LP,
+    .itemContainer-RkoeKz {
+        border: solid var(--borderColor);
+        border-width: var(--thinBorder);
+    }
+    .root-1q0s4N {
+        overflow: visible;
+    }
+    /* Highlighted card */
+    .linkCard-2SSonX {
+        background: var(--background-modifier-hover);
+    }
