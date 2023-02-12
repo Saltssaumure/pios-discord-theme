@@ -13,10 +13,10 @@
 <p>Download: <a href="https://saltssaumure.github.io/pios-discord-theme/piOStheme.css">https://saltssaumure.github.io/pios-discord-theme/piOSForever.theme.css</a></p>
 <p>If it opens in browser rather than saving automatically, do Ctrl+S.</p>
 
-<h2>Bandaged BD</h2>
+<h2>BetterDiscord</h2>
 
-<p><a href="https://rauenzi.github.io/BetterDiscordApp/">Github</a></p>
-<p><a href="https://0x71.cc/bd/guide/#home">User Guide</a></p>
+<p><a href="https://github.com/BetterDiscord/BetterDiscord/">Github</a></p>
+<p><a href="https://docs.betterdiscord.app/users/">User Guide</a></p>
 
 <h2>Join the official Superhot Discord</h2>
 
