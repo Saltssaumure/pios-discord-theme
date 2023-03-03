@@ -1,0 +1,24 @@
+/**
+ * @name piOS - Main
+ * @author Saltssaumure#7557
+ * @description Main section of piOS Discord Theme. Please download the autoupdater from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/latest!
+ * @version 9
+*/
+
+@use "top/var-scss" as *;
+@import "top/var-css";
+@import "top/mixin";
+
+@import "chanmemserv";
+@import "chat";
+@import "glow";
+@import "misc";
+@import "modal";
+@import "popover";
+@import "search";
+@import "settings";
+@import "spoiler";
+@import "text";
+
+@import url("https://saltssaumure.github.io/borderradiant-discord-theme/BorderRadiant.theme.css");
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");

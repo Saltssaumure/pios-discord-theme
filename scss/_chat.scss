@@ -1,0 +1,254 @@
+// Main chat section
+.chatContent-3KubbW {
+    border: solid var(--borderColor);
+    border-width: var(--thickBorder);
+}
+
+// "Jump to present", "New messages since", "Messages failed to load" bars
+.jumpToPresentBar-1cEnH0,
+.newMessagesBar-1hF-9G,
+.messagesErrorBar-1IQ1rH {
+    background-color: var(--piOSaccent);
+    opacity: 0.9;
+}
+
+// Messages allow overflow in case of oversize embeds
+.message-372Ods,
+.message-3g3FYR {
+    overflow: visible;
+}
+    // Message react/reply etc buttons
+    .wrapper-2vIMkT {
+        border: solid var(--borderColor);
+        border-width: var(--thinBorder);
+    }
+    // Pin icon for pin alerts
+    .iconContainer-2rPbqG {
+        padding: 0.1rem;
+    }
+    // Reply/thread pipe
+    .repliedMessage-3Z6XBG:before,
+    .cozy-VmLDNB.hasThread-3h-KJV:after {
+        border-left-width: 3px;
+        border-top-width: 1px;
+    }
+    .cozy-VmLDNB.hasThread-3h-KJV:after {
+        border-bottom-width: 1px;
+    }
+
+// piOS style message boxes in compact mode
+.compact-2Nkcau.wrapper-30-Nkg {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+    margin: calc(var(--true-compact-message-spacing) * 1.5rem) 3rem;
+    padding: 1rem 1rem 0.5rem 1rem;
+    padding-right: 1rem !important;
+}
+// Remove box if system message eg. pin
+.compact-2Nkcau.wrapper-30-Nkg.systemMessage-1H1Z20 {
+    border: 0;
+}
+    // Message info
+    .compact-2Nkcau .header-2jRmjb {
+        position: absolute;
+        top: -1.6rem;
+        display: flex;
+        flex-direction: row-reverse;
+        background: linear-gradient(
+            transparent,
+            var(--background-primary) 40%,
+            transparent 60%
+        );
+    }
+        .compact-2Nkcau .header-2jRmjb > span {
+            display: block;
+        }
+        // Hides timestamps for the same time as previous message
+        .compact-2Nkcau .timestampVisibleOnHover-9PEuZS {
+            width: 0;
+            color: transparent;
+        }
+        // Badges from ShowBadgesInChat https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/ShowBadgesInChat///
+        .compact-2Nkcau .badgesChat-f_cbR8 {
+            top: 0;
+        }
+        // Corrects alignment of username when badges are present
+        .compact-2Nkcau .username-h_Y3Us {
+            vertical-align: top;
+        }
+    // Special message left bar
+    .automodMessage-265YwJ:before,
+    .ephemeral-2nDdnn:before,
+    .mentioned-Tre-dv:before,
+    .replying-eZ7p5z:before {
+        width: 3px;
+    }
+    // Reply
+    // Post username and timestamp
+    .compact-2Nkcau.hasReply-2Cr4KE .header-2jRmjb,
+    .compact-2Nkcau .repliedMessage-3Z6XBG+.contents-2MsGLg .header-2jRmjb {
+        top: -2.7rem;
+    }
+    // Replied content
+    .compact-2Nkcau .repliedMessage-3Z6XBG {
+        margin-left: 0;
+        padding-left: 0;
+        top: -2px;
+    }
+    .executedCommand-14-SNW,
+    .threadMessageAccessory-2W9mjC {
+        height: auto;
+    }
+    .compact-2Nkcau .repliedMessage-3Z6XBG .timestamp-p1Df1m {
+        line-height: 1rem;
+        height: auto;
+    }
+    // Replied elbow
+    .compact-2Nkcau .repliedMessage-3Z6XBG::before {
+        display: none;
+    }
+    // Icons inside replied content
+    .compact-2Nkcau .repliedMessage-3Z6XBG .repliedTextContentIcon-1LQXRB,
+    .compact-2Nkcau .repliedMessage-3Z6XBG .badgesChat-f_cbR8 img,
+    .compact-2Nkcau .repliedMessage-3Z6XBG .ownerIcon-255uKo,
+    .compact-2Nkcau .repliedMessage-3Z6XBG .emoji {
+        width: 1rem;
+        height: 1rem;
+    }
+    // message react/reply etc buttons
+    .compact-2Nkcau .container-2gUZhU {
+        top: -16px;
+    }
+    // Message contents
+    .compact-2Nkcau .contents-2MsGLg {
+        margin: 0;
+        padding-left: 0;
+        text-indent: 0;
+    }
+        // Block quote starter
+        .blockquoteContainer-3VtvI1 .blockquoteDivider-363utW {
+            width: 3px;
+        }
+        // Embeds
+        .embedFull-1HGV2S.markup-eYLPri,    // most embeds
+        .theme-dark .wrapperAudio-1Bzv_Z,   // audio
+        .attachment-1PZZB2,                 // file
+        .wrapper-1HIH0j,                    // invite
+        .footer-GXWBBp                      // code/text
+        {
+            background: var(--backgroundEmbed);
+            border: 0;
+            text-shadow: none;
+        }
+        .grid-1aWVsE {
+            padding: 12px 18px;
+        }
+        .embedMargin-2PsaQ4 {
+            margin-top: 0;
+        }
+        // Video embed
+        // Video metadata
+        .metadata-3IncIG {
+            backdrop-filter: blur(3px);
+        }
+        // play buttons on video
+        .wrapper-x4po40 {
+            padding: 12px;
+        }
+        // timeline slider
+        .mediaBarProgress-38I317,
+        .mediaBarProgress-38I317:after,
+        .mediaBarProgress-38I317:before {
+            background: var(--background-accent);
+        }
+        // timeline slider knob
+        .mediaBarGrabber-FvJKJg,
+        .mediaBarInteraction-tUE5dq:hover .mediaBarGrabber-FvJKJg,
+        .mediaBarInteractionDragging-3XLL8k .mediaBarGrabber-FvJKJg {
+            background: var(--piOSwhite);
+        }
+    // Reacts you have added
+    .reaction-3vwAF2,
+    .reaction-3vwAF2:hover {
+        border: solid var(--borderColor);
+        border-width: var(--thinBorder);
+    }
+    .reaction-3vwAF2.reactionMe-1PwQAc {
+        border-color: var(--piOSaccent);
+        background-color: var(--background-modifier-selected);
+    }
+    // Thread from message
+    // Thread spine
+    // Upper
+    .compact-2Nkcau.hasThread-3h-KJV .contents-2MsGLg::before {
+        display: none;
+    }
+    // Lower
+    .spine-2vt3pM {
+        top: 0.15rem;
+        left: 0rem;
+        z-index: -1;
+        border-bottom-width: 1px;
+        border-left-width: 3px;
+    }
+    // Thread info
+    .container-3i3IzO {
+        background-color: var(--background-modifier-hover);
+    }
+    .compact-2Nkcau .container-3i3IzO {
+        position: relative;
+        left: 2.5rem;
+    }
+
+// Typing box
+.channelTextArea-1VQBuV {
+    border: solid var(--borderColor);
+    border-width: var(--thickBorder);
+}
+.scrollableContainer-15eg7h {
+    min-height: 60px;
+}
+    // "Replying to" bar
+    .attachedBars-2BCP3l {
+        background: transparent;
+        border-bottom: 2px dashed var(--border);
+    }
+        // @on button
+        .colorLink-2apWfY.mentionButton-3C5YMI {
+            color: var(--piOSaccent);
+        }
+    // Uploading files bar
+    .upload-vLbqu- {
+        background-color: var(--backgroundEmbed);
+    }
+    // Command suggestions bar
+    .theme-dark .selected-3H3-RC,
+    .theme-dark .option-Tt7anD {
+        background-color: var(--background-modifier-selected);
+    }
+
+// follow to get this channel's updates in your server add dotted topline
+.form-3gdLxP .wrapper-2SplAX {
+    border-top: 2px dashed var(--borderColor);
+    margin-top: 0;
+}
+
+// Forums
+.theme-dark .container-3wLKDe {
+    background: var(--piOSblack);
+}
+    // Post title
+    .card-2JNtco .headerText-3MQ6n4 {
+        --text-muted: var(--piOSwhite);
+    }
+    // Post message preview
+    .card-2JNtco .markup-eYLPri {
+        text-shadow: none;
+    }
+
+// Browse channels
+.theme-dark .container-2IKOsH,
+.theme-dark .header-3xB4vB,
+.theme-dark .container-1um7CU {
+    background: var(--piOSblack);
+}

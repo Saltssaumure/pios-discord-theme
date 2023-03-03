@@ -1,0 +1,72 @@
+// All caps on areas where case is not so important
+// importantly: excludes message text, searches, emoji, and status text
+.channelName-3KPsGw, 	// channel names
+.activityUserPopout-2MzGCj,	// now playing game and time
+.protip-2urNh2,			// "right click user for more actions (not changed?)
+.roleName-2ZJJYR,		// roles
+.timestamp-p1Df1m,		// message timestamp
+.divider-2rZFJK,		// day dividers
+.children-3xh0VB, 		// channel name and desc
+.navButton-1XuvI-,		// emoji/gif picker buttons
+.categoryName-1iPNc5,	// gif picker categories
+.side-2ur1Qk 			// settings list
+{
+    text-transform: uppercase;
+}
+
+// Selected text
+::selection {
+    background: var(--background-modifier-active);
+}
+
+// Code blocks and inline
+.markup-eYLPri code.hljs,
+.markup-eYLPri code.inline {
+    font-family: var(--font-code);
+    border: solid var(--borderCodeColor);
+    border-width: 1px 3px;
+    padding: 1px 8px 3px 8px;
+}
+// Code in replied message
+.markup-eYLPri.repliedTextContent-2hOYMB code.inline {
+    padding: 1px 8px 2px 8px;
+}
+
+// Underline #channels and @pings
+.theme-dark .wrapper-1ZcZW- {
+    text-decoration: underline;
+    background: var(--backgroundEmbed);
+}
+
+// User, role, and channel mentions
+.theme-dark .mention {
+    color: var(--piOSwhite);
+}
+
+// Fix font size of channel group and user group labels to match others
+.da-username,
+.container-q97qHp,
+.name-3YKhmS {
+    font-size: 16px;
+}
+
+// [user] created thread, pinned message, joined server, etc. alert message
+.content-vSHmMD {
+    text-transform: uppercase;
+}
+.content-vSHmMD a {
+    text-transform: none;
+}
+.compact-3bMNvi {
+    margin-left: 0;
+}
+
+// Pronouns from PronounDB https://github.com/Strencher/BetterDiscordStuff/tree/master/PronounDB
+.PronounDB-pronouns-text {
+    color: var(--text-muted);
+    line-height: 1.375rem;
+    margin: 0 .25rem;
+}
+.pronoun-db-dot {
+    display: none;
+}

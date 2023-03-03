@@ -1,8 +1,8 @@
 {
-    "name": "piOS Forever",
+    "name": "piOS",
     "description": "SUPERHOT piOS inspired theme. With customisable colours, glow intensity, support for both cosy and compact mode.",
-    "version": "Autoupdate6",
+    "version": "9",
     "author": "Saltssaumure",
-    "theme": "piOStheme.css",
+    "theme": "pios.min.css",
     "license": "GPL-3.0"
 }
