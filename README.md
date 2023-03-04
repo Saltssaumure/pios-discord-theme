@@ -1,8 +1,8 @@
-# SUPERHOT piOS Discord Theme
+# piOS Discord Theme
 [![GitHub downloads](https://img.shields.io/github/downloads/saltssaumure/pios-discord-theme/total?color=purple&label=GitHub%20downloads&style=flat-square)](https://github.com/Saltssaumure/pios-discord-theme/releases/latest "Latest release")
 ![Total size](https://img.shields.io/github/repo-size/saltssaumure/pios-discord-theme?style=flat-square "Total size")
 
-SUPERHOT piOS-inspired theme built for BetterDiscord.
+***SUPERHOT piOS inspired theme built for BetterDiscord.***
 
 ![Screenshot of piOS Discord Theme applied to Discord desktop client](https://user-images.githubusercontent.com/29710355/123527529-72121600-d6d8-11eb-9580-da3987ee8398.png)
 
@@ -12,7 +12,7 @@ SUPERHOT piOS-inspired theme built for BetterDiscord.
     - [GitHub](https://github.com/Saltssaumure/pios-discord-theme/releases/latest)
     - [BD Store](https://betterdiscord.app/theme/?id=572)
 3. Place theme file in BD's theme folder:
-    - Windows: `%appdata%/BetterDiscord/themes`
+    - Windows: `%AppData%/BetterDiscord/themes`
     - Mac: `~/Library/Application Support/betterdiscord/themes`
     - Linux: `~/.config/BetterDiscord/themes`
 
@@ -75,10 +75,9 @@ Adds customisable title text to replace the Discord logo.
 
 ![image](https://user-images.githubusercontent.com/29710355/185759617-42fc6937-4523-4559-ba9c-5e9bb2ba8d3c.png)
 
-
 ## License
 [GNU General Public License v3.0](https://github.com/Saltssaumure/pios-discord-theme/blob/main/LICENSE)  
-TL;DR: Do what you want with this theme, as long as you also let others do what they want with your version.
+<span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
 
 ## Questions or suggestions?
 - Post [an issue](https://github.com/Saltssaumure/pios-discord-theme/issues) on GitHub.
