@@ -10,9 +10,9 @@ SUPERHOT piOS-inspired theme built for BetterDiscord.
 1. Install [BetterDiscord](https://betterdiscord.app/).
 2. Download the theme file:
     - [GitHub](https://github.com/Saltssaumure/pios-discord-theme/releases/latest)
-    - [BD Store](https://betterdiscord.app/theme/piOS%20Forever)
+    - [BD Store](https://betterdiscord.app/theme/?id=572)
 3. Place theme file in BD's theme folder:
-    - Windows: `%appdata%/betterdiscord/themes`
+    - Windows: `%appdata%/BetterDiscord/themes`
     - Mac: `~/Library/Application Support/betterdiscord/themes`
     - Linux: `~/.config/BetterDiscord/themes`
 
@@ -77,7 +77,7 @@ Adds customisable title text to replace the Discord logo.
 
 
 ## License
-[GNU General Public License v3.0](https://github.com/Saltssaumure/pios-discord-theme/blob/master/LICENSE.md)  
+[GNU General Public License v3.0](https://github.com/Saltssaumure/pios-discord-theme/blob/main/LICENSE)  
 TL;DR: Do what you want with this theme, as long as you also let others do what they want with your version.
 
 ## Questions or suggestions?
