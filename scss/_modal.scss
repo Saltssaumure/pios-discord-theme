@@ -1,5 +1,5 @@
 // Modals
-.theme-dark .root-g14mjS {
+.theme-dark .root-1CAIjD {
     border: solid var(--borderBrightColor);
     border-width: var(--thickBorder);
     background-color: var(--piOSblack);
@@ -7,7 +7,7 @@
 }
 
 // Footer
-.theme-dark .footer-31IekZ {
+.theme-dark .footer-IubaaS {
     background-color: var(--piOSblack);
     box-shadow: none;
     border-top: 2px dashed var(--borderColor);
@@ -16,7 +16,7 @@
 
 // ---- Invite friends to server modal ----
 // Copy url
-.copyInput-1dXbXE .input-2g-os5 {
+.copyInput-1dXbXE .input-3O04eu {
     background: transparent;
 }
 
@@ -39,46 +39,6 @@
 // "Invite" button
 .inviteRowButton-3hcOhY {
     padding: 2px;
-}
-
-// ---- Inbox modal ----
-// Channel info
-.channelHeader-DFRX8q {
-    border-bottom: 2px dashed var(--borderColor);
-}
-
-// Inbox message containers
-.messageContainer-3VTXBC {
-    padding: 0;
-}
-
-.messages-23can0 {
-    padding: 16px 0 0 0;
-}
-
-// Remove "replied to" in inbox due to space constraint
-.container-iA3Qrz .compact-2Nkcau .repliedMessage-3Z6XBG,
-.container-2ebMPP .compact-2Nkcau .repliedMessage-3Z6XBG {
-    display: none;
-}
-
-// filter gets box border (not sure what this does anymore)
-.menu-1QACrS {
-    border: solid var(--borderColor);
-    border-width: var(--thickBorder);
-}
-
-// "Mark Inbox as read", "Notifications", "Mark as read", Jump buttons
-.primary-38Hs-h:hover:not(.disabled-184-il),
-.secondary-2bzKEX,
-.tertiary-1e-lAP,
-.jumpButton-1V_1FA {
-    background-color: var(--background-modifier-selected);
-}
-
-.secondary-2bzKEX:hover:not(.disabled-184-il),
-.tertiary-1e-lAP:hover:not(.disabled-184-il) {
-    background-color: var(--background-modifier-active);
 }
 
 // ---- Upload file by drag and drop modal ----
