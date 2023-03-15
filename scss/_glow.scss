@@ -1,6 +1,6 @@
 .theme-dark {
-    --mainGlowColor: hsla(180, calc(var(--saturation-factor)*100%), 50%, calc(0.7 * var(--glowIntensity)));      // Glow colour for messages, names, channels. Default: cyan
-    --mutedGlowColor: hsla(180, calc(var(--saturation-factor)*100%), 89%, calc(0.2 * var(--glowIntensity)));     // Glow colour for muted channels.            Default: slate
+    --mainGlowColor: hsla(180, calc(var(--saturation-factor)*100%), 50%, calc(0.7 * var(--glowIntensity))); // Glow colour for messages, names, channels. Default: cyan
+    --mutedGlowColor: hsla(180, calc(var(--saturation-factor)*100%), 89%, calc(0.2 * var(--glowIntensity))); // Glow colour for muted channels.            Default: slate
 }
 
 // Chat content text glow
@@ -23,7 +23,7 @@
 .timestamp-2qj4__,
 .timestamp-p1Df1m,
 .timestampInline-_lS3aK,
-.threadMessageAccessoryPreview-13YRmc .markup-eYLPri{
+.threadMessageAccessoryPreview-13YRmc .markup-eYLPri {
     text-shadow: none;
 }
 
@@ -32,6 +32,7 @@
 .markup-eYLPri a {
     text-shadow: 0 0 calc(20px * var(--glowIntensity));
 }
+
 // Role pings, pin/join/thread alert messages, selected text
 .theme-dark .mention.roleMention-11Aaqi,
 .content-vSHmMD,
@@ -57,15 +58,17 @@
     --glowSize: 0 0 calc(5px * var(--glowIntensity));
     text-shadow: var(--glowSize);
 }
+
 // Special overrides
 // Superhot Team
 span[style="color: rgb(196, 0, 0);"] {
-    --SHTeamGlowColor: rgba(255,0,0,0.5);
+    --SHTeamGlowColor: rgba(255, 0, 0, 0.5);
     text-shadow: var(--glowSize) var(--SHTeamGlowColor);
 }
+
 // SuperBOT
 span[style="color: rgb(1, 1, 1);"] {
-    --SHMindsGlowColor: rgba(0,200,255,0.5);
+    --SHMindsGlowColor: rgba(0, 200, 255, 0.5);
     text-shadow: var(--glowSize) var(--SHMindsGlowColor), var(--glowSize) var(--mainGlowColor);
 }
 
@@ -73,15 +76,19 @@ span[style="color: rgb(1, 1, 1);"] {
 .wrapper-1VLyxH[aria-label*="Online"] {
     --statusGlowColor: hsla(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%, var(--glowIntensity));
 }
+
 .wrapper-1VLyxH[aria-label*="Do Not Disturb"] {
     --statusGlowColor: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%, var(--glowIntensity));
 }
+
 .wrapper-1VLyxH[aria-label*="Idle"] {
     --statusGlowColor: hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%, var(--glowIntensity));
 }
+
 .wrapper-1VLyxH[aria-label*="Streaming"] {
     --statusGlowColor: hsl(262, calc(var(--saturation-factor, 1) * 46.8%), 39.8%, var(--glowIntensity));
 }
+
 .wrapper-1VLyxH {
     box-shadow: 0 0 10px var(--statusGlowColor);
 }

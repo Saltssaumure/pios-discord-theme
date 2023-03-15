@@ -1,16 +1,26 @@
 // All caps on areas where case is not so important
 // importantly: excludes message text, searches, emoji, and status text
-.channelName-3KPsGw, 	// channel names
-.activityUserPopout-2MzGCj,	// now playing game and time
-.protip-2urNh2,			// "right click user for more actions (not changed?)
-.roleName-2ZJJYR,		// roles
-.timestamp-p1Df1m,		// message timestamp
-.divider-2rZFJK,		// day dividers
-.children-3xh0VB, 		// channel name and desc
-.navButton-1XuvI-,		// emoji/gif picker buttons
-.categoryName-1iPNc5,	// gif picker categories
-.side-2ur1Qk 			// settings list
-{
+.channelName-3KPsGw,
+// channel names
+.activityUserPopout-2MzGCj,
+// now playing game and time
+.protip-2urNh2,
+// "right click user for more actions (not changed?)
+.roleName-2ZJJYR,
+// roles
+.timestamp-p1Df1m,
+// message timestamp
+.divider-2rZFJK,
+// day dividers
+.children-3xh0VB,
+// channel name and desc
+.navButton-1XuvI-,
+// emoji/gif picker buttons
+.categoryName-1iPNc5,
+// gif picker categories
+.side-2ur1Qk // settings list
+
+    {
     text-transform: uppercase;
 }
 
@@ -27,6 +37,7 @@
     border-width: 1px 3px;
     padding: 1px 8px 3px 8px;
 }
+
 // Code in replied message
 .markup-eYLPri.repliedTextContent-2hOYMB code.inline {
     padding: 1px 8px 2px 8px;
@@ -54,9 +65,11 @@
 .content-vSHmMD {
     text-transform: uppercase;
 }
+
 .content-vSHmMD a {
     text-transform: none;
 }
+
 .compact-3bMNvi {
     margin-left: 0;
 }
@@ -67,6 +80,7 @@
     line-height: 1.375rem;
     margin: 0 .25rem;
 }
+
 .pronoun-db-dot {
     display: none;
 }

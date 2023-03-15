@@ -5,6 +5,7 @@
     background-color: var(--piOSblack);
     box-shadow: 0 0 30px 0 var(--piOSgrey);
 }
+
 // Footer
 .theme-dark .footer-31IekZ {
     background-color: var(--piOSblack);
@@ -18,46 +19,55 @@
 .copyInput-1dXbXE .input-2g-os5 {
     background: transparent;
 }
+
 // Invite link settings
 // Selected item icon
 .selectedIcon-19TbzU {
     color: var(--piOSgrey);
 }
+
 // Search bar
 .container-2oNtJn {
     background-color: var(--input-background);
 }
+
 // Search results
 .theme-dark .inviteRow-3vmB7i:hover {
     background: var(--background-modifier-hover);
 }
-    // "Invite" button
-    .inviteRowButton-3hcOhY {
-        padding: 2px;
-    }
+
+// "Invite" button
+.inviteRowButton-3hcOhY {
+    padding: 2px;
+}
 
 // ---- Inbox modal ----
 // Channel info
 .channelHeader-DFRX8q {
     border-bottom: 2px dashed var(--borderColor);
 }
+
 // Inbox message containers
 .messageContainer-3VTXBC {
     padding: 0;
 }
+
 .messages-23can0 {
     padding: 16px 0 0 0;
 }
+
 // Remove "replied to" in inbox due to space constraint
 .container-iA3Qrz .compact-2Nkcau .repliedMessage-3Z6XBG,
 .container-2ebMPP .compact-2Nkcau .repliedMessage-3Z6XBG {
     display: none;
 }
+
 // filter gets box border (not sure what this does anymore)
 .menu-1QACrS {
     border: solid var(--borderColor);
     border-width: var(--thickBorder);
 }
+
 // "Mark Inbox as read", "Notifications", "Mark as read", Jump buttons
 .primary-38Hs-h:hover:not(.disabled-184-il),
 .secondary-2bzKEX,
@@ -65,6 +75,7 @@
 .jumpButton-1V_1FA {
     background-color: var(--background-modifier-selected);
 }
+
 .secondary-2bzKEX:hover:not(.disabled-184-il),
 .tertiary-1e-lAP:hover:not(.disabled-184-il) {
     background-color: var(--background-modifier-active);
@@ -76,17 +87,19 @@
     border: solid var(--borderBrightColor);
     border-width: var(--thickBorder);
 }
-    .uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .inner-rBP-MS {
-        border: 0;
-    }
+
+.uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .inner-rBP-MS {
+    border: 0;
+}
 
 // ---- Image upload modify modal ----
 .theme-dark .uploadModal-2ie9O_ {
     background-color: var(--background-primary);
 }
-    .theme-dark .footer-VCsJQY {
-        background-color: transparent;
-    }
+
+.theme-dark .footer-VCsJQY {
+    background-color: transparent;
+}
 
 // Delete message confirmation modal
 // Message view
@@ -104,29 +117,33 @@
     border: solid var(--borderColor);
     border-width: var(--thinBorder);
 }
-    // Country
-    .theme-dark .selectableItem-3-fmiM:hover {
-        background-color: var(--background-modifier-hover);
-    }
+
+// Country
+.theme-dark .selectableItem-3-fmiM:hover {
+    background-color: var(--background-modifier-hover);
+}
 
 // Event and new event modal
 // Event card
 .theme-dark .previewCard-E137i2,
-.card-8UsK4b
-{
+.card-8UsK4b {
     border: solid var(--borderColor);
     border-width: var(--thinBorder);
 }
+
 // Event cover image
 .imageUploaderInner-IIRaFr {
     background-color: var(--background-modifier-hover);
 }
-    .avatarUploadIcon-34ohJq.hideDefaultIcon-Z9-iXK {
-        background-color: var(--background-modifier-active);
-    }
-    .imageUploaderIcon-2OHmFu path {
-        fill: var(--piOSwhite);
-    }
+
+.avatarUploadIcon-34ohJq.hideDefaultIcon-Z9-iXK {
+    background-color: var(--background-modifier-active);
+}
+
+.imageUploaderIcon-2OHmFu path {
+    fill: var(--piOSwhite);
+}
+
 .eventStatusGreen-2-f2N8 {
     color: var(--piOSaccent);
 }

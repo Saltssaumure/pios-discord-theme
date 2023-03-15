@@ -13,11 +13,13 @@
     margin-left: 5px;
     top: 0;
 }
+
 // Resize channel icons
 .icon-2W8DHg {
     width: 15px;
     height: 15px;
 }
+
 // Happening now events
 .channelNotice-K4UfZY {
     border: solid var(--borderColor);
@@ -25,6 +27,7 @@
     margin: 0 8px;
     padding: 4px 8px 8px;
 }
+
 // Boost bar divider
 .divider-3qUeLQ {
     display: none;
@@ -35,6 +38,7 @@
 .membersGroup-2eiWxl.container-q97qHp {
     position: relative;
 }
+
 .membersGroup-2eiWxl.container-q97qHp:not(:first-of-type)>span:last-child::before {
     content: "-----------------";
     display: block;
@@ -48,19 +52,23 @@
 .item-2LIpTv {
     background-color: var(--piOSaccent);
 }
+
 // "New" bubble in servers sidebar
 .mention-3XBnnZ {
     background-color: var(--piOSaccent);
 }
+
 // Switch to DMs button
 .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
 .wrapper-3kah-n:hover .childWrapper-1j_1ub {
     background-color: var(--background-modifier-active);
 }
+
 // Add a server / explore public servers button
 .circleIconButton-1VxDrg {
     color: var(--piOSaccent);
 }
+
 .circleIconButton-1VxDrg.selected-2r1Hvo {
     background-color: var(--background-modifier-active);
 }
@@ -70,32 +78,36 @@
     border: solid var(--borderColor);
     border-width: var(--thickBorder);
 }
-    // Forum post
-    .container-2qVG6q {
-        border: solid var(--borderColor);
-        border-width: var(--thinBorder);
-    }
-    // See more
-    .container-2O1UgZ {
-        border: solid var(--borderColor);
-        border-width: var(--thinBorder);
-    }
-    // Make new post
-    // Image container
-    .container-3Om6RL,
-    .container-JhuCwn .popout-2vZMlk {
-        border: solid var(--borderBrightColor);
-        border-width: var(--thinBorder);
-    }
+
+// Forum post
+.container-2qVG6q {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}
+
+// See more
+.container-2O1UgZ {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}
+
+// Make new post
+// Image container
+.container-3Om6RL,
+.container-JhuCwn .popout-2vZMlk {
+    border: solid var(--borderBrightColor);
+    border-width: var(--thinBorder);
+}
 
 // ---- Home ----
 .homeContainer-r4Hvv1 {
     border: solid var(--borderColor);
     border-width: var(--thickBorder);
 }
-    // Message highlight
-    .card-3x20HF,
-    .card-3x20HF:hover {
-        border: solid var(--borderColor);
-        border-width: var(--thinBorder);
-    }
+
+// Message highlight
+.card-3x20HF,
+.card-3x20HF:hover {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}

@@ -1,13 +1,21 @@
 // Popovers
-.contentWrapper-3vHNP2,                 // Emoji/gif selector (from message box)
-#emoji-picker-tab-panel[role="dialog"], // Emoji picker for reactions
-.userPopout-29jUdN,                     // User profile popovers
-.profileCustomizationPreview-2-Y173,    // User profile preview (not a popover but same as above)
-.messagesPopoutWrap-3zryHW,             // Pinned messages
-.container-2ebMPP,                      // Inbox
-.container-18GwIk:not(.browser-SOGsFd), // Threads (not modal)
-.pictureInPictureVideo-2puO2Q           // Stream picture-in-picture
-{
+.contentWrapper-3vHNP2,
+// Emoji/gif selector (from message box)
+#emoji-picker-tab-panel[role="dialog"],
+// Emoji picker for reactions
+.userPopout-29jUdN,
+// User profile popovers
+.profileCustomizationPreview-2-Y173,
+// User profile preview (not a popover but same as above)
+.messagesPopoutWrap-3zryHW,
+// Pinned messages
+.container-2ebMPP,
+// Inbox
+.container-18GwIk:not(.browser-SOGsFd),
+// Threads (not modal)
+.pictureInPictureVideo-2puO2Q // Stream picture-in-picture
+
+    {
     border: solid var(--borderBrightColor);
     border-width: var(--thickBorder);
 }
@@ -18,11 +26,13 @@
     border: solid var(--borderBrightColor);
     border-width: var(--thinBorder);
 }
-    // Arrow towards tooltip source
-    .tooltipPointer-3L49xb,
-    .tooltipPointer-r3VntW {
-        display: none;
-    }
+
+// Arrow towards tooltip source
+.tooltipPointer-3L49xb,
+.tooltipPointer-r3VntW {
+    display: none;
+}
+
 // "Verified" connection tooltip
 .theme-dark .tooltipBrand-20XsMA,
 .theme-light .tooltipBrand-20XsMA {
@@ -47,17 +57,20 @@
 .wrapper-1VLyxH {
     border-width: 0;
 }
+
 // View profile hint
 .avatarHint-k7pYop {
     top: 0;
     left: 0;
 }
+
 // about me ```code``` from inline to block
 .aboutMeBody-1J8rhz code.inline {
     display: block;
     margin: 0;
     margin-bottom: -1.2em;
 }
+
 // User roles
 .role-2TIOKu {
     border-style: solid;
@@ -76,11 +89,13 @@
 .emojiItem-277VFM.emojiItemSelected-2Lg50V {
     background: var(--background-modifier-selected);
 }
+
 // Skin tone selector for emojis
 .diversitySelectorOptions-3DhNYs {
     border: solid var(--borderColor);
     border-width: var(--thinBorder);
 }
+
 // blurs out emojis and stickers that require nitro when no nitro is active
 .emojiItemDisabled-3VVnwp,
 .stickerUnsendable-PkQAxI {
@@ -92,10 +107,12 @@
 .colorDefault-CDqZdO.focused-3qFvc8 {
     background-color: var(--background-modifier-hover);
 }
+
 // Hovered danger option
 .colorDanger-3n-KnP.focused-3qFvc8 {
     background-color: var(--background-modifier-active);
 }
+
 // Clicked option
 .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
     background-color: var(--background-modifier-active);
@@ -113,8 +130,9 @@
     border: solid var(--borderColor);
     border-width: var(--thinBorder);
 }
+
 .container-8Futzw .FarcradaChannelTooltipClass {
-    margin-top: 8px!important;
+    margin-top: 8px !important;
 }
 
 // ---- Threads popover ----
