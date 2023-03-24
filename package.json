@@ -1,17 +1,25 @@
 {
-    "name": "pios",
+    "name": "pios-discord-theme",
     "version": "9",
-    "description": "SUPERHOT piOS inspired theme built for BetterDiscord.",
+    "description": "SUPERHOT piOS inspired Discord theme.",
     "repository": "https://github.com/Saltssaumure/pios-discord-theme.git",
     "author": "Saltssaumure <saltssaumure@gmail.com>",
     "license": "GPL-3.0",
     "private": true,
     "scripts": {
         "dev": "bd-scss dev",
-        "build": "bd-scss build"
+        "bd": "bd-scss build",
+        "plug": "replugged build theme",
+        "bundle": "replugged bundle theme"
     },
     "type": "module",
     "dependencies": {
-        "bd-scss": "file:../bd-scss"
+        "@parcel/config-default": "^2.8.3",
+        "@parcel/core": "^2.8.3",
+        "@parcel/transformer-sass": "^2.8.3",
+        "@types/node": "^18.15.3",
+        "salt-bd-scss": "^1.0.0",
+        "prettier": "^2.8.4",
+        "replugged": "^4.2.1"
     }
 }
