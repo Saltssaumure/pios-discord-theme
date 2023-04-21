@@ -1,0 +1,43 @@
+// Filled button with discord blue background
+.lookFilled-1H2Jvj.colorBrand-2M3O3N {
+    background: var(--piOSaccent);
+
+    &:hover {
+        background: var(--piOSaccent);
+    }
+}
+
+// Buttons
+.lookFilled-yCfaCM.colorBrand-I6CyqQ,
+.lookFilled-yCfaCM.colorBrand-I6CyqQ:disabled,
+.lookFilled-yCfaCM.colorPrimary-2AuQVo,
+.lookFilled-yCfaCM.colorBrandNew-2-gGsS {
+    background-color: var(--background-modifier-selected);
+}
+
+.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover,
+.lookFilled-yCfaCM.colorPrimary-2AuQVo:hover,
+.lookFilled-yCfaCM.colorBrandNew-2-gGsS:hover {
+    background-color: var(--background-modifier-active);
+}
+
+.lookFilled-yCfaCM.colorBrand-I6CyqQ:active,
+.lookFilled-yCfaCM.colorPrimary-2AuQVo:active,
+.lookFilled-yCfaCM.colorBrandNew-2-gGsS:active {
+    background-color: var(--background-accent);
+}
+
+// Green buttons
+.lookOutlined-3yKVGo.colorGreen-3y-Z79 {
+    background-color: var(--background-modifier-hover);
+}
+
+// Red buttons
+.lookFilled-yCfaCM.colorred-rQXKgM {
+    background: var(--background-accent);
+}
+
+// Dangerous buttons when hovered
+.button-3bklZh.dangerous-Y36ifs:hover {
+    color: var(--piOSwhite);
+}

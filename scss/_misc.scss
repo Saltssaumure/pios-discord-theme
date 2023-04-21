@@ -1,0 +1,50 @@
+@use "misc/clyde";
+@use "misc/glow";
+@use "misc/spoiler";
+
+// Title bar
+.theme-dark .titleBar-1it3bQ::before {
+    content: var(--title-text, "piOS v2.1.01p");
+    color: var(--piOSgrey);
+    background: var(--piOSblack);
+    position: absolute;
+    top: -4px;
+    left: 0;
+    height: 18px;
+    padding: 4px;
+    line-height: 23px;
+    font-size: 14px;
+    letter-spacing: 0;
+    z-index: 1;
+}
+
+.wordmark-2u86JB {
+    display: none;
+}
+
+// Notification counter
+.numberBadge-37OJ3S {
+    padding: 2px 0 0 2px;
+    width: 18px !important;
+}
+
+// discord friends tab: for some reason not currently using a variable
+.theme-dark .container-2cd8Mz {
+    background-color: var(--background-primary);
+}
+
+// Checkboxes
+.theme-dark .checkbox-f1HnKB.checked-1pZh2h {
+    border-color: var(--piOSwhite) !important;
+    color: var(--piOSwhite);
+    background: transparent !important;
+}
+
+.theme-dark .checkbox-f1HnKB.checked-1pZh2h path {
+    fill: currentColor;
+}
+
+// Star for verified
+.flowerStar-2tNFCR path {
+    fill: var(--background-modifier-active);
+}

@@ -1,0 +1,431 @@
+/**
+ * @name piOS
+ * @author Saltssaumure#7557
+ * @description SUPERHOT piOS inspired theme. Previous version: v0.2 Dec10.
+ * @version (0.3 Feb05)
+*/
+
+/*
+                                                Made by:
+ _______  _______  _    _________ _______  _______  _______           __   __           _______  _______ 
+(  ____ \(  ___  )( \   \__   __/(  ____ \(  ____ \(  ___  )|\     /|(  \ /  )|\     /|(  ____ )(  ____ \
+| (____\/| (___) || |      | |   | (____\/| (____\/| (___) || |   | || || || || |   | || (____)|| (__  \/
+(_____  )|  ___  || |      | |   (_____  )(_____  )|  ___  || |   | || |(_)| || |   | || __  __)|  __)   
+/\____) || )   ( || (____/\| |   /\____) |/\____) || )   ( || (___) || )   ( || (___) || ) \ \__| (____/\
+\_______)|/     \|(_______/)_(   \_______)\_______)|/     \|(_______)|/     \|(_______)|/   \__/(_______/
+
+                                              donut steel!
+
+Discord: Saltssaumure#7557
+Twitter: @Saltssaumure
+
+Join the Official Superhot Discord! https://discord.gg/9eAwJF8
+
+*/
+
+/* Imports fonts */
+
+@font-face {
+    font-family: "FixedSysTrue";
+    src: url("https://static.tumblr.com/6nmlfta/Xglq29q3t/fsex300.ttf")
+}
+
+@font-face {
+    font-family: "PerfectDOS";
+    src: url("https://static.tumblr.com/6nmlfta/kInq29swf/perfect_dos_vga_437_win.ttf")
+}
+
+/* Main theme adjustment */
+.theme-dark {
+    --header-primary: grey;
+    --header-secondary: #fff;
+    --text-normal: #fff;
+    --text-muted: grey;
+    --text-link: #fff;
+    --channels-default: #fff;
+    --interactive-normal: #fff;
+    --interactive-hover: #fff;
+    --interactive-active: #f00;
+    --interactive-muted: grey;
+    --background-primary: #000;
+    --background-secondary: #000;
+	--background-secondary-alt: #000;
+    --background-tertiary: #000;
+    --background-accent: #000;
+    --background-floating: #000;
+    --background-mobile-header: #000;
+    --background-modifier-hover: rgba(255,0,0,0.2);
+    --background-modifier-active: rgba(255,0,0,0.7);
+    --background-modifier-selected: rgba(255,0,0,0.3);
+    --background-modifier-accent: transparent;
+	--background-mentioned: rgba(255,0,0,0.2);
+	--background-mentioned-hover: rgba(255,0,0,0.2);
+	--activity-card-background: rgba(255,0,0,0.2);
+    --elevation-low: transparent;
+    --elevation-high: transparent;
+    /* --logo-primary: ; */
+    --guild-header-text-shadow: 20px 20px 0px rgba(245,234,32,1);
+    --channeltextarea-background: transparent;
+    --deprecated-panel-background: transparent;
+}
+
+/* scrollbar stoof */
+
+.scroller-2FKFPG::-webkit-scrollbar
+{
+    width: 18px;
+}
+
+.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb
+{
+	border-color: transparent;
+	background-color: grey;
+	border-radius: 0
+}
+
+.scroller-2FKFPG::-webkit-scrollbar-thumb, .scroller-2FKFPG::-webkit-scrollbar-track
+{
+	border-width: 4px;
+}
+
+.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece
+{
+	background: transparent;
+	border: 0;
+}
+
+/* new messages line */
+
+.isUnread-3Ef-o9
+{
+    border-color: var(--interactive-active);
+}
+
+.unreadPill-2HyYtt,
+.unreadPillCap-3_K2q2
+{
+	display: none;
+}
+
+/* fonts! */
+	
+::placeholder, body, button, input, select, textarea
+{
+    font-family: "PerfectDOS", "FixedSysTrue", monospace;
+    text-transform: uppercase;	
+}
+
+.markup-2BOw-j code.hljs,
+.markup-2BOw-j code.inline
+{
+    font-family: "FixedSysTrue", monospace;
+    border: solid var(--interactive-active);
+    border-width: 1px 3px;
+    border-radius: 0;
+    padding: 0 0.2em;
+    font-size: 16pt;
+    text-shadow: none;
+}
+
+.inlineCode-2ngu6Y,
+.codeBlockText-9TnoxQ,
+.codeLine-14BKbG
+{
+	font-family: "FixedSysTrue", monospace;
+}
+
+/* Removes roundness and adds border to every column */	
+.sidebar-2K8pFh.da-sidebar,
+.chat-3bRxxu.da-chat,
+.membersWrap-2h-GB4.da-membersWrap
+{
+    border-radius: 0;
+    border-left: 5px solid rgba(255,255,255,0.5);
+}
+
+/* Red or cyan shadow */
+.da-containerCozyBounded, /* center chat */
+.containerDefault-3GGEv_, /* left bar titles */
+.containerDefault-1ZnADq, /* left bar channels */
+.da-membersGroup, /* right bar titles*/
+.container-2Pjhx- /* right bar names n game */
+{
+    text-shadow: 0 0 20px cyan;
+}
+
+.modeUnread-1zpFdA .name-3_Dsmg/* unread undisturbed content */
+{
+    color: var(--text-normal);
+}
+
+.modeUnread-1zpFdA:hover .name-3_Dsmg,
+.wrapper-1ucjTd:hover,
+.content-3QAtGj:hover,
+.da-selected
+{
+    text-shadow: 0 0 20px var(--interactive-active);
+}
+
+.theme-dark .wrapper-3WhCwL, /* #channels and @pings */
+.markup-2BOw-j a /* hyperlinks */
+{
+    color: var(--text-normal);
+    text-shadow: 0 0 20px var(--interactive-active);
+}
+
+/* Underline @pings and #channels */
+.theme-dark .wrapper-3WhCwL
+{
+    text-decoration: underline;
+}
+
+/* Central chat boxes for each chatter */
+.container-1YxwTf
+{
+    margin: 20px;
+    border: 5px solid rgba(255,255,255,0.5);
+    border-width: 2px 5px;
+}
+
+/* Fix some font sizes */
+.da-username,
+.container-2ax-kl,
+.name-3YKhmS
+{
+    font-size: 16px;
+}
+
+.markup-2BOw-j
+{
+    font-size:1.5rem;
+    line-height:1;
+    text-transform: none;
+}
+
+/* Removes # symbol before channel names */
+.icon-1_QxNX
+{
+    display:none;
+}
+
+
+/* Adds dashes between channel groups */
+.containerDefault-3GGEv_::before
+{
+    position: relative;
+    left:7px;
+    content: "-------------------------";
+    text-shadow: 0 1px rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.5);
+}
+
+/* Makes the tab thingy at the left side of mentioned posts red */
+.mentioned-xhSam7:before
+{
+	background-color: var(--interactive-active);
+}
+
+/* square everything */
+.avatar-VxgULZ,
+.wrapper-3t9DeA,
+.content-3at_AU,
+.layout-2DM8Md,
+.spoilerText-3p6IlD.hidden-HHr2R9,
+.iconInactive-98JN5i,
+.folderIconWrapper-226oVY,
+.webkit-HjD9Er::-webkit-scrollbar-thumb,
+.blockquoteContainer-U5TVEi .blockquoteDivider-2hH8H6,
+.wrapper-2aW0bm,
+.newMessagesBar-mujexs,
+.emojiPicker-3m1S-j,
+.contextMenu-HLZMGh,
+.imageWrapper-2p5ogY,
+.userPopout-3XzG_A,
+.quickMessage-2XpSaN,
+.channelTextArea-2VhZ6z,
+.reaction-1hd86g,
+.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA.selected-39BZ4S,
+.theme-dark .autocomplete-1vrmpx,
+.button-38aScr,
+.spoilerWarning-2aAZq1,
+.spoilerContainer-331r0R,
+#bd-pub-button,
+.spoilerText-3p6IlD
+{
+	border-radius: 0;
+}
+
+foreignObject[mask*="url(#"]
+{
+  border-radius: 0;
+  mask: none;
+}
+
+/* unread servers have red pill */
+.item-2hkk8m
+{
+	background-color: var(--interactive-active);
+}
+
+/* [number] new messages since [time] bar at top */
+.newMessagesBar-mujexs
+{
+	background-color: rgba(255,0,0,0.7);
+}
+
+/* reaction when hover over message container */
+.wrapper-2aW0bm,
+.emojiPicker-3m1S-j,
+.contextMenu-HLZMGh,
+.userPopout-3XzG_A,
+.theme-dark .autocomplete-1vrmpx
+{
+	border: solid var(--interactive-muted);
+	border-width: 1px 3px;
+	padding: 0;
+}
+
+/* BEGONE NITRO */
+button[aria-label="Send a gift"]
+{
+	display: none;
+}
+
+/* reduces blurriness of bold stuff */
+.container-2ax-kl,
+.name-3YKhmS,
+.base-1x0h_U,
+.title-eS5yk3,
+.embedTitle-3OXDkz,
+.headerTagUsernameNoNickname-2_H881,
+.bodyTitle-Y0qMQz
+{
+	font-weight: normal;
+	text-shadow: none;
+}
+
+/* unblurs bold text in chat STYLE SUBJECT TO CHANGE PLS GIVE FEEDBACK*/
+.markup-2BOw-j strong
+{
+	font-weight: normal;
+	text-shadow: 2px 0 0.1px var(--text-normal);
+}
+
+/* background of popoverstuff set to black */
+.theme-dark .headerNormal-T_seeN,
+.theme-dark .bodyInner-245q0L,
+.theme-dark .footer-1fjuF6,
+.theme-dark .quickMessage-1yeL4E,
+.headerPlaying-j0WQBV,
+.headerStreaming-2FjmGz,
+.headerSpotify-zpWxgT,
+.theme-dark .autocomplete-1vrmpx
+{
+	background: var(--background-primary);
+}
+
+/* remove line in user popover */
+.footer-1fjuF6
+{
+	border: 0
+}
+
+/* remove protip in user popover */
+.protip-YaFfgO
+{
+	display: none;
+}
+
+/* top bar underline */
+.title-3qD0b-
+{
+	border-bottom: 1px solid var(--header-primary);
+}
+
+/* typing bit overline */
+.form-2fGMdU
+{
+	border-top: 1px solid var(--header-primary);
+}
+
+/* message reacts colour */
+.reaction-1hd86g.reactionMe-wv5HKu
+{
+	background: var(--background-mentioned);
+}
+
+.reactionMe-wv5HKu .reactionCount-2mvXRV,
+.reactionMe-wv5HKu:hover .reactionCount-2mvXRV
+{
+	color: var(--interactive-active);
+}
+
+/* blurs out emojis that require nitro when no nitro is active */
+.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA.disabled-1H1CfW
+{
+	filter: blur(1px) grayscale(100%) opacity(20%);
+}
+
+/* Spoiler stylin */
+.theme-dark .spoilerText-3p6IlD.hidden-HHr2R9
+{
+	background: repeating-linear-gradient(
+		-45deg,
+		transparent,
+		transparent 4px,
+		rgba(0,255,255,0.2) 2px,
+		rgba(0,255,255,0.2) 6px
+	);
+	background-color: transparent;
+	filter: drop-shadow(0px 0px 5px var(--interactive-active));
+}
+
+.theme-dark .spoilerText-3p6IlD.hidden-HHr2R9:hover,
+.spoilerText-3p6IlD
+{
+	background: repeating-linear-gradient(
+		-45deg,
+		transparent,
+		transparent 4px,
+		rgba(0,255,255,0.2) 2px,
+		rgba(0,255,255,0.2) 6px
+	);
+	filter: none;
+}
+
+.theme-dark .spoilerWarning-2aAZq1
+{
+	background: repeating-linear-gradient(
+		-45deg,
+		rgba(0,0,0,0.2),
+		rgba(0,0,0,0.2) 4px,
+		rgba(0,255,255,0.2) 2px,
+		rgba(0,255,255,0.2) 6px
+	);
+	width:100%;
+	height:100%;
+	line-height: 200%;
+	align-items: flex-start;
+	margin-left: 0.6em;
+}
+
+/* changes colour of selected emoji tab */
+.emojiPicker-3m1S-j .categories-1feg4n .selected-39BZ4S
+{
+	border-bottom-color: var(--interactive-active);
+	
+}
+
+/*-------------------------------------------------------*/
+#bd-customcss-detach-container.hljs,
+#bd-customcss-detach-container.inline,
+#bd-customcss-detach-container.hljs :-webkit-any(ol, li, span),
+.editor-wrapper :-webkit-any(textarea, div, span) {
+    /**
+     * Keep Custom CSS editor and code related parts untouched.
+     * Avoids issues when working with the Custom CSS editor.
+     */
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+    text-transform: none;
+    text-shadow: none;
+}

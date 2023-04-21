@@ -1,0 +1,123 @@
+/**
+ * @name piOS Search Boxes
+ * @author Saltssaumure#7557
+ * @description Search boxes section of piOS Discord Theme. Please download the autoupdater from https://github.com/Saltssaumure/pios-discord-theme/releases/tag/latest!
+ * @version 1
+*/
+
+/* ---- In server search ---- */
+
+/* Search bar filters */
+.theme-dark .searchFilter-2UfsDk {
+    background-color: var(--background-modifier-active);
+}
+.theme-dark .searchAnswer-23w-CH {
+    background-color: var(--background-modifier-selected);
+}
+
+/* Search suggestion box */
+.theme-dark .container-2McqkF {
+    background: var(--piOSblack);
+    border: solid var(--borderBrightColor);
+    border-width: var(--thinBorder);
+}
+
+/* Calendar date selector */
+.theme-dark .calendarPicker-sDhzdi {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}
+.theme-dark .calendarPicker-sDhzdi .react-datepicker,
+.theme-dark .calendarPicker-sDhzdi .react-datepicker__header,
+.theme-dark .calendarPicker-sDhzdi .react-datepicker__navigation.react-datepicker__navigation--previous,
+.theme-dark .calendarPicker-sDhzdi .react-datepicker__day--disabled,
+.theme-dark .calendarPicker-sDhzdi .react-datepicker__day--outside-month,
+.theme-dark .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled,
+.theme-dark .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled:hover {
+    background-color: var(--piOSblack);
+    color: var(--piOSgrey);
+}
+.calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--keyboard-selected,
+.calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--selected:hover,
+.calendarPicker-sDhzdi .react-datepicker__day:hover {
+    background-color: var(--background-modifier-hover);
+}
+/* current day underbar*/
+.calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--selected:after {
+    background: var(--background-accent);
+}
+/* Last row and column borders */
+.theme-dark .calendarPicker-sDhzdi .react-datepicker__week .react-datepicker__day:last-of-type {
+    border-right-color: var(--borderColor);
+}
+.theme-dark .calendarPicker-sDhzdi .react-datepicker__week:last-of-type .react-datepicker__day {
+    border-bottom-color: var(--borderColor);
+}
+/* Next/previous month buttons */
+.theme-dark .calendarPicker-sDhzdi .react-datepicker__navigation.react-datepicker__navigation--next,
+.theme-dark .calendarPicker-sDhzdi .react-datepicker__navigation.react-datepicker__navigation--previous {
+    border-color: var(--borderColor);
+}
+
+
+/* ---- Explore public servers ---- */
+
+/* Background */
+.theme-dark .pageWrapper-2PwDoS {
+    background-color: var(--piOSblack);
+    border: solid var(--borderColor);
+    border-width: var(--thickBorder);
+}
+/* Search results searchbox */
+.theme-dark .searchBox-pyIJJj {
+    background-color: var(--background-modifier-hover);
+    backdrop-filter: brightness(0);
+}
+.searchBox-pyIJJj:focus,
+.searchBox-pyIJJj:focus-within {
+    border-color: transparent;
+}
+/* Selected category */
+.categoryItem-Kc_HK_.selectedCategoryItem-ZjqSui .itemInner-3e_4G4 {
+    background-color: var(--background-modifier-selected);
+}
+/* Search category searchbox */
+.search-25t1e9 .searchBox-31Zv9h:focus,
+.search-25t1e9 .searchBox-31Zv9h:focus-within {
+    box-shadow: none;
+}
+    .search-25t1e9 .searchBox-31Zv9h .searchBoxInput-3h4etz {
+        color: var(--text-normal);
+    }
+    /* Clear searchbox icon */
+    .clearIcon-TMIIUa,
+    .search-25t1e9 .searchBox-31Zv9h .closeIcon-BMGxx0 {
+        color: var(--piOSgrey);
+    }
+    .clearIcon-TMIIUa:hover,
+    .search-25t1e9 .searchBox-31Zv9h .closeIcon-BMGxx0:hover {
+        color: var(--piOSlightgrey);
+    }
+/* Language dropdown */
+.lookFilled-1GseHa.select-1Ia3hD {
+    border-color: transparent;
+    color: var(--piOSgrey);
+}
+.popout-1KHNAq {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}
+/* Server card */
+.card-2TuZPZ,
+.card-1rhKXq {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}
+/* Separators in search results */
+.separator-2t2gPa {
+    display: none;
+}
+/* Student hub icon */
+.iconContainer-6xlTpK {
+    background-color: var(--background-modifier-active);
+}
