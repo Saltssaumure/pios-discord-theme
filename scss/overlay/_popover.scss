@@ -13,23 +13,20 @@
 
 // Popovers
 .contentWrapper-3vHNP2,
-// Emoji/gif selector (from message box)
-#emoji-picker-tab-panel[role="dialog"],
 // Emoji picker for reactions
-.userPopout-29jUdN,
+.contentWrapper-2f9yME,
 // Smallish popover menus
 .menu-2TXYjN,
 // User profile popovers
-.userProfileOuter-1K_BYU,
+.userProfileOuter-2tQwNf,
 // Pinned messages
-.container-2ebMPP,
+.messagesPopoutWrap-3zryHW,
 // Inbox
 .recentMentionsPopout-2bI1ZN,
 // Threads
 .browser-mnQ1T7,
-// Threads (not modal)
+// Stream picture-in-picture
 .pictureInPictureVideo-2puO2Q {
-    // Stream picture-in-picture
     border: solid var(--borderBrightColor);
     border-width: var(--thickBorder);
 }
