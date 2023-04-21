@@ -40,15 +40,7 @@
     text-shadow: 0 0 calc(10px * var(--glowIntensity));
 }
 
-// allows channel and users glow to not clip
-.overflow-1wOqNV,
-.channelName-3KPsGw,
-.name-3BUDLf,
-.mainContent-uDGa6R,
-.container-q97qHp,
-.zalgo-26OfGz.cozy-VmLDNB .header-2jRmjb,
-.username-h_Y3Us,
-// and chat content
+// Do not clip chat content glow
 .zalgo-26OfGz .messageContent-2t3eCI {
     overflow: visible;
 }
