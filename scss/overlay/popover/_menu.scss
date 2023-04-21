@@ -1,0 +1,22 @@
+// ---- General menu popover ----
+// Option in menu when hovered
+.colorDefault-2_rLdz {
+    &.focused-3LIdPu {
+        background-color: var(--background-modifier-hover);
+    }
+    &:active:not(.hideInteraction-1vQrZJ) {
+        background-color: var(--background-modifier-active);
+    }
+    .checkbox-397WsK,
+    .radioSelection-3PDNAQ {
+        color: var(--piOSaccent);
+    }
+}
+// Menu slider bar
+.barFill-3RgCsY {
+    background: var(--piOSaccent);
+}
+// Menu selected option checkbox
+.activeIcon-1ykRnF path {
+    fill: var(--piOSaccent);
+}

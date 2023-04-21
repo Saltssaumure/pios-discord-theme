@@ -1,0 +1,16 @@
+// ---- Tooltips ----
+.tooltip-33Jwqe {
+    border: solid var(--borderBrightColor);
+    border-width: var(--thinBorder);
+}
+
+// Arrow towards tooltip source
+.tooltipPointer-sMBQqe {
+    display: none;
+}
+
+// "Verified" connection tooltip
+.theme-dark .tooltipBrand-20XsMA,
+.theme-light .tooltipBrand-20XsMA {
+    background-color: var(--piOSblack);
+}

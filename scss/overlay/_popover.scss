@@ -1,3 +1,16 @@
+@use "popover/autocomplete";
+@use "popover/emojipicker";
+@use "popover/inbox";
+@use "popover/menu";
+@use "popover/messageoptions";
+@use "popover/newuser";
+@use "popover/noisesuppression";
+@use "popover/search";
+@use "popover/threads";
+@use "popover/toast";
+@use "popover/tooltip";
+@use "popover/userprofile";
+
 // Popovers
 .contentWrapper-3vHNP2,
 // Emoji/gif selector (from message box)
@@ -15,191 +28,8 @@
 // Threads
 .browser-mnQ1T7,
 // Threads (not modal)
-.pictureInPictureVideo-2puO2Q { // Stream picture-in-picture
+.pictureInPictureVideo-2puO2Q {
+    // Stream picture-in-picture
     border: solid var(--borderBrightColor);
     border-width: var(--thickBorder);
-}
-
-// ---- Tooltips ----
-.tooltip-33Jwqe {
-    border: solid var(--borderBrightColor);
-    border-width: var(--thinBorder);
-}
-
-// Arrow towards tooltip source
-.tooltipPointer-sMBQqe {
-    display: none;
-}
-
-// "Verified" connection tooltip
-.theme-dark .tooltipBrand-20XsMA,
-.theme-light .tooltipBrand-20XsMA {
-    background-color: var(--piOSblack);
-}
-
-// ---- Toasts ----
-// Link copied toast
-.toast-q3Y4wI {
-    border: solid var(--borderBrightColor);
-    border-width: var(--thinBorder);
-}
-
-// ---- General menu popover ----
-// Option in menu when hovered
-.colorDefault-2_rLdz {
-    &.focused-3LIdPu {
-        background-color: var(--background-modifier-hover);
-    }
-    &:active:not(.hideInteraction-1vQrZJ) {
-        background-color: var(--background-modifier-active);
-    }
-    .checkbox-397WsK,
-    .radioSelection-3PDNAQ {
-        color: var(--piOSaccent);
-    }
-}
-// Menu slider bar
-.barFill-3RgCsY {
-    background: var(--piOSaccent);
-}
-// Menu selected option checkbox
-.activeIcon-1ykRnF path {
-    fill: var(--piOSaccent);
-}
-
-// ---- New user popover ----
-.popoutContainer-2wbmiM {
-    border: solid var(--borderBrightColor);
-    border-width: var(--thinBorder);
-}
-
-// ---- User profile popover ----
-// User profile picture
-.wrapper-1VLyxH {
-    border-width: 0;
-}
-
-// View profile hint
-.avatarHint-k7pYop {
-    top: 0;
-    left: 0;
-}
-
-// about me ```code``` from inline to block
-.aboutMeBody-1J8rhz code.inline {
-    display: block;
-    margin: 0;
-    margin-bottom: -1.2em;
-}
-
-// User roles
-.role-2TIOKu {
-    border-style: solid;
-    border-width: var(--thinBorder);
-}
-
-// ---- Typing channel/user/command/etc. autocomplete popover ----
-.theme-dark .autocomplete-3NRXG8 {
-    background: var(--piOSblack);
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
-}
-
-// ---- Emoji selector popover ----
-// Selected/hovered emojis
-.emojiItem-277VFM.emojiItemSelected-2Lg50V {
-    background: var(--background-modifier-selected);
-}
-
-// Skin tone selector for emojis
-.diversitySelectorOptions-3DhNYs {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
-}
-
-// blurs out emojis and stickers that require nitro when no nitro is active
-.emojiItemDisabled-3VVnwp,
-.stickerUnsendable-PkQAxI {
-    filter: blur(1px) grayscale(100%) opacity(40%);
-}
-
-// ---- Message options popover ----
-// Hovered normal option
-.colorDefault-CDqZdO.focused-3qFvc8 {
-    background-color: var(--background-modifier-hover);
-}
-
-// Hovered danger option
-.colorDanger-3n-KnP.focused-3qFvc8 {
-    background-color: var(--background-modifier-active);
-}
-
-// Clicked option
-.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
-    background-color: var(--background-modifier-active);
-}
-
-// ---- Voice noise suppression popover ----
-.noiseCancellationPopout-2-e5Xz {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
-}
-
-// ---- Channel Permissions plugin popover ----
-.popout-TdhJ6Z,
-.container-8Futzw {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
-}
-
-.container-8Futzw .FarcradaChannelTooltipClass {
-    margin-top: 8px !important;
-}
-
-// ---- Threads popover ----
-// Thread container
-.container-2rzKKA,
-.container-2rzKKA:hover {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
-}
-
-// ---- Inbox popover ----
-// Channel info
-.channelHeader-DFRX8q {
-    border-bottom: 2px dashed var(--borderColor);
-}
-
-// Inbox message containers
-.messageContainer-3VTXBC {
-    padding: 0;
-}
-
-.messages-23can0 {
-    padding: 16px 0 0 0;
-}
-
-// Remove "replied to" in inbox due to space constraint
-.container-iA3Qrz .compact-2Nkcau .repliedMessage-3Z6XBG,
-.container-2ebMPP .compact-2Nkcau .repliedMessage-3Z6XBG {
-    display: none;
-}
-
-// filter gets box border (not sure what this does anymore)
-.menu-1QACrS {
-    border: solid var(--borderColor);
-    border-width: var(--thickBorder);
-}
-
-// "Mark Inbox as read", "Notifications", "Mark as read", Jump buttons
-.primary-38Hs-h:hover:not(.disabled-184-il),
-.secondary-2bzKEX,
-.tertiary-1e-lAP,
-.jumpButton-1V_1FA {
-    background-color: var(--background-modifier-selected);
-}
-
-.secondary-2bzKEX:hover:not(.disabled-184-il),
-.tertiary-1e-lAP:hover:not(.disabled-184-il) {
-    background-color: var(--background-modifier-active);
 }

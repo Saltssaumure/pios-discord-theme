@@ -1,0 +1,26 @@
+// ---- Servers sidebar ----
+// Unread server/channel dot
+.unread-36eUEm,
+.item-2LIpTv {
+    background-color: var(--piOSaccent);
+}
+
+// "New" bubble in servers sidebar
+.mention-3XBnnZ {
+    background-color: var(--piOSaccent);
+}
+
+// Switch to DMs button
+.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
+.wrapper-3kah-n:hover .childWrapper-1j_1ub {
+    background-color: var(--background-modifier-active);
+}
+
+// Add a server / explore public servers button
+.circleIconButton-1VxDrg {
+    color: var(--piOSaccent);
+}
+
+.circleIconButton-1VxDrg.selected-2r1Hvo {
+    background-color: var(--background-modifier-active);
+}

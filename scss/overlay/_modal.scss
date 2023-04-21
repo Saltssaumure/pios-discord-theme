@@ -1,3 +1,11 @@
+@use "modal/changeusername";
+@use "modal/deletemessage";
+@use "modal/event";
+@use "modal/imageupload";
+@use "modal/invitefriends";
+@use "modal/phonenumber";
+@use "modal/uploadfile";
+
 // Modals
 .theme-dark .root-1CAIjD {
     border: solid var(--borderBrightColor);
@@ -11,114 +19,4 @@
     background-color: var(--piOSblack);
     box-shadow: none;
     border-top: 2px dashed var(--borderColor);
-}
-
-
-// ---- Invite friends to server modal ----
-// Copy url
-.copyInput-1dXbXE .input-3O04eu {
-    background: transparent;
-}
-
-// Invite link settings
-// Selected item icon
-.selectedIcon-19TbzU {
-    color: var(--piOSgrey);
-}
-
-// Search bar
-.container-2oNtJn {
-    background-color: var(--input-background);
-}
-
-// Search results
-.theme-dark .inviteRow-3vmB7i:hover {
-    background: var(--background-modifier-hover);
-}
-
-// "Invite" button
-.inviteRowButton-3hcOhY {
-    padding: 2px;
-}
-
-// ---- Upload file by drag and drop modal ----
-.uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .bgScale-1iWuPF {
-    background: var(--piOSblack);
-    border: solid var(--borderBrightColor);
-    border-width: var(--thickBorder);
-}
-
-.uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .inner-rBP-MS {
-    border: 0;
-}
-
-// ---- Image upload modify modal ----
-.theme-dark .uploadModal-2ie9O_ {
-    background-color: var(--background-primary);
-}
-
-.theme-dark .footer-VCsJQY {
-    background-color: transparent;
-}
-
-// Delete message confirmation modal
-// Message view
-.theme-dark .message-G6O-Wv {
-    background-color: var(--piOSblack);
-    box-shadow: none;
-    border: solid var(--borderColor);
-    border-width: var(--thickBorder);
-}
-
-// Enter phone number modal
-// Country select
-.theme-dark .popoutList-10IFAa {
-    background: var(--background-primary);
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
-}
-
-// Country
-.theme-dark .selectableItem-3-fmiM:hover {
-    background-color: var(--background-modifier-hover);
-}
-
-// Event and new event modal
-// Event card
-.theme-dark .previewCard-E137i2,
-.card-8UsK4b {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
-}
-
-// Event cover image
-.imageUploaderInner-IIRaFr {
-    background-color: var(--background-modifier-hover);
-}
-
-.avatarUploadIcon-34ohJq.hideDefaultIcon-Z9-iXK {
-    background-color: var(--background-modifier-active);
-}
-
-.imageUploaderIcon-2OHmFu path {
-    fill: var(--piOSwhite);
-}
-
-.eventStatusGreen-2-f2N8 {
-    color: var(--piOSaccent);
-}
-
-// Change your username modal
-.questionMark-3V9mGJ {
-    background-color: var(--background-modifier-hover);
-}
-
-// Forum sort modal
-.container-2d0jMv {
-    background: transparent;
-}
-
-// BetterDiscord error modal
-.bd-error-modal-header {
-    padding: 16px;
 }

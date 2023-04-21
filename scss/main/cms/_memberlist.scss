@@ -1,0 +1,12 @@
+// ---- Members list ----
+// Position dashes between member groups
+.membersGroup-2eiWxl.container-q97qHp {
+    position: relative;
+}
+
+.membersGroup-2eiWxl.container-q97qHp:not(:first-of-type)>span:last-child::before {
+    content: "-----------------";
+    display: block;
+    font-weight: 9;
+    top: 8px;
+}
