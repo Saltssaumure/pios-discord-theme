@@ -1,12 +1,16 @@
+[screenshot]: https://user-images.githubusercontent.com/29710355/123527529-72121600-d6d8-11eb-9580-da3987ee8398.png
+
 # piOS Discord Theme
 [![GitHub downloads](https://img.shields.io/github/downloads/saltssaumure/pios-discord-theme/total?color=purple&label=GitHub%20downloads&style=flat-square)](https://github.com/Saltssaumure/pios-discord-theme/releases/latest "Latest release")
 ![Total size](https://img.shields.io/github/repo-size/saltssaumure/pios-discord-theme?style=flat-square "Total size")
 
-***SUPERHOT piOS inspired theme built for BetterDiscord.***
+***A SUPERHOT piOS inspired Discord theme.***
 
-![Screenshot of piOS Discord Theme applied to Discord desktop client](https://user-images.githubusercontent.com/29710355/123527529-72121600-d6d8-11eb-9580-da3987ee8398.png)
+![Screenshot of piOS Discord Theme applied to Discord desktop client][screenshot]
 
 ## Installation
+
+### BetterDiscord
 1. Install [BetterDiscord](https://betterdiscord.app/).
 2. Download the theme file:
     - [GitHub](https://github.com/Saltssaumure/pios-discord-theme/releases/latest)
@@ -15,6 +19,12 @@
     - Windows: `%AppData%/BetterDiscord/themes`
     - Mac: `~/Library/Application Support/betterdiscord/themes`
     - Linux: `~/.config/BetterDiscord/themes`
+
+### Replugged
+1. Install [Replugged](https://replugged.dev/).
+2. Install the theme:
+    - [GitHub](https://github.com/Saltssaumure/pios-discord-theme/releases/latest)
+    - [Replugged.dev](https://replugged.dev/install?identifier=Saltssaumure/pios-discord-theme&source=github)
 
 ## Customisation
 
@@ -76,10 +86,9 @@ Adds customisable title text to replace the Discord logo.
 ![image](https://user-images.githubusercontent.com/29710355/185759617-42fc6937-4523-4559-ba9c-5e9bb2ba8d3c.png)
 
 ## License
-[GNU General Public License v3.0](https://github.com/Saltssaumure/pios-discord-theme/blob/main/LICENSE)  
-<span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
+[GNU General Public License v3.0](https://github.com/Saltssaumure/pios-discord-theme/blob/main/LICENSE)
+- <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
 
 ## Questions or suggestions?
 - Post [an issue](https://github.com/Saltssaumure/pios-discord-theme/issues) on GitHub.
 - Post in `#theme-support` on [my support server](https://discord.gg/uy8nKQVatp).
-- Ping me on the [SUPERHOT Official server](https://discord.gg/9eAwJF8).

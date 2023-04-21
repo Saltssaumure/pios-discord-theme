@@ -35,6 +35,6 @@ Join Salt's Discord Themes server: https://discord.gg/uy8nKQVatp
     --title-text: "piOS v2.1.01p";  /* Text replacement for Discord logo. Values: any text in "quotations" */
     --crt-overlay: block;           /* CRT monitor overlay. Values: block (on) or none (off) */
     /* The following effects are performance-heavy. */
-    --crt-scanline: block;          /* CRT animated scanline. Values: block (on) or none (off) */
+    --crt-scanline: none;           /* CRT animated scanline. Values: block (on) or none (off) */
     --crt-flicker: none;            /* CRT monitor overlay flickering. Values: flicker (on) or none (off) */
 }
