@@ -111,37 +111,6 @@
     background-color: var(--background-modifier-hover);
 }
 
-// Custom CSS
-#bd-editor-panel {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
-}
-
-// Plugins and Themes
-.bd-button,
-.bd-addon-views .bd-view-button.selected {
-    background-color: var(--background-modifier-selected);
-}
-
-.bd-button:hover {
-    background-color: var(--background-modifier-active);
-}
-
-.bd-button:active {
-    background-color: var(--background-accent);
-}
-
-.bd-button.bd-button-danger,
-.bd-button.bd-button-danger:hover,
-.bd-button.bd-button-danger:active {
-    background-color: var(--background-accent);
-}
-
-.bd-addon-card {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
-}
-
 // Server settings
 
 // Stickers
@@ -169,7 +138,7 @@
 
 // App directory
 .theme-dark .directoryModal-YJsOMv {
-    background: transparent;
+    background: var(--piOSblack);
 }
 
 // App categories

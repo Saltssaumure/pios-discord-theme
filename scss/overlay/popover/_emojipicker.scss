@@ -1,0 +1,17 @@
+// ---- Emoji selector popover ----
+// Selected/hovered emojis
+.emojiItem-277VFM.emojiItemSelected-2Lg50V {
+    background: var(--background-modifier-selected);
+}
+
+// Skin tone selector for emojis
+.diversitySelectorOptions-3DhNYs {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}
+
+// blurs out emojis and stickers that require nitro when no nitro is active
+.emojiItemDisabled-3VVnwp,
+.stickerUnsendable-PkQAxI {
+    filter: blur(1px) grayscale(100%) opacity(40%);
+}

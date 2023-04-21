@@ -1,0 +1,64 @@
+// BetterDiscord toasts
+.bd-toasts {
+    align-items: flex-end;
+    right: 0;
+}
+
+.bd-toast {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+    margin-right: 24px;
+    background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.bd-toast.toast-success {
+    background-color: var(--background-modifier-active);
+}
+
+// Error modal
+.bd-error-modal-header {
+    padding: 16px;
+}
+
+// Custom CSS
+#bd-editor-panel {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}
+
+// Plugins and Themes
+.bd-button,
+.bd-addon-views .bd-view-button.selected {
+    background-color: var(--background-modifier-selected);
+}
+
+.bd-button:hover {
+    background-color: var(--background-modifier-active);
+}
+
+.bd-button:active {
+    background-color: var(--background-accent);
+}
+
+.bd-button.bd-button-danger,
+.bd-button.bd-button-danger:hover,
+.bd-button.bd-button-danger:active {
+    background-color: var(--background-accent);
+}
+
+.bd-addon-card {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+}
+
+// Keep Custom CSS editor and code related parts untouched.
+// Avoids issues when working with the Custom CSS editor.
+#bd-customcss-detach-container.hljs,
+#bd-customcss-detach-container.inline,
+#bd-customcss-detach-container.hljs :-webkit-any(ol, li, span),
+.editor-wrapper :-webkit-any(textarea, div, span) {
+    font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro",
+        monospace;
+    text-transform: none;
+    text-shadow: none;
+}

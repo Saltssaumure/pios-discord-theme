@@ -1,26 +1,10 @@
-@use "misc/clyde";
-@use "misc/glow";
-@use "misc/spoiler";
-
-// Title bar
-.theme-dark .titleBar-1it3bQ::before {
-    content: var(--title-text, "piOS v2.1.01p");
-    color: var(--piOSgrey);
-    background: var(--piOSblack);
-    position: absolute;
-    top: -4px;
-    left: 0;
-    height: 18px;
-    padding: 4px;
-    line-height: 23px;
-    font-size: 14px;
-    letter-spacing: 0;
-    z-index: 1;
-}
-
-.wordmark-2u86JB {
-    display: none;
-}
+@use "part/bd";
+@use "part/button";
+@use "part/clyde";
+@use "part/glow";
+@use "part/scanline";
+@use "part/spoiler";
+@use "part/text";
 
 // Notification counter
 .numberBadge-37OJ3S {
@@ -42,6 +26,11 @@
 
 .theme-dark .checkbox-f1HnKB.checked-1pZh2h path {
     fill: currentColor;
+}
+
+.theme-dark .checkbox-1LuCGM.checked-22NTbO {
+    background: var(--piOSaccent) !important;
+    border-color: var(--piOSaccent) !important;
 }
 
 // Star for verified

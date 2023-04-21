@@ -1,0 +1,57 @@
+// Search bar filters
+.theme-dark .searchFilter-2UfsDk {
+    background-color: var(--background-modifier-active);
+}
+
+.theme-dark .searchAnswer-23w-CH {
+    background-color: var(--background-modifier-selected);
+}
+
+// Search suggestion box
+.theme-dark .container-2McqkF {
+    background: var(--piOSblack);
+    border: solid var(--borderBrightColor);
+    border-width: var(--thinBorder);
+}
+
+.theme-dark .calendarPicker-sDhzdi {
+    border: solid var(--borderColor);
+    border-width: var(--thinBorder);
+
+    .react-datepicker,
+    .react-datepicker__header,
+    .react-datepicker__navigation.react-datepicker__navigation--previous,
+    .react-datepicker__day--disabled,
+    .react-datepicker__day--outside-month,
+    .react-datepicker__day.react-datepicker__day--disabled,
+    .react-datepicker__day.react-datepicker__day--disabled:hover {
+        background-color: var(--piOSblack);
+        color: var(--piOSgrey);
+    }
+
+    .react-datepicker__day .react-datepicker__day--keyboard-selected,
+    .react-datepicker__day.react-datepicker__day--selected:hover,
+    .react-datepicker__day:hover {
+        background-color: var(--background-modifier-hover);
+    }
+
+    .react-datepicker__day.react-datepicker__day--selected:after {
+        background: var(--background-accent);
+    }
+
+    // Next/previous month buttons
+    .react-datepicker__navigation.react-datepicker__navigation--next,
+    .react-datepicker__navigation.react-datepicker__navigation--previous {
+        border-color: var(--borderColor);
+    }
+
+    // Last column
+    .react-datepicker__week .react-datepicker__day:last-of-type {
+        border-right-color: var(--borderColor);
+    }
+
+    // Last row
+    .react-datepicker__week:last-of-type .react-datepicker__day {
+        border-bottom-color: var(--borderColor);
+    }
+}

@@ -103,10 +103,18 @@
     --background-accent: var(--piOSaccent);
     --background-floating: var(--piOSblack);
     --background-mentioned: hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.2);
+    --background-modifier-hover: hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.2);
+    --background-modifier-active: hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.7);
+    --background-modifier-selected: hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.3);
+    --background-modifier-accent: transparent;
     --backgroundEmbed: hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.3);
     --channeltextarea-background: transparent;
+    --home-background: var(--piOSblack);
+    --modal-background: var(--piOSblack);
     --input-background: var(--background-modifier-hover);
     --deprecated-card-bg: var(--background-modifier-hover);
+
+    // Buttons
     --button-danger-background: var(--background-modifier-active);
     --button-danger-background-hover: var(--background-accent);
     --button-danger-background-active: var(--background-accent);
@@ -131,10 +139,6 @@
     --button-secondary-background: var(--piOSblack);
     --button-secondary-background-hover: var(--background-modifier-hover);
     --button-secondary-background-active: var(--background-modifier-active);
-    --background-modifier-hover: hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.2);
-    --background-modifier-active: hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.7);
-    --background-modifier-selected: hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.3);
-    --background-modifier-accent: transparent;
 
     // Scrollbars
     --scrollbar-thin-thumb: var(--piOSaccent);
@@ -180,16 +184,4 @@
             calc(var(--saturation-factor) * 100%),
             50%); // Focus ring when navigating by keyboard
     --info-warning-foreground: var(--piOSaccent); // Mentioned message left bar
-}
-
-// Keep Custom CSS editor and code related parts untouched.
-// Avoids issues when working with the Custom CSS editor.
-#bd-customcss-detach-container.hljs,
-#bd-customcss-detach-container.inline,
-#bd-customcss-detach-container.hljs :-webkit-any(ol, li, span),
-.editor-wrapper :-webkit-any(textarea, div, span) {
-    font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro",
-        monospace;
-    text-transform: none;
-    text-shadow: none;
 }

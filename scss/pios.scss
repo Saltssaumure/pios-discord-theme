@@ -1,17 +1,8 @@
 @use "top/var-css";
 
-// Single
-@use "bd";
-@use "button";
-@use "chanmemserv";
-@use "chat";
-@use "search";
-@use "settings";
-@use "text";
-
-// Multi
-@use "misc";
+@use "main";
 @use "overlay";
+@use "part";
 @use "plugin";
 
 @import url("https://saltssaumure.github.io/misc-discord-themes/BorderRadiant/br.min.css");

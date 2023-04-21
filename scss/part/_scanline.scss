@@ -15,7 +15,7 @@ body::before {
 
 body::after {
     content: "";
-    display: var(--crt-scanline, block);
+    display: var(--crt-scanline, none);
     width: 100vw;
     height: 4px;
     position: absolute;
