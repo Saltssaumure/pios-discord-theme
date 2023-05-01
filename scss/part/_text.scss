@@ -1,3 +1,47 @@
+@use "../top/mixin";
+@use "../top/var-scss" as *;
+
+@font-face {
+    font-family: "FixedSysTrue";
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+    src: url("https://saltssaumure.github.io/pios-discord-theme/font/FixedSysTrue.ttf");
+}
+
+@font-face {
+    font-family: "PerfectDOS";
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+    src: url("https://saltssaumure.github.io/pios-discord-theme/font/PerfectDosVga.ttf");
+}
+
+:root {
+    // Set default fonts
+    @include mixin.lang-font($font-latin, $font-code);
+    letter-spacing: -0.04rem;
+}
+
+:lang(bg),
+:lang(el),
+:lang(ru),
+:lang(uk) {
+    @include mixin.lang-font($font-cyrillic, $font-code);
+}
+:lang(zh-CN) {
+    @include mixin.lang-font($font-chinese-simplified, $font-code);
+}
+:lang(zh-TW) {
+    @include mixin.lang-font($font-chinese-traditional, $font-code);
+}
+:lang(ja) {
+    @include mixin.lang-font($font-japanese, $font-code);
+}
+:lang(ko) {
+    @include mixin.lang-font($font-korean, $font-code);
+}
+
 // All caps on areas where case is not so important
 // importantly: excludes message text, searches, emoji, and status text
 .channelName-3KPsGw,

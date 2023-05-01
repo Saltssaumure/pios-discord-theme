@@ -1,13 +1,13 @@
 {
     "id": "net.saltssaumure.piOS",
     "name": "piOS",
-    "description": "SUPERHOT piOS inspired Discord theme.",
+    "description": "A SUPERHOT piOS inspired Discord theme.",
     "author": {
         "name": "Saltssaumure",
         "discordID": "134142022092062720",
         "github": "Saltssaumure"
     },
-    "version": "9.1",
+    "version": "9.2",
     "updater": {
         "type": "github",
         "id": "Saltssaumure/pios-discord-theme"

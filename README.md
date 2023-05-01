@@ -26,7 +26,33 @@
     - [GitHub](https://github.com/Saltssaumure/pios-discord-theme/releases/latest)
     - [Replugged.dev](https://replugged.dev/install?identifier=Saltssaumure/pios-discord-theme&source=github)
 
-## Customisation
+### Vencord
+1. Install [Vencord](https://github.com/Vendicated/Vencord).
+2. Paste the following in `Settings` > `Vencord` > `Themes`:
+    - `https://saltssaumure.github.io/pios-discord-theme/piOS.theme.css`
+
+## How to customise
+
+### BetterDiscord
+1. Open `Settings` > `BetterDiscord` > `Themes`.
+2. Click the pencil icon on this theme.
+3. Edit the variable values and save changes.
+
+### Replugged
+1. Open `Settings` > `Replugged` > `Quick CSS`.
+3. Copy and paste line 30-36 of [`piOS.theme.css`](https://github.com/Saltssaumure/pios-discord-theme/blob/main/piOS.theme.css).
+3. Edit the variable values and apply changes.
+
+### Vencord
+#### Standard method
+1. Follow the instructions in `Settings` > `Vencord` > `Themes`.
+#### Recommended method
+1. Open `Settings` > `Vencord` > `Vencord`.
+2. Toggle on `Enable Custom CSS` and click `Open QuickCSS File`.
+3. Copy and paste line 30-36 of [`piOS.theme.css`](https://github.com/Saltssaumure/pios-discord-theme/blob/main/piOS.theme.css).
+4. Edit the variable values.
+
+## Customisation options
 
 ### Message display
 Cosy mode uses regular Discord layout, while Compact mode has piOS-style boxes.
