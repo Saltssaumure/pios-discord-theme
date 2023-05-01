@@ -1,6 +1,6 @@
 // Title bar
 .theme-dark .titleBar-1it3bQ::before {
-    content: var(--title-text, "piOS v2.1.01p");
+    content: var(--pios-title-text, "piOS v2.1.01p");
     color: var(--piOSgrey);
     background: var(--piOSblack);
     position: absolute;
