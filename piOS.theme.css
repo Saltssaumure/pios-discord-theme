@@ -2,39 +2,24 @@
  * @name piOS
  * @author Saltssaumure
  * @authorLink https://github.com/Saltssaumure
- * @description SUPERHOT piOS inspired theme. With customisable colours, glow intensity, support for both cosy and compact mode.
- * @version 9.1
+ * @description A SUPERHOT piOS inspired theme.
+ * @license GPL-3.0
+ * @version 9.2
  * @invite uy8nKQVatp
  * @source https://github.com/Saltssaumure/pios-discord-theme
  * @donate https://ko-fi.com/saltssaumure
 */
 
-/*
-                                                Made by:
- _______  _______  _    _________ _______  _______  _______           __   __           _______  _______
-(  ____ \(  ___  )( \   \__   __/(  ____ \(  ____ \(  ___  )|\     /|(  \ /  )|\     /|(  ____ )(  ____ \
-| (____\/| (___) || |      | |   | (____\/| (____\/| (___) || |   | || || || || |   | || (____)|| (__  \/
-(_____  )|  ___  || |      | |   (_____  )(_____  )|  ___  || |   | || |(_)| || |   | || __  __)|  __)
-/\____) || )   ( || (____/\| |   /\____) |/\____) || )   ( || (___) || )   ( || (___) || ) \ \__| (____/\
-\_______)|/     \|(_______/)_(   \_______)\_______)|/     \|(_______)|/     \|(_______)|/   \__/(_______/
-                                         Licensed under GPL-3.0!
-
-Discord: Saltssaumure#7557
-GitHub: https://github.com/Saltssaumure/pios-discord-theme
-
-Join the SUPERHOT Official server: https://discord.gg/9eAwJF8
-Join Salt's Discord Themes server: https://discord.gg/uy8nKQVatp
-*/
-
 @import url("https://saltssaumure.github.io/pios-discord-theme/pios.min.css");
 
+/* See https://github.com/Saltssaumure/pios-discord-theme#customisation for customisation settings. */
 :root {
-    --glow-intensity: 1;            /* Intensity of text glow. Range: 0-1, default: 1 (100%) */
-    --compact-message-spacing: 1;   /* Space between messages in compact mode. Range: 0-∞, default: 1 (100%) */
-    --accent-color: 0;              /* Colour accent hue value as in HSL. Range: 0-360, default: 0 (red) */
-    --title-text: "piOS v2.1.01p";  /* Text replacement for Discord logo. Values: any text in "quotations" */
-    --crt-overlay: block;           /* CRT monitor overlay. Values: block (on) or none (off) */
-    /* The following effects are performance-heavy. */
-    --crt-scanline: none;           /* CRT animated scanline. Values: block (on) or none (off) */
-    --crt-flicker: none;            /* CRT monitor overlay flickering. Values: flicker (on) or none (off) */
+    --pios-glow-intensity:  1;
+    --pios-spacing:         1;
+    --pios-accent-hue:      0;
+    --pios-title-text:      "piOS v2.1.01p";
+
+    --crt-stripe:   block;
+    --crt-scanline: none;   /* ⛐ This effect is performance-intensive. */
+    --crt-flicker:  none;   /* ⚠ This is a fast flickering effect and may not be suitable for those with photosensitive epilepsy. */
 }

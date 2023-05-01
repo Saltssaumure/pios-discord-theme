@@ -34,7 +34,7 @@
 .layerContainer-2v_Sit .theme-light // Modals that use theme-light while in dark mode
 {
     // Set customisable colour scheme
-    --piOSaccenthue: var(--accent-color, 0); // default: 0 (red)
+    --piOSaccenthue: var(--pios-accent-hue, 0); // default: 0 (red)
     --piOSaccent: hsl(var(--piOSaccenthue), calc(var(--saturation-factor) * 100%), 50%);
     --piOSwhite: white;
     --piOSlightgrey: lightgrey;
@@ -150,8 +150,8 @@
         rgba(0, 255, 255, 0.2) 2px,
         rgba(0, 255, 255, 0.2) 6px
     ); // Spoiler stripe pattern
-    --glowIntensity: var(--glow-intensity, 1);
-    --true-compact-message-spacing: var(--compact-message-spacing, 1); // Space between messages in compact mode, user adjustable
+    --glowIntensity: var(--pios-glow-intensity, 1);
+    --true-compact-message-spacing: var(--pios-spacing, 1); // Space between messages in compact mode, user adjustable
     --focus-primary: hsl(
         calc(var(--piOSaccenthue) + 180),
         calc(var(--saturation-factor) * 100%),
