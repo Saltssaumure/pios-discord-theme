@@ -5,13 +5,13 @@
 // ---- Explore public servers ----
 
 // Background
-.appmount-2ybxzl .pageWrapper-2PwDoS {
+.appMount-2yBXZl .pageWrapper-2PwDoS {
     background-color: $background-color;
     @include bd.border(thick);
 }
 
 // Search results searchbox
-.appmount-2ybxzl .searchBox-pyIJJj {
+.appMount-2yBXZl .searchBox-pyIJJj {
     background-color: hsla.default($accent-hue, 0.2);
     backdrop-filter: brightness(0);
 }

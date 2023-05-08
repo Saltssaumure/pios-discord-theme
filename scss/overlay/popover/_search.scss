@@ -3,21 +3,21 @@
 @use "../../top/hsla";
 
 // Search bar filters
-.appmount-2ybxzl .searchFilter-2UfsDk {
+.appMount-2yBXZl .searchFilter-2UfsDk {
     background-color: hsla.default($accent-hue, 0.7);
 }
 
-.appmount-2ybxzl .searchAnswer-23w-CH {
+.appMount-2yBXZl .searchAnswer-23w-CH {
     background-color: hsla.default($accent-hue, 0.3);
 }
 
 // Search suggestion box
-.appmount-2ybxzl .container-2McqkF {
+.appMount-2yBXZl .container-2McqkF {
     background: $background-color;
     @include bd.border(thin, bright);
 }
 
-.appmount-2ybxzl .calendarPicker-sDhzdi {
+.appMount-2yBXZl .calendarPicker-sDhzdi {
     @include bd.border(thin);
 
     .react-datepicker,

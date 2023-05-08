@@ -18,13 +18,13 @@
 }
 
 // Channel and user pings, hyperlinks
-.appmount-2ybxzl .mention,
+.appMount-2yBXZl .mention,
 .markup-eYLPri a {
     @include glow.text(20px);
 }
 
 // Role pings, pin/join/thread alert messages, selected text
-.appmount-2ybxzl .mention.roleMention-11Aaqi,
+.appMount-2yBXZl .mention.roleMention-11Aaqi,
 .content-vSHmMD,
 ::selection {
     @include glow.text(10px);
