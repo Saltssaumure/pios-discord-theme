@@ -1,26 +1,30 @@
+@use "../top/var-scss" as *;
+@use "../top/border" as bd;
+@use "../top/hsla";
+
 // Values slider
-.theme-dark .bar-1Bhnl9,
-.theme-dark .markDash-yk2kJ- {
-    background-color: var(--piOSgrey);
+.appMount-2yBXZl .bar-1Bhnl9,
+.appMount-2yBXZl .markDash-yk2kJ- {
+    background-color: $dim-color;
 }
 
 .barFill-2Bh7CX {
-    background: var(--background-accent);
+    background: $accent-color;
 }
 
 // Check/uncheck slider toggle
 .container-2nx-BQ.checked-25WXMf {
-    background-color: var(--background-modifier-active) !important;
-    color: var(--background-modifier-active);
+    background-color: hsla.default($accent-hue, 0.7) !important;
+    color: hsla.default($accent-hue, 0.7);
 }
 
 .bd-switch input:checked+.bd-switch-body {
-    --switch-color: var(--background-modifier-active);
+    --switch-color: #{hsla.default($accent-hue, 0.7)};
 }
 
 .container-2nx-BQ {
-    background-color: var(--piOSgrey) !important;
-    color: var(--piOSgrey);
+    background-color: $dim-color !important;
+    color: $dim-color;
 }
 
 .slider-32CRPX svg path {
@@ -28,38 +32,36 @@
 }
 
 // Discord key redemption
-.theme-dark .codeRedemptionRedirect-2hYMSQ {
-    background-color: var(--background-modifier-hover);
-    border-color: var(--piOSaccent);
+.appMount-2yBXZl .codeRedemptionRedirect-2hYMSQ {
+    background-color: hsla.default($accent-hue, 0.2);
+    border-color: $accent-color;
 }
 
 // Default payment method
-.theme-dark .defaultIndicator-2ndWks {
-    background: var(--background-accent);
+.appMount-2yBXZl .defaultIndicator-2ndWks {
+    background: $accent-color;
 }
 
 // Authorised apps
 .authedApp-8q3NA9 {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
+    @include bd.border(thin);
 }
 
 // Connections
 .connection-YOVI9j {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
+    @include bd.border(thin);
 }
 
 // Discord nitro settings tab
 .selectedBackground-1t6xXq {
-    background: var(--background-modifier-hover);
+    background: hsla.default($accent-hue, 0.2);
 }
 
 // Voice and video
 // Video background
 .backgroundOptionRing-1vvQ0C {
-    border: solid var(--piOSaccent);
-    border-width: var(--thinBorder);
+    border: solid $accent-color;
+    @include bd.border(thin, $accent-color);
 }
 
 // Keybinds
@@ -68,94 +70,90 @@
 }
 
 .keybindShortcut-3zF1P9 span {
-    background-color: var(--background-modifier-selected);
+    background-color: hsla.default($accent-hue, 0.3);
 }
 
-.theme-dark .keybindShortcut-3zF1P9 span {
-    box-shadow: inset 0 -4px 0 var(--background-modifier-hover);
+.appMount-2yBXZl .keybindShortcut-3zF1P9 span {
+    box-shadow: inset 0 -4px 0 hsla.default($accent-hue, 0.2);
 }
 
 // Activity status
 .overlayToggleIconOff-ps4gGp rect {
-    fill: var(--piOSaccent);
+    fill: $accent-color;
 }
 
 // Remove game
-.theme-dark .default-1Tkeeg {
+.appMount-2yBXZl .default-1Tkeeg {
     background-color: transparent;
-    border: 1px solid var(--background-modifier-active);
+    border: 1px solid hsla.default($accent-hue, 0.7);
 }
 
 // Game overlay
 // Overlay notifications
 .wrapper-SdcMKg {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
+    @include bd.border(thin);
 }
 
 .wrapper-SdcMKg.disabledSelected-1jqfsw {
-    border: solid var(--piOSaccent);
-    border-width: var(--thinBorder);
+    @include bd.border(thin, $accent-color);
 }
 
 .option-1QI4c9 {
-    background-color: var(--borderColor);
+    background-color: $border-color-normal;
 }
 
 .selected-18Wszc.option-1QI4c9 {
-    background-color: var(--background-modifier-active);
-    border-color: var(--piOSaccent);
+    background-color: hsla.default($accent-hue, 0.7);
+    border-color: $accent-color;
 }
 
 .option-1QI4c9:hover {
-    background-color: var(--background-modifier-hover);
+    background-color: hsla.default($accent-hue, 0.2);
 }
 
 // Server settings
 
 // Stickers
 .tier-3CS7-p {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
+    @include bd.border(thin);
     padding: 0 16px 16px 0;
 }
 
 // Header
-.theme-dark .tierHeaderLocked-30MLlO,
-.theme-dark .tierHeaderUnlocked-1OpOLf {
+.appMount-2yBXZl .tierHeaderLocked-30MLlO,
+.appMount-2yBXZl .tierHeaderUnlocked-1OpOLf {
     background: transparent;
 }
 
 // Sticker placeholder
 .placeholderCard-3eGmb3 {
-    border-color: var(--piOSgrey);
+    border-color: $dim-color;
 }
 
 // Locked tiers
-.theme-dark .tierBody-1d3UiS {
+.appMount-2yBXZl .tierBody-1d3UiS {
     background: transparent;
 }
 
 // App directory
-.theme-dark .directoryModal-YJsOMv {
-    background: var(--piOSblack);
+.appMount-2yBXZl .directoryModal-YJsOMv {
+    background: $background-color;
 }
 
 // App categories
 .category-2OvQ93:hover {
-    background: var(--background-modifier-hover);
+    background: hsla.default($accent-hue, 0.2);
 }
 
 .category-2OvQ93:active {
-    background: var(--background-modifier-active);
+    background: hsla.default($accent-hue, 0.7);
 }
 
 // App cards
 .card-2xymMp,
 .item-2Nx4LP,
 .itemContainer-RkoeKz {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
+    @include bd.border(thin);
 }
 
 .root-1q0s4N {
@@ -164,5 +162,5 @@
 
 // Highlighted card
 .linkCard-2SSonX {
-    background: var(--background-modifier-hover);
+    background: hsla.default($accent-hue, 0.2);
 }

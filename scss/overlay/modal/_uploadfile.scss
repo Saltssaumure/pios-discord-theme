@@ -1,8 +1,10 @@
+@use "../../top/var-scss" as *;
+@use "../../top/border" as bd;
+
 // ---- Upload file by drag and drop modal ----
 .uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .bgScale-1iWuPF {
-    background: var(--piOSblack);
-    border: solid var(--borderBrightColor);
-    border-width: var(--thickBorder);
+    background: $background-color;
+    @include bd.border(thick, bright);
 }
 
 .uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .inner-rBP-MS {

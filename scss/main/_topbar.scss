@@ -1,8 +1,10 @@
+@use "../top/var-scss" as *;
+
 // Title bar
-.theme-dark .titleBar-1it3bQ::before {
+.appMount-2yBXZl .titleBar-1it3bQ::before {
     content: var(--pios-title-text, "piOS v2.1.01p");
-    color: var(--piOSgrey);
-    background: var(--piOSblack);
+    color: $dim-color;
+    background: $background-color;
     position: absolute;
     top: -4px;
     left: 0;

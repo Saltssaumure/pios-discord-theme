@@ -1,0 +1,9 @@
+@mixin status($original, $hue, $sat, $lum) {
+    &:has(rect[fill="#{$original}"]) {
+        box-shadow: 0 0 10px hsla($hue, calc(var(--saturation-factor, 1) * $sat), $lum, var(--pios-glow-intensity));
+    }
+}
+
+@mixin text($size, $color: null) {
+    text-shadow: 0 0 calc($size * var(--pios-glow-intensity)) $color;
+}

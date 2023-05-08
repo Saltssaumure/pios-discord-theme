@@ -1,3 +1,5 @@
+@use "../top/var-scss" as *;
+
 #dv-mount {
-    background: black;
+    background: $background-color;
 }

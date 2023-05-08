@@ -1,24 +1,27 @@
+@use "../../top/var-scss" as *;
+@use "../../top/border" as bd;
+@use "../../top/hsla";
+
 // Event and new event modal
 // Event card
-.theme-dark .previewCard-E137i2,
+.appMount-2yBXZl .previewCard-E137i2,
 .card-8UsK4b {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
+    @include bd.border(thin);
 }
 
 // Event cover image
 .imageUploaderInner-IIRaFr {
-    background-color: var(--background-modifier-hover);
+    background-color: hsla.default($accent-hue, 0.2);
 }
 
 .avatarUploadIcon-34ohJq.hideDefaultIcon-Z9-iXK {
-    background-color: var(--background-modifier-active);
+    background-color: hsla.default($accent-hue, 0.7);
 }
 
 .imageUploaderIcon-2OHmFu path {
-    fill: var(--piOSwhite);
+    fill: $bright-color;
 }
 
 .eventStatusGreen-2-f2N8 {
-    color: var(--piOSaccent);
+    color: $accent-color;
 }

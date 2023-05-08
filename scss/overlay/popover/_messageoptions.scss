@@ -1,15 +1,18 @@
+@use "../../top/var-scss" as *;
+@use "../../top/hsla";
+
 // ---- Message options popover ----
 // Hovered normal option
 .colorDefault-CDqZdO.focused-3qFvc8 {
-    background-color: var(--background-modifier-hover);
+    background-color: hsla.default($accent-hue, 0.2);
 }
 
 // Hovered danger option
 .colorDanger-3n-KnP.focused-3qFvc8 {
-    background-color: var(--background-modifier-active);
+    background-color: hsla.default($accent-hue, 0.7);
 }
 
 // Clicked option
 .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
-    background-color: var(--background-modifier-active);
+    background-color: hsla.default($accent-hue, 0.7);
 }

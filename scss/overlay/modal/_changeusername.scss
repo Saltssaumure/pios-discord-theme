@@ -1,4 +1,7 @@
+@use "../../top/var-scss" as *;
+@use "../../top/hsla";
+
 // Change your username modal
 .questionMark-3V9mGJ {
-    background-color: var(--background-modifier-hover);
+    background-color: hsla.default($accent-hue, 0.2);
 }

@@ -1,38 +1,34 @@
-// ---- Forums ----
+@use "../top/border" as bd;
+
+// Forums
 .container-3wLKDe {
-    border: solid var(--borderColor);
-    border-width: var(--thickBorder);
+    @include bd.border(thick);
 }
 
 // Forum post
 .container-2qVG6q {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
+    @include bd.border(thin);
 }
 
 // See more
 .container-2O1UgZ {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
+    @include bd.border(thin);
 }
 
 // Make new post
 // Image container
 .container-3Om6RL,
 .container-JhuCwn .popout-2vZMlk {
-    border: solid var(--borderBrightColor);
-    border-width: var(--thinBorder);
+    @include bd.border(thin, bright);
 }
 
 // ---- Home ----
 .homeContainer-r4Hvv1 {
-    border: solid var(--borderColor);
-    border-width: var(--thickBorder);
+    @include bd.border(thick);
 }
 
 // Message highlight
 .card-3x20HF,
 .card-3x20HF:hover {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
+    @include bd.border(thin);
 }

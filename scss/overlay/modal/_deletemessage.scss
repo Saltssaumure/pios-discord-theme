@@ -1,8 +1,10 @@
+@use "../../top/var-scss" as *;
+@use "../../top/border" as bd;
+
 // Delete message confirmation modal
 // Message view
-.theme-dark .message-G6O-Wv {
-    background-color: var(--piOSblack);
+.appMount-2yBXZl .message-G6O-Wv {
+    background-color: $background-color;
     box-shadow: none;
-    border: solid var(--borderColor);
-    border-width: var(--thickBorder);
+    @include bd.border(thick);
 }

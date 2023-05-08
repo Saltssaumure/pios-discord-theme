@@ -11,6 +11,8 @@
 @use "popover/tooltip";
 @use "popover/userprofile";
 
+@use "../top/border" as bd;
+
 // Popovers
 .contentWrapper-3vHNP2,
 // Emoji picker for reactions
@@ -27,6 +29,5 @@
 .browser-mnQ1T7,
 // Stream picture-in-picture
 .pictureInPictureVideo-2puO2Q {
-    border: solid var(--borderBrightColor);
-    border-width: var(--thickBorder);
+    @include bd.border(thick, bright);
 }

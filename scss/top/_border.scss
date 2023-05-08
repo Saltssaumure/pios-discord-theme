@@ -1,0 +1,15 @@
+@use "var-scss" as *;
+
+@mixin border($size, $color: $border-color-normal) {
+    @if $color == bright {
+        border: solid $border-color-bright;
+    } @else {
+        border: solid $color;
+    }
+
+    @if $size == thick {
+        border-width: $border-thick;
+    } @else if $size == thin {
+        border-width: $border-thin;
+    }
+}

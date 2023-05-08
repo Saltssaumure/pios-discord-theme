@@ -6,6 +6,9 @@
 @use "part/spoiler";
 @use "part/text";
 
+@use "top/var-scss" as *;
+@use "top/hsla";
+
 // Notification counter
 .numberBadge-37OJ3S {
     padding: 2px 0 0 2px;
@@ -13,27 +16,27 @@
 }
 
 // discord friends tab: for some reason not currently using a variable
-.theme-dark .container-2cd8Mz {
-    background-color: var(--background-primary);
+.appMount-2yBXZl .container-2cd8Mz {
+    background-color: $background-color;
 }
 
 // Checkboxes
-.theme-dark .checkbox-f1HnKB.checked-1pZh2h {
-    border-color: var(--piOSwhite) !important;
-    color: var(--piOSwhite);
+.appMount-2yBXZl .checkbox-f1HnKB.checked-1pZh2h {
+    border-color: $bright-color !important;
+    color: $bright-color;
     background: transparent !important;
 }
 
-.theme-dark .checkbox-f1HnKB.checked-1pZh2h path {
+.appMount-2yBXZl .checkbox-f1HnKB.checked-1pZh2h path {
     fill: currentColor;
 }
 
-.theme-dark .checkbox-1LuCGM.checked-22NTbO {
-    background: var(--piOSaccent) !important;
-    border-color: var(--piOSaccent) !important;
+.appMount-2yBXZl .checkbox-1LuCGM.checked-22NTbO {
+    background: $accent-color !important;
+    border-color: $accent-color !important;
 }
 
 // Star for verified
 .flowerStar-2tNFCR path {
-    fill: var(--background-modifier-active);
+    fill: hsla.default($accent-hue, 0.7);
 }

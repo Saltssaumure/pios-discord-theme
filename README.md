@@ -1,5 +1,6 @@
 [screenshot-old]: https://user-images.githubusercontent.com/29710355/123527529-72121600-d6d8-11eb-9580-da3987ee8398.png
-[screenshot]: https://user-images.githubusercontent.com/29710355/235468134-a4f95a88-627a-4ed9-ae3d-b288591374b2.png
+[dark]: https://user-images.githubusercontent.com/29710355/235468134-a4f95a88-627a-4ed9-ae3d-b288591374b2.png
+[light]: https://user-images.githubusercontent.com/29710355/236739532-3c62f571-bd1b-4285-a296-46f1c1eb13b4.png
 
 [cosy]: https://user-images.githubusercontent.com/29710355/154400330-eb4434ac-1716-4c3f-bca1-8b6ba509e9c3.png
 [compact]: https://user-images.githubusercontent.com/29710355/154400528-66fea4d8-53c1-4178-91f5-88729bde0e81.png
@@ -20,34 +21,60 @@
 [crt-stripe]: https://user-images.githubusercontent.com/29710355/182611054-c0cb9122-1eac-42ec-93d1-ab5a203a7e15.png
 [crt-scanline]: https://drive.google.com/uc?id=1xFbTWA5qIZAurVJdjOptnCd6OMBLBfEz
 
+[css-color]:        https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+[discord]:          https://discord.gg/uy8nKQVatp
+
+[BetterDiscord]:    https://betterdiscord.app/
+[Replugged]:        https://replugged.dev/
+[Vencord]:          https://github.com/Vendicated/Vencord
+
+[shield-donate]:    https://img.shields.io/badge/Donate-ko--fi-orange?style=flat-square&logo=kofi&logoColor=orange
+[ko-fi]:            https://ko-fi.com/saltssaumure "Buy me a coffee!"
+
+[shield-bd-dl]:  https://img.shields.io/github/downloads/Saltssaumure/pios-discord-theme/piOS.theme.css?color=purple&label=BD%20GitHub%20downloads&style=flat-square
+[shield-asar-dl]:   https://img.shields.io/github/downloads/Saltssaumure/pios-discord-theme/net.saltssaumure.piOS.asar?color=purple&label=Replugged%20downloads&style=flat-square
+[shield-repo-size]: https://img.shields.io/github/repo-size/Saltssaumure/pios-discord-theme?style=flat-square "Total size"
+
+[license]:          https://github.com/Saltssaumure/pios-discord-theme/blob/main/LICENSE
+[issues]:           https://github.com/Saltssaumure/pios-discord-theme/issues
+[.theme.css]:       https://github.com/Saltssaumure/pios-discord-theme/blob/main/piOS.theme.css
+
+[release-gh]:       https://github.com/Saltssaumure/pios-discord-theme/releases/latest "Latest release"
+[release-bd]:       https://betterdiscord.app/theme/?id=572 "BetterDiscord store page"
+[release-rp]:       https://replugged.dev/install?identifier=Saltssaumure/pios-discord-theme&source=github "Replugged addon installer"
+
 # piOS Discord Theme
-[![GitHub downloads](https://img.shields.io/github/downloads/saltssaumure/pios-discord-theme/total?color=purple&label=GitHub%20downloads&style=flat-square)](https://github.com/Saltssaumure/pios-discord-theme/releases/latest "Latest release")
-![Total size](https://img.shields.io/github/repo-size/saltssaumure/pios-discord-theme?style=flat-square "Total size")
+[![Buy me a coffee on ko-fi][shield-donate]][ko-fi]
+[![BetterDiscord GitHub downloads][shield-bd-dl]][release-gh]
+[![Replugged downloads][shield-asar-dl]][release-rp]
+![Total size][shield-repo-size]
 
 ***A SUPERHOT piOS inspired Discord theme.***
 
-![Screenshot of piOS Discord Theme applied to Discord desktop client][screenshot]
+| Dark mode                                  | Light mode                                   |
+| ------------------------------------------ | -------------------------------------------- |
+| ![piOS dark mode applied to Discord][dark] | ![piOS light mode applied to Discord][light] |
 
 ## Installation
 
 ### BetterDiscord
-1. Install [BetterDiscord](https://betterdiscord.app/).
+1. Install [BetterDiscord][BetterDiscord].
 2. Download the theme file:
-    - [GitHub](https://github.com/Saltssaumure/pios-discord-theme/releases/latest)
-    - [BD Store](https://betterdiscord.app/theme/?id=572)
-3. Place theme file in BD's theme folder:
+    - [GitHub][release-gh]
+    - [BD Store][release-bd]
+3. Place theme file in the `themes` folder:
     - Windows: `%AppData%/BetterDiscord/themes`
     - Mac: `~/Library/Application Support/betterdiscord/themes`
     - Linux: `~/.config/BetterDiscord/themes`
 
 ### Replugged
-1. Install [Replugged](https://replugged.dev/).
+1. Install [Replugged][Replugged].
 2. Install the theme:
-    - [GitHub](https://github.com/Saltssaumure/pios-discord-theme/releases/latest)
-    - [Replugged.dev](https://replugged.dev/install?identifier=Saltssaumure/pios-discord-theme&source=github)
+    - [GitHub][release-gh]
+    - [Installer][release-rp]
 
 ### Vencord
-1. Install [Vencord](https://github.com/Vendicated/Vencord).
+1. Install [Vencord][Vencord].
 2. Paste the following in `Settings` > `Vencord` > `Themes`:
     - `https://saltssaumure.github.io/pios-discord-theme/piOS.theme.css`
 
@@ -55,19 +82,24 @@
 
 - **Discord setting:** `Settings` > `App Settings` > `Appearance` > `Message Display`.
 
-| Cosy          | Compact             |
-| ------------- | ------------------- |
-| ![Cosy][cosy] | ![Compact][compact] |
+| Cosy mode          | Compact mode             |
+| ------------------ | ------------------------ |
+| ![Cosy mode][cosy] | ![Compact mode][compact] |
 
-| Description                    | Variable name           | Valid values                    | Default value            | Demonstration                                                               |
-| ------------------------------ | ----------------------- | ------------------------------- | ------------------------ | --------------------------------------------------------------------------- |
-| Glow intensity                 | `--pios-glow-intensity` | A number between `0` and `1`.   | `1` (maximum brightness) | `1` [chat][glow-1a], [icon][glow-1b] / `0` [chat][glow-0a], [icon][glow-0b] |
-| Compact message spacing        | `--pios-spacing`        | A number `0` or above.          | `1` (default spacing)    | [`1` spacing][spacing-1] / [`2.5` spacing][spacing-2.5]                     |
-| Colour accent hue              | `--pios-accent-hue`     | Any number.                     | `0` (red)                | `270` (purple) [colour picker][hue-picker], [screenshot][hue-screenshot]    |
-| Title bar text                 | `--pios-title-text`     | Any quoted text.                | `"piOS v2.1.01p"`        | [Screenshot][title-text]                                                    |
-| Scanline stripes on/off        | `--crt-stripe`          | `block` (on) or `none` (off).   | `block`                  | [Screenshot][crt-stripe]                                                    |
-| &#9936; Moving scanline on/off | `--crt-scanline`        | `block` (on) or `none` (off).   | `block`                  | [Video][crt-scanline]                                                       |
-| &#9888; Screen flicker on/off  | `--crt-flicker`         | `flicker` (on) or `none` (off). | `none`                   |
+| Description                    | Variable name             | Valid values                    | Default value                        | Demonstration                                                               |
+| ------------------------------ | ------------------------- | ------------------------------- | ------------------------------------ | --------------------------------------------------------------------------- |
+| Glow hue                       | `--pios-glow-hue`         | A number between `0` and `1`.   | `1` (maximum brightness)             |                                                                             |
+| Glow intensity                 | `--pios-glow-intensity`   | A number between `0` and `1`.   | `1` (maximum brightness)             | `1` [chat][glow-1a], [icon][glow-1b] / `0` [chat][glow-0a], [icon][glow-0b] |
+| Compact message spacing        | `--pios-spacing`          | A number `0` or above.          | `1` (default spacing)                | [`1` spacing][spacing-1] / [`2.5` spacing][spacing-2.5]                     |
+| Colour accent hue              | `--pios-accent-hue`       | Any number.                     | `0` (red)                            | `270` (purple) [colour picker][hue-picker], [screenshot][hue-screenshot]    |
+| Title bar text                 | `--pios-title-text`       | Any quoted text.                | `"piOS v2.1.01p"`                    | [Screenshot][title-text]                                                    |
+| Scanline stripes on/off        | `--crt-stripe`            | `block` (on) or `none` (off).   | `block`                              | [Screenshot][crt-stripe]                                                    |
+| &#9936; Moving scanline on/off | `--crt-scanline`          | `block` (on) or `none` (off).   | `block`                              | [Video][crt-scanline]                                                       |
+| &#9888; Screen flicker on/off  | `--crt-flicker`           | `flicker` (on) or `none` (off). | `none`                               |                                                                             |
+| Background colour              | `--pios-background-color` | Any [colour][css-color].        | `#000000` (dark) / `#FFFFFF` (light) |                                                                             |
+| Bright foreground colour       | `--pios-bright-color`     | Any [colour][css-color].        | `#FFFFFF` (dark) / `#000000` (light) |                                                                             |
+| Middle foreground colour       | `--pios-middle-color`     | Any [colour][css-color].        | `#D3D3D3` (dark) / `#696969` (light) |                                                                             |
+| Dim foreground colour          | `--pios-dim-color`        | Any [colour][css-color].        | `#808080` (dark) / `#A9A9A9` (light) |                                                                             |
 
 - &#9936; This effect is performance-intensive.
 - &#9888; This is a fast flickering effect and may not be suitable for those with photosensitive epilepsy.
@@ -79,7 +111,7 @@
 
 ### Replugged
 1. Open `Settings` > `Replugged` > `Quick CSS`.
-3. Copy and paste line 15-25 of [`piOS.theme.css`](https://github.com/Saltssaumure/pios-discord-theme/blob/main/piOS.theme.css).
+2. Copy and paste lines 15-40 of [`piOS.theme.css`][.theme.css].
 3. Edit the variable values and apply changes.
 
 ### Vencord
@@ -88,13 +120,13 @@
 #### Recommended method
 1. Open `Settings` > `Vencord` > `Vencord`.
 2. Toggle on `Enable Custom CSS` and click `Open QuickCSS File`.
-3. Copy and paste line 15-25 of [`piOS.theme.css`](https://github.com/Saltssaumure/pios-discord-theme/blob/main/piOS.theme.css).
+3. Copy and paste lines 15-40 of [`piOS.theme.css`][.theme.css].
 4. Edit the variable values.
 
 ## License
-[GNU General Public License v3.0](https://github.com/Saltssaumure/pios-discord-theme/blob/main/LICENSE)
+[GNU General Public License v3.0][license]
 - <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
 
 ## Questions or suggestions?
-- Post [an issue](https://github.com/Saltssaumure/pios-discord-theme/issues) on GitHub.
-- Post in `#theme-support` on [my support server](https://discord.gg/uy8nKQVatp).
+- Post [an issue][issues] on GitHub.
+- Post in `#theme-support` on [my support server][discord].

@@ -1,5 +1,6 @@
+@use "../../top/border" as bd;
+
 // ---- Voice noise suppression popover ----
 .noiseCancellationPopout-2-e5Xz {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
+    @include bd.border(thin);
 }

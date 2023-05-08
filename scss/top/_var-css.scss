@@ -1,4 +1,5 @@
-@use "mixin";
+@use "font";
+@use "hsla";
 @use "var-scss" as *;
 
 :root {
@@ -18,104 +19,106 @@
     --rs-invisible-color: var(--rs-offline-color); // Colour for invisible status - Note: this will only show for your own invisibility
     --rs-phone-color: var(--rs-online-color); // Colour of the ring and phone icon when a user is on their phone |
     --rs-phone-visible: none; // Visibility of the phone icon next to a users avatar. | block = visible | none = hidden
+
+    // Defaults, can be overridden in .theme.css
+    --pios-glow-hue:        180;
+    --pios-glow-intensity:  1;
+    --pios-spacing:         1;
+    --pios-accent-hue:      0;
+    --pios-title-text:      "piOS v2.1.01p";
+
+    --crt-stripe:   block;
+    --crt-scanline: none;   /* ⛐ This effect is performance-intensive. */
+    --crt-flicker:  none;   /* ⚠ This is a fast flickering effect and may not be suitable for those with photosensitive epilepsy. */
 }
 
-// Warn users in light mode
-.theme-light #piOS\ Forever-card .bd-description::after {
-    content: " Switch to dark mode to see effects.";
-    font-weight: 700;
+// Defaults, can be overridden in .theme.css
+.theme-dark {
+    --pios-background-color: #{$black};
+    --pios-bright-color: #{$white};
+    --pios-middle-color: #{nth($grey, 4)};
+    --pios-dim-color: #{nth($grey, 2)};
 }
 
-// Override Discord variables: kebab-case
-// Self-defined variables: camelCase
-// User-definable variables: kebab-case
+.theme-light {
+    --pios-background-color: #{$white};
+    --pios-bright-color: #{$black};
+    --pios-middle-color: #{nth($grey, 1)};
+    --pios-dim-color: #{nth($grey, 3)};
+}
 
+// Assign variables
 .theme-dark,
-.layerContainer-2v_Sit .theme-light // Modals that use theme-light while in dark mode
-{
-    // Set customisable colour scheme
-    --piOSaccenthue: var(--pios-accent-hue, 0); // default: 0 (red)
-    --piOSaccent: hsl(var(--piOSaccenthue), calc(var(--saturation-factor) * 100%), 50%);
-    --piOSwhite: white;
-    --piOSlightgrey: lightgrey;
-    --piOSgrey: grey;
-    --piOSblack: black;
-
-    // Borders
-    --borderColor: var(--piOSgrey);
-    --borderCodeColor: var(--piOSwhite);
-    --borderBrightColor: var(--piOSwhite);
-    --thickBorder: 2px 5px;
-    --thinBorder: 1px 3px;
-
+.theme-light {
     // Text colours
-    --header-primary: var(--piOSwhite); // Server name, channel name, default user colour
-    --header-secondary: var(--piOSgrey);
-    --text-normal: var(--piOSwhite);
-    --text-muted: var(--piOSgrey);
-    --text-link: var(--piOSwhite);
-    --text-link-low-saturation: var(--piOSwhite);
-    --text-positive: var(--piOSwhite);
-    --text-warning: var(--piOSwhite);
-    --text-danger: var(--piOSaccent);
-    --text-brand: hsl(var(--piOSaccenthue), calc(var(--saturation-factor) * 80%), 50%);
-    --interactive-normal: var(--piOSlightgrey);
-    --interactive-muted: var(--piOSgrey);
-    --interactive-active: var(--piOSwhite); // default: unread dot marker, current channel name
+    --header-primary: #{$bright-color}; // Server name, channel name, default user colour
+    --text-normal: #{$bright-color};
+    --text-link: #{$bright-color};
+    --text-link-low-saturation: #{$bright-color};
+    --text-positive: #{$bright-color};
+    --text-warning: #{$bright-color};
+    --interactive-active: #{$bright-color}; // default: unread dot marker, current channel name
+
+    --text-muted: #{$dim-color};
+    --header-secondary: #{$dim-color};
+    --interactive-muted: #{$dim-color};
+    --interactive-normal: #{$middle-color};
+
+    --text-danger: #{$accent-color};
+    --text-brand: hsl(#{$accent-hue}, calc(var(--saturation-factor) * 80%), 50%);
 
     // Backgrounds
-    --background-primary: var(--piOSblack);
-    --background-secondary: var(--piOSblack);
-    --background-secondary-alt: var(--piOSblack);
-    --background-tertiary: var(--piOSblack);
-    --background-mobile-primary: var(--piOSblack);
-    --background-mobile-secondary: var(--piOSblack);
-    --background-accent: var(--piOSaccent);
-    --background-floating: var(--piOSblack);
-    --background-mentioned: hsla(var(--piOSaccenthue), calc(var(--saturation-factor) * 100%), 50%, 0.2);
-    --background-modifier-hover: hsla(var(--piOSaccenthue), calc(var(--saturation-factor) * 100%), 50%, 0.2);
-    --background-modifier-active: hsla(var(--piOSaccenthue), calc(var(--saturation-factor) * 100%), 50%, 0.7);
-    --background-modifier-selected: hsla(var(--piOSaccenthue), calc(var(--saturation-factor) * 100%), 50%, 0.3);
+    --background-primary: #{$background-color};
+    --background-secondary: #{$background-color};
+    --background-secondary-alt: #{$background-color};
+    --background-tertiary: #{$background-color};
+    --background-mobile-primary: #{$background-color};
+    --background-mobile-secondary: #{$background-color};
+    --background-accent: #{$accent-color};
+    --background-floating: #{$background-color};
+    --background-mentioned: #{hsla.default($accent-hue, 0.2)};
+    --background-modifier-hover: #{hsla.default($accent-hue, 0.2)};
+    --background-modifier-active: #{hsla.default($accent-hue, 0.7)};
+    --background-modifier-selected: #{hsla.default($accent-hue, 0.3)};
     --background-modifier-accent: transparent;
-    --backgroundEmbed: hsla(var(--piOSaccenthue), calc(var(--saturation-factor) * 100%), 50%, 0.3);
     --channeltextarea-background: transparent;
-    --home-background: var(--piOSblack);
-    --modal-background: var(--piOSblack);
-    --input-background: var(--background-modifier-hover);
-    --deprecated-card-bg: var(--background-modifier-hover);
+    --home-background: #{$background-color};
+    --modal-background: #{$background-color};
+    --input-background: #{hsla.default($accent-hue, 0.2)};
+    --deprecated-card-bg: #{hsla.default($accent-hue, 0.2)};
 
     // Buttons
-    --button-danger-background: var(--background-modifier-active);
-    --button-danger-background-hover: var(--background-accent);
-    --button-danger-background-active: var(--background-accent);
-    --button-positive-background: var(--background-modifier-active);
-    --button-positive-background-hover: var(--background-accent);
-    --button-positive-background-active: var(--background-accent);
-    --button-outline-positive-text: var(--piOSwhite);
-    --button-outline-positive-text-hover: var(--piOSwhite);
-    --button-outline-positive-text-active: var(--piOSwhite);
-    --button-outline-positive-background-hover: var(--background-modifier-selected);
-    --button-outline-positive-background-active: var(--background-modifier-selected);
-    --button-outline-positive-border: var(--piOSaccent);
-    --button-outline-positive-border-hover: var(--piOSaccent);
-    --button-outline-positive-border-active: var(--piOSaccent);
-    --button-outline-danger-text: var(--piOSwhite);
-    --button-outline-danger-text-hover: var(--piOSwhite);
-    --button-outline-danger-border: var(--piOSaccent);
-    --button-outline-danger-background-hover: var(--background-modifier-active);
-    --button-outline-danger-background-active: var(--background-accent);
-    --button-outline-danger-border-hover: var(--background-modifier-active);
-    --button-outline-danger-border-active: var(--background-accent);
-    --button-secondary-background: var(--piOSblack);
-    --button-secondary-background-hover: var(--background-modifier-hover);
-    --button-secondary-background-active: var(--background-modifier-active);
+    --button-danger-background: #{hsla.default($accent-hue, 0.7)};
+    --button-danger-background-hover: #{$accent-color};
+    --button-danger-background-active: #{$accent-color};
+    --button-positive-background: #{hsla.default($accent-hue, 0.7)};
+    --button-positive-background-hover: #{$accent-color};
+    --button-positive-background-active: #{$accent-color};
+    --button-outline-positive-text: #{$bright-color};
+    --button-outline-positive-text-hover: #{$bright-color};
+    --button-outline-positive-text-active: #{$bright-color};
+    --button-outline-positive-background-hover: #{hsla.default($accent-hue, 0.3)};
+    --button-outline-positive-background-active: #{hsla.default($accent-hue, 0.3)};
+    --button-outline-positive-border: #{$accent-color};
+    --button-outline-positive-border-hover: #{$accent-color};
+    --button-outline-positive-border-active: #{$accent-color};
+    --button-outline-danger-text: #{$bright-color};
+    --button-outline-danger-text-hover: #{$bright-color};
+    --button-outline-danger-border: #{$accent-color};
+    --button-outline-danger-background-hover: #{hsla.default($accent-hue, 0.7)};
+    --button-outline-danger-background-active: #{$accent-color};
+    --button-outline-danger-border-hover: #{hsla.default($accent-hue, 0.7)};
+    --button-outline-danger-border-active: #{$accent-color};
+    --button-secondary-background: #{$background-color};
+    --button-secondary-background-hover: #{hsla.default($accent-hue, 0.2)};
+    --button-secondary-background-active: #{hsla.default($accent-hue, 0.7)};
 
     // Scrollbars
-    --scrollbar-thin-thumb: var(--piOSaccent);
+    --scrollbar-thin-thumb: #{$accent-color};
     --scrollbar-thin-track: transparent;
-    --scrollbar-auto-thumb: var(--piOSaccent);
+    --scrollbar-auto-thumb: #{$accent-color};
     --scrollbar-auto-track: transparent;
-    --scrollbar-auto-scrollbar-color-thumb: var(--piOSaccent);
+    --scrollbar-auto-scrollbar-color-thumb: #{$accent-color};
     --scrollbar-auto-scrollbar-color-track: transparent;
 
     // Drop shadows
@@ -125,37 +128,24 @@
     --elevation-high: transparent;
 
     // Search
-    --search-popout-option-fade: linear-gradient(90deg, transparent, var(--piOSblack) 80%); // Fading effect after search options
-    --search-popout-option-fade-hover: linear-gradient(90deg, transparent, var(--piOSblack) 50%);
-    // --search-popout-option-filter-text: var(--piOSgrey);
-    --search-popout-option-non-text-color: var(--piOSgrey);
-    //--search-popout-option-filter-color:    var(--piOSgrey);
-    --search-popout-option-answer-color: var(--piOSgrey);
-    --search-popout-date-picker-border: var(--piOSgrey);
+    --search-popout-option-fade: linear-gradient(90deg, transparent, #{$background-color} 80%); // Fading effect after search options
+    --search-popout-option-fade-hover: linear-gradient(90deg, transparent, #{$background-color} 50%);
+    // --search-popout-option-filter-text: #{$dim-color};
+    --search-popout-option-non-text-color: #{$dim-color};
+    //--search-popout-option-filter-color:    #{$dim-color};
+    --search-popout-option-answer-color: #{$dim-color};
+    --search-popout-date-picker-border: #{$dim-color};
     // As of 8th Apr 2022, these variables do nothing
-    --search-popout-date-picker-hint-text: var(--piOSgrey);
-    --search-popout-date-picker-hint-value-text: var(--piOSwhite);
-    --search-popout-date-picker-hint-value-background: var(--background-modifier-hover);
-    --search-popout-date-picker-hint-value-background-hover: var(--background-modifier-selected);
+    --search-popout-date-picker-hint-text: #{$dim-color};
+    --search-popout-date-picker-hint-value-text: #{$bright-color};
+    --search-popout-date-picker-hint-value-background: #{hsla.default($accent-hue, 0.2)};
+    --search-popout-date-picker-hint-value-background-hover: #{hsla.default($accent-hue, 0.3)};
     --deprecated-text-input-border-disabled: var(--borderColor); // for some reason used by day box borders
 
     // Misc parts
-    --status-danger: var(--piOSaccent); // Servers sidebar notification counter background
-    --divider-color: hsl(0, calc(var(--saturation-factor) * 100%), 50%); // color of new messages divider
-    --info-warning-foreground: hsl(0, calc(var(--saturation-factor) * 100%), 50%); // colour of @ping message left side indicator
-    --spoilerGradient: repeating-linear-gradient(
-        -45deg,
-        transparent,
-        transparent 4px,
-        rgba(0, 255, 255, 0.2) 2px,
-        rgba(0, 255, 255, 0.2) 6px
-    ); // Spoiler stripe pattern
-    --glowIntensity: var(--pios-glow-intensity, 1);
-    --true-compact-message-spacing: var(--pios-spacing, 1); // Space between messages in compact mode, user adjustable
-    --focus-primary: hsl(
-        calc(var(--piOSaccenthue) + 180),
-        calc(var(--saturation-factor) * 100%),
-        50%
-    ); // Focus ring when navigating by keyboard
-    --info-warning-foreground: var(--piOSaccent); // Mentioned message left bar
+    --status-danger: #{$accent-color}; // Servers sidebar notification counter background
+    // Focus ring when navigating by keyboard
+    --focus-primary: #{hsla.default($accent-hue + 180, 1)};
+    // Mentioned message left bar
+    --info-warning-foreground: #{$accent-color};
 }

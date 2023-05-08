@@ -1,3 +1,6 @@
+@use "../../top/var-scss" as *;
+@use "../../top/hsla";
+
 // ---- Invite friends to server modal ----
 // Copy url
 .copyInput-1dXbXE .input-3O04eu {
@@ -7,17 +10,17 @@
 // Invite link settings
 // Selected item icon
 .selectedIcon-19TbzU {
-    color: var(--piOSgrey);
+    color: $dim-color;
 }
 
 // Search bar
 .container-2oNtJn {
-    background-color: var(--input-background);
+    background-color: #{hsla.default($accent-hue, 0.2)};
 }
 
 // Search results
-.theme-dark .inviteRow-3vmB7i:hover {
-    background: var(--background-modifier-hover);
+.appMount-2yBXZl .inviteRow-3vmB7i:hover {
+    background: hsla.default($accent-hue, 0.2);
 }
 
 // "Invite" button

@@ -1,12 +1,15 @@
+@use "../../top/var-scss" as *;
+@use "../../top/border" as bd;
+@use "../../top/hsla";
+
 // Enter phone number modal
 // Country select
-.theme-dark .popoutList-10IFAa {
-    background: var(--background-primary);
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
+.appMount-2yBXZl .popoutList-10IFAa {
+    background: $background-color;
+    @include bd.border(thin);
 }
 
 // Country
-.theme-dark .selectableItem-3-fmiM:hover {
-    background-color: var(--background-modifier-hover);
+.appMount-2yBXZl .selectableItem-3-fmiM:hover {
+    background-color: hsla.default($accent-hue, 0.2);
 }
