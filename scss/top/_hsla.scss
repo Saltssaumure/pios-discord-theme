@@ -1,0 +1,7 @@
+@function full($hue, $lum, $alpha) {
+    @return hsla($hue, calc(var(--saturation-factor) * 100%), $lum, $alpha);
+}
+
+@function default($hue, $alpha) {
+    @return full($hue, 50%, $alpha);
+}

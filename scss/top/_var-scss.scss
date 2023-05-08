@@ -1,3 +1,39 @@
+@use "hsla";
+
+// ---- Colour ----
+
+$black: #000000;
+$white: #ffffff;
+$grey: #696969, #808080, #A9A9A9, #D3D3D3;
+
+$background-color: var(--pios-background-color);
+$bright-color: var(--pios-bright-color);
+$middle-color: var(--pios-middle-color);
+$dim-color: var(--pios-dim-color);
+
+$accent-hue: var(--pios-accent-hue);
+$glow-hue: var(--pios-glow-hue);
+$glow-intensity: var(--pios-glow-intensity);
+
+$accent-color: hsla.default($accent-hue, 1);
+$embed-color: hsla.default($accent-hue, 0.3);
+$glow-color: hsla.default($glow-hue, calc(0.7 * $glow-intensity));
+$clyde-color: $accent-color;
+$clyde-color-dim: hsla.full($accent-hue, 30%, 1);
+
+$spoiler-color: hsla.default($glow-hue, 0.2);
+$spoiler-gradient: repeating-linear-gradient(-45deg, transparent, transparent 4px, $spoiler-color 2px, $spoiler-color 6px);
+
+// ---- Border ----
+
+$border-thick: 2px 5px;
+$border-thin: 1px 3px;
+
+$border-color-normal: $dim-color;
+$border-color-bright: $bright-color;
+
+// ---- Font ----
+
 $font-code: FixedSysTrue, Consolas, monospace;
 
 $font-latin: PerfectDOS, FixedSysTrue, monospace;
@@ -8,4 +44,5 @@ $font-chinese-simplified: PerfectDOS, FixedSysTrue, "Microsoft YaHei New", 微�
     monospace;
 $font-chinese-traditional: PerfectDOS, FixedSysTrue, "Microsoft JhengHei", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft YaHei", 微軟雅黑,
     宋体, SimSun, monospace;
-$font-korean: PerfectDOS, FixedSysTrue, "Apple SD Gothic Neo", NanumBarunGothic, "맑은 고딕", "Malgun Gothic", Gulim, 굴림, Dotum, 돋움, monospace;
+$font-korean: PerfectDOS, FixedSysTrue, "Apple SD Gothic Neo", NanumBarunGothic, "맑은 고딕", "Malgun Gothic", Gulim, 굴림, Dotum, 돋움,
+    monospace;

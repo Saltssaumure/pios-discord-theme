@@ -1,6 +1,8 @@
+@use "../../top/var-scss" as *;
+@use "../../top/border" as bd;
+
 // ---- Typing channel/user/command/etc. autocomplete popover ----
-.theme-dark .autocomplete-3NRXG8 {
-    background: var(--piOSblack);
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
+.appmount-2ybxzl .autocomplete-3NRXG8 {
+    background: $background-color;
+    @include bd.border(thin);
 }

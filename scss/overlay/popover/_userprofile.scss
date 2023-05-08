@@ -1,6 +1,7 @@
+@use "../../top/border" as bd;
+
 // ---- User profile popover ----
 // User roles
 .role-2TIOKu {
-    border-style: solid;
-    border-width: var(--thinBorder);
+    @include bd.border(thin);
 }

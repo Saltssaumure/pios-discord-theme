@@ -1,5 +1,7 @@
-@use "../top/mixin";
 @use "../top/var-scss" as *;
+@use "../top/border" as bd;
+@use "../top/font";
+@use "../top/hsla";
 
 @font-face {
     font-family: "FixedSysTrue";
@@ -19,7 +21,7 @@
 
 :root {
     // Set default fonts
-    @include mixin.lang-font($font-latin, $font-code);
+    @include font.lang-font($font-latin, $font-code);
     letter-spacing: -0.04rem;
 }
 
@@ -27,19 +29,19 @@
 :lang(el),
 :lang(ru),
 :lang(uk) {
-    @include mixin.lang-font($font-cyrillic, $font-code);
+    @include font.lang-font($font-cyrillic, $font-code);
 }
 :lang(zh-CN) {
-    @include mixin.lang-font($font-chinese-simplified, $font-code);
+    @include font.lang-font($font-chinese-simplified, $font-code);
 }
 :lang(zh-TW) {
-    @include mixin.lang-font($font-chinese-traditional, $font-code);
+    @include font.lang-font($font-chinese-traditional, $font-code);
 }
 :lang(ja) {
-    @include mixin.lang-font($font-japanese, $font-code);
+    @include font.lang-font($font-japanese, $font-code);
 }
 :lang(ko) {
-    @include mixin.lang-font($font-korean, $font-code);
+    @include font.lang-font($font-korean, $font-code);
 }
 
 // All caps on areas where case is not so important
@@ -69,15 +71,14 @@
 
 // Selected text
 ::selection {
-    background: var(--background-modifier-active);
+    background: hsla.default($accent-hue, 0.7);
 }
 
 // Code blocks and inline
 .markup-eYLPri code.hljs,
 .markup-eYLPri code.inline {
     font-family: var(--font-code);
-    border: solid var(--borderCodeColor);
-    border-width: 1px 3px;
+    @include bd.border(thin, bright);
     padding: 1px 8px 3px 8px;
 }
 
@@ -87,14 +88,14 @@
 }
 
 // Underline #channels and @pings
-.theme-dark .wrapper-1ZcZW- {
+.appmount-2ybxzl .wrapper-1ZcZW- {
     text-decoration: underline;
-    background: var(--backgroundEmbed);
+    background: $embed-color;
 }
 
 // User, role, and channel mentions
-.theme-dark .mention {
-    color: var(--piOSwhite);
+.appmount-2ybxzl .mention {
+    color: $bright-color;
 }
 
 // Fix font size of channel group and user group labels to match others

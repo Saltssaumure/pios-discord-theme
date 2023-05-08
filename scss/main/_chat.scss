@@ -1,14 +1,17 @@
+@use "../top/var-scss" as *;
+@use "../top/border" as bd;
+@use "../top/hsla";
+
 // Main chat section
 .chatContent-3KubbW {
-    border: solid var(--borderColor);
-    border-width: var(--thickBorder);
+    @include bd.border(thick);
 }
 
 // "Jump to present", "New messages since", "Messages failed to load" bars
 .jumpToPresentBar-1cEnH0,
 .newMessagesBar-1hF-9G,
 .messagesErrorBar-1IQ1rH {
-    background-color: var(--piOSaccent);
+    background-color: $accent-color;
     opacity: 0.9;
 }
 
@@ -20,8 +23,7 @@
 
 // Message react/reply etc buttons
 .wrapper-2vIMkT {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
+    @include bd.border(thin);
 }
 
 // Pin icon for pin alerts
@@ -42,9 +44,8 @@
 
 // piOS style message boxes in compact mode
 .compact-2Nkcau.wrapper-30-Nkg {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
-    margin: calc(var(--true-compact-message-spacing) * 1.5rem) 3rem;
+    @include bd.border(thin);
+    margin: calc(var(--pios-spacing) * 1.5rem) 3rem;
     padding: 1rem 1rem 0.5rem 1rem;
     padding-right: 1rem !important;
 }
@@ -60,12 +61,10 @@
     top: -1.6rem;
     display: flex;
     flex-direction: row-reverse;
-    background: linear-gradient(transparent,
-            var(--background-primary) 40%,
-            transparent 60%);
+    background: linear-gradient(transparent, $background-color 40%, transparent 60%);
 }
 
-.compact-2Nkcau .header-2jRmjb>span {
+.compact-2Nkcau .header-2jRmjb > span {
     display: block;
 }
 
@@ -96,7 +95,7 @@
 // Reply
 // Post username and timestamp
 .compact-2Nkcau.hasReply-2Cr4KE .header-2jRmjb,
-.compact-2Nkcau .repliedMessage-3Z6XBG+.contents-2MsGLg .header-2jRmjb {
+.compact-2Nkcau .repliedMessage-3Z6XBG + .contents-2MsGLg .header-2jRmjb {
     top: -2.7rem;
 }
 
@@ -151,16 +150,15 @@
 // Embeds
 .embedFull-1HGV2S.markup-eYLPri,
 // most embeds
-.theme-dark .wrapperAudio-1Bzv_Z,
+.appmount-2ybxzl .wrapperAudio-1Bzv_Z,
 // audio
 .attachment-1PZZB2,
 // file
 .wrapper-1HIH0j,
 // invite
 .footer-GXWBBp // code/text
-
-    {
-    background: var(--backgroundEmbed);
+{
+    background: $embed-color;
     border: 0;
     text-shadow: none;
 }
@@ -188,26 +186,25 @@
 .mediaBarProgress-38I317,
 .mediaBarProgress-38I317:after,
 .mediaBarProgress-38I317:before {
-    background: var(--background-accent);
+    background: $accent-color;
 }
 
 // timeline slider knob
 .mediaBarGrabber-FvJKJg,
 .mediaBarInteraction-tUE5dq:hover .mediaBarGrabber-FvJKJg,
 .mediaBarInteractionDragging-3XLL8k .mediaBarGrabber-FvJKJg {
-    background: var(--piOSwhite);
+    background: $bright-color;
 }
 
 // Reacts you have added
 .reaction-3vwAF2,
 .reaction-3vwAF2:hover {
-    border: solid var(--borderColor);
-    border-width: var(--thinBorder);
+    @include bd.border(thin);
 }
 
 .reaction-3vwAF2.reactionMe-1PwQAc {
-    border-color: var(--piOSaccent);
-    background-color: var(--background-modifier-selected);
+    border-color: $accent-color;
+    background-color: hsla.default($accent-hue, 0.3);
 }
 
 // Thread from message
@@ -228,7 +225,7 @@
 
 // Thread info
 .container-3i3IzO {
-    background-color: var(--background-modifier-hover);
+    background-color: hsla.default($accent-hue, 0.2);
 }
 
 .compact-2Nkcau .container-3i3IzO {
@@ -238,8 +235,7 @@
 
 // Typing box
 .channelTextArea-1VQBuV {
-    border: solid var(--borderColor);
-    border-width: var(--thickBorder);
+    @include bd.border(thick);
 }
 
 .scrollableContainer-15eg7h {
@@ -249,39 +245,39 @@
 // "Replying to" bar
 .attachedBars-2BCP3l {
     background: transparent;
-    border-bottom: 2px dashed var(--border);
+    border-bottom: 2px dashed $border-color-normal;
 }
 
 // @on button
 .colorLink-2apWfY.mentionButton-3C5YMI {
-    color: var(--piOSaccent);
+    color: $accent-color;
 }
 
 // Uploading files bar
 .upload-vLbqu- {
-    background-color: var(--backgroundEmbed);
+    background-color: $embed-color;
 }
 
 // Command suggestions bar
-.theme-dark .selected-3H3-RC,
-.theme-dark .option-Tt7anD {
-    background-color: var(--background-modifier-selected);
+.appmount-2ybxzl .selected-3H3-RC,
+.appmount-2ybxzl .option-Tt7anD {
+    background-color: hsla.default($accent-hue, 0.3);
 }
 
 // follow to get this channel's updates in your server add dotted topline
 .form-3gdLxP .wrapper-2SplAX {
-    border-top: 2px dashed var(--borderColor);
+    border-top: 2px dashed $border-color-normal;
     margin-top: 0;
 }
 
 // Forums
-.theme-dark .container-3wLKDe {
-    background: var(--piOSblack);
+.appmount-2ybxzl .container-3wLKDe {
+    background: $background-color;
 }
 
 // Post title
 .card-2JNtco .headerText-3MQ6n4 {
-    --text-muted: var(--piOSwhite);
+    --text-muted: #{$bright-color};
 }
 
 // Post message preview
@@ -290,8 +286,8 @@
 }
 
 // Browse channels
-.theme-dark .container-2IKOsH,
-.theme-dark .header-3xB4vB,
-.theme-dark .container-1um7CU {
-    background: var(--piOSblack);
+.appmount-2ybxzl .container-2IKOsH,
+.appmount-2ybxzl .header-3xB4vB,
+.appmount-2ybxzl .container-1um7CU {
+    background: $background-color;
 }

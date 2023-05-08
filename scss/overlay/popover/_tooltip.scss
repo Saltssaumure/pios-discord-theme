@@ -1,7 +1,9 @@
+@use "../../top/var-scss" as *;
+@use "../../top/border" as bd;
+
 // ---- Tooltips ----
 .tooltip-33Jwqe {
-    border: solid var(--borderBrightColor);
-    border-width: var(--thinBorder);
+    @include bd.border(thin, bright);
 }
 
 // Arrow towards tooltip source
@@ -10,7 +12,7 @@
 }
 
 // "Verified" connection tooltip
-.theme-dark .tooltipBrand-20XsMA,
+.appmount-2ybxzl .tooltipBrand-20XsMA,
 .theme-light .tooltipBrand-20XsMA {
-    background-color: var(--piOSblack);
+    background-color: $background-color;
 }

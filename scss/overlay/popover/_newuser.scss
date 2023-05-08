@@ -1,5 +1,6 @@
+@use "../../top/border" as bd;
+
 // ---- New user popover ----
 .popoutContainer-2wbmiM {
-    border: solid var(--borderBrightColor);
-    border-width: var(--thinBorder);
+    @include bd.border(thin, bright);
 }

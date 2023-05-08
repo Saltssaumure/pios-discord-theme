@@ -1,11 +1,13 @@
+@use "../top/var-scss" as *;
+
 // Customise channels and roles / browse channels
 
-.theme-dark .emptyPage-2TGR7j,
-.theme-dark .scrollerContainer-y16Rs9 {
-    background: var(--piOSblack);
+.appmount-2ybxzl .emptyPage-2TGR7j,
+.appmount-2ybxzl .scrollerContainer-y16Rs9 {
+    background: $background-color;
 }
 
 .checkIcon-3eAeN_,
 .memberCount-2G9rxE {
-    background: var(--piOSaccent);
+    background: $accent-color;
 }

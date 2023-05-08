@@ -1,11 +1,12 @@
+@use "../top/var-scss" as *;
+@use "../top/hsla";
+
 // Messages from Clyde now appear as SYSTEM
 .compact-2Nkcau.wrapper-30-Nkg.ephemeral-2nDdnn,
 .cozyMessage-1DWF9U.wrapper-30-Nkg.ephemeral-2nDdnn,
 .message-2CShn3.ephemeral-2nDdnn.selected-2LX7Jy,
 .mouse-mode.full-motion .ephemeral-2nDdnn:hover {
-    --clydeColor: var(--piOSaccent);
-    --clydeDimColor: hsl(var(--piOSaccenthue), 100%, 30%);
-    border-color: var(--background-modifier-active);
+    border-color: hsla.default($accent-hue, 0.7);
     background-color: transparent;
 }
 
@@ -16,7 +17,7 @@
 
 // Change popout banner
 .userPopout-2j1gM4[aria-label="Clyde"] .popoutBanner-3cqRD9 {
-    background-color: var(--piOSblack) !important;
+    background-color: $background-color !important;
 }
 
 // Change avatar
@@ -38,13 +39,11 @@
     visibility: visible;
     content: "SYSTEM";
     display: block;
-    color: var(--clydeColor);
+    color: $clyde-color;
     position: absolute;
     top: -0.15rem;
     left: 0;
-    background: linear-gradient(transparent,
-            var(--background-primary) 40%,
-            transparent 60%);
+    background: linear-gradient(transparent, $background-color 40%, transparent 60%);
 }
 
 .ephemeral-2nDdnn .username-h_Y3Us:hover::after {
@@ -59,21 +58,19 @@
 // Timestamp
 .ephemeral-2nDdnn .timestamp-p1Df1m,
 .ephemeral-2nDdnn .timestamp-p1Df1m.alt-1dvXnH {
-    color: var(--clydeDimColor);
+    color: $clyde-color-dim;
 }
 
 // Content
 .ephemeral-2nDdnn .markup-eYLPri {
-    color: var(--clydeColor);
-    text-shadow:
-        2px 0 10px var(--clydeColor),
-        -2px 0 10px var(--clydeColor);
+    color: $clyde-color;
+    text-shadow: 2px 0 10px $clyde-color, -2px 0 10px $clyde-color;
     text-transform: uppercase;
 }
 
 // Dismiss message box
 .ephemeralMessage-11q8XZ {
-    color: var(--clydeDimColor);
+    color: $clyde-color-dim;
     font-size: 100%;
     text-transform: uppercase;
 }
@@ -81,9 +78,7 @@
 .compact-2Nkcau .ephemeralMessage-11q8XZ {
     position: absolute;
     right: 0;
-    background: linear-gradient(transparent,
-            var(--background-primary) 50%,
-            transparent 70%);
+    background: linear-gradient(transparent, $background-color 50%, transparent 70%);
     bottom: -1.1rem;
     display: flex;
     align-items: center;
@@ -91,5 +86,5 @@
 }
 
 .ephemeralMessage-11q8XZ .anchor-1MIwyf {
-    color: var(--clydeColor);
+    color: $clyde-color;
 }

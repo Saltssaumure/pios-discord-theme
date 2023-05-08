@@ -1,22 +1,25 @@
+@use "../../top/var-scss" as *;
+@use "../../top/hsla";
+
 // ---- General menu popover ----
 // Option in menu when hovered
 .colorDefault-2_rLdz {
     &.focused-3LIdPu {
-        background-color: var(--background-modifier-hover);
+        background-color: hsla.default($accent-hue, 0.2);
     }
     &:active:not(.hideInteraction-1vQrZJ) {
-        background-color: var(--background-modifier-active);
+        background-color: hsla.default($accent-hue, 0.7);
     }
     .checkbox-397WsK,
     .radioSelection-3PDNAQ {
-        color: var(--piOSaccent);
+        color: $accent-color;
     }
 }
 // Menu slider bar
 .barFill-3RgCsY {
-    background: var(--piOSaccent);
+    background: $accent-color;
 }
 // Menu selected option checkbox
 .activeIcon-1ykRnF path {
-    fill: var(--piOSaccent);
+    fill: $accent-color;
 }

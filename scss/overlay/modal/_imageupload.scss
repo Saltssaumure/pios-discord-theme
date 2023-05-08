@@ -1,8 +1,10 @@
+@use "../../top/var-scss" as *;
+
 // ---- Image upload modify modal ----
-.theme-dark .uploadModal-2ie9O_ {
-    background-color: var(--background-primary);
+.appmount-2ybxzl .uploadModal-2ie9O_ {
+    background-color: $background-color;
 }
 
-.theme-dark .footer-VCsJQY {
+.appmount-2ybxzl .footer-VCsJQY {
     background-color: transparent;
 }

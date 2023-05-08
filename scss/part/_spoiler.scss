@@ -1,17 +1,19 @@
-.theme-dark .spoilerText-2G40u0.hidden-2lQZ5q {
-    background: var(--spoilerGradient);
+@use "../top/var-scss" as *;
+
+.appmount-2ybxzl .spoilerText-2G40u0.hidden-2lQZ5q {
+    background: $spoiler-gradient;
     background-color: transparent;
-    filter: drop-shadow(0px 0px 5px var(--piOSaccent));
+    filter: drop-shadow(0px 0px 5px $accent-color);
 }
 
-.theme-dark .spoilerText-2G40u0.hidden-2lQZ5q:hover,
+.appmount-2ybxzl .spoilerText-2G40u0.hidden-2lQZ5q:hover,
 .spoilerText-27bIiA {
-    background: var(--spoilerGradient);
+    background: $spoiler-gradient;
     filter: none;
 }
 
-.theme-dark .spoilerWarning-1JN1Ot {
-    background: var(--spoilerGradient);
+.appmount-2ybxzl .spoilerWarning-1JN1Ot {
+    background: $spoiler-gradient;
     width: 100%;
     height: 100%;
     line-height: 200%;

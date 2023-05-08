@@ -1,6 +1,8 @@
+@use "../top/var-scss" as *;
+
 // Pronouns from PronounDB https://github.com/Strencher/BetterDiscordStuff/tree/master/PronounDB
 .PronounDB-pronouns-text {
-    color: var(--text-muted);
+    color: $dim-color;
     line-height: 1.375rem;
     margin: 0 .25rem;
 }

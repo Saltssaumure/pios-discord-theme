@@ -6,17 +6,19 @@
 @use "modal/phonenumber";
 @use "modal/uploadfile";
 
+@use "../top/var-scss" as *;
+@use "../top/border" as bd;
+
 // Modals
-.theme-dark .root-1CAIjD {
-    border: solid var(--borderBrightColor);
-    border-width: var(--thickBorder);
-    background-color: var(--piOSblack);
-    box-shadow: 0 0 30px 0 var(--piOSgrey);
+.appmount-2ybxzl .root-1CAIjD {
+    @include bd.border(thick $bright-color);
+    background-color: $background-color;
+    box-shadow: 0 0 30px 0 $dim-color;
 }
 
 // Footer
-.theme-dark .footer-IubaaS {
-    background-color: var(--piOSblack);
+.appmount-2ybxzl .footer-IubaaS {
+    background-color: $background-color;
     box-shadow: none;
-    border-top: 2px dashed var(--borderColor);
+    border-top: 2px dashed $border-color-normal;
 }
