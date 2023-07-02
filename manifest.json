@@ -7,10 +7,10 @@
         "discordID": "134142022092062720",
         "github": "Saltssaumure"
     },
-    "version": "9.3.0",
+    "version": "9.3.1",
     "updater": {
-        "type": "github",
-        "id": "Saltssaumure/pios-discord-theme"
+        "type": "store",
+        "id": "net.saltssaumure.piOS"
     },
     "license": "GPL-3.0",
     "type": "replugged-theme",
