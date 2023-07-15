@@ -8,6 +8,6 @@ export default {
         /** The name of your theme repository. */
         repo: "pios-discord-theme",
         /** The version of your theme. */
-        version: "9.3.1"
+        version: "9.3.2"
     }
 };
