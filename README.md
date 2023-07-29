@@ -31,23 +31,25 @@
 [shield-donate]:    https://img.shields.io/badge/Donate-ko--fi-orange?style=flat-square&logo=kofi&logoColor=orange
 [ko-fi]:            https://ko-fi.com/saltssaumure "Buy me a coffee!"
 
-[shield-bd-dl]:  https://img.shields.io/github/downloads/Saltssaumure/pios-discord-theme/piOS.theme.css?color=purple&label=BD%20GitHub%20downloads&style=flat-square
-[shield-asar-dl]:   https://img.shields.io/github/downloads/Saltssaumure/pios-discord-theme/net.saltssaumure.piOS.asar?color=purple&label=Replugged%20downloads&style=flat-square
-[shield-repo-size]: https://img.shields.io/github/repo-size/Saltssaumure/pios-discord-theme?style=flat-square "Total size"
+[shield-bd-dl]:  https://img.shields.io/github/downloads/Saltssaumure/pios-discord-theme/piOS.theme.css?color=purple&label=Downloads&style=flat-square
+[shield-asar-dl]:   https://img.shields.io/github/downloads/Saltssaumure/pios-discord-theme/net.saltssaumure.piOS.asar?color=purple&label=Downloads&style=flat-square
+[shield-repo-size]: https://img.shields.io/github/repo-size/Saltssaumure/pios-discord-theme?label=Repository&style=flat-square
 
+[github]:           https://github.com/Saltssaumure/pios-discord-theme
 [license]:          https://github.com/Saltssaumure/pios-discord-theme/blob/main/LICENSE
 [issues]:           https://github.com/Saltssaumure/pios-discord-theme/issues
 [.theme.css]:       https://github.com/Saltssaumure/pios-discord-theme/blob/main/piOS.theme.css
 
-[release-gh]:       https://github.com/Saltssaumure/pios-discord-theme/releases/latest "Latest release"
 [release-bd]:       https://betterdiscord.app/theme/?id=572 "BetterDiscord store page"
-[release-rp]:       https://replugged.dev/install?identifier=Saltssaumure/pios-discord-theme&source=github "Replugged addon installer"
+[release-bd-gh]:    https://github.com/Saltssaumure/pios-discord-theme/releases/latest/download/piOS.theme.css "Get latest release"
+[release-rp]:       https://replugged.dev/store/net.saltssaumure.piOS "Replugged store page"
+[release-rp-gh]:    https://github.com/Saltssaumure/pios-discord-theme/releases/latest/download/net.saltssaumure.piOS.asar "Get latest release"
 
 # piOS Discord Theme
 [![Buy me a coffee on ko-fi][shield-donate]][ko-fi]
-[![BetterDiscord GitHub downloads][shield-bd-dl]][release-gh]
-[![Replugged downloads][shield-asar-dl]][release-rp]
-![Total size][shield-repo-size]
+[![BetterDiscord GitHub downloads][shield-bd-dl]][release-bd-gh]
+[![Replugged GitHub downloads][shield-asar-dl]][release-rp-gh]
+[![Total repository size][shield-repo-size]][github]
 
 ***A SUPERHOT piOS inspired Discord theme.***
 
@@ -60,8 +62,8 @@
 ### BetterDiscord
 1. Install [BetterDiscord][BetterDiscord].
 2. Download the theme file:
-    - [GitHub][release-gh]
-    - [BD Store][release-bd]
+    - [BetterDiscord store][release-bd]
+    - [GitHub][release-bd-gh]
 3. Place theme file in the `themes` folder:
     - Windows: `%AppData%/BetterDiscord/themes`
     - Mac: `~/Library/Application Support/betterdiscord/themes`
@@ -70,8 +72,8 @@
 ### Replugged
 1. Install [Replugged][Replugged].
 2. Install the theme:
-    - [GitHub][release-gh]
-    - [Installer][release-rp]
+    - [Replugged store][release-rp]
+    - [GitHub][release-rp-gh]
 
 ### Vencord
 1. Install [Vencord][Vencord].
