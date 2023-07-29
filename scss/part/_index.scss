@@ -1,13 +1,12 @@
-@use "part/bd";
-@use "part/button";
-@use "part/clyde";
-@use "part/crt";
-@use "part/glow";
-@use "part/spoiler";
-@use "part/text";
+@forward "./button";
+@forward "./clyde";
+@forward "./css-vars";
+@forward "./glow";
+@forward "./spoiler";
+@forward "./text";
 
-@use "top/var-scss" as *;
-@use "top/hsla";
+@use "../top/vars" as *;
+@use "../top/hsla";
 
 // Notification counter
 .numberBadge-37OJ3S {

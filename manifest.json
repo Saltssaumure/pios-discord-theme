@@ -7,7 +7,7 @@
         "discordID": "134142022092062720",
         "github": "Saltssaumure"
     },
-    "version": "9.3.2",
+    "version": "9.3.3",
     "updater": {
         "type": "store",
         "id": "net.saltssaumure.piOS"
@@ -20,5 +20,6 @@
         "https://cdn.discordapp.com/attachments/946226984005025835/1129611060454891561/pios2.png",
         "https://cdn.discordapp.com/attachments/946226984005025835/1129611060748484608/pios3.png",
         "https://cdn.discordapp.com/attachments/946226984005025835/1129611059829932052/pios4.png"
-    ]
+    ],
+    "source": "https://github.com/Saltssaumure/pios-discord-theme"
 }

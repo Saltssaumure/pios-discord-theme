@@ -1,10 +1,10 @@
-@use "../top/var-scss" as *;
+@use "../top/vars" as *;
 
 // Pronouns from PronounDB https://github.com/Strencher/BetterDiscordStuff/tree/master/PronounDB
 .PronounDB-pronouns-text {
     color: $dim-color;
     line-height: 1.375rem;
-    margin: 0 .25rem;
+    margin: 0 0.25rem;
 }
 
 .pronoun-db-dot {

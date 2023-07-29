@@ -1,17 +1,17 @@
-@use "popover/autocomplete";
-@use "popover/emojipicker";
-@use "popover/inbox";
-@use "popover/menu";
-@use "popover/messageoptions";
-@use "popover/newuser";
-@use "popover/noisesuppression";
-@use "popover/search";
-@use "popover/threads";
-@use "popover/toast";
-@use "popover/tooltip";
-@use "popover/userprofile";
+@forward "./autocomplete";
+@forward "./emojipicker";
+@forward "./inbox";
+@forward "./menu";
+@forward "./messageoptions";
+@forward "./newuser";
+@forward "./noisesuppression";
+@forward "./search";
+@forward "./threads";
+@forward "./toast";
+@forward "./tooltip";
+@forward "./userprofile";
 
-@use "../top/border" as bd;
+@use "../../top/border" as bd;
 
 // Popovers
 .contentWrapper-3vHNP2,

@@ -1,4 +1,4 @@
-@use "../top/var-scss" as *;
+@use "../top/vars" as *;
 @use "../top/border" as bd;
 @use "../top/hsla";
 
@@ -58,8 +58,7 @@
 #bd-customcss-detach-container.inline,
 #bd-customcss-detach-container.hljs :-webkit-any(ol, li, span),
 .editor-wrapper :-webkit-any(textarea, div, span) {
-    font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro",
-        monospace;
+    font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace;
     text-transform: none;
     text-shadow: none;
 }

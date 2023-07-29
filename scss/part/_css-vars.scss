@@ -1,6 +1,6 @@
-@use "font";
-@use "hsla";
-@use "var-scss" as *;
+@use "../top/font";
+@use "../top/hsla";
+@use "../top/vars" as *;
 
 :root {
     // RadialStatus
@@ -21,15 +21,30 @@
     --rs-phone-visible: none; // Visibility of the phone icon next to a users avatar. | block = visible | none = hidden
 
     // Defaults, can be overridden in .theme.css
-    --pios-glow-hue:        180;
-    --pios-glow-intensity:  1;
-    --pios-spacing:         1;
-    --pios-accent-hue:      0;
-    --pios-title-text:      "piOS v2.1.01p";
+    --pios-glow-hue: 180;
+    --pios-glow-intensity: 1;
+    --pios-spacing: 1;
+    --pios-accent-hue: 0;
+    --pios-title-text: "piOS v2.1.01p";
 
-    --crt-stripe:   block;
-    --crt-scanline: none;   /* ⛐ This effect is performance-intensive. */
-    --crt-flicker:  none;   /* ⚠ This is a fast flickering effect and may not be suitable for those with photosensitive epilepsy. */
+    // See https://github.com/MiniDiscordThemes/CRT/#customisation for customisation settings.
+    --crt-height: 9999;
+    --crt-size: 4px;
+
+    --crt-stripe: block;
+    --crt-stripe-light-color: rgba(255, 255, 255, 0.1);
+    --crt-stripe-dark-color: rgba(0, 0, 0, 0.1);
+
+    // ⛐ This effect is performance-intensive.
+    --crt-scanline: none;
+    --crt-scanline-speed: 3s;
+    --crt-scanline-color: rgba(0, 0, 0, 0.5);
+    --crt-scanline-direction: normal;
+
+    // ⚠ This is a fast flickering effect and may not be suitable for those with photosensitive epilepsy.
+    --crt-flicker: none;
+    --crt-flicker-speed: calc(1s / 30);
+    --crt-flicker-color: rgba(0, 0, 0, 0.1);
 }
 
 // Defaults, can be overridden in .theme.css
