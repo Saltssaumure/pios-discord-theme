@@ -1,13 +1,13 @@
-@use "modal/changeusername";
-@use "modal/deletemessage";
-@use "modal/event";
-@use "modal/imageupload";
-@use "modal/invitefriends";
-@use "modal/phonenumber";
-@use "modal/uploadfile";
+@forward "./changeusername";
+@forward "./deletemessage";
+@forward "./event";
+@forward "./imageupload";
+@forward "./invitefriends";
+@forward "./phonenumber";
+@forward "./uploadfile";
 
-@use "../top/var-scss" as *;
-@use "../top/border" as bd;
+@use "../../top/vars" as *;
+@use "../../top/border" as bd;
 
 // Modals
 .appMount-2yBXZl .root-1CAIjD {

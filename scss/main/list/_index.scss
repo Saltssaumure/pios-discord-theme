@@ -1,10 +1,10 @@
-@use "cms/channellist";
-@use "cms/memberlist";
-@use "cms/serverlist";
+@forward "./channellist";
+@forward "./memberlist";
+@forward "./serverlist";
 
 // Adds dashes between channel/member groups
 .containerDefault-3TQ5YN:not(:first-of-type)::before,
-.membersGroup-2eiWxl.container-q97qHp:not(:first-of-type)>span:last-child::before {
+.membersGroup-2eiWxl.container-q97qHp:not(:first-of-type) > span:last-child::before {
     position: absolute;
     font-size: 16pt;
     color: var(--channels-default);

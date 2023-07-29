@@ -1,4 +1,4 @@
-@use "var-scss" as *;
+@use "vars" as *;
 
 @mixin border($size, $color: $border-color-normal) {
     @if $color == bright {
