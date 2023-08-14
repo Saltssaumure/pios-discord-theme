@@ -9,9 +9,10 @@
     "scripts": {
         "dev": "bd-scss dev",
         "bd": "bd-scss build",
+        "dev:rp": "replugged build theme --watch",
         "rp": "replugged bundle theme",
         "lint": "prettier ./scss --check",
-        "lint:fix": "prettier ./scss --write"
+        "lint:fix": "prettier ./scss --write --log-level warn"
     },
     "type": "module",
     "dependencies": {

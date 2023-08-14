@@ -1,4 +1,3 @@
-[screenshot-old]: https://user-images.githubusercontent.com/29710355/123527529-72121600-d6d8-11eb-9580-da3987ee8398.png
 [dark]: https://user-images.githubusercontent.com/29710355/235468134-a4f95a88-627a-4ed9-ae3d-b288591374b2.png
 [light]: https://user-images.githubusercontent.com/29710355/236739532-3c62f571-bd1b-4285-a296-46f1c1eb13b4.png
 
@@ -51,7 +50,7 @@
 [![Replugged GitHub downloads][shield-asar-dl]][release-rp-gh]
 [![Total repository size][shield-repo-size]][github]
 
-***A SUPERHOT piOS inspired Discord theme.***
+***A customisable SUPERHOT piOS inspired Discord theme.***
 
 | Dark mode                                  | Light mode                                   |
 | ------------------------------------------ | -------------------------------------------- |
@@ -59,25 +58,35 @@
 
 ## Installation
 
-### BetterDiscord
-1. Install [BetterDiscord][BetterDiscord].
-2. Download the theme file:
+### [BetterDiscord][BetterDiscord]
+1. Download `piOS.theme.css`:
     - [BetterDiscord store][release-bd]
     - [GitHub][release-bd-gh]
-3. Place theme file in the `themes` folder:
-    - Windows: `%AppData%/BetterDiscord/themes`
-    - Mac: `~/Library/Application Support/betterdiscord/themes`
-    - Linux: `~/.config/BetterDiscord/themes`
+2. Place the file in the themes folder:
+    - `Settings` > `BetterDiscord` > `Themes` > `Open Themes Folder`
+3. Toggle on the theme card.
 
-### Replugged
-1. Install [Replugged][Replugged].
-2. Install the theme:
+### [Replugged][Replugged]
+#### Automatic
+1. Click to install:
     - [Replugged store][release-rp]
+#### Manual
+1. Download `net.saltssaumure.piOS.asar`:
     - [GitHub][release-rp-gh]
+2. Place the file in the themes folder:
+    - `Settings` > `Replugged` > `Themes` > `Open Themes Folder`
+3. Click `Load Missing Themes` and toggle on the theme card.
 
-### Vencord
-1. Install [Vencord][Vencord].
-2. Paste the following in `Settings` > `Vencord` > `Themes`:
+### [Vencord][Vencord]
+#### Local
+1. Download `piOS.theme.css`:
+    - [BetterDiscord store][release-bd]
+    - [GitHub][release-bd-gh]
+2. Place the file in the themes folder:
+    - `Settings` > `BetterDiscord` > `Themes` > `Local Themes` > `Open Themes Folder`
+3. Click `Load missing Themes` and toggle on the theme card.
+#### Online
+1. Paste the link in `Settings` > `Vencord` > `Themes` > `Online Themes`:
     - `https://saltssaumure.github.io/pios-discord-theme/piOS.theme.css`
 
 ## Customisation
@@ -112,22 +121,26 @@
 3. Edit the variable values and save changes.
 
 ### Replugged
+1. Enable `Automatically Apply Quick CSS` in `Settings` > `Replugged` > `General`.
 1. Open `Settings` > `Replugged` > `Quick CSS`.
-2. Copy and paste lines 15-40 of [`piOS.theme.css`][.theme.css].
-3. Edit the variable values and apply changes.
+3. Copy and paste line 15-20 of [`piOS.theme.css`][.theme.css].
+3. Edit the variable values and save.
 
 ### Vencord
-#### Standard method
-1. Follow the instructions in `Settings` > `Vencord` > `Themes`.
-#### Recommended method
-1. Open `Settings` > `Vencord` > `Vencord`.
-2. Toggle on `Enable Custom CSS` and click `Open QuickCSS File`.
-3. Copy and paste lines 15-40 of [`piOS.theme.css`][.theme.css].
-4. Edit the variable values.
+#### Local
+2. `Open Themes Folder` in `Settings` > `BetterDiscord` > `Themes` > `Local Themes`
+3. Open `piOS.theme.css` with your favourite text editor.
+4. Edit the variable values and save.
+#### Online
+1. `Enable Custom CSS` in `Settings` > `Vencord` > `Vencord` and click `Open QuickCSS File`.
+2. Copy and paste lines 15-20 of [`piOS.theme.css`][.theme.css].
+3. Edit the variable values.
 
 ## License
 [GNU General Public License v3.0][license]
 - <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
+### [RadialStatus](https://github.com/DiscordStyles/RadialStatus)
+[MIT License](https://github.com/DiscordStyles/RadialStatus/blob/master/LICENSE.md)
 
 ## Questions or suggestions?
 - Post [an issue][issues] on GitHub.
