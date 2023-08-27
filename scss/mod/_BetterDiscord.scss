@@ -23,6 +23,11 @@
     padding: 16px;
 }
 
+// Toggle
+.bd-switch input:checked + .bd-switch-body {
+    --switch-color: #{hsla.default($accent-hue, 0.7)};
+}
+
 // Custom CSS
 #bd-editor-panel {
     @include bd.border(thin);
