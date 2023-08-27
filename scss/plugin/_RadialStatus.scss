@@ -1,0 +1,9 @@
+// RadialStatus
+
+// If phone display on
+#app-mount .wrapper-3Un6-K foreignObject[mask*="mobile"]:after {
+    top: unset;
+    transform: unset;
+    bottom: 2px;
+    right: 14px;
+}
