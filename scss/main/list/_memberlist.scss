@@ -1,10 +1,10 @@
 // ---- Members list ----
 // Position dashes between member groups
-.membersGroup-2eiWxl.container-q97qHp {
+:is(.membersGroup-2eiWxl, .membersGroup-2YoqY-).container-q97qHp {
     position: relative;
 }
 
-.membersGroup-2eiWxl.container-q97qHp:not(:first-of-type) > span:last-child::before {
+:is(.membersGroup-2eiWxl, .membersGroup-2YoqY-).container-q97qHp:not(:first-of-type) > span:last-child::before {
     content: "-----------------";
     display: block;
     font-weight: 9;
