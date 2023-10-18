@@ -4,7 +4,7 @@
 
 // Adds dashes between channel/member groups
 .containerDefault-3TQ5YN:not(:first-of-type)::before,
-.membersGroup-2eiWxl.container-q97qHp:not(:first-of-type) > span:last-child::before {
+:is(.membersGroup-2eiWxl, .membersGroup-2YoqY-).container-q97qHp:not(:first-of-type) > span:last-child::before {
     position: absolute;
     font-size: 16pt;
     color: var(--channels-default);

@@ -3,7 +3,7 @@
 @use "../top/hsla";
 
 // Main chat section
-.chatContent-3KubbW {
+:is(.chatContent-3KubbW, .chatContent-2O4SXb) {
     @include bd.border(thick);
 }
 
@@ -265,7 +265,7 @@
 }
 
 // follow to get this channel's updates in your server add dotted topline
-.form-3gdLxP .wrapper-2SplAX {
+:is(.form-3gdLxP, .form-3qe0Ni) :is(.wrapper-2SplAX, .wrapper-IjGAlW) {
     border-top: 2px dashed $border-color-normal;
     margin-top: 0;
 }
