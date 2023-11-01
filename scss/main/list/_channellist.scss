@@ -2,26 +2,26 @@
 
 // ---- Channel sidebar ----
 // Position dashes between channel groups
-.containerDefault-3TQ5YN:not(:first-of-type)::before {
+.containerDefault__23a29:not(:first-of-type)::before {
     content: "-------------------";
     margin-left: 5px;
     top: 0;
 }
 
 // Resize channel icons
-.icon-2W8DHg {
+.icon_eff5d4 {
     width: 15px;
     height: 15px;
 }
 
 // Happening now events
-.channelNotice-K4UfZY {
+.channelNotice__8f7b2 {
     @include bd.border(thin);
     margin: 0 8px;
     padding: 4px 8px 8px;
 }
 
 // Boost bar divider
-.divider-3qUeLQ {
+.divider__40683 {
     display: none;
 }

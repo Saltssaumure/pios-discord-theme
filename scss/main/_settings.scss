@@ -3,73 +3,70 @@
 @use "../top/hsla";
 
 // Values slider
-.appMount-2yBXZl .bar-1Bhnl9,
-.appMount-2yBXZl .markDash-yk2kJ- {
+.appMount_fae9dd .bar_e58961,
+.appMount_fae9dd .markDash_dc3ae9 {
     background-color: $dim-color;
 }
 
-.barFill-2Bh7CX {
+.barFill__30e17 {
     background: $accent-color;
 }
 
 // Check/uncheck slider toggle
-.container-1QtPKm.checked-16gMAN {
+.container__871ba.checked__6bdb0 {
     background-color: hsla.default($accent-hue, 0.7) !important;
     color: hsla.default($accent-hue, 0.7);
 }
 
-.container-1QtPKm {
+.container__871ba {
     background-color: $dim-color !important;
     color: $dim-color;
 }
 
-.slider-HJFN2i svg path {
+.slider__41d94 svg path {
     fill: currentColor !important;
 }
 
 // Discord key redemption
-.appMount-2yBXZl .codeRedemptionRedirect-2hYMSQ {
+.appMount_fae9dd .codeRedemptionRedirect_bc7f36 {
     background-color: hsla.default($accent-hue, 0.2);
     border-color: $accent-color;
 }
 
 // Default payment method
-.appMount-2yBXZl .defaultIndicator-2ndWks {
+.appMount_fae9dd .defaultIndicator__855a2 {
     background: $accent-color;
 }
 
 // Authorised apps
-.authedApp-8q3NA9 {
+.authedApp__51b26 {
     @include bd.border(thin);
 }
 
 // Connections
-.connection-YOVI9j {
+.connection_fff5f6 {
     @include bd.border(thin);
 }
 
 // Discord nitro settings tab
-.selectedBackground-1t6xXq {
+.selectedBackground_d847da {
     background: hsla.default($accent-hue, 0.2);
 }
 
 // Voice and video
 // Video background
-.backgroundOptionRing-1vvQ0C {
+.backgroundOptionRing__1f209 {
     border: solid $accent-color;
     @include bd.border(thin, $accent-color);
 }
 
 // Keybinds
-.defaultKeybind-1rEiTa {
+.defaultKeybind__05c82 {
     height: auto;
 }
 
-.keybindShortcut-3zF1P9 span {
+.appMount_fae9dd .key__06fe6 {
     background-color: hsla.default($accent-hue, 0.3);
-}
-
-.appMount-2yBXZl .keybindShortcut-3zF1P9 span {
     box-shadow: inset 0 -4px 0 hsla.default($accent-hue, 0.2);
 }
 
@@ -79,84 +76,84 @@
 }
 
 // Remove game
-.appMount-2yBXZl .default-1Tkeeg {
+.appMount_fae9dd .default__3e2f5 {
     background-color: transparent;
     border: 1px solid hsla.default($accent-hue, 0.7);
 }
 
 // Game overlay
 // Overlay notifications
-.wrapper-SdcMKg {
+.wrapper__4beb8 {
     @include bd.border(thin);
 }
 
-.wrapper-SdcMKg.disabledSelected-1jqfsw {
+.wrapper__4beb8.disabledSelected_dd29ae {
     @include bd.border(thin, $accent-color);
 }
 
-.option-1QI4c9 {
+.option_a0c054 {
     background-color: $border-color-normal;
 }
 
-.selected-18Wszc.option-1QI4c9 {
+.selected_ea51d6.option_a0c054 {
     background-color: hsla.default($accent-hue, 0.7);
     border-color: $accent-color;
 }
 
-.option-1QI4c9:hover {
+.option_a0c054:hover {
     background-color: hsla.default($accent-hue, 0.2);
 }
 
 // Server settings
 
 // Stickers
-.tier-3CS7-p {
+.tier_d16770 {
     @include bd.border(thin);
     padding: 0 16px 16px 0;
 }
 
 // Header
-.appMount-2yBXZl .tierHeaderLocked-30MLlO,
-.appMount-2yBXZl .tierHeaderUnlocked-1OpOLf {
+.appMount_fae9dd .tierHeaderLocked__4d099,
+.appMount_fae9dd .tierHeaderUnlocked_cc60fa {
     background: transparent;
 }
 
 // Sticker placeholder
-.placeholderCard-3eGmb3 {
+.placeholderCard__622e2 {
     border-color: $dim-color;
 }
 
 // Locked tiers
-.appMount-2yBXZl .tierBody-1d3UiS {
+.appMount_fae9dd .tierBody__615a1 {
     background: transparent;
 }
 
 // App directory
-.appMount-2yBXZl .directoryModal-YJsOMv {
+.appMount_fae9dd .directoryModal-YJsOMv {
     background: $background-color;
 }
 
 // App categories
-.category-2OvQ93:hover {
+.category_ba5745:hover {
     background: hsla.default($accent-hue, 0.2);
 }
 
-.category-2OvQ93:active {
+.category_ba5745:active {
     background: hsla.default($accent-hue, 0.7);
 }
 
 // App cards
-.card-2xymMp,
-.item-2Nx4LP,
-.itemContainer-RkoeKz {
+.card__834d4,
+.item_be93e4,
+.itemContainer__34a23 {
     @include bd.border(thin);
 }
 
-.root-1q0s4N {
+.root__07239 {
     overflow: visible;
 }
 
 // Highlighted card
-.linkCard-2SSonX {
+.linkCard_e80341 {
     background: hsla.default($accent-hue, 0.2);
 }

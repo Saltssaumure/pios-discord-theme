@@ -5,70 +5,70 @@
 // ---- Explore public servers ----
 
 // Background
-.appMount-2yBXZl .pageWrapper-2PwDoS {
+.appMount_fae9dd .pageWrapper_fef757 {
     background-color: $background-color;
     @include bd.border(thick);
 }
 
 // Search results searchbox
-.appMount-2yBXZl .searchBox-pyIJJj {
+.appMount_fae9dd .searchBox_a63854 {
     background-color: hsla.default($accent-hue, 0.2);
     backdrop-filter: brightness(0);
 }
 
-.searchBox-pyIJJj:focus,
-.searchBox-pyIJJj:focus-within {
+.searchBox_a63854:focus,
+.searchBox_a63854:focus-within {
     border-color: transparent;
 }
 
 // Selected category
-.categoryItem-Kc_HK_.selectedCategoryItem-ZjqSui .itemInner-3e_4G4 {
+.categoryItem_b1be5c.selectedCategoryItem__0bf4c .itemInner__9e755 {
     background-color: hsla.default($accent-hue, 0.3);
 }
 
 // Search category searchbox
-.search-25t1e9 .searchBox-31Zv9h:focus,
-.search-25t1e9 .searchBox-31Zv9h:focus-within {
+.search_e47903 .searchBox__88a98:focus,
+.search_e47903 .searchBox__88a98:focus-within {
     box-shadow: none;
 }
 
-.search-25t1e9 .searchBox-31Zv9h .searchBoxInput-3h4etz {
+.search_e47903 .searchBox__88a98 .searchBoxInput__73c9c {
     color: $bright-color;
 }
 
 // Clear searchbox icon
-.clearIcon-TMIIUa,
-.search-25t1e9 .searchBox-31Zv9h .closeIcon-BMGxx0 {
+.clearIcon__91449,
+.search_e47903 .searchBox__88a98 .closeIcon__3dfb5 {
     color: $dim-color;
 }
 
-.clearIcon-TMIIUa:hover,
-.search-25t1e9 .searchBox-31Zv9h .closeIcon-BMGxx0:hover {
+.clearIcon__91449:hover,
+.search_e47903 .searchBox__88a98 .closeIcon__3dfb5:hover {
     color: $middle-color;
 }
 
 // Language dropdown
-.lookFilled-1GseHa.select-1Ia3hD {
+.lookFilled__3dba3.select__0eb48 {
     border-color: transparent;
     color: $dim-color;
 }
 
-.popout-1KHNAq {
+.popout_a6e77f {
     @include bd.border(thin);
 }
 
 // Server card
-.card-2TuZPZ,
-.card-1rhKXq {
+.card__86773,
+.card__33bd0 {
     @include bd.border(thin);
 }
 
 // Separators in search results
-.separator-2t2gPa {
+.separator_f527c9 {
     display: none;
 }
 
 // Student hub icon
-.iconContainer-6xlTpK {
+.iconContainer__004ce {
     background-color: hsla.default($accent-hue, 0.7);
 }

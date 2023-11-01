@@ -3,8 +3,8 @@
 @forward "./serverlist";
 
 // Adds dashes between channel/member groups
-.containerDefault-3TQ5YN:not(:first-of-type)::before,
-:is(.membersGroup-2eiWxl, .membersGroup-2YoqY-).container-q97qHp:not(:first-of-type) > span:last-child::before {
+.containerDefault__23a29:not(:first-of-type)::before,
+.membersGroup__85843.container_de798d:not(:first-of-type) > span:last-child::before {
     position: absolute;
     font-size: 16pt;
     color: var(--channels-default);

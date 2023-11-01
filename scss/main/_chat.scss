@@ -3,47 +3,47 @@
 @use "../top/hsla";
 
 // Main chat section
-:is(.chatContent-3KubbW, .chatContent-2O4SXb) {
+.chatContent__5dca8 {
     @include bd.border(thick);
 }
 
 // "Jump to present", "New messages since", "Messages failed to load" bars
-.jumpToPresentBar-1cEnH0,
-.newMessagesBar-1hF-9G,
-.messagesErrorBar-1IQ1rH {
+.jumpToPresentBar__0ff7f,
+.newMessagesBar__8b6d7,
+.messagesErrorBar__06c0a {
     background-color: $accent-color;
     opacity: 0.9;
 }
 
 // Messages allow overflow in case of oversize embeds
-.message-372Ods,
-.message-3g3FYR {
+.message__41c2a,
+.message_f3a9e4 {
     overflow: visible;
 }
 
 // Message react/reply etc buttons
-.wrapper-2vIMkT {
+.wrapper_c727b6 {
     @include bd.border(thin);
 }
 
 // Pin icon for pin alerts
-.iconContainer-2rPbqG {
+.iconContainer_dfc268 {
     padding: 0.1rem;
 }
 
 // Reply/thread pipe
-.repliedMessage-3Z6XBG:before,
-.cozy-VmLDNB.hasThread-3h-KJV:after {
+.repliedMessage_e2bf4a:before,
+.cozy_f5c119.hasThread__58ee2:after {
     border-left-width: 3px;
     border-top-width: 1px;
 }
 
-.cozy-VmLDNB.hasThread-3h-KJV:after {
+.cozy_f5c119.hasThread__58ee2:after {
     border-bottom-width: 1px;
 }
 
 // piOS style message boxes in compact mode
-.compact-2Nkcau.wrapper-30-Nkg {
+.compact__54ecc.wrapper__09ecc {
     @include bd.border(thin);
     margin: calc(var(--pios-spacing) * 1.5rem) 3rem;
     padding: 1rem 1rem 0.5rem 1rem;
@@ -51,12 +51,12 @@
 }
 
 // Remove box if system message eg. pin
-.compact-2Nkcau.wrapper-30-Nkg.systemMessage-1H1Z20 {
+.compact__54ecc.wrapper__09ecc.systemMessage__6e6a4 {
     border: 0;
 }
 
 // Message info
-.compact-2Nkcau .header-2jRmjb {
+.compact__54ecc .header__39b23 {
     position: absolute;
     top: -1.6rem;
     display: flex;
@@ -64,145 +64,145 @@
     background: linear-gradient(transparent, $background-color 40%, transparent 60%);
 }
 
-.compact-2Nkcau .header-2jRmjb > span {
+.compact__54ecc .header__39b23 > span {
     display: block;
 }
 
 // Hides timestamps for the same time as previous message
-.compact-2Nkcau .timestampVisibleOnHover-9PEuZS {
+.compact__54ecc .timestampVisibleOnHover_e8cc6d {
     width: 0;
     color: transparent;
 }
 
 // Badges from ShowBadgesInChat https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/ShowBadgesInChat///
-.compact-2Nkcau .badgesChat-f_cbR8 {
+.compact__54ecc .badgesChat-f_cbR8 {
     top: 0;
 }
 
 // Corrects alignment of username when badges are present
-.compact-2Nkcau .username-h_Y3Us {
+.compact__54ecc .username_d30d99 {
     vertical-align: top;
 }
 
 // Special message left bar
-.automodMessage-265YwJ:before,
-.ephemeral-2nDdnn:before,
-.mentioned-Tre-dv:before,
-.replying-eZ7p5z:before {
+.automodMessage__410f7:before,
+.ephemeral_c26b64:before,
+.mentioned__58017:before,
+.replying_d7b6ad:before {
     width: 3px;
 }
 
 // Reply
 // Post username and timestamp
-.compact-2Nkcau.hasReply-2Cr4KE .header-2jRmjb,
-.compact-2Nkcau .repliedMessage-3Z6XBG + .contents-2MsGLg .header-2jRmjb {
+.compact__54ecc.hasReply_febd50 .header__39b23,
+.compact__54ecc .repliedMessage_e2bf4a + .contents_f41bb2 .header__39b23 {
     top: -2.7rem;
 }
 
 // Replied content
-.compact-2Nkcau .repliedMessage-3Z6XBG {
+.compact__54ecc .repliedMessage_e2bf4a {
     margin-left: 0;
     padding-left: 0;
     top: -2px;
 }
 
-.executedCommand-14-SNW,
-.threadMessageAccessory-2W9mjC {
+.executedCommand_e8859a,
+.threadMessageAccessory__33bc1 {
     height: auto;
 }
 
-.compact-2Nkcau .repliedMessage-3Z6XBG .timestamp-p1Df1m {
+.compact__54ecc .repliedMessage_e2bf4a .timestamp_cdbd93 {
     line-height: 1rem;
     height: auto;
 }
 
 // Replied elbow
-.compact-2Nkcau .repliedMessage-3Z6XBG::before {
+.compact__54ecc .repliedMessage_e2bf4a::before {
     display: none;
 }
 
 // Icons inside replied content
-.compact-2Nkcau .repliedMessage-3Z6XBG .repliedTextContentIcon-1LQXRB,
-.compact-2Nkcau .repliedMessage-3Z6XBG .badgesChat-f_cbR8 img,
-.compact-2Nkcau .repliedMessage-3Z6XBG .ownerIcon-255uKo,
-.compact-2Nkcau .repliedMessage-3Z6XBG .emoji {
+.compact__54ecc .repliedMessage_e2bf4a .repliedTextContentIcon__4dd82,
+.compact__54ecc .repliedMessage_e2bf4a .badgesChat-f_cbR8 img,
+.compact__54ecc .repliedMessage_e2bf4a .ownerIcon__827bd,
+.compact__54ecc .repliedMessage_e2bf4a .emoji {
     width: 1rem;
     height: 1rem;
 }
 
 // message react/reply etc buttons
-.compact-2Nkcau .container-2gUZhU {
+.compact__54ecc .container__9d616 {
     top: -16px;
 }
 
 // Message contents
-.compact-2Nkcau .contents-2MsGLg {
+.compact__54ecc .contents_f41bb2 {
     margin: 0;
     padding-left: 0;
     text-indent: 0;
 }
 
 // Block quote starter
-.blockquoteContainer-3VtvI1 .blockquoteDivider-363utW {
+.blockquoteContainer_f24d1f .blockquoteDivider__96157 {
     width: 3px;
 }
 
 // Embeds
-.embedFull-1HGV2S.markup-eYLPri,
+.embedFull__8dc21.markup_a7e664,
 // most embeds
-.appMount-2yBXZl .wrapperAudio-1Bzv_Z,
+.appMount_fae9dd .wrapperAudio__555ce,
 // audio
-.attachment-1PZZB2,
+.attachment_f3cf2c,
 // file
-.wrapper-1HIH0j,
+.wrapper_efe67f,
 // invite
-.footer-GXWBBp // code/text
+.footer__06f4b // code/text
 {
     background: $embed-color;
     border: 0;
     text-shadow: none;
 }
 
-.grid-1aWVsE {
+.grid_c7c4e6 {
     padding: 12px 18px;
 }
 
-.embedMargin-2PsaQ4 {
+.embedMargin__9576e {
     margin-top: 0;
 }
 
 // Video embed
 // Video metadata
-.metadata-3IncIG {
+.metadata__2d766 {
     backdrop-filter: blur(3px);
 }
 
 // play buttons on video
-.wrapper-x4po40 {
+.wrapper__5036f {
     padding: 12px;
 }
 
 // timeline slider
-.mediaBarProgress-38I317,
-.mediaBarProgress-38I317:after,
-.mediaBarProgress-38I317:before {
+.mediaBarProgress__29db2,
+.mediaBarProgress__29db2:after,
+.mediaBarProgress__29db2:before {
     background: $accent-color;
 }
 
 // timeline slider knob
-.mediaBarGrabber-FvJKJg,
-.mediaBarInteraction-tUE5dq:hover .mediaBarGrabber-FvJKJg,
-.mediaBarInteractionDragging-3XLL8k .mediaBarGrabber-FvJKJg {
+.mediaBarGrabber_c64ff9,
+.mediaBarInteraction__0633c:hover .mediaBarGrabber_c64ff9,
+.mediaBarInteractionDragging__0a2ee .mediaBarGrabber_c64ff9 {
     background: $bright-color;
 }
 
 // Reacts you have added
-.reaction-3vwAF2,
-.reaction-3vwAF2:hover {
+.reaction_b90ab0,
+.reaction_b90ab0:hover {
     @include bd.border(thin);
 }
 
-.reaction-3vwAF2.reactionMe-1PwQAc {
+.reaction_b90ab0.reactionMe_bf6909 {
     border-color: $accent-color;
     background-color: hsla.default($accent-hue, 0.3);
 }
@@ -210,12 +210,12 @@
 // Thread from message
 // Thread spine
 // Upper
-.compact-2Nkcau.hasThread-3h-KJV .contents-2MsGLg::before {
+.compact__54ecc.hasThread__58ee2 .contents_f41bb2::before {
     display: none;
 }
 
 // Lower
-.spine-2vt3pM {
+.spine_d081ec {
     top: 0.15rem;
     left: 0rem;
     z-index: -1;
@@ -224,70 +224,70 @@
 }
 
 // Thread info
-.container-3i3IzO {
+.container__767d1 {
     background-color: hsla.default($accent-hue, 0.2);
 }
 
-.compact-2Nkcau .container-3i3IzO {
+.compact__54ecc .container__767d1 {
     position: relative;
     left: 2.5rem;
 }
 
 // Typing box
-.channelTextArea-1VQBuV {
+.channelTextArea__56a36 {
     @include bd.border(thick);
 }
 
-.scrollableContainer-15eg7h {
+.scrollableContainer__33e06 {
     min-height: 60px;
 }
 
 // "Replying to" bar
-.attachedBars-2BCP3l {
+.attachedBars_da3c74 {
     background: transparent;
     border-bottom: 2px dashed $border-color-normal;
 }
 
 // @on button
-.colorLink-2apWfY.mentionButton-3C5YMI {
+.mentionButton_a470c4 {
     color: $accent-color;
 }
 
 // Uploading files bar
-.upload-vLbqu- {
+.upload_c98ecb {
     background-color: $embed-color;
 }
 
 // Command suggestions bar
-.appMount-2yBXZl .selected-3H3-RC,
-.appMount-2yBXZl .option-Tt7anD {
+.appMount_fae9dd .selected-3H3-RC,
+.appMount_fae9dd .option__32fd1 {
     background-color: hsla.default($accent-hue, 0.3);
 }
 
 // follow to get this channel's updates in your server add dotted topline
-:is(.form-3gdLxP, .form-3qe0Ni) :is(.wrapper-2SplAX, .wrapper-IjGAlW) {
+.form__13a2c .wrapper_fbbb73 {
     border-top: 2px dashed $border-color-normal;
     margin-top: 0;
 }
 
 // Forums
-.appMount-2yBXZl .container-3wLKDe {
+.appMount_fae9dd .container_b181b6 {
     background: $background-color;
 }
 
 // Post title
-.card-2JNtco .headerText-3MQ6n4 {
+.card__691f2 .headerText_cd33c6 {
     --text-muted: #{$bright-color};
 }
 
 // Post message preview
-.card-2JNtco .markup-eYLPri {
+.card__691f2 .markup_a7e664 {
     text-shadow: none;
 }
 
 // Browse channels
-.appMount-2yBXZl .container-2IKOsH,
-.appMount-2yBXZl .header-3xB4vB,
-.appMount-2yBXZl .container-1um7CU {
+.appMount_fae9dd .container__10dc7,
+.appMount_fae9dd .header__60bef,
+.appMount_fae9dd .container__7590f {
     background: $background-color;
 }

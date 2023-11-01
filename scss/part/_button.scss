@@ -2,7 +2,7 @@
 @use "../top/hsla";
 
 // Filled button with discord blue background
-.lookFilled-1H2Jvj.colorBrand-2M3O3N {
+.lookFilled__19298.colorBrand_b2253e {
     background: $accent-color;
 
     &:hover {
@@ -11,36 +11,36 @@
 }
 
 // Buttons
-.lookFilled-yCfaCM.colorBrand-I6CyqQ,
-.lookFilled-yCfaCM.colorBrand-I6CyqQ:disabled,
-.lookFilled-yCfaCM.colorPrimary-2AuQVo,
-.lookFilled-yCfaCM.colorBrandNew-2-gGsS {
+.lookFilled__19298.colorBrand_b2253e,
+.lookFilled__19298.colorBrand_b2253e:disabled,
+.lookFilled__19298.colorPrimary__6ed40,
+.lookFilled__19298.colorBrandNew_fd170a {
     background-color: hsla.default($accent-hue, 0.3);
 }
 
-.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover,
-.lookFilled-yCfaCM.colorPrimary-2AuQVo:hover,
-.lookFilled-yCfaCM.colorBrandNew-2-gGsS:hover {
+.lookFilled__19298.colorBrand_b2253e:hover,
+.lookFilled__19298.colorPrimary__6ed40:hover,
+.lookFilled__19298.colorBrandNew_fd170a:hover {
     background-color: hsla.default($accent-hue, 0.7);
 }
 
-.lookFilled-yCfaCM.colorBrand-I6CyqQ:active,
-.lookFilled-yCfaCM.colorPrimary-2AuQVo:active,
-.lookFilled-yCfaCM.colorBrandNew-2-gGsS:active {
+.lookFilled__19298.colorBrand_b2253e:active,
+.lookFilled__19298.colorPrimary__6ed40:active,
+.lookFilled__19298.colorBrandNew_fd170a:active {
     background-color: $accent-color;
 }
 
 // Green buttons
-.lookOutlined-3yKVGo.colorGreen-3y-Z79 {
+.lookOutlined__46d54.colorGreen__5f181 {
     background-color: hsla.default($accent-hue, 0.2);
 }
 
 // Red buttons
-.lookFilled-yCfaCM.colorred-rQXKgM {
+.lookFilled__19298.colorRed_d6b062 {
     background: $accent-color;
 }
 
 // Dangerous buttons when hovered
-.button-3bklZh.dangerous-Y36ifs:hover {
+.button_d553e5.dangerous_b60ec0:hover {
     color: $bright-color;
 }

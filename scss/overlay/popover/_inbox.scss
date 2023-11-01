@@ -4,39 +4,39 @@
 
 // ---- Inbox popover ----
 // Channel info
-.channelHeader-DFRX8q {
+.channelHeader__5d30c {
     border-bottom: 2px dashed $border-color-normal;
 }
 
 // Inbox message containers
-.messageContainer-3VTXBC {
+.messageContainer_aa7d14 {
     padding: 0;
 }
 
-.messages-23can0 {
+.messages_f7999e {
     padding: 16px 0 0 0;
 }
 
 // Remove "replied to" in inbox due to space constraint
-.container-iA3Qrz .compact-2Nkcau .repliedMessage-3Z6XBG,
-.container-2ebMPP .compact-2Nkcau .repliedMessage-3Z6XBG {
+.container__56e52 .compact__54ecc .repliedMessage_e2bf4a,
+.container__20de0 .compact__54ecc .repliedMessage_e2bf4a {
     display: none;
 }
 
 // filter gets box border (not sure what this does anymore)
-.menu-1QACrS {
+.menu_dc52c6 {
     @include bd.border(thick);
 }
 
 // "Mark Inbox as read", "Notifications", "Mark as read", Jump buttons
-.primary-38Hs-h:hover:not(.disabled-184-il),
-.secondary-2bzKEX,
-.tertiary-1e-lAP,
-.jumpButton-1V_1FA {
+.primary_f0f61f:hover:not(.disabled__8e315),
+.secondary_c96c46,
+.tertiary_bc0225,
+.jumpButton_da1ebb {
     background-color: hsla.default($accent-hue, 0.3);
 }
 
-.secondary-2bzKEX:hover:not(.disabled-184-il),
-.tertiary-1e-lAP:hover:not(.disabled-184-il) {
+.secondary_c96c46:hover:not(.disabled__8e315),
+.tertiary_bc0225:hover:not(.disabled__8e315) {
     background-color: hsla.default($accent-hue, 0.7);
 }

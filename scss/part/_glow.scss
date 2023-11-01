@@ -2,38 +2,38 @@
 @use "../top/glow";
 
 // Chat content text glow
-.markup-eYLPri {
+.markup_a7e664 {
     text-shadow:
         2px 0 10px $glow-color,
         -2px 0 10px $glow-color;
 }
 
-.repliedTextContent-2hOYMB.markup-eYLPri,
-.edited-1v5nT8,
-.markup-eYLPri code.hljs,
-.markup-eYLPri code.inline,
-.timestamp-2qj4__,
-.timestamp-p1Df1m,
-.timestampInline-_lS3aK,
-.threadMessageAccessoryPreview-13YRmc .markup-eYLPri {
+.repliedTextContent__75526.markup_a7e664,
+.edited_b20dd9,
+.markup_a7e664 code.hljs,
+.markup_a7e664 code.inline,
+.timestamp_c6898e,
+.timestamp_cdbd93,
+.timestampInline__470e0,
+.threadMessageAccessoryPreview__22a00 .markup_a7e664 {
     text-shadow: none;
 }
 
 // Channel and user pings, hyperlinks
-.appMount-2yBXZl .mention,
-.markup-eYLPri a {
+.appMount_fae9dd .mention,
+.markup_a7e664 a {
     @include glow.text(20px);
 }
 
 // Role pings, pin/join/thread alert messages, selected text
-.appMount-2yBXZl .mention.roleMention-11Aaqi,
-.content-vSHmMD,
+.appMount_fae9dd .mention.roleMention__02469,
+.content__72fdc,
 ::selection {
     @include glow.text(10px);
 }
 
 // Member list usernames with role colours
-.username-3_PJ5r {
+.username_d272d6 {
     @include glow.text(5px);
 }
 
@@ -49,7 +49,7 @@ span[style="color: rgb(1, 1, 1);"] {
 }
 
 // Status glow
-.wrapper-3Un6-K {
+.wrapper_edb6e0 {
     @include glow.status(#23a55a, 139, 47.3%, 43.9%);
     @include glow.status(#f0b232, 38, 95.7%, 54.1%);
     @include glow.status(#f23f43, 359, 82.6%, 59.4%);
@@ -57,11 +57,11 @@ span[style="color: rgb(1, 1, 1);"] {
 }
 
 // Do not clip chat content glow
-.zalgo-26OfGz .messageContent-2t3eCI {
+.zalgo__39311 .messageContent__21e69 {
     overflow: visible;
 }
 
 // Boosts bar
-.progressBarContainer-1efroK {
+.progressBarContainer__9b571 {
     box-shadow: 0 0 10px $glow-color;
 }
