@@ -10,14 +10,14 @@
 @use "../../top/border" as bd;
 
 // Modals
-.appMount-2yBXZl .root-1CAIjD {
+.appMount_fae9dd .root_a28985 {
     @include bd.border(thick $bright-color);
     background-color: $background-color;
     box-shadow: 0 0 30px 0 $dim-color;
 }
 
 // Footer
-.appMount-2yBXZl .footer-IubaaS {
+.appMount_fae9dd .footer__89240 {
     background-color: $background-color;
     box-shadow: none;
     border-top: 2px dashed $border-color-normal;

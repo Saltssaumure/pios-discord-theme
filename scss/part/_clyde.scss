@@ -2,40 +2,40 @@
 @use "../top/hsla";
 
 // Messages from Clyde now appear as SYSTEM
-.compact-2Nkcau.wrapper-30-Nkg.ephemeral-2nDdnn,
-.cozyMessage-1DWF9U.wrapper-30-Nkg.ephemeral-2nDdnn,
-.message-2CShn3.ephemeral-2nDdnn.selected-2LX7Jy,
-.mouse-mode.full-motion .ephemeral-2nDdnn:hover {
+.compact__54ecc.wrapper__09ecc.ephemeral_c26b64,
+.cozyMessage__64ce7.wrapper__09ecc.ephemeral_c26b64,
+.message__80c10.ephemeral_c26b64.selected_fd9051,
+.mouse-mode.full-motion .ephemeral_c26b64:hover {
     border-color: hsla.default($accent-hue, 0.7);
     background-color: transparent;
 }
 
 // No left bar
-.ephemeral-2nDdnn:before {
+.ephemeral_c26b64:before {
     display: none;
 }
 
 // Change popout banner
-.userPopout-2j1gM4[aria-label="Clyde"] .popoutBanner-3cqRD9 {
+[aria-label="Clyde"] .popoutBanner__9f5b9 {
     background-color: $background-color !important;
 }
 
 // Change avatar
-.ephemeral-2nDdnn .avatar-2e8lTP {
+.ephemeral_c26b64 .avatar__08316 {
     filter: contrast(2) saturate(100) invert(1);
 }
 
-.full-motion .avatar-2e8lTP.clickable-31pE3P:hover {
+.full-motion .avatar__08316.clickable_d866f1:hover {
     filter: hue-rotate(130deg) contrast(2) saturate(100);
 }
 
 // Change name
-.ephemeral-2nDdnn .username-h_Y3Us {
+.ephemeral_c26b64 .username_d30d99 {
     visibility: hidden;
     padding-right: 0.5rem;
 }
 
-.ephemeral-2nDdnn .username-h_Y3Us::after {
+.ephemeral_c26b64 .username_d30d99::after {
     visibility: visible;
     content: "SYSTEM";
     display: block;
@@ -46,23 +46,23 @@
     background: linear-gradient(transparent, $background-color 40%, transparent 60%);
 }
 
-.ephemeral-2nDdnn .username-h_Y3Us:hover::after {
+.ephemeral_c26b64 .username_d30d99:hover::after {
     text-decoration: underline;
 }
 
 // Totally not a bot
-.ephemeral-2nDdnn .botTag-1NoD0B {
+.ephemeral_c26b64 .botTag__11e95 {
     display: none;
 }
 
 // Timestamp
-.ephemeral-2nDdnn .timestamp-p1Df1m,
-.ephemeral-2nDdnn .timestamp-p1Df1m.alt-1dvXnH {
+.ephemeral_c26b64 .timestamp_cdbd93,
+.ephemeral_c26b64 .timestamp_cdbd93.alt__6c563 {
     color: $clyde-color-dim;
 }
 
 // Content
-.ephemeral-2nDdnn .markup-eYLPri {
+.ephemeral_c26b64 .markup_a7e664 {
     color: $clyde-color;
     text-shadow:
         2px 0 10px $clyde-color,
@@ -71,13 +71,13 @@
 }
 
 // Dismiss message box
-.ephemeralMessage-11q8XZ {
+.ephemeralMessage__6a8ba {
     color: $clyde-color-dim;
     font-size: 100%;
     text-transform: uppercase;
 }
 
-.compact-2Nkcau .ephemeralMessage-11q8XZ {
+.compact__54ecc .ephemeralMessage__6a8ba {
     position: absolute;
     right: 0;
     background: linear-gradient(transparent, $background-color 50%, transparent 70%);
@@ -87,6 +87,6 @@
     gap: 0.6rem;
 }
 
-.ephemeralMessage-11q8XZ .anchor-1MIwyf {
+.ephemeralMessage__6a8ba .anchor_c8ddc0 {
     color: $clyde-color;
 }

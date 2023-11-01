@@ -1,34 +1,34 @@
 @use "../top/border" as bd;
 
 // Forums
-.container-3wLKDe {
+.container_b181b6 {
     @include bd.border(thick);
 }
 
 // Forum post
-.container-2qVG6q {
+.container__99b06 {
     @include bd.border(thin);
 }
 
 // See more
-.container-2O1UgZ {
+.contentWrapper_eab878 {
     @include bd.border(thin);
 }
 
 // Make new post
 // Image container
-.container-3Om6RL,
-.container-JhuCwn .popout-2vZMlk {
+.container__4f0d0,
+.popout__6ba23 {
     @include bd.border(thin, bright);
 }
 
 // ---- Home ----
-.homeContainer-r4Hvv1 {
+.homeContainer__6bec1 {
     @include bd.border(thick);
 }
 
 // Message highlight
-.card-3x20HF,
-.card-3x20HF:hover {
+.card_d4f6c7,
+.card_d4f6c7:hover {
     @include bd.border(thin);
 }

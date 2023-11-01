@@ -9,33 +9,33 @@
 @use "../top/hsla";
 
 // Notification counter
-.numberBadge-37OJ3S {
+.numberBadge__50328 {
     padding: 2px 0 0 2px;
     width: 18px !important;
 }
 
 // discord friends tab: for some reason not currently using a variable
-.appMount-2yBXZl .container-2cd8Mz {
+.appMount_fae9dd .container__5c7e7 {
     background-color: $background-color;
 }
 
 // Checkboxes
-.appMount-2yBXZl .checkbox-f1HnKB.checked-1pZh2h {
+.appMount_fae9dd .checkbox_c7f690.checked__24ad6 {
     border-color: $bright-color !important;
     color: $bright-color;
     background: transparent !important;
 }
 
-.appMount-2yBXZl .checkbox-f1HnKB.checked-1pZh2h path {
+.appMount_fae9dd .checkbox_c7f690.checked__24ad6 path {
     fill: currentColor;
 }
 
-.appMount-2yBXZl .checkbox-1LuCGM.checked-22NTbO {
+.appMount_fae9dd .checkbox_c7f690.checked__24ad6 {
     background: $accent-color !important;
     border-color: $accent-color !important;
 }
 
 // Star for verified
-.flowerStar-2tNFCR path {
+.flowerStar_a9981e path {
     fill: hsla.default($accent-hue, 0.7);
 }

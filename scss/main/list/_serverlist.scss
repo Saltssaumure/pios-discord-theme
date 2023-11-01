@@ -3,27 +3,27 @@
 
 // ---- Servers sidebar ----
 // Unread server/channel dot
-.unread-36eUEm,
-.item-2LIpTv {
+.unread__48cf4,
+.item_f9d377 {
     background-color: $accent-color;
 }
 
 // "New" bubble in servers sidebar
-.mention-3XBnnZ {
+.mention__1afd3 {
     background-color: $accent-color;
 }
 
 // Switch to DMs button
-.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
-.wrapper-3kah-n:hover .childWrapper-1j_1ub {
+.wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c,
+.wrapper_d281dd:hover .childWrapper__01b9c {
     background-color: hsla.default($accent-hue, 0.7);
 }
 
 // Add a server / explore public servers button
-.circleIconButton-1VxDrg {
+.circleIconButton_d8df29 {
     color: $accent-color;
 }
 
-.circleIconButton-1VxDrg.selected-2r1Hvo {
+.circleIconButton_d8df29.selected__5250e {
     background-color: hsla.default($accent-hue, 0.7);
 }
