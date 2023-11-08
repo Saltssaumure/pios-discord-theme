@@ -4,37 +4,45 @@
  * @authorLink https://github.com/Saltssaumure
  * @description A SUPERHOT piOS inspired theme.
  * @license GPL-3.0
- * @version 9.3
+ * @version 9.6
  * @invite uy8nKQVatp
  * @source https://github.com/Saltssaumure/pios-discord-theme
  * @donate https://ko-fi.com/saltssaumure
+ * @website https://saltssaumure.github.io/pios-discord-theme
+ *
+ * @var range pios-glow-hue         "Glow hue: Default `180` (cyan)"        [180, 0, 360, 1, ""]
+ * @var range pios-glow-intensity   "Glow intensity"                        [1, 0, 1, 0.1, ""]
+ * @var range pios-spacing          "Compact message spacing"               [1, 0, 1, 0.1, ""]
+ * @var range pios-accent-hue       "Colour accent hue: Default `0` (red)"  [0, 0, 360, 1, ""]
+ * @var text  pios-title-text       "Title text"                            "piOS v2.1.01p"
+ *
+ * @var select crt-stripe           "CRT stripes"                                               ["block", "none"]
+ * @var select crt-scanline         "CRT scanlines: Warning: performance intensive"             ["block", "none*"]
+ * @var select crt-flicker          "CRT flicker: Warning: may trigger photosensitive epilepsy" ["flicker", "none*]
+ *
+ * @var color  pios-dark-background-color   "Background colour"             "#000000"
+ * @var color  pios-dark-bright-color       "Bright colour"                 "#FFFFFF"
+ * @var color  pios-dark-middle-color       "Middle colour"                 "#D3D3D3"
+ * @var color  pios-dark-dim-color          "Dim colour"                    "#808080"
+ *
+ * @var color  pios-day-background-color    "Background colour"             "#FFFFFF"
+ * @var color  pios-day-bright-color        "Bright colour"                 "#000000"
+ * @var color  pios-day-middle-color        "Middle colour"                 "#696969"
+ * @var color  pios-day-dim-color           "Dim colour"                    "#A9A9A9"
 */
 
 @import url("https://saltssaumure.github.io/pios-discord-theme/pios.min.css");
 
-/* See https://github.com/Saltssaumure/pios-discord-theme#customisation for customisation settings. */
-:root {
-    --pios-glow-hue:        180;
-    --pios-glow-intensity:  1;
-    --pios-spacing:         1;
-    --pios-accent-hue:      0;
-    --pios-title-text:      "piOS v2.1.01p";
-
-    --crt-stripe:   block;
-    --crt-scanline: none;   /* ⛐ This effect is performance-intensive. */
-    --crt-flicker:  none;   /* ⚠ This is a fast flickering effect and may not be suitable for those with photosensitive epilepsy. */
-}
-
 .theme-dark {
-    --pios-background-color:    #000000;
-    --pios-bright-color:        #FFFFFF;
-    --pios-middle-color:        #D3D3D3;
-    --pios-dim-color:           #808080;
+    --pios-background-color: var(--pios-dark-background-color);
+    --pios-bright-color:     var(--pios-dark-bright-color);
+    --pios-middle-color:     var(--pios-dark-middle-color);
+    --pios-dim-color:        var(--pios-dark-dim-color);
 }
 
 .theme-light {
-    --pios-background-color:    #FFFFFF;
-    --pios-bright-color:        #000000;
-    --pios-middle-color:        #696969;
-    --pios-dim-color:           #A9A9A9;
+    --pios-background-color: var(--pios-day-background-color);
+    --pios-bright-color:     var(--pios-day-bright-color);
+    --pios-middle-color:     var(--pios-day-middle-color);
+    --pios-dim-color:        var(--pios-day-dim-color);
 }
