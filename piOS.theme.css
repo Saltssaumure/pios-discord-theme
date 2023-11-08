@@ -15,8 +15,10 @@
  * @var range pios-spacing          "Compact message spacing"               [1, 0, 1, 0.1, ""]
  * @var range pios-accent-hue       "Colour accent hue: Default `0` (red)"  [0, 0, 360, 1, ""]
  * @var text  pios-title-text       "Title text"                            "piOS v2.1.01p"
- *
- * @var select crt-stripe           "CRT stripes"                                               ["block", "none"]
+ * @var select crt-stripe "CRT stripes" {"On*": "block", "Off": "none"}
+ * @var select crt-stripe "CRT stripes" 
+}
+ * @var select crt-stripe           "CRT stripes"                                               ["block*", "none"]
  * @var select crt-scanline         "CRT scanlines: Warning: performance intensive"             ["block", "none*"]
  * @var select crt-flicker          "CRT flicker: Warning: may trigger photosensitive epilepsy" ["flicker", "none*]
  *
