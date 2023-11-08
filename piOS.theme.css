@@ -14,21 +14,21 @@
  * @var range pios-glow-intensity   "Glow intensity"                                                                        [1, 0, 1, 0.05, ""]
  * @var range pios-spacing          "Compact message spacing"                                                               [1, 0, 5, 0.1, ""]
  * @var range pios-accent-hue       "Colour accent hue: 0 = red    90 = lime    180 = cyan    270 = purple    360 = red"    [0, 0, 360, 1, ""]
- * @var text  pios-title-text       "Titlebar text: Replaces 'Discord' wordmark"                                            "piOS v2.1.01p"
+ * @var text  pios-title-text       "Titlebar text: Replaces 'Discord' wordmark"                                            piOS v2.1.01p
  *
- * @var select crt-stripe           "CRT stripes"                                                   ["block:On*", "none:Off"]
- * @var select crt-scanline         "CRT scanlines: Warning - performance intensive"                ["block:On", "none:Off*"]
- * @var select crt-flicker          "CRT flicker: Warning - may trigger photosensitive epilepsy"    ["flicker:On", "none:Off*"]
+ * @var select crt-stripe           "CRT stripes"                                          ["block:On*", "none:Off"]
+ * @var select crt-scanline         "CRT scanlines: ⚠️ Performance intensive"               ["block:On", "none:Off*"]
+ * @var select crt-flicker          "CRT flicker: ⚠️ May trigger photosensitive epilepsy"   ["flicker:On", "none:Off*"]
  *
- * @var color  pios-dark-background-color   "Background: Dark mode - background colour"             #000000
- * @var color  pios-dark-bright-color       "Highlight: Dark mode - brightest foreground colour"    #FFFFFF
- * @var color  pios-dark-middle-color       "Standard: Dark mode - middle foreground colour"        #D3D3D3
- * @var color  pios-dark-dim-color          "Dimmed: Dark mode - dimmest foreground colour"         #808080
+ * @var color pios-dark-background-color    "Background: Dark mode - background colour"             #000000
+ * @var color pios-dark-bright-color        "Highlight: Dark mode - brightest foreground colour"    #FFFFFF
+ * @var color pios-dark-middle-color        "Standard: Dark mode - middle foreground colour"        #D3D3D3
+ * @var color pios-dark-dim-color           "Dimmed: Dark mode - dimmest foreground colour"         #808080
  *
- * @var color  pios-day-background-color    "Background: Light mode - background colour"            #FFFFFF
- * @var color  pios-day-bright-color        "Highlight: Light mode - brightest foreground colour"   #000000
- * @var color  pios-day-middle-color        "Standard: Light mode - middle foreground colour"       #696969
- * @var color  pios-day-dim-color           "Dimmed: Light mode - dimmest foreground colour"        #A9A9A9
+ * @var color pios-day-background-color     "Background: Light mode - background colour"            #FFFFFF
+ * @var color pios-day-bright-color         "Highlight: Light mode - brightest foreground colour"   #000000
+ * @var color pios-day-middle-color         "Standard: Light mode - middle foreground colour"       #696969
+ * @var color pios-day-dim-color            "Dimmed: Light mode - dimmest foreground colour"        #A9A9A9
 */
 
 @import url("https://saltssaumure.github.io/pios-discord-theme/pios.min.css");
