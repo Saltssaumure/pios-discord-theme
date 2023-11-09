@@ -5,6 +5,7 @@
   "repository": "github:Saltssaumure/pios-discord-theme",
   "author": "Saltssaumure <themes@saltssaumure.net>",
   "license": "GPL-3.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev:bd": "bd-scss dev",
