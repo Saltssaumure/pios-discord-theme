@@ -68,6 +68,10 @@
         2px 0 10px $clyde-color,
         -2px 0 10px $clyde-color;
     text-transform: uppercase;
+
+    code {
+        text-transform: none;
+    }
 }
 
 // Dismiss message box
