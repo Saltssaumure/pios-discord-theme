@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "prettier": "^3.1.0",
-    "replugged": "^4.7.6",
+    "replugged": "^4.7.7",
     "salt-bd-scss": "^1.2.1"
   }
 }
