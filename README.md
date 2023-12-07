@@ -111,7 +111,7 @@
 
 | Description                    | Variable name             | Valid values                    | Default value                        | Demonstration                                                               |
 | ------------------------------ | ------------------------- | ------------------------------- | ------------------------------------ | --------------------------------------------------------------------------- |
-| Glow hue                       | `--pios-glow-hue`         | A number between `0` and `1`.   | `1` (maximum brightness)             |                                                                             |
+| Glow hue                       | `--pios-glow-hue`         | Any number.                     | `180` (cyan)                         |                                                                             |
 | Glow intensity                 | `--pios-glow-intensity`   | A number between `0` and `1`.   | `1` (maximum brightness)             | `1` [chat][glow-1a], [icon][glow-1b] / `0` [chat][glow-0a], [icon][glow-0b] |
 | Compact message spacing        | `--pios-spacing`          | A number `0` or above.          | `1` (default spacing)                | [`1` spacing][spacing-1] / [`2.5` spacing][spacing-2.5]                     |
 | Colour accent hue              | `--pios-accent-hue`       | Any number.                     | `0` (red)                            | `270` (purple) [colour picker][hue-picker], [screenshot][hue-screenshot]    |
