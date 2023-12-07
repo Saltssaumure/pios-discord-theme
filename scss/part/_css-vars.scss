@@ -92,6 +92,7 @@
     --background-accent: #{$accent-color};
     --background-floating: #{$background-color};
     --background-mentioned: #{hsla.default($accent-hue, 0.2)};
+    --background-mentioned-hover: #{hsla.default($accent-hue, 0.1)};
     --background-modifier-hover: #{hsla.default($accent-hue, 0.2)};
     --background-modifier-active: #{hsla.default($accent-hue, 0.7)};
     --background-modifier-selected: #{hsla.default($accent-hue, 0.3)};
