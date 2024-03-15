@@ -1,6 +1,6 @@
 {
   "name": "pios-discord-theme",
-  "version": "9.5.2",
+  "version": "9.5.3",
   "description": "A SUPERHOT piOS inspired Discord theme.",
   "repository": "github:Saltssaumure/pios-discord-theme",
   "author": "Saltssaumure <themes@saltssaumure.net>",
@@ -19,8 +19,8 @@
     "release": "replugged release"
   },
   "devDependencies": {
-    "prettier": "^3.1.0",
-    "replugged": "^4.7.7",
-    "salt-bd-scss": "^1.2.1"
+    "prettier": "^3.2.5",
+    "replugged": "^4.7.9",
+    "salt-bd-scss": "^1.2.2"
   }
 }
