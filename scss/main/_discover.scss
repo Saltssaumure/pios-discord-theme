@@ -5,50 +5,50 @@
 // ---- Explore public servers ----
 
 // Background
-.appMount_fae9dd .pageWrapper_fef757 {
+.appMount_c99875 .pageWrapper_c182d3 {
     background-color: $background-color;
     @include bd.border(thick);
 }
 
 // Search results searchbox
-.appMount_fae9dd .searchBox_a63854 {
+.appMount_c99875 .searchBox__56feb {
     background-color: hsla.default($accent-hue, 0.2);
     backdrop-filter: brightness(0);
 }
 
-.searchBox_a63854:focus,
-.searchBox_a63854:focus-within {
+.searchBox__56feb:focus,
+.searchBox__56feb:focus-within {
     border-color: transparent;
 }
 
 // Selected category
-.categoryItem_b1be5c.selectedCategoryItem__0bf4c .itemInner__9e755 {
+.categoryItem__0608f.selectedCategoryItem__3e361 .itemInner_eedb2b {
     background-color: hsla.default($accent-hue, 0.3);
 }
 
 // Search category searchbox
-.search_e47903 .searchBox__88a98:focus,
-.search_e47903 .searchBox__88a98:focus-within {
+.search_e47903 .searchBox__02d0b:focus,
+.search_e47903 .searchBox__02d0b:focus-within {
     box-shadow: none;
 }
 
-.search_e47903 .searchBox__88a98 .searchBoxInput__73c9c {
+.search_e47903 .searchBox__02d0b .searchBoxInput__56498 {
     color: $bright-color;
 }
 
 // Clear searchbox icon
-.clearIcon__91449,
-.search_e47903 .searchBox__88a98 .closeIcon__3dfb5 {
+.clearIcon__21453,
+.search_e47903 .searchBox__02d0b .closeIcon_da3bc1 {
     color: $dim-color;
 }
 
-.clearIcon__91449:hover,
-.search_e47903 .searchBox__88a98 .closeIcon__3dfb5:hover {
+.clearIcon__21453:hover,
+.search_e47903 .searchBox__02d0b .closeIcon_da3bc1:hover {
     color: $middle-color;
 }
 
 // Language dropdown
-.lookFilled__3dba3.select__0eb48 {
+.lookFilled__9c1ef.select_fe2671 {
     border-color: transparent;
     color: $dim-color;
 }
@@ -64,11 +64,11 @@
 }
 
 // Separators in search results
-.separator_f527c9 {
+.separator__16faf {
     display: none;
 }
 
 // Student hub icon
-.iconContainer__004ce {
+.iconContainer__6b1cc {
     background-color: hsla.default($accent-hue, 0.7);
 }

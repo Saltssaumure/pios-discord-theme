@@ -9,21 +9,21 @@
 }
 
 // "New" bubble in servers sidebar
-.mention__1afd3 {
+.mention_dd733a {
     background-color: $accent-color;
 }
 
 // Switch to DMs button
-.wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c,
-.wrapper_d281dd:hover .childWrapper__01b9c {
+.wrapper__8436d.selected_ae80f7 .childWrapper_a6ce15,
+.wrapper__8436d:hover .childWrapper_a6ce15 {
     background-color: hsla.default($accent-hue, 0.7);
 }
 
 // Add a server / explore public servers button
-.circleIconButton_d8df29 {
+.circleIconButton__05cf2 {
     color: $accent-color;
 }
 
-.circleIconButton_d8df29.selected__5250e {
+.circleIconButton__05cf2.selected_aded59 {
     background-color: hsla.default($accent-hue, 0.7);
 }

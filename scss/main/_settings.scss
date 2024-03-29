@@ -3,22 +3,22 @@
 @use "../top/hsla";
 
 // Values slider
-.appMount_fae9dd .bar_e58961,
-.appMount_fae9dd .markDash_dc3ae9 {
+.appMount_c99875 .bar_e58961,
+.appMount_c99875 .markDash__54545 {
     background-color: $dim-color;
 }
 
-.barFill__30e17 {
+.barFill__1f56b {
     background: $accent-color;
 }
 
 // Check/uncheck slider toggle
-.container__871ba.checked__6bdb0 {
+.container__2ed72.checked__36fdc {
     background-color: hsla.default($accent-hue, 0.7) !important;
     color: hsla.default($accent-hue, 0.7);
 }
 
-.container__871ba {
+.container__2ed72 {
     background-color: $dim-color !important;
     color: $dim-color;
 }
@@ -28,44 +28,44 @@
 }
 
 // Discord key redemption
-.appMount_fae9dd .codeRedemptionRedirect_bc7f36 {
+.appMount_c99875 .codeRedemptionRedirect_b3eca7 {
     background-color: hsla.default($accent-hue, 0.2);
     border-color: $accent-color;
 }
 
 // Default payment method
-.appMount_fae9dd .defaultIndicator__855a2 {
+.appMount_c99875 .defaultIndicator_b89fc1 {
     background: $accent-color;
 }
 
 // Authorised apps
-.authedApp__51b26 {
+.authedApp__71a52 {
     @include bd.border(thin);
 }
 
 // Connections
-.connection_fff5f6 {
+.connection__6dbd8 {
     @include bd.border(thin);
 }
 
 // Discord nitro settings tab
-.selectedBackground_d847da {
+.selectedBackground__4039b {
     background: hsla.default($accent-hue, 0.2);
 }
 
 // Voice and video
 // Video background
-.backgroundOptionRing__1f209 {
+.backgroundOptionRing__45698 {
     border: solid $accent-color;
     @include bd.border(thin, $accent-color);
 }
 
 // Keybinds
-.defaultKeybind__05c82 {
+.defaultKeybind__48ba0 {
     height: auto;
 }
 
-.appMount_fae9dd .key__06fe6 {
+.appMount_c99875 .key__6a8d9 {
     background-color: hsla.default($accent-hue, 0.3);
     box-shadow: inset 0 -4px 0 hsla.default($accent-hue, 0.2);
 }
@@ -76,31 +76,31 @@
 }
 
 // Remove game
-.appMount_fae9dd .default__3e2f5 {
+.appMount_c99875 .default__23a5a {
     background-color: transparent;
     border: 1px solid hsla.default($accent-hue, 0.7);
 }
 
 // Game overlay
 // Overlay notifications
-.wrapper__4beb8 {
+.wrapper__4b6b3 {
     @include bd.border(thin);
 }
 
-.wrapper__4beb8.disabledSelected_dd29ae {
+.wrapper__4b6b3.disabledSelected__7c065 {
     @include bd.border(thin, $accent-color);
 }
 
-.option_a0c054 {
+.option__1d8de {
     background-color: $border-color-normal;
 }
 
-.selected_ea51d6.option_a0c054 {
+.selected__4e154.option__1d8de {
     background-color: hsla.default($accent-hue, 0.7);
     border-color: $accent-color;
 }
 
-.option_a0c054:hover {
+.option__1d8de:hover {
     background-color: hsla.default($accent-hue, 0.2);
 }
 
@@ -113,39 +113,39 @@
 }
 
 // Header
-.appMount_fae9dd .tierHeaderLocked__4d099,
-.appMount_fae9dd .tierHeaderUnlocked_cc60fa {
+.appMount_c99875 .tierHeaderLocked__0ca2e,
+.appMount_c99875 .tierHeaderUnlocked__960f7 {
     background: transparent;
 }
 
 // Sticker placeholder
-.placeholderCard__622e2 {
+.placeholderCard__393a9 {
     border-color: $dim-color;
 }
 
 // Locked tiers
-.appMount_fae9dd .tierBody__615a1 {
+.appMount_c99875 .tierBody_fd5f94 {
     background: transparent;
 }
 
 // App directory
-.appMount_fae9dd .directoryModal-YJsOMv {
+.appMount_c99875 .directoryModal-YJsOMv {
     background: $background-color;
 }
 
 // App categories
-.category_ba5745:hover {
+.category_c3da1d:hover {
     background: hsla.default($accent-hue, 0.2);
 }
 
-.category_ba5745:active {
+.category_c3da1d:active {
     background: hsla.default($accent-hue, 0.7);
 }
 
 // App cards
 .card__834d4,
 .item_be93e4,
-.itemContainer__34a23 {
+.itemContainer_e3f471 {
     @include bd.border(thin);
 }
 
@@ -154,6 +154,6 @@
 }
 
 // Highlighted card
-.linkCard_e80341 {
+.linkCard__6ed49 {
     background: hsla.default($accent-hue, 0.2);
 }

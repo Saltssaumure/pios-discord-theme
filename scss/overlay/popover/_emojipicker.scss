@@ -4,17 +4,17 @@
 
 // ---- Emoji selector popover ----
 // Selected/hovered emojis
-.emojiItem_b15dee.emojiItemSelected__1a09a {
+.emojiItem_de65fd.emojiItemSelected__023be {
     background: hsla.default($accent-hue, 0.3);
 }
 
 // Skin tone selector for emojis
-.diversitySelectorOptions__846c5 {
+.diversitySelectorOptions_daea2d {
     @include bd.border(thin);
 }
 
 // blurs out emojis and stickers that require nitro when no nitro is active
-.emojiItemDisabled__36cbf,
-.stickerUnsendable__47eae {
+.emojiItemDisabled__843ea,
+.stickerUnsendable__6d4dd {
     filter: blur(1px) grayscale(100%) opacity(40%);
 }
