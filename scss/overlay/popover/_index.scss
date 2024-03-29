@@ -14,20 +14,20 @@
 @use "../../top/border" as bd;
 
 // Popovers
-.contentWrapper__321ed,
+.contentWrapper_e0bb2c,
 // Emoji picker for reactions
 .contentWrapper_eab878,
 // Smallish popover menus
-.menu_dc52c6,
+.menu__088f7,
 // User profile popovers
-.userProfileOuter__46bb7,
+.userProfileOuter__4ac83,
 // Pinned messages
-.messagesPopoutWrap_b3b384,
+.messagesPopoutWrap__10dd1,
 // Inbox
-.recentMentionsPopout__826a9,
+.recentMentionsPopout__40c54,
 // Threads
-.browser_fece63,
+.browser_fa9cea,
 // Stream picture-in-picture
-.pictureInPictureVideo_f1081d {
+.pictureInPictureVideo__31ff0 {
     @include bd.border(thick, bright);
 }

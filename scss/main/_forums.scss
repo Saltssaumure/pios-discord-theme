@@ -1,12 +1,12 @@
 @use "../top/border" as bd;
 
 // Forums
-.container_b181b6 {
+.container_b92032 {
     @include bd.border(thick);
 }
 
 // Forum post
-.container__99b06 {
+.container_de2a56 {
     @include bd.border(thin);
 }
 
@@ -17,13 +17,13 @@
 
 // Make new post
 // Image container
-.container__4f0d0,
+.container__9dc79,
 .popout__6ba23 {
     @include bd.border(thin, bright);
 }
 
 // ---- Home ----
-.homeContainer__6bec1 {
+.homeContainer__73533 {
     @include bd.border(thick);
 }
 

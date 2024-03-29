@@ -3,47 +3,47 @@
 @use "../top/hsla";
 
 // Main chat section
-.chatContent__5dca8 {
+.chatContent_f087cb {
     @include bd.border(thick);
 }
 
 // "Jump to present", "New messages since", "Messages failed to load" bars
-.jumpToPresentBar__0ff7f,
-.newMessagesBar__8b6d7,
-.messagesErrorBar__06c0a {
+.jumpToPresentBar__69174,
+.newMessagesBar__8b272,
+.messagesErrorBar__82c21 {
     background-color: $accent-color;
     opacity: 0.9;
 }
 
 // Messages allow overflow in case of oversize embeds
-.message__41c2a,
-.message_f3a9e4 {
+.message__15d84,
+.message__04a5b {
     overflow: visible;
 }
 
 // Message react/reply etc buttons
-.wrapper_c727b6 {
+.wrapper__4e6b6 {
     @include bd.border(thin);
 }
 
 // Pin icon for pin alerts
-.iconContainer_dfc268 {
+.iconContainer_d0200f {
     padding: 0.1rem;
 }
 
 // Reply/thread pipe
-.repliedMessage_e2bf4a:before,
-.cozy_f5c119.hasThread__58ee2:after {
+.repliedMessage__636d2:before,
+.cozy_f5c119.hasThread__44ae4:after {
     border-left-width: 3px;
     border-top-width: 1px;
 }
 
-.cozy_f5c119.hasThread__58ee2:after {
+.cozy_f5c119.hasThread__44ae4:after {
     border-bottom-width: 1px;
 }
 
 // piOS style message boxes in compact mode
-.compact__54ecc.wrapper__09ecc {
+.compact_eda3c8.wrapper_a62503 {
     @include bd.border(thin);
     margin: calc(var(--pios-spacing) * 1.5rem) 3rem;
     padding: 1rem 1rem 0.5rem 1rem;
@@ -51,12 +51,12 @@
 }
 
 // Remove box if system message eg. pin
-.compact__54ecc.wrapper__09ecc.systemMessage__6e6a4 {
+.compact_eda3c8.wrapper_a62503.systemMessage_fced96 {
     border: 0;
 }
 
 // Message info
-.compact__54ecc .header__39b23 {
+.compact_eda3c8 .header__6a14d {
     position: absolute;
     top: -1.6rem;
     display: flex;
@@ -64,145 +64,145 @@
     background: linear-gradient(transparent, $background-color 40%, transparent 60%);
 }
 
-.compact__54ecc .header__39b23 > span {
+.compact_eda3c8 .header__6a14d > span {
     display: block;
 }
 
 // Hides timestamps for the same time as previous message
-.compact__54ecc .timestampVisibleOnHover_e8cc6d {
+.compact_eda3c8 .timestampVisibleOnHover__1679f {
     width: 0;
     color: transparent;
 }
 
 // Badges from ShowBadgesInChat https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/ShowBadgesInChat///
-.compact__54ecc .badgesChat-f_cbR8 {
+.compact_eda3c8 .badgesChat-f_cbR8 {
     top: 0;
 }
 
 // Corrects alignment of username when badges are present
-.compact__54ecc .username_d30d99 {
+.compact_eda3c8 .username__0b0e7 {
     vertical-align: top;
 }
 
 // Special message left bar
-.automodMessage__410f7:before,
-.ephemeral_c26b64:before,
-.mentioned__58017:before,
-.replying_d7b6ad:before {
+.automodMessage__43f24:before,
+.ephemeral_eb5d84:before,
+.mentioned_fa6fd2:before,
+.replying__38514:before {
     width: 3px;
 }
 
 // Reply
 // Post username and timestamp
-.compact__54ecc.hasReply_febd50 .header__39b23,
-.compact__54ecc .repliedMessage_e2bf4a + .contents_f41bb2 .header__39b23 {
+.compact_eda3c8.hasReply__602e2 .header__6a14d,
+.compact_eda3c8 .repliedMessage__636d2 + .contents_d3ae0d .header__6a14d {
     top: -2.7rem;
 }
 
 // Replied content
-.compact__54ecc .repliedMessage_e2bf4a {
+.compact_eda3c8 .repliedMessage__636d2 {
     margin-left: 0;
     padding-left: 0;
     top: -2px;
 }
 
-.executedCommand_e8859a,
-.threadMessageAccessory__33bc1 {
+.executedCommand__4fb1a,
+.threadMessageAccessory_ef0459 {
     height: auto;
 }
 
-.compact__54ecc .repliedMessage_e2bf4a .timestamp_cdbd93 {
+.compact_eda3c8 .repliedMessage__636d2 .timestamp_c79dd2 {
     line-height: 1rem;
     height: auto;
 }
 
 // Replied elbow
-.compact__54ecc .repliedMessage_e2bf4a::before {
+.compact_eda3c8 .repliedMessage__636d2::before {
     display: none;
 }
 
 // Icons inside replied content
-.compact__54ecc .repliedMessage_e2bf4a .repliedTextContentIcon__4dd82,
-.compact__54ecc .repliedMessage_e2bf4a .badgesChat-f_cbR8 img,
-.compact__54ecc .repliedMessage_e2bf4a .ownerIcon__827bd,
-.compact__54ecc .repliedMessage_e2bf4a .emoji {
+.compact_eda3c8 .repliedMessage__636d2 .repliedTextContentIcon_da8b30,
+.compact_eda3c8 .repliedMessage__636d2 .badgesChat-f_cbR8 img,
+.compact_eda3c8 .repliedMessage__636d2 .ownerIcon_bd8e7d,
+.compact_eda3c8 .repliedMessage__636d2 .emoji {
     width: 1rem;
     height: 1rem;
 }
 
 // message react/reply etc buttons
-.compact__54ecc .container__9d616 {
+.compact_eda3c8 .container__2f489 {
     top: -16px;
 }
 
 // Message contents
-.compact__54ecc .contents_f41bb2 {
+.compact_eda3c8 .contents_d3ae0d {
     margin: 0;
     padding-left: 0;
     text-indent: 0;
 }
 
 // Block quote starter
-.blockquoteContainer_f24d1f .blockquoteDivider__96157 {
+.blockquoteContainer__66aaa .blockquoteDivider__5cbad {
     width: 3px;
 }
 
 // Embeds
-.embedFull__8dc21.markup_a7e664,
+.embedFull__14919.markup_a7e664,
 // most embeds
-.appMount_fae9dd .wrapperAudio__555ce,
+.appMount_c99875 .wrapperAudio__178e9,
 // audio
-.attachment_f3cf2c,
+.attachment__06ca3,
 // file
-.wrapper_efe67f,
+.wrapper__8a5dd,
 // invite
-.footer__06f4b // code/text
+.footer__90194 // code/text
 {
     background: $embed-color;
     border: 0;
     text-shadow: none;
 }
 
-.grid_c7c4e6 {
+.grid__35551 {
     padding: 12px 18px;
 }
 
-.embedMargin__9576e {
+.embedMargin__99b82 {
     margin-top: 0;
 }
 
 // Video embed
 // Video metadata
-.metadata__2d766 {
+.metadata__7bef0 {
     backdrop-filter: blur(3px);
 }
 
 // play buttons on video
-.wrapper__5036f {
+.wrapper_fc4faf {
     padding: 12px;
 }
 
 // timeline slider
-.mediaBarProgress__29db2,
-.mediaBarProgress__29db2:after,
-.mediaBarProgress__29db2:before {
+.mediaBarProgress_a3b7f1,
+.mediaBarProgress_a3b7f1:after,
+.mediaBarProgress_a3b7f1:before {
     background: $accent-color;
 }
 
 // timeline slider knob
-.mediaBarGrabber_c64ff9,
-.mediaBarInteraction__0633c:hover .mediaBarGrabber_c64ff9,
-.mediaBarInteractionDragging__0a2ee .mediaBarGrabber_c64ff9 {
+.mediaBarGrabber__1d527,
+.mediaBarInteraction_e21234:hover .mediaBarGrabber__1d527,
+.mediaBarInteractionDragging__55800 .mediaBarGrabber__1d527 {
     background: $bright-color;
 }
 
 // Reacts you have added
-.reaction_b90ab0,
-.reaction_b90ab0:hover {
+.reaction_ef7e09,
+.reaction_ef7e09:hover {
     @include bd.border(thin);
 }
 
-.reaction_b90ab0.reactionMe_bf6909 {
+.reaction_ef7e09.reactionMe__9fc5c {
     border-color: $accent-color;
     background-color: hsla.default($accent-hue, 0.3);
 }
@@ -210,7 +210,7 @@
 // Thread from message
 // Thread spine
 // Upper
-.compact__54ecc.hasThread__58ee2 .contents_f41bb2::before {
+.compact_eda3c8.hasThread__44ae4 .contents_d3ae0d::before {
     display: none;
 }
 
@@ -224,32 +224,32 @@
 }
 
 // Thread info
-.container__767d1 {
+.container__17159 {
     background-color: hsla.default($accent-hue, 0.2);
 }
 
-.compact__54ecc .container__767d1 {
+.compact_eda3c8 .container__17159 {
     position: relative;
     left: 2.5rem;
 }
 
 // Typing box
-.channelTextArea__56a36 {
+.channelTextArea__648e5 {
     @include bd.border(thick);
 }
 
-.scrollableContainer__33e06 {
+.scrollableContainer_ff917f {
     min-height: 60px;
 }
 
 // "Replying to" bar
-.attachedBars_da3c74 {
+.attachedBars_c1606a {
     background: transparent;
     border-bottom: 2px dashed $border-color-normal;
 }
 
 // @on button
-.mentionButton_a470c4 {
+.mentionButton__73096 {
     color: $accent-color;
 }
 
@@ -259,24 +259,24 @@
 }
 
 // Command suggestions bar
-.appMount_fae9dd .selected-3H3-RC,
-.appMount_fae9dd .option__32fd1 {
+.appMount_c99875 .selected-3H3-RC,
+.appMount_c99875 .option__2b069 {
     background-color: hsla.default($accent-hue, 0.3);
 }
 
 // follow to get this channel's updates in your server add dotted topline
-.form__13a2c .wrapper_fbbb73 {
+.form_d8a4a1 .wrapper__57349 {
     border-top: 2px dashed $border-color-normal;
     margin-top: 0;
 }
 
 // Forums
-.appMount_fae9dd .container_b181b6 {
+.appMount_c99875 .container_b92032 {
     background: $background-color;
 }
 
 // Post title
-.card__691f2 .headerText_cd33c6 {
+.card__691f2 .headerText__0e18a {
     --text-muted: #{$bright-color};
 }
 
@@ -286,8 +286,8 @@
 }
 
 // Browse channels
-.appMount_fae9dd .container__10dc7,
-.appMount_fae9dd .header__60bef,
-.appMount_fae9dd .container__7590f {
+.appMount_c99875 .container__03ec9,
+.appMount_c99875 .header__71942,
+.appMount_c99875 .container__6b2e5 {
     background: $background-color;
 }

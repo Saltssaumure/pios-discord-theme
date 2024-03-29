@@ -3,23 +3,23 @@
 
 // ---- General menu popover ----
 // Option in menu when hovered
-.colorDefault__0b482 {
-    &.focused__27621 {
+.colorDefault_e361cf {
+    &.focused_dcafb9 {
         background-color: hsla.default($accent-hue, 0.2);
     }
-    &:active:not(.hideInteraction__2790e) {
+    &:active:not(.hideInteraction__0b569) {
         background-color: hsla.default($accent-hue, 0.7);
     }
-    .checkbox__45366,
-    .radioSelection__5ed39 {
+    .checkbox__378d3,
+    .radioSelection__41d1e {
         color: $accent-color;
     }
 }
 // Menu slider bar
-.barFill__30e17 {
+.barFill__1f56b {
     background: $accent-color;
 }
 // Menu selected option checkbox
-.activeIcon_e452f7 path {
+.activeIcon_b2fa28 path {
     fill: $accent-color;
 }

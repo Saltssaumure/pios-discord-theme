@@ -2,7 +2,7 @@
 @use "../../top/border" as bd;
 
 // ---- Typing channel/user/command/etc. autocomplete popover ----
-.appMount_fae9dd .autocomplete_df266d {
+.appMount_c99875 .autocomplete__743a5 {
     background: $background-color;
     @include bd.border(thin);
 }
