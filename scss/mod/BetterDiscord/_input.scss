@@ -1,0 +1,7 @@
+@use "../../top/vars" as *;
+@use "../../top/hsla";
+
+// Toggle
+.bd-switch input:checked + .bd-switch-body {
+    --switch-color: #{hsla.default($accent-hue, 0.7)};
+}
