@@ -1,5 +1,5 @@
-@use "../../top/vars" as *;
-@use "../../top/hsla";
+@use "../../vars" as *;
+@use "../../hsla";
 
 // Toggle
 .bd-switch input:checked + .bd-switch-body {
