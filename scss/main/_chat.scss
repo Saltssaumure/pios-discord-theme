@@ -291,3 +291,38 @@
 .appMount_c99875 .container__6b2e5 {
     background: $background-color;
 }
+
+// Poll
+.pollContainer_cfb8c7 {
+    @include bd.border(thin);
+    background: $background-color;
+
+    // Answer
+    @at-root .answer__07489 {
+        // Default
+        &.normalStylesDefault__1c2f5 {
+            --custom-poll-style-vote-percentage: #{$embed-color};
+            --custom-poll-style-border: #{$embed-color};
+        }
+
+        // Voted
+        &.votedStyles__57019,
+        // Winner
+        &.victorStyles_ad1336 {
+            --custom-poll-style-vote-percentage: #{$accent-color};
+            --custom-poll-style-border: #{$accent-color};
+            path {
+                fill: $accent-color;
+            }
+        }
+
+        .answerInner_b97752 {
+            @include bd.border(thin);
+            background: transparent;
+
+            &.currentlyVoting__54b47.selected__93ede {
+                --control-brand-foreground: #{$accent-color};
+            }
+        }
+    }
+}
