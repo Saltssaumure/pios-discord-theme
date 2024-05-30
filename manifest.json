@@ -17,9 +17,9 @@
   "main": "scss/pios.scss",
   "source": "https://github.com/Saltssaumure/pios-discord-theme",
   "image": [
-    "https://i.imgur.com/g9PzbtE.png",
-    "https://i.imgur.com/zuQvNF0.png",
-    "https://i.imgur.com/Tw2mKmp.png",
-    "https://i.imgur.com/yBL2Fqo.png"
+    "https://saltssaumure.github.io/pios-discord-theme/preview/dark.png",
+    "https://saltssaumure.github.io/pios-discord-theme/preview/light.png",
+    "https://saltssaumure.github.io/pios-discord-theme/preview/cosy.png",
+    "https://saltssaumure.github.io/pios-discord-theme/preview/compact.png"
   ]
 }

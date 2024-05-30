@@ -1,8 +1,7 @@
-[dark]:             https://user-images.githubusercontent.com/29710355/235468134-a4f95a88-627a-4ed9-ae3d-b288591374b2.png
-[light]:            https://user-images.githubusercontent.com/29710355/236739532-3c62f571-bd1b-4285-a296-46f1c1eb13b4.png
-
-[cosy]:             https://user-images.githubusercontent.com/29710355/154400330-eb4434ac-1716-4c3f-bca1-8b6ba509e9c3.png
-[compact]:          https://user-images.githubusercontent.com/29710355/154400528-66fea4d8-53c1-4178-91f5-88729bde0e81.png
+[dark]:             https://saltssaumure.github.io/pios-discord-theme/preview/dark.png
+[light]:            https://saltssaumure.github.io/pios-discord-theme/preview/light.png
+[cosy]:             https://saltssaumure.github.io/pios-discord-theme/preview/cosy.png
+[compact]:          https://saltssaumure.github.io/pios-discord-theme/preview/compact.png
 
 [glow-1a]:          https://user-images.githubusercontent.com/29710355/165006236-eeddba57-b7d6-4bd6-81af-1f649c5000dc.png
 [glow-1b]:          https://user-images.githubusercontent.com/29710355/165006394-3f6b4379-a35f-4506-a855-6a86d9e1f142.png
