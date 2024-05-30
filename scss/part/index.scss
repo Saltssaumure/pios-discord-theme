@@ -1,41 +1,8 @@
+@forward "./a";
 @forward "./button";
 @forward "./clyde";
 @forward "./css-vars";
 @forward "./glow";
+@forward "./import";
 @forward "./spoiler";
 @forward "./text";
-
-@use "../top/vars" as *;
-@use "../top/hsla";
-
-// Notification counter
-.numberBadge__40d6f {
-    padding: 2px 0 0 2px;
-    width: 18px !important;
-}
-
-// discord friends tab: for some reason not currently using a variable
-.appMount_c99875 .container_bd15da {
-    background-color: $background-color;
-}
-
-// Checkboxes
-.appMount_c99875 .checkbox_fcf2ad.checked__16f88 {
-    border-color: $bright-color !important;
-    color: $bright-color;
-    background: transparent !important;
-}
-
-.appMount_c99875 .checkbox_fcf2ad.checked__16f88 path {
-    fill: currentColor;
-}
-
-.appMount_c99875 .checkbox_fcf2ad.checked__16f88 {
-    background: $accent-color !important;
-    border-color: $accent-color !important;
-}
-
-// Star for verified
-.flowerStar_fa5ad8 path {
-    fill: hsla.default($accent-hue, 0.7);
-}

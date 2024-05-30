@@ -1,0 +1,16 @@
+@use "../../top/vars" as *;
+@use "../../top/border" as bd;
+
+// Modals
+.appMount_c99875 .root_a28985 {
+    @include bd.border(thick $bright-color);
+    background-color: $background-color;
+    box-shadow: 0 0 30px 0 $dim-color;
+}
+
+// Footer
+.appMount_c99875 .footer_e0b400 {
+    background-color: $background-color;
+    box-shadow: none;
+    border-top: 2px dashed $border-color-normal;
+}

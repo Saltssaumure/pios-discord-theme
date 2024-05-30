@@ -1,3 +1,4 @@
+@forward "./a";
 @forward "./autocomplete";
 @forward "./emojipicker";
 @forward "./inbox";
@@ -10,24 +11,3 @@
 @forward "./toast";
 @forward "./tooltip";
 @forward "./userprofile";
-
-@use "../../top/border" as bd;
-
-// Popovers
-.contentWrapper_e0bb2c,
-// Emoji picker for reactions
-.contentWrapper_eab878,
-// Smallish popover menus
-.menu__088f7,
-// User profile popovers
-.userProfileOuter__35e59,
-// Pinned messages
-.messagesPopoutWrap__10dd1,
-// Inbox
-.recentMentionsPopout__40c54,
-// Threads
-.browser_fa9cea,
-// Stream picture-in-picture
-.pictureInPictureVideo__31ff0 {
-    @include bd.border(thick, bright);
-}
