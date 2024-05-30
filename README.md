@@ -39,18 +39,6 @@
 [license]:          https://github.com/Saltssaumure/pios-discord-theme/blob/main/LICENSE
 [.theme.css]:       https://github.com/Saltssaumure/pios-discord-theme/blob/main/piOS.theme.css
 
-[rs]:               https://github.com/DiscordStyles/RadialStatus
-[rs-author]:        https://github.com/Gibbu
-[rs-license]:       https://github.com/DiscordStyles/RadialStatus/blob/master/LICENSE.md
-
-[squared]:          https://github.com/MiniDiscordThemes/Squared
-[squared-author]:   https://github.com/Saltssaumure
-[squared-license]:  https://github.com/MiniDiscordThemes/Squared/blob/main/LICENSE
-
-[crt]:              https://github.com/MiniDiscordThemes/CRT
-[crt-author]:       https://github.com/Saltssaumure
-[crt-license]:      https://github.com/MiniDiscordThemes/CRT/blob/main/LICENSE
-
 [release-bd]:       https://betterdiscord.app/theme/?id=572 "BetterDiscord store page"
 [release-rp]:       https://replugged.dev/store/net.saltssaumure.piOS "Replugged store page"
 [release-bd-gh]:    https://github.com/Saltssaumure/pios-discord-theme/releases/latest/download/piOS.theme.css "Get latest release"
@@ -149,13 +137,28 @@
 3. Edit the variable values.
 
 ## License
-[GNU General Public License v3.0][license]
-- <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
+Copyright (c) 2019-2024 Saltssaumure
 
-### Includes
-- [RadialStatus][rs] by [Gibbu][rs-author] - [MIT License][rs-license]
-- [Squared][squared] by [Saltssaumure][squared-author] - [MIT License][squared-license]
-- [CRT][crt] by [Saltssaumure][crt-author] - [MIT License][crt-license]
+This theme is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This theme is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU Affero General Public License][license] for more details.
+
+## Credits
+### Themes
+[radialstatus]: https://github.com/DiscordStyles/RadialStatus
+[squared]:      https://github.com/MiniDiscordThemes/Squared
+[crt]:          https://github.com/MiniDiscordThemes/CRT
+
+- [RadialStatus](https://github.com/DiscordStyles/RadialStatus) by [DiscordStyles](https://github.com/DiscordStyles) ([Gibbu](https://github.com/Gibbu)) - MIT license
+- [Squared][squared] by [MiniDiscordThemes](https://github.com/MiniDiscordThemes) ([Saltssaumure](https://github.com/Saltssaumure)) - MIT license
+- [CRT][crt] by [MiniDiscordThemes](https://github.com/MiniDiscordThemes) ([Saltssaumure](https://github.com/Saltssaumure)) - MIT license
+
+### Fonts
+[dos]:          https://www.dafont.com/perfect-dos-vga-437.font
+[fixedsys]:     https://github.com/kika/fixedsys
+
+- [Perfect DOS VGA 437][dos] by [Zeh Fernando](https://www.dafont.com/zeh-jose-fernando-baldo-caneiro.d467) - "The license is this: this font is free to use in whatever you want."
+- [Fixedsys Excelsior][fixedsys] by [bathos](https://github.com/Bathos) and [kika](https://github.com/kika) - Public domain / CC0
 
 ## Questions or suggestions?
 - Post [an issue][issues] on GitHub.

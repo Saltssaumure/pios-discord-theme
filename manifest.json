@@ -12,7 +12,7 @@
     "type": "store",
     "id": "net.saltssaumure.piOS"
   },
-  "license": "GPL-3.0",
+  "license": "AGPL-3.0-or-later",
   "type": "replugged-theme",
   "main": "scss/pios.scss",
   "source": "https://github.com/Saltssaumure/pios-discord-theme",
