@@ -7,19 +7,19 @@
     "discordID": "134142022092062720",
     "github": "Saltssaumure"
   },
-  "version": "9.6.1",
+  "version": "9.7.0",
   "updater": {
     "type": "store",
     "id": "net.saltssaumure.piOS"
   },
-  "license": "GPL-3.0",
+  "license": "AGPL-3.0-or-later",
   "type": "replugged-theme",
   "main": "scss/pios.scss",
   "source": "https://github.com/Saltssaumure/pios-discord-theme",
   "image": [
-    "https://i.imgur.com/g9PzbtE.png",
-    "https://i.imgur.com/zuQvNF0.png",
-    "https://i.imgur.com/Tw2mKmp.png",
-    "https://i.imgur.com/yBL2Fqo.png"
+    "https://saltssaumure.github.io/pios-discord-theme/preview/dark.png",
+    "https://saltssaumure.github.io/pios-discord-theme/preview/light.png",
+    "https://saltssaumure.github.io/pios-discord-theme/preview/cosy.png",
+    "https://saltssaumure.github.io/pios-discord-theme/preview/compact.png"
   ]
 }

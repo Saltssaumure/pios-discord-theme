@@ -1,7 +1,3 @@
-@forward "./channellist";
-@forward "./memberlist";
-@forward "./serverlist";
-
 // Adds dashes between channel/member groups
 .containerDefault_e3b32b:not(:first-of-type)::before,
 .membersGroup_cad095.container__43554:not(:first-of-type) > span:last-child::before {

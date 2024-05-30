@@ -1,17 +1,4 @@
-@forward "./autocomplete";
-@forward "./emojipicker";
-@forward "./inbox";
-@forward "./menu";
-@forward "./messageoptions";
-@forward "./newuser";
-@forward "./noisesuppression";
-@forward "./search";
-@forward "./threads";
-@forward "./toast";
-@forward "./tooltip";
-@forward "./userprofile";
-
-@use "../../top/border" as bd;
+@use "../../border" as bd;
 
 // Popovers
 .contentWrapper_e0bb2c,

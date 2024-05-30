@@ -1,0 +1,27 @@
+@use "../../vars" as *;
+@use "../../border" as bd;
+@use "../../hsla";
+
+// Plugins and Themes
+.bd-button,
+.bd-addon-views .bd-view-button.selected {
+    background-color: hsla.default($accent-hue, 0.3);
+}
+
+.bd-button:hover {
+    background-color: hsla.default($accent-hue, 0.7);
+}
+
+.bd-button:active {
+    background-color: $accent-color;
+}
+
+.bd-button.bd-button-danger,
+.bd-button.bd-button-danger:hover,
+.bd-button.bd-button-danger:active {
+    background-color: $accent-color;
+}
+
+.bd-addon-card {
+    @include bd.border(thin);
+}

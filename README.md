@@ -1,8 +1,7 @@
-[dark]:             https://user-images.githubusercontent.com/29710355/235468134-a4f95a88-627a-4ed9-ae3d-b288591374b2.png
-[light]:            https://user-images.githubusercontent.com/29710355/236739532-3c62f571-bd1b-4285-a296-46f1c1eb13b4.png
-
-[cosy]:             https://user-images.githubusercontent.com/29710355/154400330-eb4434ac-1716-4c3f-bca1-8b6ba509e9c3.png
-[compact]:          https://user-images.githubusercontent.com/29710355/154400528-66fea4d8-53c1-4178-91f5-88729bde0e81.png
+[dark]:             https://saltssaumure.github.io/pios-discord-theme/preview/dark.png
+[light]:            https://saltssaumure.github.io/pios-discord-theme/preview/light.png
+[cosy]:             https://saltssaumure.github.io/pios-discord-theme/preview/cosy.png
+[compact]:          https://saltssaumure.github.io/pios-discord-theme/preview/compact.png
 
 [glow-1a]:          https://user-images.githubusercontent.com/29710355/165006236-eeddba57-b7d6-4bd6-81af-1f649c5000dc.png
 [glow-1b]:          https://user-images.githubusercontent.com/29710355/165006394-3f6b4379-a35f-4506-a855-6a86d9e1f142.png
@@ -39,18 +38,6 @@
 [license]:          https://github.com/Saltssaumure/pios-discord-theme/blob/main/LICENSE
 [.theme.css]:       https://github.com/Saltssaumure/pios-discord-theme/blob/main/piOS.theme.css
 
-[rs]:               https://github.com/DiscordStyles/RadialStatus
-[rs-author]:        https://github.com/Gibbu
-[rs-license]:       https://github.com/DiscordStyles/RadialStatus/blob/master/LICENSE.md
-
-[squared]:          https://github.com/MiniDiscordThemes/Squared
-[squared-author]:   https://github.com/Saltssaumure
-[squared-license]:  https://github.com/MiniDiscordThemes/Squared/blob/main/LICENSE
-
-[crt]:              https://github.com/MiniDiscordThemes/CRT
-[crt-author]:       https://github.com/Saltssaumure
-[crt-license]:      https://github.com/MiniDiscordThemes/CRT/blob/main/LICENSE
-
 [release-bd]:       https://betterdiscord.app/theme/?id=572 "BetterDiscord store page"
 [release-rp]:       https://replugged.dev/store/net.saltssaumure.piOS "Replugged store page"
 [release-bd-gh]:    https://github.com/Saltssaumure/pios-discord-theme/releases/latest/download/piOS.theme.css "Get latest release"
@@ -71,14 +58,21 @@
 ## Installation
 
 ### [BetterDiscord][BetterDiscord]
+<details>
+    <summary>Click to expand</summary>
+
 1. Download `piOS.theme.css`:
     - [BetterDiscord store][release-bd]
     - [GitHub][release-bd-gh]
 2. Place the file in the themes folder:
     - `Settings` > `BetterDiscord` > `Themes` > `Open Themes Folder`
 3. Toggle on the theme card.
+</details>
 
 ### [Replugged][Replugged]
+<details>
+    <summary>Click to expand</summary>
+
 #### Automatic
 1. Click to install:
     - [Replugged store][release-rp]
@@ -88,8 +82,12 @@
 2. Place the file in the themes folder:
     - `Settings` > `Replugged` > `Themes` > `Open Themes Folder`
 3. Click `Load Missing Themes` and toggle on the theme card.
+</details>
 
 ### [Vencord][Vencord]
+<details>
+    <summary>Click to expand</summary>
+
 #### Local
 1. Download `piOS.theme.css`:
     - [BetterDiscord store][release-bd]
@@ -100,14 +98,19 @@
 #### Online
 1. Paste the link in `Settings` > `Vencord` > `Themes` > `Online Themes`:
     - `https://saltssaumure.github.io/pios-discord-theme/piOS.theme.css`
+</details>
 
 ## Customisation
 
-- **Discord setting:** `Settings` > `App Settings` > `Appearance` > `Message Display`.
+To switch between Cosy and Compact mode, go to the Discord settings:
+
+- `Settings` > `App Settings` > `Appearance` > `Message Display`.
 
 | Cosy mode          | Compact mode             |
 | ------------------ | ------------------------ |
 | ![Cosy mode][cosy] | ![Compact mode][compact] |
+
+To edit the following variables, follow the instructions for your client mod.
 
 | Description                    | Variable name             | Valid values                    | Default value                        | Demonstration                                                               |
 | ------------------------------ | ------------------------- | ------------------------------- | ------------------------------------ | --------------------------------------------------------------------------- |
@@ -128,17 +131,28 @@
 - &#9888; This is a fast flickering effect and may not be suitable for those with photosensitive epilepsy.
 
 ### BetterDiscord
+<details>
+    <summary>Click to expand</summary>
+
 1. Open `Settings` > `BetterDiscord` > `Themes`.
 2. Click the pencil icon on this theme.
 3. Edit the variable values and save changes.
+</details>
 
 ### Replugged
+<details>
+    <summary>Click to expand</summary>
+
 1. Enable `Automatically Apply Quick CSS` in `Settings` > `Replugged` > `General`.
 2. Open `Settings` > `Replugged` > `Quick CSS`.
 3. Copy and paste lines 15-20 of [`piOS.theme.css`][.theme.css].
 4. Edit the variable values and save.
+</details>
 
 ### Vencord
+<details>
+    <summary>Click to expand</summary>
+
 #### Local
 1. `Open Themes Folder` in `Settings` > `Vencord` > `Themes` > `Local Themes`
 2. Open `piOS.theme.css` with your favourite text editor.
@@ -147,15 +161,31 @@
 1. `Enable Custom CSS` in `Settings` > `Vencord` > `Vencord` and click `Open QuickCSS File`.
 2. Copy and paste lines 15-20 of [`piOS.theme.css`][.theme.css].
 3. Edit the variable values.
+</details>
 
 ## License
-[GNU General Public License v3.0][license]
-- <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
+Copyright (c) 2019-2024 Saltssaumure
 
-### Includes
-- [RadialStatus][rs] by [Gibbu][rs-author] - [MIT License][rs-license]
-- [Squared][squared] by [Saltssaumure][squared-author] - [MIT License][squared-license]
-- [CRT][crt] by [Saltssaumure][crt-author] - [MIT License][crt-license]
+This theme is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This theme is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU Affero General Public License][license] for more details.
+
+## Credits
+### Themes
+[radialstatus]: https://github.com/DiscordStyles/RadialStatus
+[squared]:      https://github.com/MiniDiscordThemes/Squared
+[crt]:          https://github.com/MiniDiscordThemes/CRT
+
+- [RadialStatus](https://github.com/DiscordStyles/RadialStatus) by [DiscordStyles](https://github.com/DiscordStyles) ([Gibbu](https://github.com/Gibbu)) - MIT license
+- [Squared][squared] by [MiniDiscordThemes](https://github.com/MiniDiscordThemes) ([Saltssaumure](https://github.com/Saltssaumure)) - MIT license
+- [CRT][crt] by [MiniDiscordThemes](https://github.com/MiniDiscordThemes) ([Saltssaumure](https://github.com/Saltssaumure)) - MIT license
+
+### Fonts
+[dos]:          https://www.dafont.com/perfect-dos-vga-437.font
+[fixedsys]:     https://github.com/kika/fixedsys
+
+- [Perfect DOS VGA 437][dos] by [Zeh Fernando](https://www.dafont.com/zeh-jose-fernando-baldo-caneiro.d467) - "The license is this: this font is free to use in whatever you want."
+- [Fixedsys Excelsior][fixedsys] by [bathos](https://github.com/Bathos) and [kika](https://github.com/kika) - Public domain / CC0
 
 ## Questions or suggestions?
 - Post [an issue][issues] on GitHub.

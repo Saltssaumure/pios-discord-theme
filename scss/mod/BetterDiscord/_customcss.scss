@@ -1,0 +1,17 @@
+@use "../../border" as bd;
+
+// Custom CSS
+#bd-editor-panel {
+    @include bd.border(thin);
+}
+
+// Keep Custom CSS editor and code related parts untouched.
+// Avoids issues when working with the Custom CSS editor.
+#bd-customcss-detach-container.hljs,
+#bd-customcss-detach-container.inline,
+#bd-customcss-detach-container.hljs :-webkit-any(ol, li, span),
+.editor-wrapper :-webkit-any(textarea, div, span) {
+    font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace;
+    text-transform: none;
+    text-shadow: none;
+}

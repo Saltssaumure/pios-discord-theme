@@ -1,12 +1,5 @@
-@forward "./button";
-@forward "./clyde";
-@forward "./css-vars";
-@forward "./glow";
-@forward "./spoiler";
-@forward "./text";
-
-@use "../top/vars" as *;
-@use "../top/hsla";
+@use "../vars" as *;
+@use "../hsla";
 
 // Notification counter
 .numberBadge__40d6f {

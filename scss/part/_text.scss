@@ -1,7 +1,7 @@
-@use "../top/vars" as *;
-@use "../top/border" as bd;
-@use "../top/font";
-@use "../top/hsla";
+@use "../vars" as *;
+@use "../border" as bd;
+@use "../font";
+@use "../hsla";
 
 @font-face {
     font-family: "FixedSysTrue";

@@ -1,13 +1,5 @@
-@forward "./changeusername";
-@forward "./deletemessage";
-@forward "./event";
-@forward "./imageupload";
-@forward "./invitefriends";
-@forward "./phonenumber";
-@forward "./uploadfile";
-
-@use "../../top/vars" as *;
-@use "../../top/border" as bd;
+@use "../../vars" as *;
+@use "../../border" as bd;
 
 // Modals
 .appMount_c99875 .root_a28985 {

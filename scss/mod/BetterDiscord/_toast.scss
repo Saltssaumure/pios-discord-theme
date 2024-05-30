@@ -1,0 +1,19 @@
+@use "../../vars" as *;
+@use "../../border" as bd;
+@use "../../hsla";
+
+// BetterDiscord toasts
+.bd-toasts {
+    align-items: flex-end;
+    right: 0;
+}
+
+.bd-toast {
+    @include bd.border(thin);
+    margin-right: 24px;
+    background-color: $background-color, 0.3;
+}
+
+.bd-toast.toast-success {
+    background-color: hsla.default($accent-hue, 0.7);
+}
