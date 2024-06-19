@@ -46,25 +46,25 @@
 
 // All caps on areas where case is not so important
 // importantly: excludes message text, searches, emoji, and status text
-.name__4eb92,
+.name_d8bfb3,
 // channel names
-.activityUserPopout_eceeb9,
+.activityUserPopout_d5089b,
 // now playing game and time
 .protip-2urNh2,
 // "right click user for more actions (not changed?)
-.roleName__851c9,
+.roleName_e4010c,
 // roles
-.timestamp_c79dd2,
+.timestamp_ec86aa,
 // message timestamp
-.divider__855e3,
+.divider_fc5f50,
 // day dividers
-.children_cde9af,
+.children_e44302,
 // channel name and desc
-.navButton_b588d0,
+.navButton_af5dbb,
 // emoji/gif picker buttons
-.categoryName_f25cbb,
+.categoryName_af1167,
 // gif picker categories
-.side_b4b3f6 // settings list
+.side_a0 // settings list
 {
     text-transform: uppercase;
 }
@@ -75,45 +75,45 @@
 }
 
 // Code blocks and inline
-.markup_a7e664 code.hljs,
-.markup_a7e664 code.inline {
+.markup_d6076c code.hljs,
+.markup_d6076c code.inline {
     font-family: var(--font-code);
     @include bd.border(thin, bright);
     padding: 1px 8px 3px 8px;
 }
 
 // Code in replied message
-.markup_a7e664.repliedTextContent_b12fe1 code.inline {
+.markup_d6076c.repliedTextContent_ec86aa code.inline {
     padding: 1px 8px 2px 8px;
 }
 
 // Underline #channels and @pings
-.appMount_c99875 .wrapper__4ef2e {
+.appMount_ea7e65 .wrapper_d4fa29 {
     text-decoration: underline;
     background: $embed-color;
 }
 
 // User, role, and channel mentions
-.appMount_c99875 .mention {
+.appMount_ea7e65 .mention {
     color: $bright-color;
 }
 
 // Fix font size of channel group and user group labels to match others
 .da-username,
-.container__43554,
+.container_cc72c1,
 .name-3YKhmS {
     font-size: 16px;
 }
 
 // [user] created thread, pinned message, joined server, etc. alert message
-.content__945f5 {
+.content_e62b38 {
     text-transform: uppercase;
 }
 
-.content__945f5 a {
+.content_e62b38 a {
     text-transform: none;
 }
 
-.compact_e39360 {
+.compact_e62b38 {
     margin-left: 0;
 }

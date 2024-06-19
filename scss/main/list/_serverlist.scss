@@ -3,13 +3,13 @@
 
 // ---- Servers sidebar ----
 // Unread server/channel dot
-.unread__48cf4,
-.item_f9d377 {
+.unread_d8bfb3,
+.item_fd07a3 {
     background-color: $accent-color;
 }
 
 // "New" bubble in servers sidebar
-.mention_dd733a {
+.mention_c10249 {
     background-color: $accent-color;
 }
 
@@ -20,10 +20,10 @@
 }
 
 // Add a server / explore public servers button
-.circleIconButton__05cf2 {
+.circleIconButton_db6521 {
     color: $accent-color;
 }
 
-.circleIconButton__05cf2.selected_aded59 {
+.circleIconButton_db6521.selected_db6521 {
     background-color: hsla.default($accent-hue, 0.7);
 }

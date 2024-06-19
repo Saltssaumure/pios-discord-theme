@@ -1,6 +1,6 @@
 // Adds dashes between channel/member groups
-.containerDefault_e3b32b:not(:first-of-type)::before,
-.membersGroup_cad095.container__43554:not(:first-of-type) > span:last-child::before {
+.containerDefault_a08117:not(:first-of-type)::before,
+.membersGroup_cbd271.container_cc72c1:not(:first-of-type) > span:last-child::before {
     position: absolute;
     font-size: 16pt;
     color: var(--channels-default);

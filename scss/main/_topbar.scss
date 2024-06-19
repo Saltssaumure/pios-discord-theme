@@ -1,7 +1,7 @@
 @use "../vars" as *;
 
 // Title bar
-.appMount_c99875 .titleBar__710b0::before {
+.appMount_ea7e65 .titleBar_a934d8::before {
     content: var(--pios-title-text, "piOS v2.1.01p");
     color: $dim-color;
     background: $background-color;
@@ -16,6 +16,6 @@
     z-index: 1;
 }
 
-.wordmark__5b8c9 {
+.wordmark_a934d8 {
     display: none;
 }

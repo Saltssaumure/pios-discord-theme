@@ -2,20 +2,20 @@
 
 // ---- Channel sidebar ----
 // Position dashes between channel groups
-.containerDefault_e3b32b:not(:first-of-type)::before {
+.containerDefault_a08117:not(:first-of-type)::before {
     content: "-------------------";
     margin-left: 5px;
     top: 0;
 }
 
 // Resize channel icons
-.icon__67ab4 {
+.icon_d8bfb3 {
     width: 15px;
     height: 15px;
 }
 
 // Happening now events
-.channelNotice__36ec1 {
+.channelNotice_a6cd4e {
     @include bd.border(thin);
     margin: 0 8px;
     padding: 4px 8px 8px;
