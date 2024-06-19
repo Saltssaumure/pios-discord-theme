@@ -2,11 +2,11 @@
 @use "../../border" as bd;
 
 // ---- Upload file by drag and drop modal ----
-.uploadModalIn_c0e1db .uploadDropModal_cfadae .bgScale_f4bff5 {
+.uploadModalIn_f82cc7 .uploadDropModal_f82cc7 .bgScale_f82cc7 {
     background: $background-color;
     @include bd.border(thick, bright);
 }
 
-.uploadModalIn_c0e1db .uploadDropModal_cfadae .inner__7afe9 {
+.uploadModalIn_f82cc7 .uploadDropModal_f82cc7 .inner_f82cc7 {
     border: 0;
 }

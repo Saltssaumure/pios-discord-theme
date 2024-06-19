@@ -2,32 +2,32 @@
 @use "../glow";
 
 // Chat content text glow
-.markup_a7e664 {
+.markup_d6076c {
     text-shadow:
         2px 0 10px $glow-color,
         -2px 0 10px $glow-color;
 }
 
-.repliedTextContent_b12fe1.markup_a7e664,
-.edited_b20dd9,
-.markup_a7e664 code.hljs,
-.markup_a7e664 code.inline,
+.repliedTextContent_ec86aa.markup_d6076c,
+.edited_ec86aa,
+.markup_d6076c code.hljs,
+.markup_d6076c code.inline,
 .timestamp__28d64,
-.timestamp_c79dd2,
-.timestampInline__430cf,
-.threadMessageAccessoryPreview__58ff3 .markup_a7e664 {
+.timestamp_ec86aa,
+.timestampInline_ec86aa,
+.threadMessageAccessoryPreview_ec86aa .markup_d6076c {
     text-shadow: none;
 }
 
 // Channel and user pings, hyperlinks
-.appMount_c99875 .mention,
-.markup_a7e664 a {
+.appMount_ea7e65 .mention,
+.markup_d6076c a {
     @include glow.text(20px);
 }
 
 // Role pings, pin/join/thread alert messages, selected text
-.appMount_c99875 .mention.roleMention_d441cd,
-.content__945f5,
+.appMount_ea7e65 .mention.roleMention_d6076c,
+.content_e62b38,
 ::selection {
     @include glow.text(10px);
 }
@@ -49,7 +49,7 @@ span[style="color: rgb(1, 1, 1);"] {
 }
 
 // Status glow
-.wrapper__3ed10 {
+.wrapper_c51b4e {
     @include glow.status(#23a55a, 139, 47.3%, 43.9%);
     @include glow.status(#f0b232, 38, 95.7%, 54.1%);
     @include glow.status(#f23f43, 359, 82.6%, 59.4%);
@@ -57,11 +57,11 @@ span[style="color: rgb(1, 1, 1);"] {
 }
 
 // Do not clip chat content glow
-.zalgo__39311 .messageContent_abea64 {
+.zalgo_ec86aa .messageContent_ec86aa {
     overflow: visible;
 }
 
 // Boosts bar
-.progressBarContainer_e11b41 {
+.progressBarContainer_c75f85 {
     box-shadow: 0 0 10px $glow-color;
 }

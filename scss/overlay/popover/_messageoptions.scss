@@ -3,16 +3,16 @@
 
 // ---- Message options popover ----
 // Hovered normal option
-.colorDefault_e361cf.focused_dcafb9 {
+.colorDefault_d90b3d.focused_d90b3d {
     background-color: hsla.default($accent-hue, 0.2);
 }
 
 // Hovered danger option
-.colorDanger__08c25.focused_dcafb9 {
+.colorDanger_d90b3d.focused_d90b3d {
     background-color: hsla.default($accent-hue, 0.7);
 }
 
 // Clicked option
-.colorDefault_e361cf:active:not(.hideInteraction__0b569) {
+.colorDefault_d90b3d:active:not(.hideInteraction_d90b3d) {
     background-color: hsla.default($accent-hue, 0.7);
 }
