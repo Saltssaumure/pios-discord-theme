@@ -1,4 +1,4 @@
-name: Bundle and release for Replugged
+name: Bundle and release
 
 on:
   push:
@@ -18,8 +18,6 @@ jobs:
 
       - name: Setup node
         uses: actions/setup-node@v4
-        with:
-          node-version: 21
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
