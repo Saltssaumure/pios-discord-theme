@@ -27,3 +27,11 @@
 .circleIconButton_db6521.selected_db6521 {
     background-color: hsla.default($accent-hue, 0.7);
 }
+
+// Notification count badge
+.lowerBadge_c5f96a {
+    @at-root .numberBadge_df8943 {
+        padding-left: 2px;
+        padding-top: 0.5px;
+    }
+}
