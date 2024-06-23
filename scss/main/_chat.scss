@@ -209,6 +209,16 @@
     }
 }
 
+// Mention
+.wrapper_bf1b19 {
+    background: hsla.default($accent-hue, 0.3);
+    color: $bright-color;
+
+    &.interactive:hover {
+        background: hsla.default($accent-hue, 0.5);
+    }
+}
+
 // Thread from message
 // Thread spine
 // Upper

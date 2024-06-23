@@ -19,14 +19,13 @@
     text-shadow: none;
 }
 
-// Channel and user pings, hyperlinks
-.appMount_ea7e65 .mention,
+// Hyperlinks
 .markup_d6076c a {
     @include glow.text(20px);
 }
 
 // Role pings, pin/join/thread alert messages, selected text
-.appMount_ea7e65 .mention.roleMention_d6076c,
+.wrapper_bf1b19,
 .content_e62b38,
 ::selection {
     @include glow.text(10px);
