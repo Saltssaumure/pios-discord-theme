@@ -197,14 +197,26 @@
 }
 
 // Reacts you have added
-.reaction_f61c73,
-.reaction_f61c73:hover {
-    @include bd.border(thin);
+:is(.reaction_ec6b19, .reaction_f61c73) {
+    :is(&, &:hover) {
+        @include bd.border(thin);
+        background: transparent;
+
+        &:is(.reactionMe_ec6b19, .reactionMe_f61c73) {
+            border-color: $accent-color;
+            background-color: hsla.default($accent-hue, 0.3);
+        }
+    }
 }
 
-.reaction_f61c73.reactionMe_f61c73 {
-    border-color: $accent-color;
-    background-color: hsla.default($accent-hue, 0.3);
+// Mention
+.wrapper_bf1b19 {
+    background: hsla.default($accent-hue, 0.3);
+    color: $bright-color;
+
+    &.interactive:hover {
+        background: hsla.default($accent-hue, 0.5);
+    }
 }
 
 // Thread from message
