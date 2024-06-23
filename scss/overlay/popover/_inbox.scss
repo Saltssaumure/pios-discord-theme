@@ -23,11 +23,6 @@
     display: none;
 }
 
-// filter gets box border (not sure what this does anymore)
-.menu_d90b3d {
-    @include bd.border(thick);
-}
-
 // "Mark Inbox as read", "Notifications", "Mark as read", Jump buttons
 .primary_a41c2a:hover:not(.disabled__4d064),
 .secondary__45d4f,

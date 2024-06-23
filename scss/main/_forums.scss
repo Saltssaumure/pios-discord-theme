@@ -1,30 +1,45 @@
 @use "../border" as bd;
+@use "../vars" as *;
 
 // Forums
 .container_a6d69a {
     @include bd.border(thick);
-}
 
-// Forum post
-.container_d331f1 {
-    @include bd.border(thin);
+    // Forum post
+    @at-root .mainCard_a6d69a {
+        @include bd.border(thin);
+        background: transparent;
+
+        &:hover {
+            transform: none;
+        }
+
+        // Make new post
+        // Image container
+        @at-root .container_a15d29,
+            .popout_a15d29 {
+            @include bd.border(thin, bright);
+
+            @at-root .badge_a15d29 {
+                background: $accent-color;
+                border: none;
+            }
+        }
+        // Post text area
+        .channelTextArea_d0696b {
+            border: none;
+        }
+    }
+
+    // Search result count row
+    @at-root .matchingPostsRow_a6d69a {
+        background: transparent;
+    }
 }
 
 // See more
 .contentWrapper_eab878 {
     @include bd.border(thin);
-}
-
-// Make new post
-// Image container
-.container_a15d29,
-.popout_a15d29 {
-    @include bd.border(thin, bright);
-}
-
-// ---- Home ----
-.homeContainer__73533 {
-    @include bd.border(thick);
 }
 
 // Message highlight
