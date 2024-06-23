@@ -1,4 +1,5 @@
 @use "../border" as bd;
+@use "../hsla";
 @use "../vars" as *;
 
 // Forums
@@ -12,6 +13,11 @@
 
         &:hover {
             transform: none;
+        }
+
+        // Text post footer
+        .textContentFooter_a57509 {
+            background: linear-gradient(transparent, $background-color);
         }
 
         // Make new post
@@ -35,11 +41,60 @@
     @at-root .matchingPostsRow_a6d69a {
         background: transparent;
     }
-}
 
-// See more
-.contentWrapper_eab878 {
-    @include bd.border(thin);
+    // Post guildelines
+    .container_ddbb27 {
+        @include bd.border(thin);
+    }
+
+    // Tags
+    @at-root .tagsContainer_a6d69a {
+        align-items: flex-start;
+
+        // Tags list
+        // Expand on hover
+        @at-root .tagList_a6d69a {
+            height: unset;
+            max-height: 32px;
+            transition: max-height 0.2s ease;
+            &:hover,
+            &:has(.selected_c993da) {
+                max-height: 128px;
+            }
+
+            // Tags
+            @at-root .pill_c993da.pill_c993da {
+                @include bd.border(thin);
+                background: $background-color;
+
+                &.selected_c993da {
+                    border-color: $accent-color;
+                    background-color: hsla.default($accent-hue, 0.3);
+                    --background-tertiary: #{hsla.default($accent-hue, 0.3)};
+                }
+            }
+
+            // // Hoist selected tag to top
+            // .tag_a6d69a.selected_c993da {
+            //     order: -1;
+            // }
+        }
+
+        // "See all tags" dropdown
+        @at-root .tagsButton_a6d69a {
+            position: static;
+
+            @at-root .countContainer_a6d69a,
+                .countContainer_ae4f46 {
+                background: $accent-color;
+            }
+        }
+
+        // "See more tags" dropdown that currently does nothing
+        @at-root .tagsButtonPlaceholder_a6d69a {
+            display: none;
+        }
+    }
 }
 
 // Message highlight
