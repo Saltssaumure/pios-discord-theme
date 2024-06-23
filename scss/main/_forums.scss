@@ -97,7 +97,35 @@
     }
 }
 
-// Message highlight
+// Scroller in opened forum post, make actions bar actually sticky
+.scrollerInner_e2e187 {
+    overflow: unset;
+
+    // Actions bar
+    @at-root .container_b385c8 {
+        @at-root :is(.addReactButton_b385c8, .buttonInner_b385c8) {
+            @include bd.border(thin);
+            &:hover {
+                border-color: $dim-color;
+            }
+
+            &:is(.active_f61c73, .active_b385c8) {
+                border-color: $accent-color;
+                background-color: hsla.default($accent-hue, 0.3);
+
+                &:is(:hover, :active) {
+                    color: $accent-color;
+
+                    .icon_f61c73 {
+                        color: inherit;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Message highlight (???)
 .card_d4f6c7,
 .card_d4f6c7:hover {
     @include bd.border(thin);
