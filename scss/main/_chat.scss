@@ -32,18 +32,18 @@
 }
 
 // Reply/thread pipe
-.repliedMessage_ec86aa:before,
-.cozy_ec86aa.hasThread_ec86aa:after {
+.repliedMessage_f9f2ca:before,
+.cozy_f9f2ca.hasThread_f9f2ca:after {
     border-left-width: 3px;
     border-top-width: 1px;
 }
 
-.cozy_ec86aa.hasThread_ec86aa:after {
+.cozy_f9f2ca.hasThread_f9f2ca:after {
     border-bottom-width: 1px;
 }
 
 // piOS style message boxes in compact mode
-.compact_ec86aa.wrapper_ec86aa {
+.compact_f9f2ca.wrapper_f9f2ca {
     @include bd.border(thin);
     margin: calc(var(--pios-spacing) * 1.5rem) 3rem;
     padding: 1rem 1rem 0.5rem 1rem;
@@ -51,12 +51,12 @@
 }
 
 // Remove box if system message eg. pin
-.compact_ec86aa.wrapper_ec86aa.systemMessage_d5deea {
+.compact_f9f2ca.wrapper_f9f2ca.systemMessage_d5deea {
     border: 0;
 }
 
 // Message info
-.compact_ec86aa .header_ec86aa {
+.compact_f9f2ca .header_f9f2ca {
     position: absolute;
     top: -1.6rem;
     display: flex;
@@ -64,23 +64,23 @@
     background: linear-gradient(transparent, $background-color 40%, transparent 60%);
 }
 
-.compact_ec86aa .header_ec86aa > span {
+.compact_f9f2ca .header_f9f2ca > span {
     display: block;
 }
 
 // Hides timestamps for the same time as previous message
-.compact_ec86aa .timestampVisibleOnHover_ec86aa {
+.compact_f9f2ca .timestampVisibleOnHover_f9f2ca {
     width: 0;
     color: transparent;
 }
 
 // Badges from ShowBadgesInChat https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/ShowBadgesInChat///
-.compact_ec86aa .badgesChat-f_cbR8 {
+.compact_f9f2ca .badgesChat-f_cbR8 {
     top: 0;
 }
 
 // Corrects alignment of username when badges are present
-.compact_ec86aa .username_ec86aa {
+.compact_f9f2ca .username_f9f2ca {
     vertical-align: top;
 }
 
@@ -94,61 +94,61 @@
 
 // Reply
 // Post username and timestamp
-.compact_ec86aa.hasReply_ec86aa .header_ec86aa,
-.compact_ec86aa .repliedMessage_ec86aa + .contents_ec86aa .header_ec86aa {
+.compact_f9f2ca.hasReply_f9f2ca .header_f9f2ca,
+.compact_f9f2ca .repliedMessage_f9f2ca + .contents_f9f2ca .header_f9f2ca {
     top: -2.7rem;
 }
 
 // Replied content
-.compact_ec86aa .repliedMessage_ec86aa {
+.compact_f9f2ca .repliedMessage_f9f2ca {
     margin-left: 0;
     padding-left: 0;
     top: -2px;
 }
 
-.executedCommand_ec86aa,
-.threadMessageAccessory_ec86aa {
+.executedCommand_f9f2ca,
+.threadMessageAccessory_f9f2ca {
     height: auto;
 }
 
-.compact_ec86aa .repliedMessage_ec86aa .timestamp_ec86aa {
+.compact_f9f2ca .repliedMessage_f9f2ca .timestamp_f9f2ca {
     line-height: 1rem;
     height: auto;
 }
 
 // Replied elbow
-.compact_ec86aa .repliedMessage_ec86aa::before {
+.compact_f9f2ca .repliedMessage_f9f2ca::before {
     display: none;
 }
 
 // Icons inside replied content
-.compact_ec86aa .repliedMessage_ec86aa .repliedTextContentIcon_da8b30,
-.compact_ec86aa .repliedMessage_ec86aa .badgesChat-f_cbR8 img,
-.compact_ec86aa .repliedMessage_ec86aa .ownerIcon_a31c43,
-.compact_ec86aa .repliedMessage_ec86aa .emoji {
+.compact_f9f2ca .repliedMessage_f9f2ca .repliedTextContentIcon_da8b30,
+.compact_f9f2ca .repliedMessage_f9f2ca .badgesChat-f_cbR8 img,
+.compact_f9f2ca .repliedMessage_f9f2ca .ownerIcon_a31c43,
+.compact_f9f2ca .repliedMessage_f9f2ca .emoji {
     width: 1rem;
     height: 1rem;
 }
 
 // message react/reply etc buttons
-.compact_ec86aa .container_a3b500 {
+.compact_f9f2ca .container_a3b500 {
     top: -16px;
 }
 
 // Message contents
-.compact_ec86aa .contents_ec86aa {
+.compact_f9f2ca .contents_f9f2ca {
     margin: 0;
     padding-left: 0;
     text-indent: 0;
 }
 
 // Block quote starter
-.blockquoteContainer_d6076c .blockquoteDivider_d6076c {
+.blockquoteContainer_f8f345 .blockquoteDivider_f8f345 {
     width: 3px;
 }
 
 // Embeds
-.embedFull_ad0b71.markup_d6076c,
+.embedFull_ad0b71.markup_f8f345,
 // most embeds
 .appMount_ea7e65 .wrapperAudio_f316dd,
 // audio
@@ -222,7 +222,7 @@
 // Thread from message
 // Thread spine
 // Upper
-.compact_ec86aa.hasThread_ec86aa .contents_ec86aa::before {
+.compact_f9f2ca.hasThread_f9f2ca .contents_f9f2ca::before {
     display: none;
 }
 
@@ -240,7 +240,7 @@
     background-color: hsla.default($accent-hue, 0.2);
 }
 
-.compact_ec86aa .container_c15230 {
+.compact_f9f2ca .container_c15230 {
     position: relative;
     left: 2.5rem;
 }
@@ -293,7 +293,7 @@
 }
 
 // Post message preview
-.card_a6d69a .markup_d6076c {
+.card_a6d69a .markup_f8f345 {
     text-shadow: none;
 }
 
