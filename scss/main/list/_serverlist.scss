@@ -13,19 +13,26 @@
     background-color: $accent-color;
 }
 
-// Switch to DMs button
-.wrapper__8436d.selected_ae80f7 .childWrapper_a6ce15,
-.wrapper__8436d:hover .childWrapper_a6ce15 {
-    background-color: hsla.default($accent-hue, 0.7);
+// Home / favourites button
+.wrapper_f90abb {
+    .childWrapper_f90abb {
+        color: $accent-color;
+    }
+    &:is(:hover, .selected_f90abb) {
+        .childWrapper_f90abb {
+            background-color: hsla.default($accent-hue, 0.7);
+            color: $bright-color;
+        }
+    }
 }
 
 // Add a server / explore public servers button
 .circleIconButton_db6521 {
     color: $accent-color;
-}
 
-.circleIconButton_db6521.selected_db6521 {
-    background-color: hsla.default($accent-hue, 0.7);
+    &.selected_db6521 {
+        background-color: hsla.default($accent-hue, 0.7);
+    }
 }
 
 // Notification count badge
