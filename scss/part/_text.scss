@@ -54,7 +54,7 @@
 // "right click user for more actions (not changed?)
 .roleName_e4010c,
 // roles
-.timestamp_ec86aa,
+.timestamp_f9f2ca,
 // message timestamp
 .divider_fc5f50,
 // day dividers
@@ -75,15 +75,15 @@
 }
 
 // Code blocks and inline
-.markup_d6076c code.hljs,
-.markup_d6076c code.inline {
+.markup_f8f345 code.hljs,
+.markup_f8f345 code.inline {
     font-family: var(--font-code);
     @include bd.border(thin, bright);
     padding: 1px 8px 3px 8px;
 }
 
 // Code in replied message
-.markup_d6076c.repliedTextContent_ec86aa code.inline {
+.markup_f8f345.repliedTextContent_f9f2ca code.inline {
     padding: 1px 8px 2px 8px;
 }
 

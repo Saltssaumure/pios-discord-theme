@@ -2,8 +2,8 @@
 @use "../hsla";
 
 // Messages from Clyde now appear as SYSTEM
-.compact_ec86aa.wrapper_ec86aa.ephemeral_d5deea,
-.cozyMessage_d5deea.wrapper_ec86aa.ephemeral_d5deea,
+.compact_f9f2ca.wrapper_f9f2ca.ephemeral_d5deea,
+.cozyMessage_d5deea.wrapper_f9f2ca.ephemeral_d5deea,
 .message_d5deea.ephemeral_d5deea.selected_d5deea,
 .mouse-mode.full-motion .ephemeral_d5deea:hover {
     border-color: hsla.default($accent-hue, 0.7);
@@ -21,21 +21,21 @@
 }
 
 // Change avatar
-.ephemeral_d5deea .avatar_ec86aa {
+.ephemeral_d5deea .avatar_f9f2ca {
     filter: contrast(2) saturate(100) invert(1);
 }
 
-.full-motion .avatar_ec86aa.clickable_ec86aa:hover {
+.full-motion .avatar_f9f2ca.clickable_f9f2ca:hover {
     filter: hue-rotate(130deg) contrast(2) saturate(100);
 }
 
 // Change name
-.ephemeral_d5deea .username_ec86aa {
+.ephemeral_d5deea .username_f9f2ca {
     visibility: hidden;
     padding-right: 0.5rem;
 }
 
-.ephemeral_d5deea .username_ec86aa::after {
+.ephemeral_d5deea .username_f9f2ca::after {
     visibility: visible;
     content: "SYSTEM";
     display: block;
@@ -46,23 +46,23 @@
     background: linear-gradient(transparent, $background-color 40%, transparent 60%);
 }
 
-.ephemeral_d5deea .username_ec86aa:hover::after {
+.ephemeral_d5deea .username_f9f2ca:hover::after {
     text-decoration: underline;
 }
 
 // Totally not a bot
-.ephemeral_d5deea .botTag_ec86aa {
+.ephemeral_d5deea .botTag_f9f2ca {
     display: none;
 }
 
 // Timestamp
-.ephemeral_d5deea .timestamp_ec86aa,
-.ephemeral_d5deea .timestamp_ec86aa.alt_ec86aa {
+.ephemeral_d5deea .timestamp_f9f2ca,
+.ephemeral_d5deea .timestamp_f9f2ca.alt_f9f2ca {
     color: $clyde-color-dim;
 }
 
 // Content
-.ephemeral_d5deea .markup_d6076c {
+.ephemeral_d5deea .markup_f8f345 {
     color: $clyde-color;
     text-shadow:
         2px 0 10px $clyde-color,
@@ -81,7 +81,7 @@
     text-transform: uppercase;
 }
 
-.compact_ec86aa .ephemeralMessage_cabade {
+.compact_f9f2ca .ephemeralMessage_cabade {
     position: absolute;
     right: 0;
     background: linear-gradient(transparent, $background-color 50%, transparent 70%);

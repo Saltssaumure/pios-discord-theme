@@ -2,25 +2,25 @@
 @use "../glow";
 
 // Chat content text glow
-.markup_d6076c {
+.markup_f8f345 {
     text-shadow:
         2px 0 10px $glow-color,
         -2px 0 10px $glow-color;
 }
 
-.repliedTextContent_ec86aa.markup_d6076c,
-.edited_ec86aa,
-.markup_d6076c code.hljs,
-.markup_d6076c code.inline,
+.repliedTextContent_f9f2ca.markup_f8f345,
+.edited_f9f2ca,
+.markup_f8f345 code.hljs,
+.markup_f8f345 code.inline,
 .timestamp__28d64,
-.timestamp_ec86aa,
-.timestampInline_ec86aa,
-.threadMessageAccessoryPreview_ec86aa .markup_d6076c {
+.timestamp_f9f2ca,
+.timestampInline_f9f2ca,
+.threadMessageAccessoryPreview_f9f2ca .markup_f8f345 {
     text-shadow: none;
 }
 
 // Hyperlinks
-.markup_d6076c a {
+.markup_f8f345 a {
     @include glow.text(20px);
 }
 
@@ -56,7 +56,7 @@ span[style="color: rgb(1, 1, 1);"] {
 }
 
 // Do not clip chat content glow
-.zalgo_ec86aa .messageContent_ec86aa {
+.zalgo_f9f2ca .messageContent_f9f2ca {
     overflow: visible;
 }
 
