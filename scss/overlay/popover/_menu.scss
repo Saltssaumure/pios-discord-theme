@@ -23,3 +23,13 @@
 .activeIcon_e1268c path {
     fill: $accent-color;
 }
+
+// Nonstandard option
+.customLabelContainer_b6bf2d {
+    &:hover {
+        background: hsla.default($accent-hue, 0.2);
+    }
+    &:active {
+        background: hsla.default($accent-hue, 0.7);
+    }
+}
